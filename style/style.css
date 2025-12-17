@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.logo{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.hero{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    height: 300px;
+    background-color: #1B1811;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero h1{
+    color: white;
+    font-size: 4em;
+}
+
+.divider p{
+    text-align: center;
+    font-size: large;
+    margin: 20px;
+    color: gray;
+    opacity: 0.5;
+}
+
+.hero-section h1{
+    color: rgb(0, 38, 255);
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    align-items: center;
+    text-align: left;
+    font-weight: 100;
+    margin: 20px;
+    margin-bottom: -40px;
+}
+
+.hero-section a{
+    color: black;
+    text-decoration: underline;
+}
+
+.hero-section a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
