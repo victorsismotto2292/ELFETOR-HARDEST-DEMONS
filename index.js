@@ -16,9 +16,9 @@ const levelsData = fs.readFileSync(levelsPath);
 const levels = JSON.parse(levelsData);
 
 function CreateCardLevels(level, index){
-    const video_url = `${level.video_url}`;
     const position = index + 1;
-    const imageSrc = `/img/${level.lvl_name.toLowerCase().replace(/\s+/g, '')}_elfetor.png`;
+    const videoId = level.video_url.split('v=')[1]?.split('&')[0];
+    const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
     const difficulty = `${level.diff_scale}`;
     const historyHtml = level.pos_history.map(log => log.log1).join('<br>');
     let levelCardHtml = `
@@ -26,7 +26,7 @@ function CreateCardLevels(level, index){
     <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
         <div class="row g-0">
             <div class="col-md-4">
-                <a href="${video_url}"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
+                <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
             </div>
             <div class="col-md-8">
                 <div class="card-body">
