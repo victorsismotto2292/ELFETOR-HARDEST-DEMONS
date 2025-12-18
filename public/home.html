@@ -5,75 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELFETOR HARDEST DEMONS</title>
     <link rel="stylesheet" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="/img/Imagem cabeçário.webp">
-            <p>ELFetor Hardest Demons</p>
+    <header class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+                <div class="logo d-flex align-items-center">
+                    <img src="/img/Imagem cabeçário.webp" class="img-fluid" style="max-width: 50px;">
+                    <p class="mb-0 ms-2">ELFetor Hardest Demons</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <nav class="nav-bar d-flex justify-content-end">
+                    <ul class="d-flex flex-wrap gap-3 list-unstyled mb-0">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Highest BPM List</a></li>
+                        <li><a href="">Former Hardest Levels</a></li>
+                        <li><a href="">Levels Progress</a></li>
+                        <li><a href="">Another Lists</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Highest BPM List</a></li>
-                <li><a href="">Former Hardest Levels</a></li>
-                <li><a href="">Levels Progress</a></li>
-                <li><a href="">Another Lists</a></li>
-            </ul>
-        </nav>
     </header>
-    <div class="hero" style="background-image: url('/img/Imagem home.webp');">
-        <h1>Home</h1>
+    <div class="hero d-flex align-items-center justify-content-center" style="background-image: url('/img/Imagem home.webp'); min-height: 300px;">
+        <h1 class="text-white fw-bold display-1 display-md-2 display-sm-3">Home</h1>
     </div>
     <div class="divider">
-        <p>________________________________________________________________________________________________________________________________________________________________________</p>
+        <hr class="my-4">
     </div>
-    <div class="hero-section">
-        <h1>
-            Hello, this site is inspired by the BGZ'S Hardest Demons List; 
-            This site shows you the hardest demons I've beaten on the game called ''Geometry Dash'', 
-            which every level that has here have the amount of your difficulty and your placement on the demonlist, 
-            also with the videos that are mine or not xD;</h1>
-            <h1>
-            Also,thanks for <a href="https://www.youtube.com/@BGZEXE">BGZEXE</a> 
-            ,<a href="https://www.youtube.com/@uranosgd4294">Urano's GD</a>, 
-            <a href="https://www.youtube.com/@foguitogd">Foguitopo</a> and 
-            <a href="https://www.youtube.com/@Mono-uw4fg">Monogalaxy152</a> for being the administrators of the demonlist!;</h1>
-            <h1>Update (29/03/23) - Now, you can see the position history from all the top 10 levels that were on the demonlist!;</h1>
-            <h1>Note: The top 10 levels on this date before Buh was added were:</h1>
-            <h1>
-            1 - MASTERMIND <br><br>
-            2 - Stalemate <br><br>
-            3 - Blast Furnace <br><br>
-            4 - Different Descent <br><br>
-            5 - DAK <br><br>
-            6 - Nowise <br><br>
-            7 - Nine Circles <br><br>
-            8 - Jawbreaker <br><br>
-            9 - Can't Let Vulc <br><br>
-            10 - Deadlocked 2017 <br><br>
-            Just to not get you in confusion lol. <br><br>
-            Anyways, hope you enjoy! <br><br>
-        </h1>
+    <div class="hero-section container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-12">
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2 lh-base">
+                    Hello, this site is inspired by the BGZ'S Hardest Demons List; 
+                    This site shows you the hardest demons I've beaten on the game called ''Geometry Dash'', 
+                    which every level that has here have the amount of your difficulty and your placement on the demonlist, 
+                    also with the videos that are mine or not xD;</h1>
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2 lh-base">
+                    Also,thanks for <a href="https://www.youtube.com/@BGZEXE">BGZEXE</a> 
+                    ,<a href="https://www.youtube.com/@uranosgd4294">Urano's GD</a>, 
+                    <a href="https://www.youtube.com/@foguitogd">Foguitopo</a> and 
+                    <a href="https://www.youtube.com/@Mono-uw4fg">Monogalaxy152</a> for being the administrators of the demonlist!;</h1>
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2 lh-base">Update (29/03/23) - Now, you can see the position history from all the top 10 levels that were on the demonlist!;</h1>
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2 lh-base">Note: The top 10 levels on this date before Buh was added were:</h1>
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2 lh-base">
+                    1 - MASTERMIND <br>
+                    2 - Stalemate <br>
+                    3 - Blast Furnace <br>
+                    4 - Different Descent <br>
+                    5 - DAK <br>
+                    6 - Nowise <br>
+                    7 - Nine Circles <br>
+                    8 - Jawbreaker <br>
+                    9 - Can't Let Vulc <br>
+                    10 - Deadlocked 2017 <br>
+                    Just to not get you in confusion lol. <br>
+                    Anyways, hope you enjoy!
+                </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-10 col-12 text-center">
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2">My <a href="https://discord.gg/x3zad5RD">discord</a> server:</h1>
+                <h1 class="text-primary fs-4 fs-md-3 fs-lg-2"><a href="https://discord.gg/x3zad5RD">https://discord.gg/x3zad5RD</a></h1>
+            </div>
+        </div>
+    </div>
     <div class="divider">
-        <p>________________________________________________________________________________________________________________________________________________________________________</p>
-    </div>
-        <h1 style="text-align: center;">My <a href="https://discord.gg/x3zad5RD">discord</a> server:</h1>
-        <h1 style="text-align: center;"><a href="https://discord.gg/x3zad5RD">https://discord.gg/x3zad5RD</a></h1>
-    </div>
-    <div class="divider">
-        <p>________________________________________________________________________________________________________________________________________________________________________</p>
+        <hr class="my-4">
     </div>
 
     <!--LIST BEGINNING-->
     <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(0, 0, 0); font-size: 2.5rem; font-style: italic; text-align: center;">MAIN LIST</h1>
-        <div class="divider">
-        <p>________________________________________________________________________________________________________________________________________________________________________</p>
+
+    <div class="divider">
+        <hr class="my-4">
+    </div>
+
+    <!-- LEVELS LIST CARDS HERE -->
+    <div class="levels-list">
+        {{cardsHtml}}
     </div>
 
     <footer>
             <p>&copy ELFETOR HARDEST DEMONS | Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
