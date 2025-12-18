@@ -5,9 +5,8 @@
         "lvl_creator": "Riot",
         "pos_aredl": 640,
         "diff_rank": "Extreme Demon",
-        "diff_scale": 24,
-        "pos_history": 
-        [{
+        "diff_scale": 16,
+        "pos_history": [{
             "log1": "13/12/24 - Added to the list at position 1"
         }]
     },
@@ -17,10 +16,203 @@
         "lvl_creator": "cherryteam",
         "pos_aredl": 740,
         "diff_rank": "Extreme Demon",
-        "diff_scale": 24,
-        "pos_history":
-        [{
+        "diff_scale": 15,
+        "pos_history": [{
             "log1": "24/11/25 - Added to the list at position 2"
         }]
+    },
+    {
+        "video_url": "hhttps://www.youtube.com/watch?v=y5vGpxwIGQI",
+        "lvl_name": "Prismatic Haze",
+        "lvl_creator": "Cirtrax",
+        "pos_aredl": 670,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 15,
+        "pos_history": [
+            {"log1": "05/09/24 - Added to the list at position 1"},
+            {"log1": "13/12/24 - Bloodbath was added above (Fell out of the top 1) (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_MANIC_MACHINE",
+        "lvl_name": "Manic Machine",
+        "lvl_creator": "TwisterDude161",
+        "pos_aredl": 750,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 14,
+        "pos_history": [
+            {"log1": "19/05/25 - Added to the list at position 3"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_REFLECTIVE",
+        "lvl_name": "Reflective",
+        "lvl_creator": "Mojitoz",
+        "pos_aredl": 860,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 15,
+        "pos_history": [
+            {"log1": "22/09/25 - Added to the list at position 4"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_STELLALUNA",
+        "lvl_name": "Stellaluna",
+        "lvl_creator": "SamMaxx",
+        "pos_aredl": 1100,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 13,
+        "pos_history": [
+            {"log1": "02/02/25 - Added to the list at position 3"},
+            {"log1": "01/05/25 - The Ultimate Return was added above (-1)"},
+            {"log1": "19/05/25 - Manic Machine was added above (-1)"},
+            {"log1": "15/09/25 - Moved to position 4 (+1)"},
+            {"log1": "23/09/25 - Reflective was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 5) (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_REVERENCE",
+        "lvl_name": "Reverence",
+        "lvl_creator": "Woom",
+        "pos_aredl": 975,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 13,
+        "pos_history": [
+            {"log1": "06/10/25 - Added to the list at position 6"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_THE_ULTIMATE_RETURN",
+        "lvl_name": "The Ultimate Return",
+        "lvl_creator": "vit12",
+        "pos_aredl": 820,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12.5,
+        "pos_history": [
+            {"log1": "01/05/25 - Added to the list at position 3"},
+            {"log1": "19/05/25 - Manic Machine was added above (-1)"},
+            {"log1": "15/09/25 - Moved to position 5 (-1)"},
+            {"log1": "23/09/25 - Reflective was added above (Fell out of the top 5) (-1)"},
+            {"log1": "06/10/25 - Reverence was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_NAPALM",
+        "lvl_name": "Napalm",
+        "lvl_creator": "Marwec",
+        "pos_aredl": 960,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "17/02/24 - Added to the list at position 1"},
+            {"log1": "05/09/24 - Prismatic Haze was added above (Fell out of the top 1) (-1)"},
+            {"log1": "13/12/24 - Bloodbath was added above (-1)"},
+            {"log1": "02/02/25 - Stellaluna was added above (-1)"},
+            {"log1": "01/05/25 - The Ultimate Return was added above (-1)"},
+            {"log1": "19/05/25 - Manic Machine was added above (Fell out of the top 5) (-1)"},
+            {"log1": "23/09/25 - Reflective was added above (-1)"},
+            {"log1": "06/10/25 - Reverence was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_BROKEN_SIGNAL",
+        "lvl_name": "Broken Signal",
+        "lvl_creator": "Grax",
+        "pos_aredl": 970,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "06/10/25 - Added to the list at position 9"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_ALLEGIANCE",
+        "lvl_name": "Allegiance",
+        "lvl_creator": "NikroPlays",
+        "pos_aredl": 1070,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "02/11/25 - Added to the list at position 10"},
+            {"log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 10) (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_THE_FLAWLESS",
+        "lvl_name": "The Flawless",
+        "lvl_creator": "Fin",
+        "pos_aredl": 1040,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "18/08/25 - Added to the list at position 7"},
+            {"log1": "23/09/25 - Reflective was added above (-1)"},
+            {"log1": "06/10/25 - Reverence was added above (-1)"},
+            {"log1": "06/10/25 - Broken Signal was added above (-1)"},
+            {"log1": "02/11/25 - Allegiance was added above (Fell out of the top 10) (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_FORBIDDEN_ISLE",
+        "lvl_name": "Forbidden Isle",
+        "lvl_creator": "Sillow",
+        "pos_aredl": 1140,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "19/09/25 - Added to the list at position 8"},
+            {"log1": "23/09/25 - Reflective was added above (-1)"},
+            {"log1": "06/10/25 - Reverence was added above (-1)"},
+            {"log1": "06/10/25 - Broken Signal was added above (Fell out of the top 10) (-1)"},
+            {"log1": "02/11/25 - Allegiance was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_THE_LOST_EXISTENCE",
+        "lvl_name": "The Lost Existence",
+        "lvl_creator": "JonathanGD",
+        "pos_aredl": 1160,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 12,
+        "pos_history": [
+            {"log1": "31/10/25 - Added to the list at position 12"},
+            {"log1": "02/11/25 - Allegiance was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
+    },
+    {
+        "video_url": "https://www.youtube.com/watch?v=LINK_CATACLYSM",
+        "lvl_name": "Cataclysm",
+        "lvl_creator": "Ggb0y",
+        "pos_aredl": 1170,
+        "diff_rank": "Extreme Demon",
+        "diff_scale": 11,
+        "pos_history": [
+            {"log1": "23/08/24 - Added to the list at position 3"},
+            {"log1": "02/09/24 - Moved to position 2 (+1)"},
+            {"log1": "05/09/24 - Prismatic Haze was added above (-1)"},
+            {"log1": "13/12/24 - Bloodbath was added above (-1)"},
+            {"log1": "02/02/25 - Stellaluna was added above (-1)"},
+            {"log1": "01/05/25 - The Ultimate Return was added above (Fell out of the top 5) (-1)"},
+            {"log1": "19/05/25 - Manic Machine was added above (-1)"},
+            {"log1": "18/08/25 - The Flawless was added above (-1)"},
+            {"log1": "19/09/25 - Forbidden Isle was added above (-1)"},
+            {"log1": "23/09/25 - Reflective was added above (-1)"},
+            {"log1": "06/10/25 - Reverence was added above (Fell out of the top 10) (-1)"},
+            {"log1": "06/10/25 - Broken Signal was added above (-1)"},
+            {"log1": "01/11/25 - The Lost Existence was added above (-1)"},
+            {"log1": "02/11/25 - Allegiance was added above (-1)"},
+            {"log1": "24/11/25 - Cytokinesis was added above (-1)"}
+        ]
     }
 ]
