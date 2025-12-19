@@ -11,28 +11,28 @@ app.use('/public', express.static('public'));
 app.use('/style', express.static('style'));
 app.use('/img', express.static('img'));
 
-const levelsPath = path.join(__dirname, 'levels.json');
-const levelsData = fs.readFileSync(levelsPath);
-const levels = JSON.parse(levelsData);
+const MainlevelsPath = path.join(__dirname, 'levels_main.json');
+const MainlevelsData = fs.readFileSync(MainlevelsPath);
+const Mainlevels = JSON.parse(MainlevelsData);
 
-function CreateCardLevels(level, index){
+function CreateCardLevels_Main(level_main, index){
     const position = index + 1;
-    const videoId = level.video_url.split('v=')[1]?.split('&')[0];
+    const videoId = level_main.video_url.split('v=')[1]?.split('&')[0];
     const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
-    const difficulty = `${level.diff_scale}`;
-    const historyHtml = level.pos_history.map(log => log.log1).join('<br>');
-    if(level.pos_aredl === "" || level.pos_aredl === 0){
+    const difficulty = `${level_main.diff_scale}`;
+    const historyHtml = level_main.pos_history.map(log => log.log1).join('<br>');
+    if(level_main.pos_aredl === "" || level_main.pos_aredl === 0){
         let levelCardHtml = `
                 <div class="d-flex justify-content-center">
                 <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
+                            <a href="${level_main.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level_main.lvl_name}"></a>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level.lvl_name} by ${level.lvl_creator}</h5>
-                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(${level.diff_rank})</p>
+                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level_main.lvl_name} by ${level_main.lvl_creator}</h5>
+                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(${level_main.diff_rank})</p>
                                 <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">Tier (AREDL): ${difficulty}</p>
                             </div>
                         </div>
@@ -58,12 +58,12 @@ function CreateCardLevels(level, index){
                 <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
+                            <a href="${level_main.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level_main.lvl_name}"></a>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level.lvl_name} by ${level.lvl_creator}</h5>
-                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(Top ${level.pos_aredl} ${level.diff_rank})</p>
+                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level_main.lvl_name} by ${level_main.lvl_creator}</h5>
+                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(Top ${level_main.pos_aredl} ${level_main.diff_rank})</p>
                                 <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">Tier (AREDL): ${difficulty}</p>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ function CreateCardLevels(level, index){
 }
 
 app.get('/home', (req, res) => {
-    const cardsHtml = levels.map((level, index) => CreateCardLevels(level, index)).join('');
+    const cardsHtml = Mainlevels.map((level_main, index) => CreateCardLevels_Main(level_main, index)).join('');
     const htmlPagePath = path.join(__dirname, '/public/home.html');
     let htmlPage = fs.readFileSync(htmlPagePath, 'utf-8');
     htmlPage = htmlPage.replace('{{cardsHtml}}', cardsHtml);
