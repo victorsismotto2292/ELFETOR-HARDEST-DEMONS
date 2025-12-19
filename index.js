@@ -140,7 +140,6 @@ function CreateCardLevels_Extended(level_extended, index){
     }
 }
 
-
 app.get('/home', (req, res) => {
     const htmlPagePath = path.join(__dirname, '/public/home.html');
     let htmlPage = fs.readFileSync(htmlPagePath, 'utf-8');
@@ -151,8 +150,24 @@ app.get('/home', (req, res) => {
     // EXTENDED LEVELS DATA:
     const cardsExtendedHtml = Extendedlevels.map((level_extended, index) => CreateCardLevels_Extended(level_extended, index)).join('');
 
-    htmlPage = htmlPage.replace('{{cardsMainHtml}}', cardsMainHtml);
-    res.send(htmlPage + cardsExtendedHtml);
+    const footerHtml = `<footer>
+            <p>&copy; ELFETOR HARDEST DEMONS | Todos os direitos reservados</p>
+        </footer>`;
+
+    // replace placeholders first (use replaceAll to cover any whitespace/occurrence)
+    htmlPage = htmlPage.replaceAll('{{cardsMainHtml}}', cardsMainHtml);
+    htmlPage = htmlPage.replaceAll('{{cardsExtendedHtml}}', cardsExtendedHtml);
+    htmlPage = htmlPage.replaceAll('{{footer}}', footerHtml);
+
+    // fallbacks if placeholders weren't present
+    if (!htmlPage.includes(cardsExtendedHtml)) {
+        htmlPage = htmlPage.replace('</body>', cardsExtendedHtml + '\n</body>');
+    }
+    if (!htmlPage.includes(footerHtml)) {
+        htmlPage = htmlPage.replace('</body>', footerHtml + '\n</body>');
+    }
+
+    res.send(htmlPage);
 });
 
 app.listen(port, () => {
