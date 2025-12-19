@@ -21,35 +21,68 @@ function CreateCardLevels(level, index){
     const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
     const difficulty = `${level.diff_scale}`;
     const historyHtml = level.pos_history.map(log => log.log1).join('<br>');
-    let levelCardHtml = `
-    <div class="d-flex justify-content-center">
-    <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level.lvl_name} by ${level.lvl_creator}</h5>
-                    <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(Top ${level.pos_aredl} ${level.diff_rank})</p>
-                    <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">Tier (AREDL): ${difficulty}</p>
+    if(level.pos_aredl === "" || level.pos_aredl === 0){
+        let levelCardHtml = `
+                <div class="d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level.lvl_name} by ${level.lvl_creator}</h5>
+                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(${level.diff_rank})</p>
+                                <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">Tier (AREDL): ${difficulty}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 100%;">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(231, 231, 231); width: 100%;">
+                        View Position History
+                        </a>
+
+                        <ul class="dropdown-menu" style="width: 100%; text-align: left; padding-left: 10px;">
+                        <p>${historyHtml}</p>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="dropdown" style="width: 100%;">
-            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(231, 231, 231); width: 100%;">
-            View Position History
-            </a>
+                `;
 
-            <ul class="dropdown-menu" style="width: 100%; text-align: left; padding-left: 10px;">
-            <p>${historyHtml}</p>
-            </ul>
-        </div>
-    </div>
-</div>
-    `;
+                return levelCardHtml;
+    }
+    else{
+        let levelCardHtml = `
+                <div class="d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <a href="${level.video_url}" target="_blank"><img src="${imageSrc}" class="img-fluid rounded-start" alt="${level.lvl_name}"></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">${position}- ${level.lvl_name} by ${level.lvl_creator}</h5>
+                                <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">(Top ${level.pos_aredl} ${level.diff_rank})</p>
+                                <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">Tier (AREDL): ${difficulty}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 100%;">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(231, 231, 231); width: 100%;">
+                        View Position History
+                        </a>
 
-    return levelCardHtml;
+                        <ul class="dropdown-menu" style="width: 100%; text-align: left; padding-left: 10px;">
+                        <p>${historyHtml}</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return levelCardHtml;
+    }
 }
 
 app.get('/home', (req, res) => {
