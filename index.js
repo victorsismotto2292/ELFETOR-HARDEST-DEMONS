@@ -1,9 +1,10 @@
+// index.js - VERSÃO CORRIGIDA
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const app = express();
 
-const port = 3030;
+const port = process.env.PORT || 3030;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -140,7 +141,8 @@ function CreateCardLevels_Extended(level_extended, index){
     }
 }
 
-app.get('/home', (req, res) => {
+// FUNÇÃO PARA GERAR A PÁGINA
+function generatePage() {
     const htmlPagePath = path.join(__dirname, '/public/home.html');
     let htmlPage = fs.readFileSync(htmlPagePath, 'utf-8');
     
@@ -154,7 +156,7 @@ app.get('/home', (req, res) => {
             <p>&copy; ELFETOR HARDEST DEMONS | Todos os direitos reservados</p>
         </footer>`;
 
-    // replace placeholders first (use replaceAll to cover any whitespace/occurrence)
+    // replace placeholders
     htmlPage = htmlPage.replaceAll('{{cardsMainHtml}}', cardsMainHtml);
     htmlPage = htmlPage.replaceAll('{{cardsExtendedHtml}}', cardsExtendedHtml);
     htmlPage = htmlPage.replaceAll('{{footer}}', footerHtml);
@@ -167,9 +169,31 @@ app.get('/home', (req, res) => {
         htmlPage = htmlPage.replace('</body>', footerHtml + '\n</body>');
     }
 
+    return htmlPage;
+}
+
+// ROTA RAIZ
+app.get('/', (req, res) => {
+    res.redirect('/home');
+});
+
+// ROTA PÁGINA PRINCIPAL
+app.get('/home', (req, res) => {
+    const htmlPage = generatePage();
     res.send(htmlPage);
 });
 
-app.listen(port, () => {
-    console.log(`Server now loading in: http://localhost:${port}/home`);
+// ROTA CATCH-ALL
+app.get('*', (req, res) => {
+    res.redirect('/home');
 });
+
+// Para Vercel (serverless)
+if (process.env.VERCEL) {
+    module.exports = app;
+} else {
+    // Para desenvolvimento local
+    app.listen(port, () => {
+        console.log(`Server now loading in: http://localhost:${port}/home`);
+    });
+}
