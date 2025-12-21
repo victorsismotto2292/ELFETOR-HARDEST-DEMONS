@@ -66,7 +66,7 @@ if (!packageJson.dependencies.express) {
   packageJson.dependencies.express = "^4.18.2";
 }
 packageJson.engines = {
-  node: "18.x"
+  node: "20.x"
 };
 
 fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
