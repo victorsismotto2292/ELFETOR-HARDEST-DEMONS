@@ -1,4 +1,12 @@
-// index.js - VERSÃO CORRIGIDA
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// SERVIR ARQUIVOS ESTÁTICOS (CSS, IMG, JS)
+app.use(express.static(path.join(__dirname, "public")));
+
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
@@ -174,7 +182,7 @@ function generatePage() {
 
 // ROTA RAIZ
 app.get('/', (req, res) => {
-    res.redirect('/home');
+    res.sendFile(path.join(__dirname, "public", "home.html"));
 });
 
 // ROTA PÁGINA PRINCIPAL
