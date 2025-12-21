@@ -2,17 +2,17 @@
 
 Site de lista dos demons mais difíceis completados por ELFetor no Geometry Dash.
 
-## 🚀 Deploy
+## Deploy
 
 Este projeto está configurado para deploy automático no Vercel.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - Node.js
 - Express.js
 - Bootstrap 5
 
-## 📦 Instalação Local
+## Instalação Local
 
 ```bash
 npm install
@@ -21,11 +21,11 @@ npm start
 
 Acesse: http://localhost:3030/home
 
-## 🌐 Deploy no Vercel
+## Deploy no Vercel
 
 1. Conecte seu repositório GitHub ao Vercel
 2. O deploy será automático a cada push
 
-## 📝 Licença
+## Licença
 
 Projeto pessoal - ELFetor
