@@ -35,42 +35,69 @@ const Extendedlevels = JSON.parse(
 // FUNÇÕES (SUA LÓGICA)
 // ==========================
 function CreateCardLevels_Main(level_main, index) {
-  const position = index + 1;
-  const videoId = level_main.video_url.split("v=")[1]?.split("&")[0];
-  const imageSrc = videoId
-    ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
-    : "/img/placeholder.png";
+    const position = index + 1;
+    
+    // Extração do ID do vídeo (Corrigido para usar level_main)
+    const videoId = level_main.video_url.split('v=')[1]?.split('&')[0];
+    const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
+    
+    const difficulty = `${level_main.diff_scale}`;
+    
+    // Gera o HTML do histórico
+    // O '?' evita erro se pos_history for undefined
+    const historyHtml = level_main.pos_history ? level_main.pos_history.map(log => log.log1).join('<br>') : '';
 
-  const historyHtml = level_main.pos_history
-    ?.map(log => log.log1)
-    .join("<br>") ?? "";
+    // Lógica para definir o texto do rank (Com ou sem "Top X")
+    let rankDisplay = "";
+    if (level_main.pos_aredl === "" || level_main.pos_aredl === 0) {
+        // Se não tiver posição AREDL, mostra apenas o rank de dificuldade
+        rankDisplay = `(${level_main.diff_rank})`;
+    } else {
+        // Se tiver posição, mostra "Top X"
+        rankDisplay = `(Top ${level_main.pos_aredl} ${level_main.diff_rank})`;
+    }
 
-  return `
-    <div class="d-flex justify-content-center">
-      <div class="card mb-3" style="max-width:1000px;margin:20px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <a href="${level_main.video_url}" target="_blank">
-              <img src="${imageSrc}" class="img-fluid rounded-start">
-            </a>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 style="font-size:3rem;color:#980000;">
-                ${position} - ${level_main.lvl_name} by ${level_main.lvl_creator}
-              </h5>
-              <p style="color:#980000;">
-                ${level_main.pos_aredl
-                  ? `(Top ${level_main.pos_aredl} ${level_main.diff_rank})`
-                  : `(${level_main.diff_rank})`}
-              </p>
-              <p>Tier (AREDL): ${level_main.diff_scale}</p>
+    // Montagem do HTML Único
+    let levelCardHtml = `
+        <div class="d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="${level_main.video_url}" target="_blank">
+                            <img src="${imageSrc}" class="img-fluid rounded-start" alt="${level_main.lvl_name}">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">
+                                ${position}- ${level_main.lvl_name} by ${level_main.lvl_creator}
+                            </h5>
+                            
+                            <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">
+                                ${rankDisplay}
+                            </p>
+                            
+                            <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">
+                                Tier (AREDL): ${difficulty}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown" style="width: 100%;">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(231, 231, 231); width: 100%;">
+                    View Position History
+                    </a>
+
+                    <ul class="dropdown-menu" style="width: 100%; text-align: left; padding-left: 10px;">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  `;
+    `;
+
+    return levelCardHtml;
 }
 
 function CreateCardLevels_Extended(level_extended, index) {
