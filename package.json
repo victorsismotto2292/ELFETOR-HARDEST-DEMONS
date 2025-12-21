@@ -1,16 +1,12 @@
 {
   "name": "elfetor-hardest-demons",
   "version": "1.0.0",
-  "description": "ELFetor Hardest Demons List",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": "20.x"
+    "express": "^4.19.2"
   }
 }

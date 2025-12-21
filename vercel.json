@@ -3,13 +3,28 @@
   "builds": [
     {
       "src": "index.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "runtime": "nodejs24.x"
+      }
     }
   ],
   "routes": [
     {
+      "src": "/style/(.*)",
+      "dest": "/style/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "/index.js"
     }
   ]
 }
