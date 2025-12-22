@@ -13,3 +13,4 @@
 - 22/12/2025, 15:34:33 - Psychosis atualizado: AREDL:  → 220
 - 22/12/2025, 18:22:58 - Droppy foi adicionado na posição 80, abaixo de Z
 - 22/12/2025, 18:24:24 - Droppy foi removido da posição 80
+- 22/12/2025, 18:26:28 - Droppy foi adicionado na posição 6, abaixo de Anya II e acima de Terror Factory
