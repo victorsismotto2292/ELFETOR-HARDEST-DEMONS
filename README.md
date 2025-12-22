@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 18:26:28 — Droppy foi adicionado na posição 6, abaixo de Anya II e acima de Terror Factory
+- 22/12/2025, 18:27:50 — Droppy atualizado: AREDL: 0 → 170
 <!--LATEST-CHANGES-END-->
+
 
 
 
