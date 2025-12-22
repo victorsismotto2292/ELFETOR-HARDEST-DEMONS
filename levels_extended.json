@@ -1171,5 +1171,14 @@
         "log1": "21/12/25 - DeCodeX was added above (-1)"
       }
     ]
+  },
+  {
+    "lvl_name": "teste",
+    "lvl_creator": "teste",
+    "video_url": "",
+    "diff_rank": "medium demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": []
   }
 ]
