@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 15:31:04 — DeCodeX atualizado: rank: undefined → Hard Demon, scale: undefined → 9.5, AREDL: undefined → 230
+- 22/12/2025, 15:32:24 — 8E8E6 atualizado: scale: 9.5 → 9.5, AREDL:  → 235
 <!--LATEST-CHANGES-END-->
+
 
 
 
