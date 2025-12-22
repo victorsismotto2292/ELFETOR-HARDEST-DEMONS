@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 18:22:58 — Droppy foi adicionado na posição 80, abaixo de Z
+- 22/12/2025, 18:24:24 — Droppy foi removido da posição 80
 <!--LATEST-CHANGES-END-->
+
 
 
 
