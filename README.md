@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 04:17:25 — Destination 19 foi movido da posição 20 para 19, abaixo de Memories III e acima de Prismatic
+- 22/12/2025, 04:31:10 — Dashplorers foi movido da posição 55 para 50, abaixo de Golden Hope e acima de Black Off
 <!--LATEST-CHANGES-END-->
+
 
 
 
