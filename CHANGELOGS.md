@@ -11,3 +11,4 @@
 - 22/12/2025, 15:31:04 - DeCodeX atualizado: rank: undefined → Hard Demon, scale: undefined → 9.5, AREDL: undefined → 230
 - 22/12/2025, 15:32:24 - 8E8E6 atualizado: scale: 9.5 → 9.5, AREDL:  → 235
 - 22/12/2025, 15:34:33 - Psychosis atualizado: AREDL:  → 220
+- 22/12/2025, 18:22:58 - Droppy foi adicionado na posição 80, abaixo de Z
