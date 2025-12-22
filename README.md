@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 15:25:05 — Destination 19 atualizado: scale: 10 → 21, AREDL:  → 1200
+- 22/12/2025, 15:29:30 — Sharp Minor atualizado: AREDL: 0 → 110
 <!--LATEST-CHANGES-END-->
+
 
 
 
