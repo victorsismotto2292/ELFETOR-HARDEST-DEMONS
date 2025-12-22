@@ -5,3 +5,4 @@
 - 22/12/2025, 04:31:10 - Dashplorers foi movido da posição 55 para 50, abaixo de Golden Hope e acima de Black Off
 - 22/12/2025, 04:34:07 - teste foi adicionado na posição 80, abaixo de Z
 - 22/12/2025, 04:34:18 - teste foi removido da posição 80
+- 22/12/2025, 15:25:05 - Destination 19 atualizado: scale: 10 → 21, AREDL:  → 1200

@@ -645,9 +645,9 @@
     "video_url": "https://www.youtube.com/watch?v=LINK_DESTINATION_19",
     "lvl_name": "Destination 19",
     "lvl_creator": "bosjoker",
-    "pos_aredl": "",
+    "pos_aredl": 1200,
     "diff_rank": "Extreme Demon",
-    "diff_scale": 10,
+    "diff_scale": "21",
     "pos_history": [
       {
         "log1": "24/07/25 - Added to the list at position 15"

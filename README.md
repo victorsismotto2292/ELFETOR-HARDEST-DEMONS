@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 04:34:18 — teste foi removido da posição 80
+- 22/12/2025, 15:25:05 — Destination 19 atualizado: scale: 10 → 21, AREDL:  → 1200
 <!--LATEST-CHANGES-END-->
+
 
 
 
