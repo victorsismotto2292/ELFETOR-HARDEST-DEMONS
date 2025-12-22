@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 15:30:23 — Euphoria atualizado: AREDL: undefined → 110
+- 22/12/2025, 15:31:04 — DeCodeX atualizado: rank: undefined → Hard Demon, scale: undefined → 9.5, AREDL: undefined → 230
 <!--LATEST-CHANGES-END-->
+
 
 
 
