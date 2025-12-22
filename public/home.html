@@ -141,6 +141,14 @@ a:hover{
         <hr class="my-4">
     </div>
 
+    <div class="container my-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12">
+          <input id="levelSearch" class="form-control" placeholder="Pesquisar níveis (nome ou criador)" />
+        </div>
+      </div>
+    </div>
+
     <!-- MAIN LIST BEGINNING-->
     <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(0, 0, 0); font-size: 2.5rem; font-style: italic; text-align: center;">MAIN LIST</h1>
 
@@ -152,6 +160,26 @@ a:hover{
     <div class="main-levels-list">
         {{cardsMainHtml}}
     </div>
+
+    <script>
+      (function(){
+        const input = document.getElementById('levelSearch');
+        if (!input) return;
+        input.addEventListener('input', function(){
+          const q = (this.value||'').trim().toLowerCase();
+          const cards = document.querySelectorAll('.level-card');
+          cards.forEach(card => {
+            if (!q) { card.style.display = ''; return; }
+            const name = card.getAttribute('data-name') || '';
+            const creator = card.getAttribute('data-creator') || '';
+            const pos = card.getAttribute('data-position') || '';
+            const hay = name + ' ' + creator + ' ' + pos;
+            card.style.display = hay.indexOf(q) !== -1 ? '' : 'none';
+          });
+        });
+      })();
+    </script>
+
 
     <div class="divider">
         <hr class="my-4">

@@ -36,30 +36,23 @@ const Extendedlevels = JSON.parse(
 // ==========================
 function CreateCardLevels_Main(level_main, index) {
     const position = index + 1;
-    
-    // Extração do ID do vídeo (Corrigido para usar level_main)
-    const videoId = level_main.video_url.split('v=')[1]?.split('&')[0];
+    const videoId = String(level_main.video_url||'').split('v=')[1]?.split('&')[0];
     const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
-    
-    const difficulty = `${level_main.diff_scale}`;
-    
-    // Gera o HTML do histórico
-    // O '?' evita erro se pos_history for undefined
+    const difficulty = `${level_main.diff_scale||''}`;
     const historyHtml = level_main.pos_history ? level_main.pos_history.map(log => log.log1).join('<br>') : '';
 
-    // Lógica para definir o texto do rank (Com ou sem "Top X")
     let rankDisplay = "";
-    if (level_main.pos_aredl === "" || level_main.pos_aredl === 0) {
-        // Se não tiver posição AREDL, mostra apenas o rank de dificuldade
-        rankDisplay = `(${level_main.diff_rank})`;
+    if (level_main.pos_aredl === "" || level_main.pos_aredl === 0 || level_main.pos_aredl === undefined) {
+        rankDisplay = `(${level_main.diff_rank||''})`;
     } else {
-        // Se tiver posição, mostra "Top X"
-        rankDisplay = `(Top ${level_main.pos_aredl} ${level_main.diff_rank})`;
+        rankDisplay = `(Top ${level_main.pos_aredl} ${level_main.diff_rank||''})`;
     }
 
-    // Montagem do HTML Único
+    const safeName = (level_main.lvl_name||'').replace(/"/g,'&quot;');
+    const safeCreator = (level_main.lvl_creator||'').replace(/"/g,'&quot;');
+
     let levelCardHtml = `
-        <div class="d-flex justify-content-center">
+        <div class="level-card main-level d-flex justify-content-center" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card mb-3" style="max-width: 1000px; margin: 20px;">
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -102,13 +95,13 @@ function CreateCardLevels_Main(level_main, index) {
 
 function CreateCardLevels_Extended(level_extended, index) {
   const position = index + 76;
-  const videoId = level_extended.video_url.split("v=")[1]?.split("&")[0];
-  const imageSrc = videoId
-    ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
-    : "/img/placeholder.png";
+  const videoId = String(level_extended.video_url||'').split("v=")[1]?.split("&")[0];
+  const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "/img/placeholder.png";
+  const safeName = (level_extended.lvl_name||'').replace(/"/g,'&quot;');
+  const safeCreator = (level_extended.lvl_creator||'').replace(/"/g,'&quot;');
 
   return `
-    <div class="d-flex justify-content-center">
+    <div class="level-card extended-level d-flex justify-content-center" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
       <div class="card mb-3" style="max-width:1000px;margin:20px;">
         <div class="row g-0">
           <div class="col-md-4">

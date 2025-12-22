@@ -202,13 +202,16 @@ function moveLevel(data, spec, newPos) {
 function usage() {
   console.log('Usage: node manage_levels.js --file <path> <command> [options]');
   console.log('Commands:');
-  console.log('  add --json <jsonString> [--pos N]          Add a level (provide full JSON object)');
-  console.log('  add --from <path> [--pos N]                Add a level from file');
-  console.log('  delete --name <lvl_name> | --index N       Delete a level');
-  console.log('  update --name <lvl_name> --json <patch>    Update properties (patch is JSON)');
-  console.log('  move --name <lvl_name> --pos N             Move level to new position (1-based)');
-  console.log('  format                                     Normalize pos_history for all levels');
-  console.log('  list                                       Print level names with indices');
+  console.log('  list                                             List all levels');
+  console.log('  search <query>                                   Search levels by name/creator/position');
+  console.log('  add --json <jsonString> [--pos N]                Add a level (provide full JSON object)');
+  console.log('  add --from <path> [--pos N]                      Add a level from file');
+  console.log('  add --name "<name>" --video_url "<url>" --lvl_creator "<creator>" [--diff_rank "<rank>"] [--diff_scale "<scale>"] [--pos_aredl N] [--pos N]   Add level using simple flags');
+  console.log('  delete --name <lvl_name> | --index N             Delete a level');
+  console.log('  update --name <lvl_name> --json <patch>          Update properties (patch is JSON)');
+  console.log('  move --name <lvl_name> --pos N                   Move level to new position (1-based)');
+  console.log('  format                                           Normalize pos_history for all levels');
+  console.log('  menu                                             Open interactive menu (try this!)');
 }
 
 function getArg(flag) {
@@ -219,7 +222,17 @@ function getArg(flag) {
 
 async function main() {
   const file = getArg('--file') || 'levels_main.json';
-  const cmd = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : process.argv[3];
+  
+  // Get command - it should be the first arg that doesn't start with -- and is not after a flag value
+  let cmd = undefined;
+  for (let i = 2; i < process.argv.length; i++) {
+    const arg = process.argv[i];
+    if (!arg.startsWith('--') && (i === 2 || !process.argv[i-1].startsWith('--'))) {
+      cmd = arg;
+      break;
+    }
+  }
+  
   if (!cmd) { usage(); return; }
   if (!fs.existsSync(file)) { console.error('file not found:', file); process.exit(1); }
   const data = load(file);
@@ -233,7 +246,22 @@ async function main() {
         let obj;
         if (from) obj = JSON.parse(fs.readFileSync(from,'utf8'));
         else if (jsonStr) obj = JSON.parse(jsonStr);
-        else { console.error('provide --from or --json'); process.exit(1); }
+        else {
+          const name = getArg('--name') || getArg('--lvl_name');
+          const video_url = getArg('--video_url') || getArg('--video');
+          const lvl_creator = getArg('--lvl_creator') || getArg('--creator');
+          const diff_rank = getArg('--diff_rank');
+          const diff_scale = getArg('--diff_scale');
+          const pos_aredl = getArg('--pos_aredl');
+          if (!name) { console.error('provide --from, --json or --name'); process.exit(1); }
+          obj = {};
+          if (name) obj.lvl_name = name;
+          if (video_url) obj.video_url = video_url;
+          if (lvl_creator) obj.lvl_creator = lvl_creator;
+          if (diff_rank) obj.diff_rank = diff_rank;
+          if (diff_scale) obj.diff_scale = diff_scale;
+          if (pos_aredl) obj.pos_aredl = parseInt(pos_aredl,10);
+        }
         backupFile(file);
         addLevel(file, data, obj, pos);
         save(file, data);
@@ -281,6 +309,35 @@ async function main() {
       }
       case 'list': {
         data.forEach((it,i)=> console.log(`${i+1}. ${it.lvl_name}`));
+        break;
+      }
+      case 'search': {
+        // Get query - it's the argument right after "search"
+        const searchIdx = process.argv.indexOf('search');
+        const query = (process.argv[searchIdx + 1] || '').toLowerCase();
+        if (!query) { console.error('Usage: search <query>'); process.exit(1); }
+        const results = data.filter((item, idx) => {
+          const name = (item.lvl_name || '').toLowerCase();
+          const creator = (item.lvl_creator || '').toLowerCase();
+          const pos = String(idx + 1);
+          return name.includes(query) || creator.includes(query) || pos === query;
+        });
+        if (results.length === 0) {
+          console.log('❌ No results found.');
+        } else {
+          console.log(`✅ Found ${results.length} result(s):\n`);
+          results.forEach(item => {
+            const idx = data.indexOf(item);
+            console.log(`  ${idx+1}. ${item.lvl_name} by ${item.lvl_creator}`);
+          });
+        }
+        break;
+      }
+      case 'menu': {
+        console.log('Opening interactive menu...');
+        const cli = require('./cli.cjs');
+        // cli.menu is async
+        await cli.menu();
         break;
       }
       default: usage(); break;

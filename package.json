@@ -4,7 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "levels": "node scripts/cli.cjs",
+    "manage": "node scripts/cli.cjs"
   },
   "dependencies": {
     "express": "^4.22.1"
