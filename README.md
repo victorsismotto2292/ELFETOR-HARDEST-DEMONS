@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 22/12/2025, 18:27:50 — Droppy atualizado: AREDL: 0 → 170
+- 24/12/2025, 19:39:10 — Hibernal foi adicionado na posição 3, abaixo de Multition e acima de Xes
 <!--LATEST-CHANGES-END-->
+
 
 
 

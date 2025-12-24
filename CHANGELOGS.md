@@ -15,3 +15,4 @@
 - 22/12/2025, 18:24:24 - Droppy foi removido da posição 80
 - 22/12/2025, 18:26:28 - Droppy foi adicionado na posição 6, abaixo de Anya II e acima de Terror Factory
 - 22/12/2025, 18:27:50 - Droppy atualizado: AREDL: 0 → 170
+- 24/12/2025, 19:39:10 - Hibernal foi adicionado na posição 3, abaixo de Multition e acima de Xes
