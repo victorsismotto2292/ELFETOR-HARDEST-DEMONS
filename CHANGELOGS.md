@@ -18,3 +18,4 @@
 - 24/12/2025, 19:39:10 - Hibernal foi adicionado na posição 3, abaixo de Multition e acima de Xes
 - 24/12/2025, 19:39:28 - Hibernal foi removido da posição 3
 - 24/12/2025, 19:40:03 - Hibernal foi adicionado na posição 4, abaixo de Xes e acima de Frostbound
+- 24/12/2025, 19:40:25 - Hibernal atualizado: AREDL: 0 → 50

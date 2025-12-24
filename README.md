@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 24/12/2025, 19:40:03 — Hibernal foi adicionado na posição 4, abaixo de Xes e acima de Frostbound
+- 24/12/2025, 19:40:25 — Hibernal atualizado: AREDL: 0 → 50
 <!--LATEST-CHANGES-END-->
+
 
 
 
