@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 27/12/2025, 01:16:29 — Nantendo foi movido da posição 67 para 68, abaixo de Deadlocked 2017 e acima de Flinq
+- 27/12/2025, 01:21:35 — Nantendo atualizado: URL
 <!--LATEST-CHANGES-END-->
+
 
 
 
