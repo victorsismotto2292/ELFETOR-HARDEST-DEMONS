@@ -955,15 +955,6 @@
     ]
   },
   {
-    "lvl_name": "Nantendo",
-    "lvl_creator": "im fernando",
-    "video_url": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "9",
-    "pos_aredl": 0,
-    "pos_history": []
-  },
-  {
     "video_url": "",
     "lvl_name": "Deadlocked 2017",
     "lvl_creator": "Bronks",
@@ -978,6 +969,15 @@
         "log1": "21/12/25 - DeCodeX was added above (-1)"
       }
     ]
+  },
+  {
+    "lvl_name": "Nantendo",
+    "lvl_creator": "im fernando",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": []
   },
   {
     "video_url": "",

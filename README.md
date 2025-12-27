@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 27/12/2025, 01:15:05 — Nantendo foi adicionado na posição 67, abaixo de Cant Let Vulc e acima de Deadlocked 2017
+- 27/12/2025, 01:16:29 — Nantendo foi movido da posição 67 para 68, abaixo de Deadlocked 2017 e acima de Flinq
 <!--LATEST-CHANGES-END-->
+
 
 
 

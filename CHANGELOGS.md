@@ -20,3 +20,4 @@
 - 24/12/2025, 19:40:03 - Hibernal foi adicionado na posição 4, abaixo de Xes e acima de Frostbound
 - 24/12/2025, 19:40:25 - Hibernal atualizado: AREDL: 0 → 50
 - 27/12/2025, 01:15:05 - Nantendo foi adicionado na posição 67, abaixo de Cant Let Vulc e acima de Deadlocked 2017
+- 27/12/2025, 01:16:29 - Nantendo foi movido da posição 67 para 68, abaixo de Deadlocked 2017 e acima de Flinq
