@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 24/12/2025, 19:40:25 — Hibernal atualizado: AREDL: 0 → 50
+- 27/12/2025, 01:15:05 — Nantendo foi adicionado na posição 67, abaixo de Cant Let Vulc e acima de Deadlocked 2017
 <!--LATEST-CHANGES-END-->
+
 
 
 
