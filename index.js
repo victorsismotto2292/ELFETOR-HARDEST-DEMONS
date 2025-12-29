@@ -48,8 +48,8 @@ function CreateCardLevels_Main(level_main, index) {
         rankDisplay = `(Top ${level_main.pos_aredl} ${level_main.diff_rank||''})`;
     }
 
-    const safeName = (level_main.lvl_name||'').replace(/"/g,'&quot;');
-    const safeCreator = (level_main.lvl_creator||'').replace(/"/g,'&quot;');
+    const safeName = (level_main.lvl_name||'').replace(/"/g,'"');
+    const safeCreator = (level_main.lvl_creator||'').replace(/"/g,'"');
 
     let levelCardHtml = `
         <div class="level-card main-level d-flex justify-content-center" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
@@ -95,10 +95,31 @@ function CreateCardLevels_Main(level_main, index) {
 
 function CreateCardLevels_Extended(level_extended, index) {
   const position = index + 76;
-  const videoId = String(level_extended.video_url||'').split("v=")[1]?.split("&")[0];
+  
+  // FIX: Extrair o videoId corretamente da URL
+  const videoUrl = String(level_extended.video_url || '');
+  let videoId = '';
+  
+  // Tentar extrair o ID do vídeo de diferentes formatos de URL do YouTube
+  if (videoUrl.includes('youtube.com/watch?v=')) {
+    videoId = videoUrl.split('v=')[1]?.split('&')[0];
+  } else if (videoUrl.includes('youtu.be/')) {
+    videoId = videoUrl.split('youtu.be/')[1]?.split('?')[0];
+  }
+  
+  // Se tiver videoId válido, usar thumbnail do YouTube, senão usar placeholder
   const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "/img/placeholder.png";
-  const safeName = (level_extended.lvl_name||'').replace(/"/g,'&quot;');
-  const safeCreator = (level_extended.lvl_creator||'').replace(/"/g,'&quot;');
+  
+  const safeName = (level_extended.lvl_name || '').replace(/"/g, '"');
+  const safeCreator = (level_extended.lvl_creator || '').replace(/"/g, '&quot');
+
+  // Formatar o rank display
+  let rankDisplay = "";
+  if (level_extended.pos_aredl === "" || level_extended.pos_aredl === 0 || level_extended.pos_aredl === undefined) {
+    rankDisplay = `(${level_extended.diff_rank || ''})`;
+  } else {
+    rankDisplay = `(Top ${level_extended.pos_aredl} ${level_extended.diff_rank || ''})`;
+  }
 
   return `
     <div class="level-card extended-level d-flex justify-content-center" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
@@ -106,20 +127,20 @@ function CreateCardLevels_Extended(level_extended, index) {
         <div class="row g-0">
           <div class="col-md-4">
             <a href="${level_extended.video_url}" target="_blank">
-              <img src="${imageSrc}" class="img-fluid rounded-start">
+              <img src="${imageSrc}" class="img-fluid rounded-start" alt="${level_extended.lvl_name}">
             </a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 style="font-size:3rem;color:#980000;">
+              <h5 class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem; color: #980000;">
                 ${position} - ${level_extended.lvl_name} by ${level_extended.lvl_creator}
               </h5>
-              <p style="color:#980000;">
-                ${level_extended.pos_aredl
-                  ? `(Top ${level_extended.pos_aredl} ${level_extended.diff_rank})`
-                  : `(${level_extended.diff_rank})`}
+              <p class="card-text" style="font-weight: 500; font-size: 14px; color: #980000;">
+                ${rankDisplay}
               </p>
-              <p>Tier (AREDL): ${level_extended.diff_scale}</p>
+              <p class="card-text" style="font-weight: bold; font-size: small; color: black;">
+                Tier (AREDL): ${level_extended.diff_scale || ''}
+              </p>
             </div>
           </div>
         </div>
