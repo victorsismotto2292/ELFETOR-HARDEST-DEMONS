@@ -24,3 +24,4 @@
 - 27/12/2025, 01:21:35 - Nantendo atualizado: URL
 - 30/12/2025, 00:03:04 - The Furious foi adicionado na posição 10, abaixo de Diffuse e acima de Sharp Minor
 - 30/12/2025, 00:17:06 - The Furious atualizado: AREDL: 0 → 110
+- 30/12/2025, 00:18:47 - Dashplorers atualizado: rank:  → Hard Demon
