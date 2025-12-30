@@ -22,3 +22,4 @@
 - 27/12/2025, 01:15:05 - Nantendo foi adicionado na posição 67, abaixo de Cant Let Vulc e acima de Deadlocked 2017
 - 27/12/2025, 01:16:29 - Nantendo foi movido da posição 67 para 68, abaixo de Deadlocked 2017 e acima de Flinq
 - 27/12/2025, 01:21:35 - Nantendo atualizado: URL
+- 30/12/2025, 00:03:04 - The Furious foi adicionado na posição 10, abaixo de Diffuse e acima de Sharp Minor

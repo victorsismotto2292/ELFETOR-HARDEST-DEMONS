@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 27/12/2025, 01:21:35 — Nantendo atualizado: URL
+- 30/12/2025, 00:03:04 — The Furious foi adicionado na posição 10, abaixo de Diffuse e acima de Sharp Minor
 <!--LATEST-CHANGES-END-->
+
 
 
 
