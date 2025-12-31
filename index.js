@@ -71,7 +71,7 @@ function CreateCardLevels_Main(level_main, index) {
                             </p>
                             
                             <p class="card-text" style="font-weight: bold; font-size: small; color: black; margin-bottom: 60px;">
-                                Tier (AREDL): ${difficulty}
+                                Tier (GDDL): ${difficulty}
                             </p>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ function CreateCardLevels_Extended(level_extended, index) {
                 ${rankDisplay}
               </p>
               <p class="card-text" style="font-weight: bold; font-size: small; color: black;">
-                Tier (AREDL): ${level_extended.diff_scale || ''}
+                Tier (GDDL): ${level_extended.diff_scale || ''}
               </p>
             </div>
           </div>
