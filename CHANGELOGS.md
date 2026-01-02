@@ -26,3 +26,4 @@
 - 30/12/2025, 00:17:06 - The Furious atualizado: AREDL: 0 → 110
 - 30/12/2025, 00:18:47 - Dashplorers atualizado: rank:  → Hard Demon
 - 02/01/2026, 05:33:22 - Thanatophobia foi adicionado na posição 25, abaixo de Hateflayer e acima de Dysphoria
+- 02/01/2026, 05:34:37 - Thanatophobia atualizado: AREDL: 0 → 50
