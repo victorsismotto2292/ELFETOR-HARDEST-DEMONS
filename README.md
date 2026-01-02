@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 02/01/2026, 05:34:37 — Thanatophobia atualizado: AREDL: 0 → 50
+- 02/01/2026, 05:36:37 — TENDO foi removido da posição 76
 <!--LATEST-CHANGES-END-->
+
 
 
 
