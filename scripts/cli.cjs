@@ -28,6 +28,14 @@ function ensurePosHistory(obj) {
   );
 }
 
+function nowDate() {
+  const d = new Date();
+  const day = String(d.getDate()).padStart(2, '0');
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const year = String(d.getFullYear()).slice(-2);
+  return `${day}/${month}/${year}`;
+}
+
 function appendChangelog(entry) {
   const file = 'CHANGELOGS.md';
   const date = new Date().toLocaleString('pt-BR');
@@ -59,7 +67,6 @@ function updateReadmeSummary(date, entry) {
     const after = content.split(endMarker)[1] || '';
     content = before + newBlock + after;
   } else {
-    // insert new block after first top-level title or at start
     const idx = content.indexOf('\n');
     if (idx !== -1) {
       content = content.slice(0, idx + 1) + '\n' + newBlock + '\n' + content.slice(idx + 1);
@@ -69,6 +76,7 @@ function updateReadmeSummary(date, entry) {
   }
   fs.writeFileSync(file, content, 'utf8');
 }
+
 function ensureGitAvailable() {
   try {
     execSync('git rev-parse --is-inside-work-tree', { stdio: 'ignore' });
@@ -100,8 +108,6 @@ function gitCommitAndPush(files, message) {
   }
 }
 
-// end helpers
-
 // ===== LISTAR =====
 async function list(file) {
   const data = load(file);
@@ -130,43 +136,182 @@ async function search(file) {
   console.log('');
 }
 
-// ===== ADICIONAR =====
-async function add(file) {
-  console.log('\n➕ ADICIONAR NÍVEL:');
+// ===== ADICIONAR COM HISTÓRICO AUTOMÁTICO =====
+async function addWithHistory(file) {
+  console.log('\n➕ ADICIONAR NÍVEL COM HISTÓRICO AUTOMÁTICO:');
   const data = load(file);
   const beforeTop = data.slice(0, 150).map(d => d.lvl_name);
   
-  const name = await ask('Nome: ');
+  const name = await ask('Nome do nível: ');
   if (!name) { console.log('❌ Cancelado.\n'); return; }
   
   const creator = await ask('Criador: ') || '';
   const url = await ask('URL vídeo (Enter = pular): ') || '';
   const rank = await ask('Rank (Enter = pular): ') || '';
   const scale = await ask('Scale (Enter = pular): ') || '';
-  const pos = await ask('Posição (Enter = final): ');
+  const aredl = await ask('Posição AREDL (Enter = pular): ') || '0';
+  const pos = await ask('Posição na lista (Enter = final): ');
   
-  const obj = { lvl_name: name, lvl_creator: creator, video_url: url, diff_rank: rank, diff_scale: scale, pos_aredl: 0, pos_history: [] };
+  const obj = { 
+    lvl_name: name, 
+    lvl_creator: creator, 
+    video_url: url, 
+    diff_rank: rank, 
+    diff_scale: scale, 
+    pos_aredl: parseInt(aredl) || 0, 
+    pos_history: [] 
+  };
+  
   ensurePosHistory(obj);
   
   const idx = pos ? Math.max(0, Math.min(parseInt(pos) - 1, data.length)) : data.length;
+  
+  // Inserir nível
   data.splice(idx, 0, obj);
+  
+  // Adicionar histórico no nível novo
+  const date = nowDate();
+  const above = idx > 0 ? data[idx - 1].lvl_name : null;
+  const below = idx + 1 < data.length ? data[idx + 1].lvl_name : null;
+  
+  let positionDesc = `Added to the list at position ${idx + 1}`;
+  if (above || below) {
+    const parts = [];
+    if (above) parts.push(`below ${above}`);
+    if (below) parts.push(`above ${below}`);
+    positionDesc += `, ${parts.join(' and ')}`;
+  }
+  
+  obj.pos_history.push({ log1: `${date} - ${positionDesc}` });
+  
+  // Atualizar histórico dos níveis abaixo
+  for (let i = idx + 1; i < data.length; i++) {
+    ensurePosHistory(data[i]);
+    data[i].pos_history.push({ log1: `${date} - ${name} was added above (-1)` });
+  }
 
   save(file, data);
-  console.log(`✅ Adicionado na posição ${idx + 1}!\n`);
+  console.log(`\n✅ Nível "${name}" adicionado na posição ${idx + 1}!`);
+  console.log(`📝 Histórico atualizado para ${data.length - idx - 1} níveis abaixo.\n`);
+  
   // Changelog + commit
-  const above = idx > 0 ? data[idx-1].lvl_name : null;
-  const below = idx+1 < data.length ? data[idx+1].lvl_name : null;
   const afterTop = data.slice(0, 150).map(d => d.lvl_name);
   const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
   const removedFromTop = beforeTop.filter(n => !afterTop.includes(n));
-  let desc = `${name} foi adicionado na posição ${idx+1}`;
-  if (above || below) desc += ', ' + (above ? `abaixo de ${above}` : '') + (above && below ? ' e ' : '') + (below ? `acima de ${below}` : '');
+  
+  let desc = `${name} foi adicionado na posição ${idx + 1}`;
+  if (above || below) {
+    const parts = [];
+    if (above) parts.push(`abaixo de ${above}`);
+    if (below) parts.push(`acima de ${below}`);
+    desc += ', ' + parts.join(' e ');
+  }
   if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Legacy List`;
   if (addedToTop.length && !addedToTop.includes(name)) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top 150`;
+  
   appendChangelog(desc);
   const ok = gitCommitAndPush([file, 'CHANGELOGS.md', 'README.md'], `Adicionado: ${desc}`);
   console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
-  return { name, index: idx };
+}
+
+// ===== MOVER COM HISTÓRICO AUTOMÁTICO =====
+async function moveWithHistory(file) {
+  const data = load(file);
+  console.log('\n➡️  MOVER NÍVEL COM HISTÓRICO AUTOMÁTICO:');
+  data.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
+  if (data.length > 10) console.log(`  ... (total: ${data.length})`);
+  
+  const from = await ask('\nPosição atual (ou nome): ');
+  if (!from) { console.log('❌ Cancelado.\n'); return; }
+  
+  // Buscar por nome ou posição
+  let fromIdx;
+  if (isNaN(from)) {
+    fromIdx = data.findIndex(l => l.lvl_name.toLowerCase() === from.toLowerCase());
+    if (fromIdx === -1) {
+      console.log('❌ Nível não encontrado.\n');
+      return;
+    }
+  } else {
+    fromIdx = parseInt(from) - 1;
+  }
+  
+  if (fromIdx < 0 || fromIdx >= data.length) { 
+    console.log('❌ Posição inválida.\n'); 
+    return; 
+  }
+  
+  const to = await ask('Nova posição: ');
+  const toIdx = Math.max(0, Math.min(parseInt(to) - 1, data.length - 1));
+  
+  if (fromIdx === toIdx) {
+    console.log('⚠️ Nível já está nessa posição.\n');
+    return;
+  }
+  
+  const beforeTop = data.slice(0, 150).map(d => d.lvl_name);
+  const item = data.splice(fromIdx, 1)[0];
+  data.splice(toIdx, 0, item);
+
+  // Adicionar histórico no nível movido
+  const date = nowDate();
+  const oldPos = fromIdx + 1;
+  const newPos = toIdx + 1;
+  const delta = Math.abs(oldPos - newPos);
+  const sign = (oldPos > newPos) ? `+${delta}` : `-${delta}`;
+  
+  const above = toIdx > 0 ? data[toIdx - 1].lvl_name : null;
+  const below = toIdx + 1 < data.length ? data[toIdx + 1].lvl_name : null;
+  
+  ensurePosHistory(item);
+  let moveDesc = `Moved to position ${newPos} (${sign})`;
+  if (above || below) {
+    const parts = [];
+    if (above) parts.push(`below ${above}`);
+    if (below) parts.push(`above ${below}`);
+    moveDesc += `, ${parts.join(' and ')}`;
+  }
+  item.pos_history.push({ log1: `${date} - ${moveDesc}` });
+  
+  // Atualizar histórico dos níveis afetados
+  const name = item.lvl_name;
+  
+  if (oldPos > newPos) {
+    // Moveu para cima: níveis entre newPos e oldPos-1 foram empurrados para baixo
+    for (let i = toIdx + 1; i <= fromIdx; i++) {
+      ensurePosHistory(data[i]);
+      data[i].pos_history.push({ log1: `${date} - ${name} was moved above (-1)` });
+    }
+  } else {
+    // Moveu para baixo: níveis entre oldPos e newPos foram empurrados para cima
+    for (let i = fromIdx; i < toIdx; i++) {
+      ensurePosHistory(data[i]);
+      data[i].pos_history.push({ log1: `${date} - ${name} was moved below (+1)` });
+    }
+  }
+
+  save(file, data);
+  console.log(`\n✅ "${name}" movido de ${oldPos} para ${newPos}!`);
+  console.log(`📝 Histórico atualizado para ${Math.abs(fromIdx - toIdx)} níveis.\n`);
+  
+  // Changelog
+  const afterTop = data.slice(0, 150).map(d => d.lvl_name);
+  const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
+  const removedFromTop = beforeTop.filter(n => !afterTop.includes(n));
+  
+  let desc = `${name} foi movido da posição ${oldPos} para ${newPos}`;
+  if (above || below) {
+    const parts = [];
+    if (above) parts.push(`abaixo de ${above}`);
+    if (below) parts.push(`acima de ${below}`);
+    desc += ', ' + parts.join(' e ');
+  }
+  if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Legacy List`;
+  if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top 150`;
+  
+  appendChangelog(desc);
+  const ok = gitCommitAndPush([file, 'CHANGELOGS.md', 'README.md'], `Movido: ${desc}`);
+  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
 }
 
 // ===== DELETAR =====
@@ -189,7 +334,7 @@ async function deleteLevel(file) {
   const afterTop = data.slice(0, 150).map(d => d.lvl_name);
   const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
   console.log(`✅ "${name}" deletado!\n`);
-  // Changelog + commit
+  
   let desc = `${name} foi removido da posição ${idx+1}`;
   if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} suba(m) para o Top 150`;
   appendChangelog(desc);
@@ -212,7 +357,6 @@ async function update(file) {
   const item = data[idx];
   console.log(`\nEditando: ${item.lvl_name}`);
   
-  // snapshot old values
   const old = {
     lvl_creator: item.lvl_creator,
     video_url: item.video_url,
@@ -235,7 +379,7 @@ async function update(file) {
   
   save(file, data);
   console.log(`✅ Atualizado!\n`);
-  // Changelog: listar campos alterados (comparar com snapshot)
+  
   const changes = [];
   if (old.lvl_creator !== item.lvl_creator) changes.push(`criador: ${old.lvl_creator} → ${item.lvl_creator}`);
   if (old.video_url !== item.video_url) changes.push(`URL`);
@@ -249,49 +393,13 @@ async function update(file) {
   console.log(ok2 ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
 }
 
-// ===== MOVER =====
-async function move(file) {
-  const data = load(file);
-  console.log('\n➡️  MOVER:');
-  data.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
-  if (data.length > 10) console.log(`  ... (total: ${data.length})`);
-  
-  const from = await ask('\nPosição atual: ');
-  const to = await ask('Nova posição: ');
-  
-  const fromIdx = parseInt(from) - 1;
-  const toIdx = Math.max(0, Math.min(parseInt(to) - 1, data.length - 1));
-  
-  if (fromIdx < 0 || fromIdx >= data.length) { console.log('❌ Posição inválida.\n'); return; }
-  
-  const beforeTop = data.slice(0, 150).map(d => d.lvl_name);
-  const item = data.splice(fromIdx, 1)[0];
-  data.splice(toIdx, 0, item);
-
-  save(file, data);
-  console.log(`✅ Movido para posição ${toIdx + 1}!\n`);
-  // Changelog + commit
-  const above = toIdx > 0 ? data[toIdx-1].lvl_name : null;
-  const below = toIdx+1 < data.length ? data[toIdx+1].lvl_name : null;
-  const name = item.lvl_name || '(sem nome)';
-  const afterTop = data.slice(0, 150).map(d => d.lvl_name);
-  const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
-  const removedFromTop = beforeTop.filter(n => !afterTop.includes(n));
-  let desc = `${name} foi movido da posição ${fromIdx+1} para ${toIdx+1}`;
-  if (above || below) desc += ', ' + (above ? `abaixo de ${above}` : '') + (above && below ? ' e ' : '') + (below ? `acima de ${below}` : '');
-  if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Legacy List`;
-  if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top 150`;
-  appendChangelog(desc);
-  const ok = gitCommitAndPush([file, 'CHANGELOGS.md', 'README.md'], `Movido: ${desc}`);
-  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
-}
-
 // ===== MENU PRINCIPAL =====
 async function menu() {
   console.clear();
-  console.log('╔═══════════════════════════════════╗');
-  console.log('║  GERENCIADOR DE NÍVEIS - ELFETOR  ║');
-  console.log('╚═══════════════════════════════════╝\n');
+  console.log('╔═══════════════════════════════════════════╗');
+  console.log('║  GERENCIADOR DE NÍVEIS - ELFETOR v2.0    ║');
+  console.log('║  Com Histórico de Posição Automático     ║');
+  console.log('╚═══════════════════════════════════════════╝\n');
   
   let file = '';
   while (!file) {
@@ -303,16 +411,16 @@ async function menu() {
   
   let running = true;
   while (running) {
-    console.log('╔═══════════════════════╗');
-    console.log('║     O QUE FAZER?      ║');
-    console.log('╚═══════════════════════╝\n');
+    console.log('╔═══════════════════════════════════╗');
+    console.log('║        O QUE FAZER?               ║');
+    console.log('╚═══════════════════════════════════╝\n');
     console.log('1. Listar');
     console.log('2. Buscar');
-    console.log('3. Adicionar');
-    console.log('4. Editar');
-    console.log('5. Deletar');
-    console.log('6. Mover');
-    console.log('7. Trocar lista');
+    console.log('3. ➕ Adicionar (com histórico automático)');
+    console.log('4. ✏️  Editar');
+    console.log('5. 🗑️  Deletar');
+    console.log('6. ➡️  Mover (com histórico automático)');
+    console.log('7. 🔄 Trocar lista');
     console.log('0. Sair\n');
     
     const choice = await ask('> ');
@@ -320,10 +428,10 @@ async function menu() {
     switch (choice) {
       case '1': await list(file); break;
       case '2': await search(file); break;
-      case '3': await add(file); break;
+      case '3': await addWithHistory(file); break;
       case '4': await update(file); break;
       case '5': await deleteLevel(file); break;
-      case '6': await move(file); break;
+      case '6': await moveWithHistory(file); break;
       case '7':
         file = '';
         while (!file) {

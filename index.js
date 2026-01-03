@@ -21,15 +21,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // ==========================
-// DADOS
+// FUNÇÃO PARA CARREGAR DADOS (sempre atualizado)
 // ==========================
-const Mainlevels = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "levels_main.json"), "utf-8")
-);
-
-const Extendedlevels = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "levels_extended.json"), "utf-8")
-);
+function loadLevels() {
+  const mainPath = path.join(__dirname, "levels_main.json");
+  const extPath = path.join(__dirname, "levels_extended.json");
+  
+  return {
+    main: JSON.parse(fs.readFileSync(mainPath, "utf-8")),
+    extended: JSON.parse(fs.readFileSync(extPath, "utf-8"))
+  };
+}
 
 // ==========================
 // FUNÇÕES (SUA LÓGICA)
@@ -187,6 +189,9 @@ function CreateCardLevels_Extended(level_extended, index) {
 // GERAR PÁGINA
 // ==========================
 function generatePage() {
+    // CARREGAR DADOS ATUALIZADOS A CADA REQUISIÇÃO
+    const { main: Mainlevels, extended: Extendedlevels } = loadLevels();
+    
     const htmlPagePath = path.join(__dirname, '/public/home.html');
     let htmlPage = fs.readFileSync(htmlPagePath, 'utf-8');
     
@@ -224,6 +229,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
+  console.log("📊 Carregando dados atualizados do JSON...");
   res.send(generatePage());
 });
 
