@@ -29,3 +29,4 @@
 - 02/01/2026, 05:34:37 - Thanatophobia atualizado: AREDL: 0 → 50
 - 02/01/2026, 05:36:37 - TENDO foi removido da posição 76
 - 02/01/2026, 05:37:54 - TENDO foi adicionado na posição 1, acima de MulLuna
+- 03/01/2026, 18:23:27 - Thanatophobia foi removido da posição 25

@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 02/01/2026, 05:37:54 — TENDO foi adicionado na posição 1, acima de MulLuna
+- 03/01/2026, 18:23:27 — Thanatophobia foi removido da posição 25
 <!--LATEST-CHANGES-END-->
+
 
 
 
