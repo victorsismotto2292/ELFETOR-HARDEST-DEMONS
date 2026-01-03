@@ -32,3 +32,4 @@
 - 03/01/2026, 18:23:27 - Thanatophobia foi removido da posição 25
 - 03/01/2026, 18:25:49 - Thanatophobia foi adicionado na posição 25, abaixo de Hateflayer e acima de Dysphoria
 - 03/01/2026, 18:26:01 - Thanatophobia atualizado: AREDL: 0 → 50
+- 03/01/2026, 19:16:13 - Thanatophobia foi removido da posição 25

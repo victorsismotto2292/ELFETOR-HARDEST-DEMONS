@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 03/01/2026, 18:26:01 — Thanatophobia atualizado: AREDL: 0 → 50
+- 03/01/2026, 19:16:13 — Thanatophobia foi removido da posição 25
 <!--LATEST-CHANGES-END-->
+
 
 
 
