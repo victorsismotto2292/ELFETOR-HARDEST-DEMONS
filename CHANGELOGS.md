@@ -47,3 +47,4 @@
 - 04/01/2026, 23:48:07 - Reverence atualizado: scale: 13 → 22, AREDL: 975 → 1000
 - 04/01/2026, 23:48:43 - The Ultimate Return atualizado: scale: 12.5 → 22, AREDL: 820 → 910
 - 04/01/2026, 23:49:18 - Napalm atualizado: scale: 12 → 22, AREDL: 960 → 1030
+- 04/01/2026, 23:49:33 - Broken Signal atualizado: scale: 12 → 22, AREDL: 970 → 1020

@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 23:49:18 — Napalm atualizado: scale: 12 → 22, AREDL: 960 → 1030
+- 04/01/2026, 23:49:33 — Broken Signal atualizado: scale: 12 → 22, AREDL: 970 → 1020
 <!--LATEST-CHANGES-END-->
+
 
 
 
