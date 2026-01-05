@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 21:51:05 — TENDO foi removido da posição 1
+- 04/01/2026, 21:52:15 — TENDO foi adicionado na posição 1, acima de MulLuna
 <!--LATEST-CHANGES-END-->
+
 
 
 
