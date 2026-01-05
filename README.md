@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 03/01/2026, 19:17:28 — Thanatophobia foi adicionado na posição 25, abaixo de Hateflayer e acima de Dysphoria
+- 04/01/2026, 21:51:05 — TENDO foi removido da posição 1
 <!--LATEST-CHANGES-END-->
+
 
 
 
