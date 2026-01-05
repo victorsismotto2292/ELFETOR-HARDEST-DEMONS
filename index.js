@@ -78,7 +78,7 @@ function CreateCardLevels_Main(level_main, index) {
     if (level_main.pos_aredl === "" || level_main.pos_aredl === 0 || level_main.pos_aredl === undefined) {
         rankDisplay = `${level_main.diff_rank || ''}`;
     } else {
-        rankDisplay = `${level_main.diff_rank || ''} (Top ${level_main.pos_aredl} AREDL)`;
+        rankDisplay = `${level_main.diff_rank || ''}`;
     }
 
     const safeName = (level_main.lvl_name || '').replace(/"/g, '&quot;');
@@ -87,7 +87,10 @@ function CreateCardLevels_Main(level_main, index) {
     // URL segura para o link do vídeo
     const safeVideoUrl = level_main.video_url || '#';
 
-    let levelCardHtml = `
+    // DIFF RANK CASES:
+
+    if(level_main.diff_rank === "Extreme Demon"){
+            let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
                 <div class="row g-0">
@@ -115,7 +118,7 @@ function CreateCardLevels_Main(level_main, index) {
                             
                             <div class="badge-container">
                                 <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier ${difficulty}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
                             </div>
                             
                             ${level_main.pos_aredl ? `<p class="aredl-text">AREDL Position: #${level_main.pos_aredl}</p>` : ''}
@@ -137,30 +140,10 @@ function CreateCardLevels_Main(level_main, index) {
     `;
 
     return levelCardHtml;
-}
-
-function CreateCardLevels_Extended(level_extended, index) {
-    const position = index + 76;
-    
-    // Extração melhorada do ID do vídeo
-    const videoId = extractYouTubeVideoId(level_extended.video_url);
-    
-    const imageSrc = videoId 
-        ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` 
-        : "/img/placeholder.png";
-    
-    const safeName = (level_extended.lvl_name || '').replace(/"/g, '&quot;');
-    const safeCreator = (level_extended.lvl_creator || '').replace(/"/g, '&quot;');
-    const safeVideoUrl = level_extended.video_url || '#';
-
-    let rankDisplay = "";
-    if (level_extended.pos_aredl === "" || level_extended.pos_aredl === 0 || level_extended.pos_aredl === undefined) {
-        rankDisplay = `${level_extended.diff_rank || ''}`;
-    } else {
-        rankDisplay = `${level_extended.diff_rank || ''} (Top ${level_extended.pos_aredl} AREDL)`;
     }
 
-    return `
+    if(level_main.diff_rank === "Insane Demon"){
+            let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
                 <div class="row g-0">
@@ -188,16 +171,274 @@ function CreateCardLevels_Extended(level_extended, index) {
                             
                             <div class="badge-container">
                                 <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier ${level_extended.diff_scale || ''}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
+                            </div>
+                            
+                            ${level_main.pos_aredl ? `<p class="aredl-text">IDL Position: #${level_main.pos_aredl}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        View Position History
+                    </a>
+
+                    <ul class="dropdown-menu w-100">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+
+    return levelCardHtml;
+    }
+}
+
+function CreateCardLevels_Extended(level_extended, index) {
+        const position = index + 76;
+    
+    // Extração melhorada do ID do vídeo
+    const videoId = extractYouTubeVideoId(level_extended.video_url);
+    
+    // Usar imagem de placeholder se não houver vídeo ou ID inválido
+    const imageSrc = videoId 
+        ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` 
+        : '/img/placeholder.png';
+    
+    const difficulty = `${level_extended.diff_scale || ''}`;
+    const historyHtml = level_extended.pos_history 
+        ? level_extended.pos_history.map(log => log.log1).join('<br>') 
+        : 'No history available';
+
+    let rankDisplay = "";
+    if (level_extended.pos_aredl === "" || level_extended.pos_aredl === 0 || level_extended.pos_aredl === undefined) {
+        rankDisplay = `${level_extended.diff_rank || ''}`;
+    } else {
+        rankDisplay = `${level_extended.diff_rank || ''}`;
+    }
+
+    const safeName = (level_extended.lvl_name || '').replace(/"/g, '&quot;');
+    const safeCreator = (level_extended.lvl_creator || '').replace(/"/g, '&quot;');
+    
+    // URL segura para o link do vídeo
+    const safeVideoUrl = level_extended.video_url || '#';
+
+    // DIFF RANK CASES:
+
+        if(level_extended.diff_rank === "Extreme Demon"){
+            CreateCardLevels_Main(level_main, index);
+            let levelCardHtml = `
+        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
+                                <img 
+                                    src="${imageSrc}" 
+                                    alt="${safeName}"
+                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
+                                    loading="lazy"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ${position}. ${safeName}
+                            </h5>
+                            
+                            <p class="creator-text">
+                                by ${safeCreator}
+                            </p>
+                            
+                            <div class="badge-container">
+                                <span class="badge-demon">${rankDisplay}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
                             </div>
                             
                             ${level_extended.pos_aredl ? `<p class="aredl-text">AREDL Position: #${level_extended.pos_aredl}</p>` : ''}
                         </div>
                     </div>
                 </div>
+                
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        View Position History
+                    </a>
+
+                    <ul class="dropdown-menu w-100">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
             </div>
         </div>
     `;
+
+    return levelCardHtml;
+    }
+
+    if(level_extended.diff_rank === "Insane Demon"){
+        CreateCardLevels_Main(level_main, index);
+            let levelCardHtml = `
+        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
+                                <img 
+                                    src="${imageSrc}" 
+                                    alt="${safeName}"
+                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
+                                    loading="lazy"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ${position}. ${safeName}
+                            </h5>
+                            
+                            <p class="creator-text">
+                                by ${safeCreator}
+                            </p>
+                            
+                            <div class="badge-container">
+                                <span class="badge-demon">${rankDisplay}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
+                            </div>
+                            
+                            ${level_main.pos_aredl ? `<p class="aredl-text">IDL Position: #${level_extended.pos_aredl}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        View Position History
+                    </a>
+
+                    <ul class="dropdown-menu w-100">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+
+    return levelCardHtml;
+    }
+    
+    if(level_extended.diff_rank === "Hard Demon"){
+                    let levelCardHtml = `
+        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
+                                <img 
+                                    src="${imageSrc}" 
+                                    alt="${safeName}"
+                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
+                                    loading="lazy"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ${position}. ${safeName}
+                            </h5>
+                            
+                            <p class="creator-text">
+                                by ${safeCreator}
+                            </p>
+                            
+                            <div class="badge-container">
+                                <span class="badge-demon">${rankDisplay}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
+                            </div>
+                            
+                            ${level_extended.pos_aredl ? `<p class="aredl-text">HDL Position: #${level_extended.pos_aredl}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        View Position History
+                    </a>
+
+                    <ul class="dropdown-menu w-100">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+
+    return levelCardHtml;
+    }
+    if(level_extended.diff_rank === "Medium Demon" ){
+                    let levelCardHtml = `
+        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
+                                <img 
+                                    src="${imageSrc}" 
+                                    alt="${safeName}"
+                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
+                                    loading="lazy"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ${position}. ${safeName}
+                            </h5>
+                            
+                            <p class="creator-text">
+                                by ${safeCreator}
+                            </p>
+                            
+                            <div class="badge-container">
+                                <span class="badge-demon">${rankDisplay}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
+                            </div>
+                            
+                            ${level_extended.pos_aredl ? `<p class="aredl-text">List Position: #${level_extended.pos_aredl}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        View Position History
+                    </a>
+
+                    <ul class="dropdown-menu w-100">
+                        <p>${historyHtml}</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+
+    return levelCardHtml;
+    }
 }
 
 // ==========================
