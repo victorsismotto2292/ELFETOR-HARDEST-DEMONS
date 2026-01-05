@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 23:46:25 — Manic Machine atualizado: URL, scale: 14 → 23, AREDL: 750 → 800
+- 04/01/2026, 23:47:29 — Reflective atualizado: URL, scale: 13.5 → 22, AREDL: 860 → 900
 <!--LATEST-CHANGES-END-->
+
 
 
 
