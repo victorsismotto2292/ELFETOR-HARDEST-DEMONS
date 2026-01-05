@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 23:47:49 — Stellaluna atualizado: scale: 13 → 22
+- 04/01/2026, 23:48:07 — Reverence atualizado: scale: 13 → 22, AREDL: 975 → 1000
 <!--LATEST-CHANGES-END-->
+
 
 
 
