@@ -72,12 +72,12 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=LINK_MANIC_MACHINE",
+    "video_url": "https://www.youtube.com/watch?v=nmnbfFaiNbI",
     "lvl_name": "Manic Machine",
     "lvl_creator": "TwisterDude161",
-    "pos_aredl": 750,
+    "pos_aredl": 800,
     "diff_rank": "Extreme Demon",
-    "diff_scale": 14,
+    "diff_scale": "23",
     "pos_history": [
       {
         "log1": "19/05/25 - Added to the list at position 3"

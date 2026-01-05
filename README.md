@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 23:45:39 — Prismatic Haze atualizado: AREDL: 670 → 720
+- 04/01/2026, 23:46:25 — Manic Machine atualizado: URL, scale: 14 → 23, AREDL: 750 → 800
 <!--LATEST-CHANGES-END-->
+
 
 
 
