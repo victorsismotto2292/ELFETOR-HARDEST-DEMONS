@@ -36,3 +36,4 @@
 - 03/01/2026, 19:17:28 - Thanatophobia foi adicionado na posição 25, abaixo de Hateflayer e acima de Dysphoria
 - 04/01/2026, 21:51:05 - TENDO foi removido da posição 1
 - 04/01/2026, 21:52:15 - TENDO foi adicionado na posição 1, acima de MulLuna
+- 04/01/2026, 23:42:05 - Cytokinesis atualizado: URL, scale: 15 → 24

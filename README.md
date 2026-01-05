@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 04/01/2026, 21:52:15 — TENDO foi adicionado na posição 1, acima de MulLuna
+- 04/01/2026, 23:42:05 — Cytokinesis atualizado: URL, scale: 15 → 24
 <!--LATEST-CHANGES-END-->
+
 
 
 
