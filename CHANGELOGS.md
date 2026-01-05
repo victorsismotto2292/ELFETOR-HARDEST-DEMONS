@@ -45,3 +45,4 @@
 - 04/01/2026, 23:47:29 - Reflective atualizado: URL, scale: 13.5 → 22, AREDL: 860 → 900
 - 04/01/2026, 23:47:49 - Stellaluna atualizado: scale: 13 → 22
 - 04/01/2026, 23:48:07 - Reverence atualizado: scale: 13 → 22, AREDL: 975 → 1000
+- 04/01/2026, 23:48:43 - The Ultimate Return atualizado: scale: 12.5 → 22, AREDL: 820 → 910
