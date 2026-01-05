@@ -228,7 +228,6 @@ function CreateCardLevels_Extended(level_extended, index) {
     // DIFF RANK CASES:
 
         if(level_extended.diff_rank === "Extreme Demon"){
-            CreateCardLevels_Main(level_main, index);
             let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -264,16 +263,6 @@ function CreateCardLevels_Extended(level_extended, index) {
                         </div>
                     </div>
                 </div>
-                
-                <div class="dropdown">
-                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        View Position History
-                    </a>
-
-                    <ul class="dropdown-menu w-100">
-                        <p>${historyHtml}</p>
-                    </ul>
-                </div>
             </div>
         </div>
     `;
@@ -282,7 +271,6 @@ function CreateCardLevels_Extended(level_extended, index) {
     }
 
     if(level_extended.diff_rank === "Insane Demon"){
-        CreateCardLevels_Main(level_main, index);
             let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -314,19 +302,9 @@ function CreateCardLevels_Extended(level_extended, index) {
                                 <span class="badge-tier">Tier: ${difficulty}</span>
                             </div>
                             
-                            ${level_main.pos_aredl ? `<p class="aredl-text">IDL Position: #${level_extended.pos_aredl}</p>` : ''}
+                            ${level_extended.pos_aredl ? `<p class="aredl-text">IDL Position: #${level_extended.pos_aredl}</p>` : ''}
                         </div>
                     </div>
-                </div>
-                
-                <div class="dropdown">
-                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        View Position History
-                    </a>
-
-                    <ul class="dropdown-menu w-100">
-                        <p>${historyHtml}</p>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -371,16 +349,6 @@ function CreateCardLevels_Extended(level_extended, index) {
                         </div>
                     </div>
                 </div>
-                
-                <div class="dropdown">
-                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        View Position History
-                    </a>
-
-                    <ul class="dropdown-menu w-100">
-                        <p>${historyHtml}</p>
-                    </ul>
-                </div>
             </div>
         </div>
     `;
@@ -422,16 +390,6 @@ function CreateCardLevels_Extended(level_extended, index) {
                             ${level_extended.pos_aredl ? `<p class="aredl-text">List Position: #${level_extended.pos_aredl}</p>` : ''}
                         </div>
                     </div>
-                </div>
-                
-                <div class="dropdown">
-                    <a class="btn dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        View Position History
-                    </a>
-
-                    <ul class="dropdown-menu w-100">
-                        <p>${historyHtml}</p>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -494,7 +452,7 @@ app.get("/home", (req, res) => {
 // RODAR LOCALMENTE (APENAS DEV)
 // ==========================
 if (process.env.NODE_ENV !== "production") {
-  const PORT = 3000;
+  const PORT = 3010;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });
