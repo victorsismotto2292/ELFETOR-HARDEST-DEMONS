@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 08/01/2026, 18:16:50 — teste atualizado: rank: miedium demon → medium demon
+- 08/01/2026, 18:18:17 — foguito foi adicionado na posição 2, abaixo de TENDO e acima de MulLuna
 <!--LATEST-CHANGES-END-->
+
 
 
 
