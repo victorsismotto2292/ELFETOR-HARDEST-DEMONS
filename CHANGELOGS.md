@@ -49,3 +49,4 @@
 - 04/01/2026, 23:49:18 - Napalm atualizado: scale: 12 → 22, AREDL: 960 → 1030
 - 04/01/2026, 23:49:33 - Broken Signal atualizado: scale: 12 → 22, AREDL: 970 → 1020
 - 08/01/2026, 18:16:11 - teste foi adicionado na posição 76, abaixo de Dont Simp
+- 08/01/2026, 18:16:50 - teste atualizado: rank: miedium demon → medium demon
