@@ -598,5 +598,18 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": 9
+  },
+  {
+    "lvl_name": "teste",
+    "lvl_creator": "a",
+    "video_url": "",
+    "diff_rank": "miedium demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "08/01/26 - Added to the list at position 76, below Dont Simp"
+      }
+    ]
   }
 ]
