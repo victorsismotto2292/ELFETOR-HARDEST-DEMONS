@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:53:33 — X Adventure (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:54:32 — CHROMA (MAIN List) atualizado: URL, scale: 10 → 16
 <!--LATEST-CHANGES-END-->
+
 
 
 
