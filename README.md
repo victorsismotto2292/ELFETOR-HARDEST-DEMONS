@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 19:03:33 — One North atualizado: URL, scale: 9.5 → 16
+- 09/01/2026, 19:05:33 — Backrooms atualizado: URL, scale: 9.5 → 16
 <!--LATEST-CHANGES-END-->
+
 
 
 

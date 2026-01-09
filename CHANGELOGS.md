@@ -123,3 +123,4 @@
 - 09/01/2026, 18:57:52 - PPPPPPPPPPPPPPPPIXEL atualizado: URL
 - 09/01/2026, 19:01:59 - PPPPPPPPPPPPPPPPIXEL atualizado: URL
 - 09/01/2026, 19:03:33 - One North atualizado: URL, scale: 9.5 → 16
+- 09/01/2026, 19:05:33 - Backrooms atualizado: URL, scale: 9.5 → 16
