@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:43:37 — Ulon (MAIN List) atualizado: URL, scale: 10 → 19, AREDL: 175 → 185
+- 09/01/2026, 15:44:20 — Leyak (MAIN List) atualizado: URL, scale: 10 → 18
 <!--LATEST-CHANGES-END-->
+
 
 
 
