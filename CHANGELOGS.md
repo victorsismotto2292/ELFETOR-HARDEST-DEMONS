@@ -90,3 +90,4 @@
 - 09/01/2026, 15:47:04 - Necropolis (MAIN List) atualizado: URL, scale: 10 → 18
 - 09/01/2026, 15:48:55 - Elements X (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 240
 - 09/01/2026, 15:50:16 - ReRUST (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:51:03 - Gumshot (MAIN List) atualizado: URL, scale: 10 → 18

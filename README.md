@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:50:16 — ReRUST (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:51:03 — Gumshot (MAIN List) atualizado: URL, scale: 10 → 18
 <!--LATEST-CHANGES-END-->
+
 
 
 
