@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:51:03 — Gumshot (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:51:40 — Night Terrors (MAIN List) atualizado: URL, scale: 10 → 17
 <!--LATEST-CHANGES-END-->
+
 
 
 
