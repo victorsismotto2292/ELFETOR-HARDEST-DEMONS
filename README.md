@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:12:45 — Memories III (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1200 → 1290
+- 09/01/2026, 15:13:47 — HyperSonic (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1030 → 1135
 <!--LATEST-CHANGES-END-->
+
 
 
 
