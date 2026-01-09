@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:41:27 — teste foi removido da EXTENDED List (posição #76)
+- 09/01/2026, 14:54:16 — Prismatic (MAIN List) atualizado: URL, scale: 10.5 → 20, AREDL: 1190 → 1278
 <!--LATEST-CHANGES-END-->
+
 
 
 

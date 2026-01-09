@@ -65,3 +65,4 @@
 - 09/01/2026, 11:39:54 - teste foi removido da EXTENDED List (posição #151)
 - 09/01/2026, 11:40:10 - teste foi adicionado na EXTENDED List posição #76, acima de TENDO
 - 09/01/2026, 11:41:27 - teste foi removido da EXTENDED List (posição #76)
+- 09/01/2026, 14:54:16 - Prismatic (MAIN List) atualizado: URL, scale: 10.5 → 20, AREDL: 1190 → 1278
