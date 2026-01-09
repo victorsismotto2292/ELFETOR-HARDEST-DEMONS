@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:24:25 — teste foi adicionado na MAIN List posição #20, abaixo de Destination 19 e acima de Prismatic
+- 09/01/2026, 11:25:45 — teste foi removido da MAIN List (posição #20)
 <!--LATEST-CHANGES-END-->
+
 
 
 
