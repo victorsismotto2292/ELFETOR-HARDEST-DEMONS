@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:07:33 — Dust storm (MAIN List) atualizado: URL, scale: 10 → 17
+- 09/01/2026, 18:08:30 — Lmao (MAIN List) atualizado: URL, scale: 10 → 16
 <!--LATEST-CHANGES-END-->
+
 
 
 
