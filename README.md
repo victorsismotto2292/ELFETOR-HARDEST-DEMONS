@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:14:48 — Cataclysm (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1170 → 1230
+- 09/01/2026, 15:15:01 — Destination 19 (MAIN List) atualizado: AREDL: 1243 → 12240
 <!--LATEST-CHANGES-END-->
+
 
 
 

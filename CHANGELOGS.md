@@ -70,3 +70,4 @@
 - 09/01/2026, 15:12:45 - Memories III (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1200 → 1290
 - 09/01/2026, 15:13:47 - HyperSonic (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1030 → 1135
 - 09/01/2026, 15:14:48 - Cataclysm (MAIN List) atualizado: URL, scale: 11 → 21, AREDL: 1170 → 1230
+- 09/01/2026, 15:15:01 - Destination 19 (MAIN List) atualizado: AREDL: 1243 → 12240
