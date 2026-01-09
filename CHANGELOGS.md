@@ -100,3 +100,4 @@
 - 09/01/2026, 16:01:17 - goodnight (MAIN List) atualizado: URL, scale: 10 → 17
 - 09/01/2026, 16:01:55 - YMTHLYFYMBIKWHRLYF (MAIN List) atualizado: URL, scale: 10 → 17
 - 09/01/2026, 16:02:32 - Valhalla (MAIN List) atualizado: URL, scale: 10 → 17
+- 09/01/2026, 16:03:07 - Heritage (MAIN List) atualizado: URL, scale: 10 → 17
