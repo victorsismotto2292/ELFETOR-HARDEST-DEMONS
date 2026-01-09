@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:10:39 — Quantum Force (MAIN List) atualizado: URL, scale: 9.5 → 16
+- 09/01/2026, 18:11:51 — Bicromatic foi removido da MAIN List (posição #60)
 <!--LATEST-CHANGES-END-->
+
 
 
 
