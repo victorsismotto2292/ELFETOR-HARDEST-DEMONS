@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:27:46 — Dont Simp foi movido de #151 (LEGACY) para #149 (EXTENDED). speequ caiu da Extended (#151) para Legacy (#151)
+- 09/01/2026, 18:28:03 — Windy Landscape foi movido de #76 (EXTENDED) para #74 (MAIN), fazendo com que Blast Furnace caia(m) para Extended, fazendo com que Windy Landscape suba(m) para Main. Blast Furnace caiu da Main (#76) para Extended (#76)
 <!--LATEST-CHANGES-END-->
+
 
 
 
