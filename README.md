@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:54:32 — CHROMA (MAIN List) atualizado: URL, scale: 10 → 16
+- 09/01/2026, 15:55:49 — Arcane (MAIN List) atualizado: URL, scale: 10 → 178
 <!--LATEST-CHANGES-END-->
+
 
 
 
