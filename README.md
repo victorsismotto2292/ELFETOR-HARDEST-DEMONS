@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:57:02 — PPPPPPPPPPPPPPPPIXEL foi adicionado na posição 27 (MAIN), fazendo com que TENDO caia(m) para a Extended List. TENDO caiu da Main (#76) para Extended (#76); Nebulous Journey caiu da Extended (#151) para Legacy (#151)
+- 09/01/2026, 18:57:52 — PPPPPPPPPPPPPPPPIXEL atualizado: URL
 <!--LATEST-CHANGES-END-->
+
 
 
 
