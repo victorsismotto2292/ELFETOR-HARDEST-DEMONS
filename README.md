@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:34:10 — Kyrie Eleison (MAIN List) atualizado: AREDL: 125 → 130
+- 09/01/2026, 15:40:01 — Elysian Aegis (MAIN List) atualizado: URL, scale: 10 → 19, AREDL: 160 → 170
 <!--LATEST-CHANGES-END-->
+
 
 
 

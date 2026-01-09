@@ -83,3 +83,4 @@
 - 09/01/2026, 15:33:27 - Mind Crusher (MAIN List) atualizado: URL, scale: 10 → 19
 - 09/01/2026, 15:33:40 - Mind Crusher (MAIN List) editado (sem mudanças detectadas)
 - 09/01/2026, 15:34:10 - Kyrie Eleison (MAIN List) atualizado: AREDL: 125 → 130
+- 09/01/2026, 15:40:01 - Elysian Aegis (MAIN List) atualizado: URL, scale: 10 → 19, AREDL: 160 → 170
