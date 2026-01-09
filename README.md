@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:17:17 — Encroaching Dark (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 1200 → 1235
+- 09/01/2026, 15:22:27 — Hateflayer (MAIN List) atualizado: URL, scale: 10 → 20
 <!--LATEST-CHANGES-END-->
+
 
 
 
