@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 19:08:58 — Buh atualizado: URL, scale: 9.5 → 15
+- 09/01/2026, 19:09:50 — Blast Furnace atualizado: URL, scale: 9.5 → 15
 <!--LATEST-CHANGES-END-->
+
 
 
 
