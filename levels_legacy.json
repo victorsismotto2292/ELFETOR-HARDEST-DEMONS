@@ -1,69 +1,5 @@
 [
   {
-    "video_url": "",
-    "lvl_name": "Nebulous Journey",
-    "lvl_creator": "CorroX",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Gold Temple",
-    "lvl_creator": "Serponge",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "ZO",
-    "lvl_creator": "KasVA",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Boss 3 Electro",
-    "lvl_creator": "XenderGame",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Boss V Devourers",
-    "lvl_creator": "Xender Game",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Shrill Hallway",
-    "lvl_creator": "Nico99",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Solar Circles",
-    "lvl_creator": "D4rkGryf",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
-    "video_url": "",
-    "lvl_name": "Reanimation",
-    "lvl_creator": "Terron",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9
-  },
-  {
     "lvl_name": "Z",
     "lvl_creator": "Zyzyx",
     "video_url": "",
@@ -73,6 +9,113 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 1 (+8), above Nebulous Journey"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Nebulous Journey",
+    "lvl_creator": "CorroX",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Gold Temple",
+    "lvl_creator": "Serponge",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "ZO",
+    "lvl_creator": "KasVA",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Boss 3 Electro",
+    "lvl_creator": "XenderGame",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Boss V Devourers",
+    "lvl_creator": "Xender Game",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Shrill Hallway",
+    "lvl_creator": "Nico99",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Solar Circles",
+    "lvl_creator": "D4rkGryf",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Reanimation",
+    "lvl_creator": "Terron",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
       }
     ]
   }

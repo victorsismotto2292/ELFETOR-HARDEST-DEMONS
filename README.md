@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:20:41 — Z foi adicionado na LEGACY List posição #159, abaixo de Reanimation
+- 09/01/2026, 11:22:06 — Z foi movido na LEGACY List de #159 para #151, acima de Nebulous Journey
 <!--LATEST-CHANGES-END-->
+
 
 
 
