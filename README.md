@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:48:55 — Elements X (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 240
+- 09/01/2026, 15:50:16 — ReRUST (MAIN List) atualizado: URL, scale: 10 → 18
 <!--LATEST-CHANGES-END-->
+
 
 
 
