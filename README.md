@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:15:11 — Destination 19 (MAIN List) atualizado: AREDL: 12240 → 1240
+- 09/01/2026, 15:16:16 — Acu (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 1210 → 1305
 <!--LATEST-CHANGES-END-->
+
 
 
 
