@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:16:16 — Acu (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 1210 → 1305
+- 09/01/2026, 15:17:17 — Encroaching Dark (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 1200 → 1235
 <!--LATEST-CHANGES-END-->
+
 
 
 
