@@ -1,21 +1,5 @@
 [
   {
-    "lvl_name": "Z",
-    "lvl_creator": "Zyzyx",
-    "video_url": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "9",
-    "pos_aredl": 0,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
-      },
-      {
-        "log1": "09/01/26 - Moved to position 1 (+8), above Nebulous Journey"
-      }
-    ]
-  },
-  {
     "video_url": "",
     "lvl_name": "Nebulous Journey",
     "lvl_creator": "CorroX",
@@ -25,6 +9,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -38,6 +25,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -51,6 +41,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -64,6 +57,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -77,6 +73,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -90,6 +89,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -103,6 +105,9 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
       }
     ]
   },
@@ -116,6 +121,28 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Z",
+    "lvl_creator": "Zyzyx",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 1 (+8), above Nebulous Journey"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 9 (-8), below Reanimation"
       }
     ]
   }
