@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:18:53 — Z foi promovido da Legacy List para Main List posição #76, abaixo de Windy Landscape
+- 09/01/2026, 11:20:19 — Z foi removido da MAIN List (posição #76)
 <!--LATEST-CHANGES-END-->
+
 
 
 
