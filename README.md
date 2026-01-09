@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:51:40 — Night Terrors (MAIN List) atualizado: URL, scale: 10 → 17
+- 09/01/2026, 15:53:33 — X Adventure (MAIN List) atualizado: URL, scale: 10 → 18
 <!--LATEST-CHANGES-END-->
+
 
 
 
