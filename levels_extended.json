@@ -1,13 +1,5 @@
 [
   {
-    "video_url": "https://www.youtube.com/watch?v=LINK_CHROMA",
-    "lvl_name": "Blast Furnace",
-    "lvl_creator": "Samifying",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": 9.5
-  },
-  {
     "lvl_name": "TENDO",
     "lvl_creator": "gradientxd",
     "video_url": "https://www.youtube.com/watch?v=H0dmFLZkxO0",
@@ -1176,6 +1168,22 @@
     "video_url": "",
     "lvl_name": "Ruuun",
     "lvl_creator": "qMystic",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "speequ",
+    "lvl_creator": "Tenzk",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": 9,

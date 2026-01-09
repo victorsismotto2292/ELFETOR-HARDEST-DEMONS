@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:28:03 — Windy Landscape foi movido de #76 (EXTENDED) para #74 (MAIN), fazendo com que Blast Furnace caia(m) para Extended, fazendo com que Windy Landscape suba(m) para Main. Blast Furnace caiu da Main (#76) para Extended (#76)
+- 09/01/2026, 18:29:00 — teste removido de #20 (MAIN), Blast Furnace promovido(s) para Main. Blast Furnace promovido de Extended para Main (#75); speequ promovido de Legacy para Extended (#150)
 <!--LATEST-CHANGES-END-->
+
 
 
 
