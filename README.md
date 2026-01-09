@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 08/01/2026, 18:18:17 — foguito foi adicionado na posição 2, abaixo de TENDO e acima de MulLuna
+- 08/01/2026, 21:37:22 — Z foi promovido da Legacy List para posição 76
 <!--LATEST-CHANGES-END-->
+
 
 
 
