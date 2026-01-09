@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:40:01 — Elysian Aegis (MAIN List) atualizado: URL, scale: 10 → 19, AREDL: 160 → 170
+- 09/01/2026, 15:43:37 — Ulon (MAIN List) atualizado: URL, scale: 10 → 19, AREDL: 175 → 185
 <!--LATEST-CHANGES-END-->
+
 
 
 
