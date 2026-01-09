@@ -79,3 +79,4 @@
 - 09/01/2026, 15:28:42 - Zaphes Back Yard (MAIN List) atualizado: URL, scale: 10 → 20
 - 09/01/2026, 15:29:49 - Sheol Death (MAIN List) atualizado: URL, scale: 10 → 19
 - 09/01/2026, 15:30:59 - Kyrie Eleison (MAIN List) atualizado: URL, scale: 10 → 19
+- 09/01/2026, 15:31:50 - CMYK (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 140 → 145
