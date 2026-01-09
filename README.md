@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:29:49 — Sheol Death (MAIN List) atualizado: URL, scale: 10 → 19
+- 09/01/2026, 15:30:59 — Kyrie Eleison (MAIN List) atualizado: URL, scale: 10 → 19
 <!--LATEST-CHANGES-END-->
+
 
 
 
