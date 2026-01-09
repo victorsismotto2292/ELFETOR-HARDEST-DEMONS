@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:29:24 — Dont Simp foi movido de #148 (EXTENDED) para #150 (EXTENDED)
+- 09/01/2026, 18:35:51 — FFFFFF atualizado: URL, scale: 9.5 → 16
 <!--LATEST-CHANGES-END-->
+
 
 
 
