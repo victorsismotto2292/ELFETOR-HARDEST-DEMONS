@@ -968,5 +968,18 @@
         "log1": "08/01/26 - foguito was added above (-1)"
       }
     ]
+  },
+  {
+    "lvl_name": "teste",
+    "lvl_creator": "testium",
+    "video_url": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "9.5",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the EXTENDED List at position 76, below Dont Simp"
+      }
+    ]
   }
 ]

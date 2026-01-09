@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:25:45 — teste foi removido da MAIN List (posição #20)
+- 09/01/2026, 11:39:32 — teste foi adicionado na EXTENDED List posição #151, abaixo de Dont Simp
 <!--LATEST-CHANGES-END-->
+
 
 
 
