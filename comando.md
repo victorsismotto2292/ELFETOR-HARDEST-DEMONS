@@ -1,0 +1,3 @@
+COMANDO PRA DELETAR TODOS OS ARQUIVOS .BAK:
+
+del levels_*.json.bak.*

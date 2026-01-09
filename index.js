@@ -657,7 +657,7 @@ app.get("/home", (req, res) => {
 // RODAR LOCALMENTE (APENAS DEV)
 // ==========================
 if (process.env.NODE_ENV !== "production") {
-  const PORT = 3010;
+  const PORT = 3000;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });

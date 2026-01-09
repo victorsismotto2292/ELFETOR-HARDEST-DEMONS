@@ -8,12 +8,23 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-// ===== CONSTANTES =====
-const MAIN_LIST_FILE = 'levels_main.json';
-const EXTENDED_LIST_FILE = 'levels_extended.json';
-const LEGACY_LIST_FILE = 'levels_legacy.json';
-const TOP_150_THRESHOLD = 150;
+// ==========================
+// CONFIGURAÇÃO
+// ==========================
+const FILES = {
+  MAIN: 'levels_main.json',
+  EXTENDED: 'levels_extended.json',
+  LEGACY: 'levels_legacy.json'
+};
 
+const LIMITS = {
+  MAIN_MAX: 75,      // Posições 1-75
+  EXTENDED_MAX: 150  // Posições 76-150
+};
+
+// ==========================
+// UTILITÁRIOS
+// ==========================
 function ask(question) {
   return new Promise(resolve => rl.question(question, resolve));
 }
@@ -27,11 +38,29 @@ function save(file, data) {
   fs.copyFileSync(file, `${file}.bak.${Date.now()}`);
 }
 
+function loadAll() {
+  return {
+    main: load(FILES.MAIN),
+    extended: load(FILES.EXTENDED),
+    legacy: load(FILES.LEGACY)
+  };
+}
+
+function saveAll(lists) {
+  save(FILES.MAIN, lists.main);
+  save(FILES.EXTENDED, lists.extended);
+  save(FILES.LEGACY, lists.legacy);
+}
+
 function ensurePosHistory(obj) {
   if (!Array.isArray(obj.pos_history)) obj.pos_history = [];
   obj.pos_history = obj.pos_history.map(e => 
     typeof e === 'string' ? {log1: e} : (e && typeof e === 'object' ? e : {log1: String(e)})
   );
+}
+
+function removePosHistory(obj) {
+  delete obj.pos_history;
 }
 
 function nowDate() {
@@ -114,122 +143,89 @@ function gitCommitAndPush(files, message) {
   }
 }
 
-// ===== FUNÇÕES ESPECÍFICAS DA LEGACY LIST =====
-
-function moveToLegacy(level) {
-  const legacyData = load(LEGACY_LIST_FILE);
-  const date = nowDate();
+// ==========================
+// SISTEMA DE TRANSIÇÕES
+// ==========================
+function cascadeTransitions(lists, date) {
+  const changes = [];
   
-  // Adicionar ao histórico do nível
-  ensurePosHistory(level);
-  level.pos_history.push({
-    log1: `${date} - Moved to Legacy List (fell out of Top 150)`
-  });
-  
-  // Adicionar à Legacy List
-  legacyData.push(level);
-  save(LEGACY_LIST_FILE, legacyData);
-  
-  return level.lvl_name;
-}
-
-function moveFromLegacy(levelName) {
-  const legacyData = load(LEGACY_LIST_FILE);
-  const date = nowDate();
-  
-  // Encontrar nível na Legacy List
-  const legacyIdx = legacyData.findIndex(l => l.lvl_name === levelName);
-  if (legacyIdx === -1) {
-    console.log('❌ Nível não encontrado na Legacy List.\n');
-    return null;
-  }
-  
-  const level = legacyData.splice(legacyIdx, 1)[0];
-  
-  // Atualizar histórico dos níveis restantes na Legacy
-  for (let i = legacyIdx; i < legacyData.length; i++) {
-    ensurePosHistory(legacyData[i]);
-    legacyData[i].pos_history.push({ 
-      log1: `${date} - ${levelName} was promoted to Main List (+1)` 
+  // 1. Main overflow → Extended
+  if (lists.main.length > LIMITS.MAIN_MAX) {
+    const overflow = lists.main.splice(LIMITS.MAIN_MAX);
+    overflow.forEach(level => {
+      removePosHistory(level);
+      lists.extended.unshift(level);
+      changes.push(`${level.lvl_name} caiu da Main (#${LIMITS.MAIN_MAX + 1}) para Extended (#${LIMITS.MAIN_MAX + 1})`);
     });
   }
   
-  save(LEGACY_LIST_FILE, legacyData);
+  // 2. Extended overflow → Legacy
+  if (lists.extended.length > (LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX)) {
+    const maxExtended = LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX;
+    const overflow = lists.extended.splice(maxExtended);
+    overflow.forEach(level => {
+      lists.legacy.unshift(level);
+      changes.push(`${level.lvl_name} caiu da Extended (#${LIMITS.EXTENDED_MAX + 1}) para Legacy (#${LIMITS.EXTENDED_MAX + 1})`);
+    });
+  }
   
-  // Adicionar ao histórico do nível promovido
-  ensurePosHistory(level);
-  level.pos_history.push({
-    log1: `${date} - Promoted from Legacy List to Main List`
-  });
-  
-  return level;
+  return changes;
 }
 
-function checkAndMoveToLegacy() {
-  const mainData = load(MAIN_LIST_FILE);
-  const movedLevels = [];
-  
-  // Verificar se há níveis além da posição 150
-  while (mainData.length > TOP_150_THRESHOLD) {
-    const level = mainData.pop(); // Remove o último (posição > 150)
-    const name = moveToLegacy(level);
-    movedLevels.push(name);
-  }
-  
-  if (movedLevels.length > 0) {
-    save(MAIN_LIST_FILE, mainData);
-    console.log(`\n📦 ${movedLevels.length} nível(is) movido(s) para Legacy List:`);
-    movedLevels.forEach(name => console.log(`  - ${name}`));
-  }
-  
-  return movedLevels;
-}
+// ==========================
+// FUNÇÕES PRINCIPAIS
+// ==========================
 
 // ===== LISTAR =====
-async function list(file) {
-  const data = load(file);
-  const listName = file === LEGACY_LIST_FILE ? 'LEGACY' : 
-                   file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'MAIN';
+async function list() {
+  const lists = loadAll();
   
-  console.log(`\n📊 ${listName} LIST (${data.length} níveis):\n`);
-  data.slice(0, 20).forEach((l, i) => {
-    const pos = file === LEGACY_LIST_FILE ? i + 151 : 
-                file === EXTENDED_LIST_FILE ? i + 76 : i + 1;
-    console.log(`  ${pos}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`);
-  });
-  if (data.length > 20) console.log(`  ... e ${data.length - 20} mais\n`);
-  else console.log('');
+  console.log(`\n📊 MAIN LIST (${lists.main.length}/${LIMITS.MAIN_MAX} níveis, posições 1-${LIMITS.MAIN_MAX}):\n`);
+  lists.main.slice(0, 20).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
+  if (lists.main.length > 20) console.log(`  ... e ${lists.main.length - 20} mais\n`);
+  
+  console.log(`\n📊 EXTENDED LIST (${lists.extended.length}/${LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX} níveis, posições ${LIMITS.MAIN_MAX + 1}-${LIMITS.EXTENDED_MAX}):\n`);
+  lists.extended.slice(0, 10).forEach((l, i) => console.log(`  ${LIMITS.MAIN_MAX + i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
+  if (lists.extended.length > 10) console.log(`  ... e ${lists.extended.length - 10} mais\n`);
+  
+  console.log(`\n📊 LEGACY LIST (${lists.legacy.length} níveis, posições ${LIMITS.EXTENDED_MAX + 1}+):\n`);
+  lists.legacy.slice(0, 10).forEach((l, i) => console.log(`  ${LIMITS.EXTENDED_MAX + i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
+  if (lists.legacy.length > 10) console.log(`  ... e ${lists.legacy.length - 10} mais\n`);
+  
+  console.log('');
 }
 
 // ===== BUSCAR =====
-async function search(file) {
-  const data = load(file);
+async function search() {
+  const lists = loadAll();
   const query = (await ask('\n🔍 Buscar (nome/criador): ')).toLowerCase();
   if (!query) return;
   
-  const results = data.filter(l => 
+  const allLevels = [
+    ...lists.main.map((l, i) => ({...l, pos: i + 1, list: 'MAIN'})),
+    ...lists.extended.map((l, i) => ({...l, pos: LIMITS.MAIN_MAX + i + 1, list: 'EXTENDED'})),
+    ...lists.legacy.map((l, i) => ({...l, pos: LIMITS.EXTENDED_MAX + i + 1, list: 'LEGACY'}))
+  ];
+  
+  const results = allLevels.filter(l => 
     (l.lvl_name || '').toLowerCase().includes(query) ||
     (l.lvl_creator || '').toLowerCase().includes(query)
   );
   
   console.log(`\n✅ ${results.length} resultado(s):\n`);
   results.forEach(l => {
-    const idx = data.indexOf(l);
-    const pos = file === LEGACY_LIST_FILE ? idx + 151 : 
-                file === EXTENDED_LIST_FILE ? idx + 76 : idx + 1;
-    console.log(`  ${pos}. ${l.lvl_name} by ${l.lvl_creator}`);
+    console.log(`  #${l.pos} (${l.list}): ${l.lvl_name} by ${l.lvl_creator}`);
   });
   console.log('');
 }
 
-// ===== ADICIONAR COM HISTÓRICO AUTOMÁTICO =====
-async function addWithHistory(file) {
-  const listType = file === MAIN_LIST_FILE ? 'MAIN' : 
-                   file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'LEGACY';
+// ===== ADICIONAR =====
+async function addWithHistory(targetFile) {
+  console.log('\n➕ ADICIONAR NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
-  console.log(`\n➕ ADICIONAR NÍVEL À ${listType} LIST:`);
-  const data = load(file);
-  const beforeTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
+  const lists = loadAll();
+  const targetList = targetFile === FILES.MAIN ? 'main' : targetFile === FILES.EXTENDED ? 'extended' : 'legacy';
+  const beforeTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   
   const name = await ask('Nome do nível: ');
   if (!name) { console.log('❌ Cancelado.\n'); return; }
@@ -239,7 +235,7 @@ async function addWithHistory(file) {
   const rank = await ask('Rank (Enter = pular): ') || '';
   const scale = await ask('Scale (Enter = pular): ') || '';
   const aredl = await ask('Posição AREDL (Enter = pular): ') || '0';
-  const pos = await ask(`Posição na ${listType} (Enter = final): `);
+  const pos = await ask(`Posição na ${targetList.toUpperCase()} (Enter = final): `);
   
   const obj = { 
     lvl_name: name, 
@@ -247,490 +243,471 @@ async function addWithHistory(file) {
     video_url: url, 
     diff_rank: rank, 
     diff_scale: scale, 
-    pos_aredl: parseInt(aredl) || 0,
-    pos_history: []
+    pos_aredl: parseInt(aredl) || 0
   };
   
-  ensurePosHistory(obj);
-  
+  const data = lists[targetList];
   const idx = pos ? Math.max(0, Math.min(parseInt(pos) - 1, data.length)) : data.length;
   
-  // Inserir nível
+  // Calcular posição global
+  let globalPos = idx + 1;
+  if (targetList === 'extended') globalPos = idx + LIMITS.MAIN_MAX + 1;
+  if (targetList === 'legacy') globalPos = idx + LIMITS.EXTENDED_MAX + 1;
+  
+  // Inserir na lista apropriada
   data.splice(idx, 0, obj);
   
-  // Adicionar histórico em TODAS as listas (incluindo Legacy)
+  // Adicionar histórico apenas se for Main
   const date = nowDate();
-  const above = idx > 0 ? data[idx - 1].lvl_name : null;
-  const below = idx + 1 < data.length ? data[idx + 1].lvl_name : null;
-  
-  let positionDesc = `Added to the ${listType} List at position ${idx + 1}`;
-  if (above || below) {
-    const parts = [];
-    if (above) parts.push(`below ${above}`);
-    if (below) parts.push(`above ${below}`);
-    positionDesc += `, ${parts.join(' and ')}`;
+  if (targetList === 'main') {
+    ensurePosHistory(obj);
+    const above = idx > 0 ? data[idx - 1].lvl_name : null;
+    const below = idx + 1 < data.length ? data[idx + 1].lvl_name : null;
+    
+    let positionDesc = `Added to the list at position ${globalPos}`;
+    if (above || below) {
+      const parts = [];
+      if (above) parts.push(`below ${above}`);
+      if (below) parts.push(`above ${below}`);
+      positionDesc += `, ${parts.join(' and ')}`;
+    }
+    
+    obj.pos_history = [{ log1: `${date} - ${positionDesc}` }];
+    
+    // Atualizar histórico dos níveis abaixo na Main
+    for (let i = idx + 1; i < data.length; i++) {
+      ensurePosHistory(data[i]);
+      data[i].pos_history.push({ log1: `${date} - ${name} was added above (-1)` });
+    }
   }
   
-  obj.pos_history.push({ log1: `${date} - ${positionDesc}` });
+  // Fazer transições em cascata
+  const cascadeChanges = cascadeTransitions(lists, date);
   
-  // Atualizar histórico dos níveis abaixo
-  for (let i = idx + 1; i < data.length; i++) {
-    ensurePosHistory(data[i]);
-    data[i].pos_history.push({ log1: `${date} - ${name} was added above (-1)` });
+  saveAll(lists);
+  
+  console.log(`\n✅ Nível "${name}" adicionado na posição ${globalPos} (${targetList.toUpperCase()})!`);
+  if (cascadeChanges.length > 0) {
+    console.log('\n📋 Transições automáticas:');
+    cascadeChanges.forEach(c => console.log(`  • ${c}`));
   }
-
-  save(file, data);
+  console.log('');
   
-  // Verificar se precisa mover para Legacy (apenas para Main List)
-  let movedToLegacy = [];
-  if (file === MAIN_LIST_FILE) {
-    movedToLegacy = checkAndMoveToLegacy();
-  }
-  
-  const displayPos = file === LEGACY_LIST_FILE ? `#${idx + 151}` : 
-                     file === EXTENDED_LIST_FILE ? `#${idx + 76}` : `#${idx + 1}`;
-  
-  console.log(`\n✅ Nível "${name}" adicionado na posição ${displayPos}!`);
-  console.log(`📝 Histórico atualizado para ${data.length - idx - 1} níveis abaixo.\n`);
-  
-  // Changelog + commit
-  const afterTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
+  // Changelog
+  const afterTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
   const removedFromTop = beforeTop.filter(n => !afterTop.includes(n));
   
-  let desc = `${name} foi adicionado na ${listType} List posição ${displayPos}`;
-  const aboveLevel = idx > 0 ? data[idx - 1].lvl_name : null;
-  const belowLevel = idx + 1 < data.length ? data[idx + 1].lvl_name : null;
-  if (aboveLevel || belowLevel) {
-    const parts = [];
-    if (aboveLevel) parts.push(`abaixo de ${aboveLevel}`);
-    if (belowLevel) parts.push(`acima de ${belowLevel}`);
-    desc += ', ' + parts.join(' e ');
-  }
-  if (movedToLegacy.length) {
-    desc += `, fazendo com que ${movedToLegacy.join(', ')} caia(m) para a Legacy List`;
-  }
-  if (removedFromTop.length && !movedToLegacy.includes(removedFromTop[0])) {
-    desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Legacy List`;
-  }
-  if (addedToTop.length && !addedToTop.includes(name)) {
-    desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top 150`;
-  }
+  let desc = `${name} foi adicionado na posição ${globalPos} (${targetList.toUpperCase()})`;
+  if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Extended List`;
+  if (addedToTop.length && !addedToTop.includes(name)) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top ${LIMITS.MAIN_MAX}`;
+  if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
   
   appendChangelog(desc);
-  const filesToCommit = file === MAIN_LIST_FILE ? 
-    [file, LEGACY_LIST_FILE, 'CHANGELOGS.md', 'README.md'] : 
-    [file, 'CHANGELOGS.md', 'README.md'];
-  const ok = gitCommitAndPush(filesToCommit, `Adicionado: ${desc}`);
+  const ok = gitCommitAndPush([FILES.MAIN, FILES.EXTENDED, FILES.LEGACY, 'CHANGELOGS.md', 'README.md'], `Adicionado: ${desc}`);
   console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
 }
 
-// ===== MOVER COM HISTÓRICO AUTOMÁTICO =====
-async function moveWithHistory(file) {
-  const data = load(file);
-  const listType = file === MAIN_LIST_FILE ? 'MAIN' : 
-                   file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'LEGACY';
+// ===== MOVER =====
+async function moveWithHistory() {
+  console.log('\n➡️  MOVER NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
-  console.log(`\n➡️  MOVER NÍVEL NA ${listType} LIST:`);
-  data.slice(0, 10).forEach((l, i) => {
-    const displayPos = file === LEGACY_LIST_FILE ? i + 151 : 
-                       file === EXTENDED_LIST_FILE ? i + 76 : i + 1;
-    console.log(`  ${displayPos}. ${l.lvl_name}`);
-  });
-  if (data.length > 10) console.log(`  ... (total: ${data.length})`);
+  const lists = loadAll();
   
-  const from = await ask('\nPosição atual (ou nome): ');
+  // Mostrar alguns níveis de referência
+  console.log('\nPrimeiros 10 da Main:');
+  lists.main.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
+  console.log('\nPrimeiros 5 da Extended:');
+  lists.extended.slice(0, 5).forEach((l, i) => console.log(`  ${LIMITS.MAIN_MAX + i+1}. ${l.lvl_name}`));
+  console.log('');
+  
+  const from = await ask('\nNome do nível ou posição global: ');
   if (!from) { console.log('❌ Cancelado.\n'); return; }
   
-  // Buscar por nome ou posição
-  let fromIdx;
+  // Buscar nível
+  let level, oldGlobalPos, oldList;
   if (isNaN(from)) {
-    fromIdx = data.findIndex(l => l.lvl_name.toLowerCase() === from.toLowerCase());
-    if (fromIdx === -1) {
-      console.log('❌ Nível não encontrado.\n');
-      return;
+    // Buscar por nome
+    let foundIdx = lists.main.findIndex(l => l.lvl_name.toLowerCase() === from.toLowerCase());
+    if (foundIdx !== -1) {
+      level = lists.main[foundIdx];
+      oldGlobalPos = foundIdx + 1;
+      oldList = 'main';
+    } else {
+      foundIdx = lists.extended.findIndex(l => l.lvl_name.toLowerCase() === from.toLowerCase());
+      if (foundIdx !== -1) {
+        level = lists.extended[foundIdx];
+        oldGlobalPos = LIMITS.MAIN_MAX + foundIdx + 1;
+        oldList = 'extended';
+      } else {
+        foundIdx = lists.legacy.findIndex(l => l.lvl_name.toLowerCase() === from.toLowerCase());
+        if (foundIdx !== -1) {
+          level = lists.legacy[foundIdx];
+          oldGlobalPos = LIMITS.EXTENDED_MAX + foundIdx + 1;
+          oldList = 'legacy';
+        }
+      }
     }
   } else {
-    const adjustedPos = file === LEGACY_LIST_FILE ? parseInt(from) - 151 : 
-                        file === EXTENDED_LIST_FILE ? parseInt(from) - 76 : parseInt(from) - 1;
-    fromIdx = adjustedPos;
+    // Buscar por posição global
+    const globalPos = parseInt(from);
+    if (globalPos <= LIMITS.MAIN_MAX) {
+      level = lists.main[globalPos - 1];
+      oldGlobalPos = globalPos;
+      oldList = 'main';
+    } else if (globalPos <= LIMITS.EXTENDED_MAX) {
+      level = lists.extended[globalPos - LIMITS.MAIN_MAX - 1];
+      oldGlobalPos = globalPos;
+      oldList = 'extended';
+    } else {
+      level = lists.legacy[globalPos - LIMITS.EXTENDED_MAX - 1];
+      oldGlobalPos = globalPos;
+      oldList = 'legacy';
+    }
   }
   
-  if (fromIdx < 0 || fromIdx >= data.length) { 
-    console.log('❌ Posição inválida.\n'); 
-    return; 
+  if (!level) {
+    console.log('❌ Nível não encontrado.\n');
+    return;
   }
   
-  const to = await ask('Nova posição: ');
-  const adjustedToPos = file === LEGACY_LIST_FILE ? parseInt(to) - 151 : 
-                        file === EXTENDED_LIST_FILE ? parseInt(to) - 76 : parseInt(to) - 1;
-  const toIdx = Math.max(0, Math.min(adjustedToPos, data.length - 1));
+  const to = await ask(`Nova posição global para "${level.lvl_name}" (atual: #${oldGlobalPos}): `);
+  const newGlobalPos = parseInt(to);
   
-  if (fromIdx === toIdx) {
+  if (newGlobalPos === oldGlobalPos) {
     console.log('⚠️ Nível já está nessa posição.\n');
     return;
   }
   
-  const beforeTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
-  const item = data.splice(fromIdx, 1)[0];
-  data.splice(toIdx, 0, item);
-
-  // Adicionar histórico em TODAS as listas (incluindo Legacy)
+  const beforeTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   const date = nowDate();
-  const oldPos = fromIdx + 1;
-  const newPos = toIdx + 1;
-  const delta = Math.abs(oldPos - newPos);
-  const sign = (oldPos > newPos) ? `+${delta}` : `-${delta}`;
   
-  const above = toIdx > 0 ? data[toIdx - 1].lvl_name : null;
-  const below = toIdx + 1 < data.length ? data[toIdx + 1].lvl_name : null;
-  
-  ensurePosHistory(item);
-  let moveDesc = `Moved to position ${newPos} (${sign})`;
-  if (above || below) {
-    const parts = [];
-    if (above) parts.push(`below ${above}`);
-    if (below) parts.push(`above ${below}`);
-    moveDesc += `, ${parts.join(' and ')}`;
-  }
-  item.pos_history.push({ log1: `${date} - ${moveDesc}` });
-  
-  // Atualizar histórico dos níveis afetados
-  const name = item.lvl_name;
-  
-  if (oldPos > newPos) {
-    for (let i = toIdx + 1; i <= fromIdx; i++) {
-      ensurePosHistory(data[i]);
-      data[i].pos_history.push({ log1: `${date} - ${name} was moved above (-1)` });
-    }
+  // Determinar lista de destino
+  let newList, newLocalIdx;
+  if (newGlobalPos <= LIMITS.MAIN_MAX) {
+    newList = 'main';
+    newLocalIdx = Math.max(0, Math.min(newGlobalPos - 1, lists.main.length));
+  } else if (newGlobalPos <= LIMITS.EXTENDED_MAX) {
+    newList = 'extended';
+    newLocalIdx = Math.max(0, Math.min(newGlobalPos - LIMITS.MAIN_MAX - 1, lists.extended.length));
   } else {
-    for (let i = fromIdx; i < toIdx; i++) {
-      ensurePosHistory(data[i]);
-      data[i].pos_history.push({ log1: `${date} - ${name} was moved below (+1)` });
+    newList = 'legacy';
+    newLocalIdx = Math.max(0, Math.min(newGlobalPos - LIMITS.EXTENDED_MAX - 1, lists.legacy.length));
+  }
+  
+  // Remover da lista antiga
+  const oldLocalIdx = lists[oldList].indexOf(level);
+  lists[oldList].splice(oldLocalIdx, 1);
+  
+  // Inserir na nova lista
+  lists[newList].splice(newLocalIdx, 0, level);
+  
+  // Gerenciar pos_history
+  const wasInMain = oldList === 'main';
+  const isInMain = newList === 'main';
+  
+  if (isInMain) {
+    // Promovido/movido para Main - garantir pos_history
+    ensurePosHistory(level);
+    
+    const delta = Math.abs(oldGlobalPos - newGlobalPos);
+    const sign = (oldGlobalPos > newGlobalPos) ? `+${delta}` : `-${delta}`;
+    
+    const above = newLocalIdx > 0 ? lists.main[newLocalIdx - 1].lvl_name : null;
+    const below = newLocalIdx + 1 < lists.main.length ? lists.main[newLocalIdx + 1].lvl_name : null;
+    
+    let moveDesc = `Moved to position ${newGlobalPos} (${sign})`;
+    if (above || below) {
+      const parts = [];
+      if (above) parts.push(`below ${above}`);
+      if (below) parts.push(`above ${below}`);
+      moveDesc += `, ${parts.join(' and ')}`;
     }
+    level.pos_history.push({ log1: `${date} - ${moveDesc}` });
+    
+    // Atualizar histórico dos afetados na Main
+    const name = level.lvl_name;
+    if (oldGlobalPos > newGlobalPos) {
+      for (let i = newLocalIdx + 1; i < lists.main.length && i <= oldLocalIdx; i++) {
+        ensurePosHistory(lists.main[i]);
+        lists.main[i].pos_history.push({ log1: `${date} - ${name} was moved above (-1)` });
+      }
+    } else if (oldGlobalPos < newGlobalPos && wasInMain) {
+      for (let i = oldLocalIdx; i < newLocalIdx; i++) {
+        ensurePosHistory(lists.main[i]);
+        lists.main[i].pos_history.push({ log1: `${date} - ${name} was moved below (+1)` });
+      }
+    }
+  } else if (wasInMain && !isInMain) {
+    // Rebaixado da Main - remover pos_history
+    removePosHistory(level);
   }
-
-  save(file, data);
   
-  // Verificar se precisa mover para Legacy (apenas para Main List)
-  let movedToLegacy = [];
-  if (file === MAIN_LIST_FILE) {
-    movedToLegacy = checkAndMoveToLegacy();
+  // Fazer transições em cascata
+  const cascadeChanges = cascadeTransitions(lists, date);
+  
+  saveAll(lists);
+  
+  console.log(`\n✅ "${level.lvl_name}" movido de #${oldGlobalPos} (${oldList.toUpperCase()}) para #${newGlobalPos} (${newList.toUpperCase()})!`);
+  if (cascadeChanges.length > 0) {
+    console.log('\n📋 Transições automáticas:');
+    cascadeChanges.forEach(c => console.log(`  • ${c}`));
   }
-  
-  const oldDisplayPos = file === LEGACY_LIST_FILE ? fromIdx + 151 : 
-                        file === EXTENDED_LIST_FILE ? fromIdx + 76 : fromIdx + 1;
-  const newDisplayPos = file === LEGACY_LIST_FILE ? toIdx + 151 : 
-                        file === EXTENDED_LIST_FILE ? toIdx + 76 : toIdx + 1;
-  
-  console.log(`\n✅ "${item.lvl_name}" movido de #${oldDisplayPos} para #${newDisplayPos}!`);
-  console.log(`📝 Histórico atualizado para ${Math.abs(fromIdx - toIdx)} níveis.\n`);
+  console.log('');
   
   // Changelog
-  const afterTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
+  const afterTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
   const removedFromTop = beforeTop.filter(n => !afterTop.includes(n));
   
-  let desc = `${item.lvl_name} foi movido na ${listType} List de #${oldDisplayPos} para #${newDisplayPos}`;
-  
-  const aboveLevel = toIdx > 0 ? data[toIdx - 1].lvl_name : null;
-  const belowLevel = toIdx + 1 < data.length ? data[toIdx + 1].lvl_name : null;
-  if (aboveLevel || belowLevel) {
-    const parts = [];
-    if (aboveLevel) parts.push(`abaixo de ${aboveLevel}`);
-    if (belowLevel) parts.push(`acima de ${belowLevel}`);
-    desc += ', ' + parts.join(' e ');
-  }
-  
-  if (movedToLegacy.length) {
-    desc += `, fazendo com que ${movedToLegacy.join(', ')} caia(m) para a Legacy List`;
-  }
-  if (removedFromTop.length && !movedToLegacy.includes(removedFromTop[0])) {
-    desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Legacy List`;
-  }
-  if (addedToTop.length) {
-    desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top 150`;
-  }
+  let desc = `${level.lvl_name} foi movido de #${oldGlobalPos} (${oldList.toUpperCase()}) para #${newGlobalPos} (${newList.toUpperCase()})`;
+  if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para Extended`;
+  if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} suba(m) para Main`;
+  if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
   
   appendChangelog(desc);
-  const filesToCommit = file === MAIN_LIST_FILE ? 
-    [file, LEGACY_LIST_FILE, 'CHANGELOGS.md', 'README.md'] : 
-    [file, 'CHANGELOGS.md', 'README.md'];
-  const ok = gitCommitAndPush(filesToCommit, `Movido: ${desc}`);
-  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
+  const ok = gitCommitAndPush([FILES.MAIN, FILES.EXTENDED, FILES.LEGACY, 'CHANGELOGS.md', 'README.md'], `Movido: ${desc}`);
+  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
 }
 
 // ===== DELETAR =====
-async function deleteLevel(file) {
-  const data = load(file);
-  const listType = file === MAIN_LIST_FILE ? 'MAIN' : 
-                   file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'LEGACY';
+async function deleteLevel() {
+  console.log('\n🗑️  DELETAR COM PROMOÇÕES AUTOMÁTICAS:');
   
-  console.log(`\n🗑️  DELETAR DA ${listType} LIST:`);
-  data.slice(0, 10).forEach((l, i) => {
-    const displayPos = file === LEGACY_LIST_FILE ? i + 151 : 
-                       file === EXTENDED_LIST_FILE ? i + 76 : i + 1;
-    console.log(`  ${displayPos}. ${l.lvl_name}`);
-  });
-  if (data.length > 10) console.log(`  ... (total: ${data.length})`);
+  const lists = loadAll();
   
-  const pos = await ask('\nPosição (ou nome): ');
-  if (!pos) { console.log('❌ Cancelado.\n'); return; }
+  console.log('\nPrimeiros 10 da Main:');
+  lists.main.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
+  console.log('');
   
-  let idx;
-  if (isNaN(pos)) {
-    idx = data.findIndex(l => l.lvl_name.toLowerCase() === pos.toLowerCase());
-    if (idx === -1) {
-      console.log('❌ Nível não encontrado.\n');
-      return;
+  const input = await ask('\nNome do nível ou posição global: ');
+  if (!input) { console.log('❌ Cancelado.\n'); return; }
+  
+  // Buscar nível
+  let level, globalPos, list;
+  if (isNaN(input)) {
+    let foundIdx = lists.main.findIndex(l => l.lvl_name.toLowerCase() === input.toLowerCase());
+    if (foundIdx !== -1) {
+      level = lists.main[foundIdx];
+      globalPos = foundIdx + 1;
+      list = 'main';
+    } else {
+      foundIdx = lists.extended.findIndex(l => l.lvl_name.toLowerCase() === input.toLowerCase());
+      if (foundIdx !== -1) {
+        level = lists.extended[foundIdx];
+        globalPos = LIMITS.MAIN_MAX + foundIdx + 1;
+        list = 'extended';
+      } else {
+        foundIdx = lists.legacy.findIndex(l => l.lvl_name.toLowerCase() === input.toLowerCase());
+        if (foundIdx !== -1) {
+          level = lists.legacy[foundIdx];
+          globalPos = LIMITS.EXTENDED_MAX + foundIdx + 1;
+          list = 'legacy';
+        }
+      }
     }
   } else {
-    const adjustedPos = file === LEGACY_LIST_FILE ? parseInt(pos) - 151 : 
-                        file === EXTENDED_LIST_FILE ? parseInt(pos) - 76 : parseInt(pos) - 1;
-    idx = adjustedPos;
-  }
-  
-  if (idx < 0 || idx >= data.length) { console.log('❌ Posição inválida.\n'); return; }
-  
-  const beforeTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
-  const name = data[idx].lvl_name;
-  const displayPos = file === LEGACY_LIST_FILE ? idx + 151 : 
-                     file === EXTENDED_LIST_FILE ? idx + 76 : idx + 1;
-  
-  data.splice(idx, 1);
-  
-  save(file, data);
-  const afterTop = file === MAIN_LIST_FILE ? data.slice(0, 150).map(d => d.lvl_name) : [];
-  const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
-  
-  console.log(`✅ "${name}" deletado da ${listType} List (posição #${displayPos})!\n`);
-  
-  let desc = `${name} foi removido da ${listType} List (posição #${displayPos})`;
-  if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} suba(m) para o Top 150`;
-  
-  appendChangelog(desc);
-  const filesToCommit = file === MAIN_LIST_FILE ? 
-    [file, LEGACY_LIST_FILE, 'CHANGELOGS.md', 'README.md'] : 
-    [file, 'CHANGELOGS.md', 'README.md'];
-  const ok = gitCommitAndPush(filesToCommit, `Removido: ${desc}`);
-  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
-}
-
-// ===== EDITAR =====
-async function update(file) {
-  const data = load(file);
-  const listType = file === MAIN_LIST_FILE ? 'MAIN' : 
-                   file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'LEGACY';
-  
-  console.log(`\n✏️  EDITAR NA ${listType} LIST:`);
-  data.slice(0, 10).forEach((l, i) => {
-    const displayPos = file === LEGACY_LIST_FILE ? i + 151 : 
-                       file === EXTENDED_LIST_FILE ? i + 76 : i + 1;
-    console.log(`  ${displayPos}. ${l.lvl_name}`);
-  });
-  if (data.length > 10) console.log(`  ... (total: ${data.length})`);
-  
-  const pos = await ask('\nPosição (ou nome): ');
-  if (!pos) { console.log('❌ Cancelado.\n'); return; }
-  
-  let idx;
-  if (isNaN(pos)) {
-    idx = data.findIndex(l => l.lvl_name.toLowerCase() === pos.toLowerCase());
-    if (idx === -1) {
-      console.log('❌ Nível não encontrado.\n');
-      return;
+    const pos = parseInt(input);
+    if (pos <= LIMITS.MAIN_MAX) {
+      level = lists.main[pos - 1];
+      globalPos = pos;
+      list = 'main';
+    } else if (pos <= LIMITS.EXTENDED_MAX) {
+      level = lists.extended[pos - LIMITS.MAIN_MAX - 1];
+      globalPos = pos;
+      list = 'extended';
+    } else {
+      level = lists.legacy[pos - LIMITS.EXTENDED_MAX - 1];
+      globalPos = pos;
+      list = 'legacy';
     }
-  } else {
-    const adjustedPos = file === LEGACY_LIST_FILE ? parseInt(pos) - 151 : 
-                        file === EXTENDED_LIST_FILE ? parseInt(pos) - 76 : parseInt(pos) - 1;
-    idx = adjustedPos;
   }
   
-  if (idx < 0 || idx >= data.length) { console.log('❌ Posição inválida.\n'); return; }
-  
-  const item = data[idx];
-  console.log(`\nEditando: ${item.lvl_name}`);
-  
-  const old = {
-    lvl_creator: item.lvl_creator,
-    video_url: item.video_url,
-    diff_rank: item.diff_rank,
-    diff_scale: item.diff_scale,
-    pos_aredl: item.pos_aredl
-  };
-
-  const creator = await ask(`Criador [${item.lvl_creator}]: `) || item.lvl_creator;
-  const url = await ask(`URL [${item.video_url}]: `) || item.video_url;
-  const rank = await ask(`Rank [${item.diff_rank}]: `) || item.diff_rank;
-  const scale = await ask(`Scale [${item.diff_scale}]: `) || item.diff_scale;
-  const aredl = await ask(`AREDL [${item.pos_aredl || '-'}]: `);
-
-  item.lvl_creator = creator;
-  item.video_url = url;
-  item.diff_rank = rank;
-  item.diff_scale = scale;
-  if (aredl) item.pos_aredl = parseInt(aredl, 10);
-  
-  save(file, data);
-  console.log(`✅ Atualizado!\n`);
-  
-  const changes = [];
-  if (old.lvl_creator !== item.lvl_creator) changes.push(`criador: ${old.lvl_creator} → ${item.lvl_creator}`);
-  if (old.video_url !== item.video_url) changes.push(`URL`);
-  if (old.diff_rank !== item.diff_rank) changes.push(`rank: ${old.diff_rank} → ${item.diff_rank}`);
-  if (old.diff_scale !== item.diff_scale) changes.push(`scale: ${old.diff_scale} → ${item.diff_scale}`);
-  if (old.pos_aredl !== item.pos_aredl) changes.push(`AREDL: ${old.pos_aredl} → ${item.pos_aredl}`);
-  const desc = changes.length ? `${item.lvl_name} (${listType} List) atualizado: ${changes.join(', ')}` : `${item.lvl_name} (${listType} List) editado (sem mudanças detectadas)`;
-  appendChangelog(desc);
-  const ok2 = gitCommitAndPush([file, 'CHANGELOGS.md', 'README.md'], `Atualizado: ${desc}`);
-  console.log(ok2 ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
-}
-
-// ===== PROMOVER DA LEGACY =====
-async function promoteFromLegacy() {
-  console.log('\n⬆️  PROMOVER DA LEGACY LIST:');
-  const legacyData = load(LEGACY_LIST_FILE);
-  
-  if (legacyData.length === 0) {
-    console.log('❌ Legacy List está vazia.\n');
+  if (!level) {
+    console.log('❌ Nível não encontrado.\n');
     return;
   }
   
-  legacyData.slice(0, 10).forEach((l, i) => console.log(`  ${i + 151}. ${l.lvl_name}`));
-  if (legacyData.length > 10) console.log(`  ... (total: ${legacyData.length})`);
+  const beforeTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
+  const name = level.lvl_name;
   
-  const name = await ask('\nNome do nível: ');
-  if (!name) { console.log('❌ Cancelado.\n'); return; }
+  // Remover da lista
+  const idx = lists[list].indexOf(level);
+  lists[list].splice(idx, 1);
   
-  const level = moveFromLegacy(name);
-  if (!level) return;
-  
-  const pos = await ask('Posição na Main List: ');
-  const mainData = load(MAIN_LIST_FILE);
-  const idx = pos ? Math.max(0, Math.min(parseInt(pos) - 1, mainData.length)) : mainData.length;
-  
+  // Preencher espaços vazios (promoções)
   const date = nowDate();
-  const above = idx > 0 ? mainData[idx - 1].lvl_name : null;
-  const below = idx < mainData.length ? mainData[idx].lvl_name : null;
+  const promotions = [];
   
-  // Inserir na Main List
-  mainData.splice(idx, 0, level);
-  
-  // Atualizar histórico do nível promovido
-  ensurePosHistory(level);
-  let promoteDesc = `Promoted to Main List at position ${idx + 1}`;
-  if (above || below) {
-    const parts = [];
-    if (above) parts.push(`below ${above}`);
-    if (below) parts.push(`above ${below}`);
-    promoteDesc += `, ${parts.join(' and ')}`;
-  }
-  level.pos_history.push({ log1: `${date} - ${promoteDesc}` });
-  
-  // Atualizar histórico dos níveis da Main que foram empurrados para baixo
-  for (let i = idx + 1; i < mainData.length; i++) {
-    ensurePosHistory(mainData[i]);
-    mainData[i].pos_history.push({ log1: `${date} - ${name} was promoted from Legacy above (-1)` });
+  // Extended → Main
+  if (lists.extended.length > 0 && lists.main.length < LIMITS.MAIN_MAX) {
+    const promoted = lists.extended.shift();
+    lists.main.push(promoted);
+    ensurePosHistory(promoted);
+    promoted.pos_history.push({ 
+      log1: `${date} - Promoted to Main List at position ${lists.main.length} (was Extended #${LIMITS.MAIN_MAX + 1})` 
+    });
+    promotions.push(`${promoted.lvl_name} promovido de Extended para Main (#${lists.main.length})`);
   }
   
-  save(MAIN_LIST_FILE, mainData);
-  
-  // Verificar se algum nível cai para Legacy
-  const movedToLegacy = checkAndMoveToLegacy();
-  
-  console.log(`\n✅ "${name}" promovido da Legacy para posição #${idx + 1}!`);
-  console.log(`📝 Histórico atualizado.\n`);
-  
-  let desc = `${name} foi promovido da Legacy List para Main List posição #${idx + 1}`;
-  if (above || below) {
-    const parts = [];
-    if (above) parts.push(`abaixo de ${above}`);
-    if (below) parts.push(`acima de ${below}`);
-    desc += ', ' + parts.join(' e ');
+  // Legacy → Extended
+  if (lists.legacy.length > 0 && lists.extended.length < (LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX)) {
+    const promoted = lists.legacy.shift();
+    lists.extended.push(promoted);
+    promotions.push(`${promoted.lvl_name} promovido de Legacy para Extended (#${LIMITS.MAIN_MAX + lists.extended.length})`);
   }
-  if (movedToLegacy.length) {
-    desc += `, fazendo com que ${movedToLegacy.join(', ')} caia(m) para a Legacy List`;
+  
+  saveAll(lists);
+  
+  console.log(`✅ "${name}" deletado de #${globalPos} (${list.toUpperCase()})!\n`);
+  if (promotions.length > 0) {
+    console.log('📋 Promoções automáticas:');
+    promotions.forEach(p => console.log(`  • ${p}`));
+    console.log('');
   }
+  
+  // Changelog
+  const afterTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
+  const addedToTop = afterTop.filter(n => !beforeTop.includes(n));
+  
+  let desc = `${name} removido de #${globalPos} (${list.toUpperCase()})`;
+  if (addedToTop.length) desc += `, ${addedToTop.join(', ')} promovido(s) para Main`;
+  if (promotions.length > 0) desc += `. ${promotions.join('; ')}`;
   
   appendChangelog(desc);
-  const ok = gitCommitAndPush([MAIN_LIST_FILE, LEGACY_LIST_FILE, 'CHANGELOGS.md', 'README.md'], `Promovido: ${desc}`);
-  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
+  const ok = gitCommitAndPush([FILES.MAIN, FILES.EXTENDED, FILES.LEGACY, 'CHANGELOGS.md', 'README.md'], `Removido: ${desc}`);
+  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
 }
 
-// ===== MENU PRINCIPAL =====
+// ===== EDITAR =====
+async function update() {
+  console.log('\n✏️  EDITAR:');
+  
+  const lists = loadAll();
+  
+  console.log('\nPrimeiros 10 da Main:');
+  lists.main.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
+  console.log('');
+  
+  const input = await ask('\nNome do nível ou posição global: ');
+  if (!input) { console.log('❌ Cancelado.\n'); return; }
+  
+  // Buscar nível
+  let level;
+  if (isNaN(input)) {
+    level = lists.main.find(l => l.lvl_name.toLowerCase() === input.toLowerCase()) ||
+            lists.extended.find(l => l.lvl_name.toLowerCase() === input.toLowerCase()) ||
+            lists.legacy.find(l => l.lvl_name.toLowerCase() === input.toLowerCase());
+  } else {
+    const pos = parseInt(input);
+    if (pos <= LIMITS.MAIN_MAX) {
+      level = lists.main[pos - 1];
+    } else if (pos <= LIMITS.EXTENDED_MAX) {
+      level = lists.extended[pos - LIMITS.MAIN_MAX - 1];
+    } else {
+      level = lists.legacy[pos - LIMITS.EXTENDED_MAX - 1];
+    }
+  }
+  
+  if (!level) {
+    console.log('❌ Nível não encontrado.\n');
+    return;
+  }
+  
+  console.log(`\nEditando: ${level.lvl_name}`);
+  
+  const old = {
+    lvl_creator: level.lvl_creator,
+    video_url: level.video_url,
+    diff_rank: level.diff_rank,
+    diff_scale: level.diff_scale,
+    pos_aredl: level.pos_aredl
+  };
+
+  const creator = await ask(`Criador [${level.lvl_creator}]: `) || level.lvl_creator;
+  const url = await ask(`URL [${level.video_url}]: `) || level.video_url;
+  const rank = await ask(`Rank [${level.diff_rank}]: `) || level.diff_rank;
+  const scale = await ask(`Scale [${level.diff_scale}]: `) || level.diff_scale;
+  const aredl = await ask(`AREDL [${level.pos_aredl || '-'}]: `);
+
+  level.lvl_creator = creator;
+  level.video_url = url;
+  level.diff_rank = rank;
+  level.diff_scale = scale;
+  if (aredl) level.pos_aredl = parseInt(aredl, 10);
+  
+  saveAll(lists);
+  console.log(`✅ Atualizado!\n`);
+  
+  const changes = [];
+  if (old.lvl_creator !== level.lvl_creator) changes.push(`criador: ${old.lvl_creator} → ${level.lvl_creator}`);
+  if (old.video_url !== level.video_url) changes.push(`URL`);
+  if (old.diff_rank !== level.diff_rank) changes.push(`rank: ${old.diff_rank} → ${level.diff_rank}`);
+  if (old.diff_scale !== level.diff_scale) changes.push(`scale: ${old.diff_scale} → ${level.diff_scale}`);
+  if (old.pos_aredl !== level.pos_aredl) changes.push(`AREDL: ${old.pos_aredl} → ${level.pos_aredl}`);
+  
+  const name = level.lvl_name || '(sem nome)';
+  const desc = changes.length ? `${name} atualizado: ${changes.join(', ')}` : `${name} editado (sem mudanças)`;
+  
+  appendChangelog(desc);
+  const ok = gitCommitAndPush([FILES.MAIN, FILES.EXTENDED, FILES.LEGACY, 'CHANGELOGS.md', 'README.md'], `Atualizado: ${desc}`);
+  console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
+}
+
+// ==========================
+// MENU PRINCIPAL
+// ==========================
 async function menu() {
   console.clear();
   console.log('╔═══════════════════════════════════════════╗');
   console.log('║  GERENCIADOR DE NÍVEIS - ELFETOR v3.0    ║');
-  console.log('║  Com Suporte à Legacy List                ║');
+  console.log('║  Sistema Integrado de 3 Listas           ║');
+  console.log('║  Main (1-75) → Extended (76-150)         ║');
+  console.log('║  → Legacy (151+)                         ║');
   console.log('╚═══════════════════════════════════════════╝\n');
-  
-  let file = '';
-  while (!file) {
-    const choice = await ask('Escolha lista:\n1. MAIN\n2. EXTENDED\n3. LEGACY\n> ');
-    file = choice === '1' ? MAIN_LIST_FILE : 
-           choice === '2' ? EXTENDED_LIST_FILE : 
-           choice === '3' ? LEGACY_LIST_FILE : '';
-    if (!file) console.log('❌ Inválido.\n');
-    else console.clear();
-  }
   
   let running = true;
   while (running) {
-    const listType = file === MAIN_LIST_FILE ? 'MAIN' : 
-                     file === EXTENDED_LIST_FILE ? 'EXTENDED' : 'LEGACY';
-    
     console.log('╔═══════════════════════════════════╗');
-    console.log(`║    ${listType} LIST - O QUE FAZER?    `.padEnd(36) + '║');
+    console.log('║        O QUE FAZER?               ║');
     console.log('╚═══════════════════════════════════╝\n');
-    console.log('1. 📋 Listar');
-    console.log('2. 🔍 Buscar');
-    console.log('3. ➕ Adicionar');
-    console.log('4. ✏️  Editar');
-    console.log('5. 🗑️  Deletar');
-    console.log('6. ➡️  Mover');
-    
-    if (file === MAIN_LIST_FILE) {
-      console.log('\n📦 Comandos Legacy:');
-      console.log('7. Ver Legacy List');
-      console.log('8. ⬆️  Promover da Legacy');
-    }
-    
-    console.log('\n9. 🔄 Trocar lista');
-    console.log('0. ❌ Sair\n');
+    console.log('1. 📋 Listar todas as listas');
+    console.log('2. 🔍 Buscar em todas as listas');
+    console.log('3. ➕ Adicionar nível (com transições automáticas)');
+    console.log('4. ✏️  Editar nível');
+    console.log('5. 🗑️  Deletar nível (com promoções automáticas)');
+    console.log('6. ➡️  Mover nível (com transições automáticas)');
+    console.log('0. Sair\n');
     
     const choice = await ask('> ');
     
     switch (choice) {
-      case '1': await list(file); break;
-      case '2': await search(file); break;
-      case '3': await addWithHistory(file); break;
-      case '4': await update(file); break;
-      case '5': await deleteLevel(file); break;
-      case '6': await moveWithHistory(file); break;
-      case '7':
-        if (file === MAIN_LIST_FILE) {
-          await list(LEGACY_LIST_FILE);
-        } else {
-          console.log('❌ Opção inválida.\n');
-        }
+      case '1': 
+        await list(); 
         break;
-      case '8':
-        if (file === MAIN_LIST_FILE) {
-          await promoteFromLegacy();
-        } else {
-          console.log('❌ Opção inválida.\n');
-        }
+      case '2': 
+        await search(); 
         break;
-      case '9':
-        file = '';
-        while (!file) {
-          const c = await ask('1. MAIN\n2. EXTENDED\n3. LEGACY\n> ');
-          file = c === '1' ? MAIN_LIST_FILE : 
-                 c === '2' ? EXTENDED_LIST_FILE : 
-                 c === '3' ? LEGACY_LIST_FILE : '';
-        }
-        console.clear();
+      case '3':
+        console.log('\nOnde adicionar?');
+        console.log('1. Main List (1-75)');
+        console.log('2. Extended List (76-150)');
+        console.log('3. Legacy List (151+)');
+        const addChoice = await ask('> ');
+        const addFile = addChoice === '1' ? FILES.MAIN : 
+                       addChoice === '2' ? FILES.EXTENDED : 
+                       addChoice === '3' ? FILES.LEGACY : null;
+        if (addFile) await addWithHistory(addFile);
+        else console.log('❌ Escolha inválida.\n');
+        break;
+      case '4': 
+        await update(); 
+        break;
+      case '5': 
+        await deleteLevel(); 
+        break;
+      case '6': 
+        await moveWithHistory(); 
         break;
       case '0':
         running = false;
