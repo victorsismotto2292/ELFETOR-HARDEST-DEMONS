@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:29:00 — teste removido de #20 (MAIN), Blast Furnace promovido(s) para Main. Blast Furnace promovido de Extended para Main (#75); speequ promovido de Legacy para Extended (#150)
+- 09/01/2026, 18:29:14 — Windy Landscape foi movido de #73 (MAIN) para #75 (MAIN)
 <!--LATEST-CHANGES-END-->
+
 
 
 

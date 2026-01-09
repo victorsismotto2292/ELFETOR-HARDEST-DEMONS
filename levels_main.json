@@ -6379,19 +6379,6 @@
   },
   {
     "video_url": "https://www.youtube.com/watch?v=LINK_CHROMA",
-    "lvl_name": "Windy Landscape",
-    "lvl_creator": "WOOGI1411",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": 9.5,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Moved to position 74 (+2), below Joyride and above Buh"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=LINK_CHROMA",
     "lvl_name": "Buh",
     "lvl_creator": "MazZedy",
     "pos_aredl": "",
@@ -6643,6 +6630,9 @@
       },
       {
         "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Windy Landscape was moved below (+1)"
       }
     ]
   },
@@ -6656,6 +6646,25 @@
     "pos_history": [
       {
         "log1": "09/01/26 - Promoted to Main List at position 75 (was Extended #76)"
+      },
+      {
+        "log1": "09/01/26 - Windy Landscape was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=LINK_CHROMA",
+    "lvl_name": "Windy Landscape",
+    "lvl_creator": "WOOGI1411",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": 9.5,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Moved to position 74 (+2), below Joyride and above Buh"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 75 (-2), below Blast Furnace"
       }
     ]
   }
