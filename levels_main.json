@@ -1143,25 +1143,6 @@
     ]
   },
   {
-    "lvl_name": "Thanatophobia",
-    "lvl_creator": "ARtu",
-    "video_url": "https://youtu.be/jWLbdP7r5oU?si=ZOrh-o9s6A9Iw0y9",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "10",
-    "pos_aredl": 50,
-    "pos_history": [
-      {
-        "log1": "03/01/26 - Added to the list at position 25, below Hateflayer and above Dysphoria"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://www.youtube.com/watch?v=LINK_DYSPHORIA",
     "lvl_name": "Dysphoria",
     "lvl_creator": "IceboxOG",
@@ -6665,6 +6646,22 @@
       },
       {
         "log1": "09/01/26 - Moved to position 75 (-2), below Blast Furnace"
+      }
+    ]
+  },
+  {
+    "lvl_name": "TENDO",
+    "lvl_creator": "gradientxd",
+    "video_url": "https://www.youtube.com/watch?v=H0dmFLZkxO0",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "9.5",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Promoted to Main List at position 75 (was Extended #76)"
       }
     ]
   }

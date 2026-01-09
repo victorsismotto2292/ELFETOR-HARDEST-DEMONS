@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:36:52 — PPPPPPPPPPPPPPPPIXEL atualizado: URL
+- 09/01/2026, 18:41:55 — Thanatophobia removido de #25 (MAIN), TENDO promovido(s) para Main. TENDO promovido de Extended para Main (#75); Nebulous Journey promovido de Legacy para Extended (#150)
 <!--LATEST-CHANGES-END-->
+
 
 
 
