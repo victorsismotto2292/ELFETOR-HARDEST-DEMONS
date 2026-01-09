@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:44:20 — Leyak (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:45:42 — The Bandere (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 205
 <!--LATEST-CHANGES-END-->
+
 
 
 
