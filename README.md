@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:55:57 — Arcane (MAIN List) atualizado: scale: 178 → 17
+- 09/01/2026, 15:57:57 — Acrise (MAIN List) atualizado: URL, scale: 10 → 16
 <!--LATEST-CHANGES-END-->
+
 
 
 

@@ -96,3 +96,4 @@
 - 09/01/2026, 15:54:32 - CHROMA (MAIN List) atualizado: URL, scale: 10 → 16
 - 09/01/2026, 15:55:49 - Arcane (MAIN List) atualizado: URL, scale: 10 → 178
 - 09/01/2026, 15:55:57 - Arcane (MAIN List) atualizado: scale: 178 → 17
+- 09/01/2026, 15:57:57 - Acrise (MAIN List) atualizado: URL, scale: 10 → 16
