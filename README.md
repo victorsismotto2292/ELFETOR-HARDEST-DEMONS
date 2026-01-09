@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 19:06:29 — Stalemate atualizado: URL, scale: 9.5 → 15
+- 09/01/2026, 19:06:56 — Explorers atualizado: URL
 <!--LATEST-CHANGES-END-->
+
 
 
 
