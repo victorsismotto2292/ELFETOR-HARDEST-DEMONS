@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:11:51 — Bicromatic foi removido da MAIN List (posição #60)
+- 09/01/2026, 18:12:48 — Bichromatic foi adicionado na MAIN List posição #60, abaixo de Quantum Force e acima de Pyromaniac
 <!--LATEST-CHANGES-END-->
+
 
 
 
