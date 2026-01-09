@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:47:04 — Necropolis (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:48:55 — Elements X (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 240
 <!--LATEST-CHANGES-END-->
+
 
 
 

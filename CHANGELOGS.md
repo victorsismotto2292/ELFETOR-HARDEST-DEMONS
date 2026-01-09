@@ -88,3 +88,4 @@
 - 09/01/2026, 15:44:20 - Leyak (MAIN List) atualizado: URL, scale: 10 → 18
 - 09/01/2026, 15:45:42 - The Bandere (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 205
 - 09/01/2026, 15:47:04 - Necropolis (MAIN List) atualizado: URL, scale: 10 → 18
+- 09/01/2026, 15:48:55 - Elements X (MAIN List) atualizado: URL, scale: 10 → 18, AREDL: 200 → 240
