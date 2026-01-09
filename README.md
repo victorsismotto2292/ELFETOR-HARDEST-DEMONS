@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 19:06:56 — Explorers atualizado: URL
+- 09/01/2026, 19:07:13 — Explorers atualizado: scale: 9.5 → 15
 <!--LATEST-CHANGES-END-->
+
 
 
 
