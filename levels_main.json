@@ -1187,79 +1187,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/UHfzgOaLRs8?si=7mV3qWSVCbCGmSnn",
-    "lvl_name": "PPPPPPPPPPPPPPPPIXEL",
-    "lvl_creator": "Renn241",
-    "pos_aredl": 80,
-    "diff_rank": "Insane Demon",
-    "diff_scale": "20",
-    "pos_history": [
-      {
-        "log1": "19/11/24 - Added to the list at position 10"
-      },
-      {
-        "log1": "29/11/24 - Precipitance was added above (Fell out of the top 10) (-1)"
-      },
-      {
-        "log1": "13/12/24 - Bloodbath was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Stellaluna was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Azurite was added above (-1)"
-      },
-      {
-        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
-      },
-      {
-        "log1": "19/05/25 - Manic Machine was added above (Fell out of the top 15) (-1)"
-      },
-      {
-        "log1": "24/07/25 - Destination 19 was added above (-1)"
-      },
-      {
-        "log1": "18/08/25 - The Flawless was added above (-1)"
-      },
-      {
-        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
-      },
-      {
-        "log1": "23/09/25 - Reflective was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Reverence was added above (Fell out of the top 20) (-1)"
-      },
-      {
-        "log1": "06/10/25 - Broken Signal was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - The Lost Existence was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - Dysphoria was added above (-1)"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/A3vk3aWIWbE?si=1zvZZBmCptUE1dkf",
     "lvl_name": "Zaphes Back Yard",
     "lvl_creator": "Zacanii",
@@ -6809,6 +6736,19 @@
       },
       {
         "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "TENDO",
+    "lvl_creator": "gradientxd",
+    "video_url": "https://www.youtube.com/watch?v=H0dmFLZkxO0",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "9.5",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Promoted to Main List at position 75 (was Extended #76)"
       }
     ]
   }
