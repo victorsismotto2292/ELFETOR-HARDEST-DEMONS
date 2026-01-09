@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:08:30 — Lmao (MAIN List) atualizado: URL, scale: 10 → 16
+- 09/01/2026, 18:09:04 — Lit Fuse (MAIN List) atualizado: URL, scale: 10 → 17
 <!--LATEST-CHANGES-END-->
+
 
 
 
