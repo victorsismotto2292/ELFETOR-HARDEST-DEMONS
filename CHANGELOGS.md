@@ -54,3 +54,4 @@
 - 08/01/2026, 21:37:22 - Z foi promovido da Legacy List para posição 76
 - 08/01/2026, 21:38:34 - Z foi removido da posição 76
 - 08/01/2026, 21:39:09 - Z foi adicionado na LEGACY List posição #159
+- 09/01/2026, 11:18:53 - Z foi promovido da Legacy List para Main List posição #76, abaixo de Windy Landscape

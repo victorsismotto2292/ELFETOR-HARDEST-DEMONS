@@ -6742,5 +6742,21 @@
         "log1": "03/01/26 - Thanatophobia was added above (-1)"
       }
     ]
+  },
+  {
+    "lvl_name": "Z",
+    "lvl_creator": "Zyzyx",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Promoted from Legacy List to Main List"
+      },
+      {
+        "log1": "09/01/26 - Promoted to Main List at position 76, below Windy Landscape"
+      }
+    ]
   }
 ]
