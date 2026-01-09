@@ -62,5 +62,18 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": 9
+  },
+  {
+    "lvl_name": "Z",
+    "lvl_creator": "Zyzyx",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
+      }
+    ]
   }
 ]

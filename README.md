@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 11:20:19 — Z foi removido da MAIN List (posição #76)
+- 09/01/2026, 11:20:41 — Z foi adicionado na LEGACY List posição #159, abaixo de Reanimation
 <!--LATEST-CHANGES-END-->
+
 
 
 
