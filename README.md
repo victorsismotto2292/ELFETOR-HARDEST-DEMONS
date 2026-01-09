@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 18:27:20 — teste foi adicionado na posição 20 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Dont Simp caiu da Extended (#151) para Legacy (#151)
+- 09/01/2026, 18:27:46 — Dont Simp foi movido de #151 (LEGACY) para #149 (EXTENDED). speequ caiu da Extended (#151) para Legacy (#151)
 <!--LATEST-CHANGES-END-->
+
 
 
 
