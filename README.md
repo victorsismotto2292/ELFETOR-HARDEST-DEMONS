@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 09/01/2026, 15:31:50 — CMYK (MAIN List) atualizado: URL, scale: 10 → 20, AREDL: 140 → 145
+- 09/01/2026, 15:33:27 — Mind Crusher (MAIN List) atualizado: URL, scale: 10 → 19
 <!--LATEST-CHANGES-END-->
+
 
 
 

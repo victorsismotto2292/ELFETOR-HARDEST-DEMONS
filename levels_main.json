@@ -1553,12 +1553,12 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=LINK_MIND_CRUSHER",
+    "video_url": "https://youtu.be/hw0uWQrIan0?si=4lQofCIGZ08Jiz2z",
     "lvl_name": "Mind Crusher",
     "lvl_creator": "ThatJack",
     "pos_aredl": 150,
     "diff_rank": "Insane Demon",
-    "diff_scale": 10,
+    "diff_scale": "19",
     "pos_history": [
       {
         "log1": "06/10/24 - Added to the list at position 11"
