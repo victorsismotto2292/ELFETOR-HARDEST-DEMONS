@@ -1,18 +1,5 @@
 [
   {
-    "lvl_name": "teste",
-    "lvl_creator": "testiuum",
-    "video_url": "",
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "25",
-    "pos_aredl": 600,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Added to the list at position 1, above Bloodbath"
-      }
-    ]
-  },
-  {
     "video_url": "https://www.youtube.com/watch?v=j_svLT9ZXZA",
     "lvl_name": "Bloodbath",
     "lvl_creator": "Riot",
@@ -7106,6 +7093,19 @@
       },
       {
         "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://youtu.be/kc0xOXNnpbE?si=3QxlAHm4l-J5tz3_",
+    "lvl_name": "Windy Landscape",
+    "lvl_creator": "WOOGI1411",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15",
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Promoted to Main List at position 75 (was Extended #76)"
       }
     ]
   }
