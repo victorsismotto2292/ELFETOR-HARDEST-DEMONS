@@ -218,3 +218,4 @@
 - 10/01/2026, 12:55:55 - SaDrop foi adicionado na posição 235 (LEGACY)
 - 10/01/2026, 12:56:10 - DeaDrop foi adicionado na posição 236 (LEGACY)
 - 10/01/2026, 12:56:25 - THE HILLS HAVE EYES foi adicionado na posição 237 (LEGACY)
+- 10/01/2026, 12:56:36 - THE HILLS HAVE EYES atualizado: criador: Overdefp → Overdefo

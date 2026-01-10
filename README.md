@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:56:25 — THE HILLS HAVE EYES foi adicionado na posição 237 (LEGACY)
+- 10/01/2026, 12:56:36 — THE HILLS HAVE EYES atualizado: criador: Overdefp → Overdefo
 <!--LATEST-CHANGES-END-->
+
 
 
 
