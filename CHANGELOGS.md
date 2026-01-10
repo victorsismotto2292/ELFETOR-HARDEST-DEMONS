@@ -145,3 +145,4 @@
 - 10/01/2026, 12:36:18 - factry foi adicionado na posição 168 (LEGACY)
 - 10/01/2026, 12:36:39 - Bloodshed foi adicionado na posição 169 (LEGACY)
 - 10/01/2026, 12:36:51 - Ascent foi adicionado na posição 170 (LEGACY)
+- 10/01/2026, 12:37:08 - Sakupen Egg foi adicionado na posição 171 (LEGACY)

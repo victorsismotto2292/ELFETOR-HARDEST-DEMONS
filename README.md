@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:36:51 — Ascent foi adicionado na posição 170 (LEGACY)
+- 10/01/2026, 12:37:08 — Sakupen Egg foi adicionado na posição 171 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
