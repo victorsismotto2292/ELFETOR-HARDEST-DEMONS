@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:06:57 — TOE II foi adicionado na posição 273 (LEGACY)
+- 10/01/2026, 13:07:14 — iS foi adicionado na posição 274 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
