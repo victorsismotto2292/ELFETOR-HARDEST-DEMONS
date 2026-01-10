@@ -94,6 +94,8 @@ function formatPositionHistory(posHistory) {
     return entries.join('');
 }
 
+// Esta versão usa um sistema de expansão próprio, sem depender do Bootstrap dropdown
+
 function CreateCardLevels_Main(level_main, index) {
     const position = index + 1;
     
@@ -104,24 +106,35 @@ function CreateCardLevels_Main(level_main, index) {
     
     const difficulty = `${level_main.diff_scale || ''}`;
     
-    // NEW UPDATE FUNCTION
-    const historyHtml = formatPositionHistory(level_main.pos_history);
-
-    let rankDisplay = "";
-    if (level_main.pos_aredl === "" || level_main.pos_aredl === 0 || level_main.pos_aredl === undefined) {
-        rankDisplay = `${level_main.diff_rank || ''}`;
+    // Formatar histórico de forma segura
+    let historyHtml = '';
+    if (level_main.pos_history && Array.isArray(level_main.pos_history) && level_main.pos_history.length > 0) {
+        historyHtml = level_main.pos_history.map((entry, idx) => {
+            const log = (entry.log1 || entry || 'Unknown entry')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+            
+            return `<div class="history-entry">
+                <span class="history-number">${idx + 1}.</span>
+                <span class="history-text">${log}</span>
+            </div>`;
+        }).join('');
     } else {
-        rankDisplay = `${level_main.diff_rank || ''}`;
+        historyHtml = '<div class="text-center text-muted py-3">No history available</div>';
     }
 
+    let rankDisplay = level_main.diff_rank || '';
     const safeName = (level_main.lvl_name || '').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     const safeCreator = (level_main.lvl_creator || '').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     const safeVideoUrl = level_main.video_url || '#';
 
-    // Unique ID for every dropdown
-    const dropdownId = `dropdown-main-${position}`;
+    // ID único para o accordion
+    const accordionId = `history-${position}`;
 
-    const baseCardHtml = `
+    const cardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
                 <div class="row g-0">
@@ -157,13 +170,15 @@ function CreateCardLevels_Main(level_main, index) {
                     </div>
                 </div>
                 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-expanded="false">
-                        📜 View Position History
+                <!-- Sistema de accordion customizado -->
+                <div class="history-accordion">
+                    <button class="history-toggle" onclick="toggleHistory('${accordionId}', this)" type="button">
+                        <span class="toggle-text">View Position History</span>
+                        <span class="toggle-arrow">▼</span>
                     </button>
-
-                    <div class="dropdown-menu dropdown-menu-history w-100" aria-labelledby="${dropdownId}">
-                        <div class="dropdown-history-content">
+                    
+                    <div class="history-content" id="${accordionId}" style="display: none;">
+                        <div class="history-list">
                             ${historyHtml}
                         </div>
                     </div>
@@ -172,7 +187,7 @@ function CreateCardLevels_Main(level_main, index) {
         </div>
     `;
 
-    return baseCardHtml;
+    return cardHtml;
 }
 
 function CreateCardLevels_Extended(level_extended, index) {
@@ -630,7 +645,7 @@ app.get("/home", (req, res) => {
 // LOADING LOCALHOST PORT
 // ==========================
 if (process.env.NODE_ENV !== "production") {
-  const PORT = 3000;
+  const PORT = 3010;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });
