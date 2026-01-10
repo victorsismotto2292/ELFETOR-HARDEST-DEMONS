@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:01:49 — Deadlocked foi adicionado na posição 257 (LEGACY)
+- 10/01/2026, 13:01:59 — OTIS foi adicionado na posição 258 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
