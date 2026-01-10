@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:54:30 — Demon Park atualizado: AREDL: 8 → NaN
+- 10/01/2026, 12:54:49 — Speed of Light foi adicionado na posição 231 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
