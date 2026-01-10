@@ -139,3 +139,4 @@
 - 10/01/2026, 12:34:23 - RIOT foi adicionado na posição 162 (LEGACY)
 - 10/01/2026, 12:34:41 - Tengu Wind foi adicionado na posição 163 (LEGACY)
 - 10/01/2026, 12:35:00 - Malware foi adicionado na posição 164 (LEGACY)
+- 10/01/2026, 12:35:24 - KrAzY MAcHine foi adicionado na posição 165 (LEGACY)
