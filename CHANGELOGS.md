@@ -155,3 +155,4 @@
 - 10/01/2026, 12:39:00 - Uranus Fantasy II foi adicionado na posição 178 (LEGACY)
 - 10/01/2026, 12:39:32 - The End of The World foi adicionado na posição 179 (LEGACY)
 - 10/01/2026, 12:39:47 - Demon Dawn foi adicionado na posição 180 (LEGACY)
+- 10/01/2026, 12:40:14 - Electrodynamix v2 foi adicionado na posição 181 (LEGACY)
