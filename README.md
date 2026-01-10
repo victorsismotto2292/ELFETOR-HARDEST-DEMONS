@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:50:18 — Traction atualizado: AREDL: 8 → NaN
+- 10/01/2026, 12:50:41 — BlooDrop foi adicionado na posição 212 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
