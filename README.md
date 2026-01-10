@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:47:03 — Lanthanium foi adicionado na posição 201 (LEGACY)
+- 10/01/2026, 12:47:23 — Bloudebafe foi adicionado na posição 202 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
