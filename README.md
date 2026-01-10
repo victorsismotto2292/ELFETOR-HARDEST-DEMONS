@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:50:53 — Outlive foi adicionado na posição 213 (LEGACY)
+- 10/01/2026, 12:51:06 — Tabasco foi adicionado na posição 214 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 

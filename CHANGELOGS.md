@@ -192,3 +192,4 @@
 - 10/01/2026, 12:50:18 - Traction atualizado: AREDL: 8 → NaN
 - 10/01/2026, 12:50:41 - BlooDrop foi adicionado na posição 212 (LEGACY)
 - 10/01/2026, 12:50:53 - Outlive foi adicionado na posição 213 (LEGACY)
+- 10/01/2026, 12:51:06 - Tabasco foi adicionado na posição 214 (LEGACY)
