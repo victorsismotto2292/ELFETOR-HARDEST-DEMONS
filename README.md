@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:50:11 — Traction foi adicionado na posição 211 (LEGACY)
+- 10/01/2026, 12:50:18 — Traction atualizado: AREDL: 8 → NaN
 <!--LATEST-CHANGES-END-->
+
 
 
 
