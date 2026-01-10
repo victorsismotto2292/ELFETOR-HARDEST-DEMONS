@@ -256,3 +256,4 @@
 - 10/01/2026, 13:05:52 - Speed Racer atualizado: scale:  → 6
 - 10/01/2026, 13:06:22 - Theory of Everything v2 foi adicionado na posição 271 (LEGACY)
 - 10/01/2026, 13:06:44 - Clutterfunk v2 foi adicionado na posição 272 (LEGACY)
+- 10/01/2026, 13:06:57 - TOE II foi adicionado na posição 273 (LEGACY)
