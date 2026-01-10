@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:34:41 — Tengu Wind foi adicionado na posição 163 (LEGACY)
+- 10/01/2026, 12:35:00 — Malware foi adicionado na posição 164 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
