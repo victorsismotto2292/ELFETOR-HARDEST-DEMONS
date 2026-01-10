@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:36:18 — factry foi adicionado na posição 168 (LEGACY)
+- 10/01/2026, 12:36:39 — Bloodshed foi adicionado na posição 169 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
