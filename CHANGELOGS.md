@@ -186,3 +186,4 @@
 - 10/01/2026, 12:49:04 - Spark foi adicionado na posição 208 (LEGACY)
 - 10/01/2026, 12:49:18 - wowzers holy foi adicionado na posição 209 (LEGACY)
 - 10/01/2026, 12:49:34 - Voyager foi adicionado na posição 210 (LEGACY)
+- 10/01/2026, 12:49:44 - Voyager atualizado: AREDL: 8 → NaN
