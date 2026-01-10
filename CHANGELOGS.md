@@ -132,3 +132,4 @@
 - 09/01/2026, 19:08:58 - Buh atualizado: URL, scale: 9.5 → 15
 - 09/01/2026, 19:09:50 - Blast Furnace atualizado: URL, scale: 9.5 → 15
 - 09/01/2026, 19:10:16 - Windy Landscape atualizado: URL, scale: 9.5 → 15
+- 09/01/2026, 23:53:36 - teste foi adicionado na posição 1 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Dont Simp caiu da Extended (#151) para Legacy (#151)
