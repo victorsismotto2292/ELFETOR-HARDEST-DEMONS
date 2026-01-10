@@ -197,3 +197,4 @@
 - 10/01/2026, 12:51:28 - X foi adicionado na posição 216 (LEGACY)
 - 10/01/2026, 12:51:38 - Broken Roulette foi adicionado na posição 217 (LEGACY)
 - 10/01/2026, 12:51:49 - SUPERCHARGE foi adicionado na posição 218 (LEGACY)
+- 10/01/2026, 12:52:05 - iSpyWithMylittleEye foi adicionado na posição 219 (LEGACY)
