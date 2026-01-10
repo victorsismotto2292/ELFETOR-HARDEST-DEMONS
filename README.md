@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:39:32 — The End of The World foi adicionado na posição 179 (LEGACY)
+- 10/01/2026, 12:39:47 — Demon Dawn foi adicionado na posição 180 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
