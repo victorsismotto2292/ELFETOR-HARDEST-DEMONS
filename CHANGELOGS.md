@@ -152,3 +152,4 @@
 - 10/01/2026, 12:38:11 - Forcedynamix foi adicionado na posição 175 (LEGACY)
 - 10/01/2026, 12:38:25 - The Adventure foi adicionado na posição 176 (LEGACY)
 - 10/01/2026, 12:38:42 - Fire Temple foi adicionado na posição 177 (LEGACY)
+- 10/01/2026, 12:39:00 - Uranus Fantasy II foi adicionado na posição 178 (LEGACY)
