@@ -158,3 +158,4 @@
 - 10/01/2026, 12:40:14 - Electrodynamix v2 foi adicionado na posição 181 (LEGACY)
 - 10/01/2026, 12:40:39 - Way of The Darkness foi adicionado na posição 182 (LEGACY)
 - 10/01/2026, 12:41:00 - Clubstep v2 foi adicionado na posição 183 (LEGACY)
+- 10/01/2026, 12:41:26 - NANDERTALE foi adicionado na posição 184 (LEGACY)

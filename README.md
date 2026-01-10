@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:41:00 — Clubstep v2 foi adicionado na posição 183 (LEGACY)
+- 10/01/2026, 12:41:26 — NANDERTALE foi adicionado na posição 184 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
