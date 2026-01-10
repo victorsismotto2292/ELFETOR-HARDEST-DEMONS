@@ -137,3 +137,4 @@
 - 10/01/2026, 12:31:50 - Chaoz Airflow foi adicionado na posição 160 (LEGACY)
 - 10/01/2026, 12:33:32 - Velocity II foi adicionado na posição 161 (LEGACY)
 - 10/01/2026, 12:34:23 - RIOT foi adicionado na posição 162 (LEGACY)
+- 10/01/2026, 12:34:41 - Tengu Wind foi adicionado na posição 163 (LEGACY)

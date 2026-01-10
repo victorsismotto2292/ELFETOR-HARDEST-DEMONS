@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:34:23 — RIOT foi adicionado na posição 162 (LEGACY)
+- 10/01/2026, 12:34:41 — Tengu Wind foi adicionado na posição 163 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
