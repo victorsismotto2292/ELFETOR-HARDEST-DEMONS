@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:56:36 — THE HILLS HAVE EYES atualizado: criador: Overdefp → Overdefo
+- 10/01/2026, 12:56:55 — WiiDrop foi adicionado na posição 238 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
