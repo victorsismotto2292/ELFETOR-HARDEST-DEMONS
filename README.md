@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:52:41 — Balut foi adicionado na posição 223 (LEGACY)
+- 10/01/2026, 12:52:55 — FOUR WHEEL DRIVE foi adicionado na posição 224 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
