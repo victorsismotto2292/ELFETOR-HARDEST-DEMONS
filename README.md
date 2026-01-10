@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:04:39 — Buried Angel foi adicionado na posição 267 (LEGACY)
+- 10/01/2026, 13:05:01 — neXus foi adicionado na posição 268 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
