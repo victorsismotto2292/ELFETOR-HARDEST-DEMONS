@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:44:11 — Nemesis foi adicionado na posição 192 (LEGACY)
+- 10/01/2026, 12:44:30 — Extinction foi adicionado na posição 193 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 

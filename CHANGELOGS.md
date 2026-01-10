@@ -167,3 +167,4 @@
 - 10/01/2026, 12:43:30 - Fast N Spicy foi adicionado na posição 190 (LEGACY)
 - 10/01/2026, 12:43:56 - Bloudeleute foi adicionado na posição 191 (LEGACY)
 - 10/01/2026, 12:44:11 - Nemesis foi adicionado na posição 192 (LEGACY)
+- 10/01/2026, 12:44:30 - Extinction foi adicionado na posição 193 (LEGACY)
