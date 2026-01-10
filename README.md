@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:42:34 — MORCE II foi adicionado na posição 187 (LEGACY)
+- 10/01/2026, 12:42:54 — Dark Hell foi adicionado na posição 188 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
