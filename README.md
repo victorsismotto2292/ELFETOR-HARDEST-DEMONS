@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:35:24 — KrAzY MAcHine foi adicionado na posição 165 (LEGACY)
+- 10/01/2026, 12:35:43 — Mechanical Showdown foi adicionado na posição 166 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
