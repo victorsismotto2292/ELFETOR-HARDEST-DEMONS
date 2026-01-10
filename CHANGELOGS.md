@@ -141,3 +141,4 @@
 - 10/01/2026, 12:35:00 - Malware foi adicionado na posição 164 (LEGACY)
 - 10/01/2026, 12:35:24 - KrAzY MAcHine foi adicionado na posição 165 (LEGACY)
 - 10/01/2026, 12:35:43 - Mechanical Showdown foi adicionado na posição 166 (LEGACY)
+- 10/01/2026, 12:36:02 - Speed of Light II foi adicionado na posição 167 (LEGACY)
