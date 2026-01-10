@@ -147,3 +147,4 @@
 - 10/01/2026, 12:36:51 - Ascent foi adicionado na posição 170 (LEGACY)
 - 10/01/2026, 12:37:08 - Sakupen Egg foi adicionado na posição 171 (LEGACY)
 - 10/01/2026, 12:37:24 - Ultra Violence foi adicionado na posição 172 (LEGACY)
+- 10/01/2026, 12:37:39 - Paracosm Circles foi adicionado na posição 173 (LEGACY)
