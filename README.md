@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:48:00 — Born Survivor foi adicionado na posição 204 (LEGACY)
+- 10/01/2026, 12:48:14 — Adust foi adicionado na posição 205 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
