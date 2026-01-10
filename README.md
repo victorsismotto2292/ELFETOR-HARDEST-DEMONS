@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:05:46 — Speed Racer foi adicionado na posição 270 (LEGACY)
+- 10/01/2026, 13:05:52 — Speed Racer atualizado: scale:  → 6
 <!--LATEST-CHANGES-END-->
+
 
 
 
