@@ -176,3 +176,4 @@
 - 10/01/2026, 12:46:14 - The Experiment foi adicionado na posição 198 (LEGACY)
 - 10/01/2026, 12:46:30 - Blast Processed foi adicionado na posição 199 (LEGACY)
 - 10/01/2026, 12:46:45 - Vibration foi adicionado na posição 200 (LEGACY)
+- 10/01/2026, 12:47:03 - Lanthanium foi adicionado na posição 201 (LEGACY)
