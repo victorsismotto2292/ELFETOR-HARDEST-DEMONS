@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:59:38 — Slap Squad II atualizado: AREDL: 8 → NaN
+- 10/01/2026, 12:59:50 — Outbreak foi adicionado na posição 248 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
