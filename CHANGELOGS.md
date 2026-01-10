@@ -261,3 +261,4 @@
 - 10/01/2026, 13:07:27 - Phjork foi adicionado na posição 275 (LEGACY)
 - 10/01/2026, 13:07:47 - Black Park foi adicionado na posição 276 (LEGACY)
 - 10/01/2026, 13:08:01 - Clubstep foi adicionado na posição 277 (LEGACY)
+- 10/01/2026, 13:08:19 - SpArta foi adicionado na posição 278 (LEGACY)

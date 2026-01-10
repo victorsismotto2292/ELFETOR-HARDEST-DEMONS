@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:08:01 — Clubstep foi adicionado na posição 277 (LEGACY)
+- 10/01/2026, 13:08:19 — SpArta foi adicionado na posição 278 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
