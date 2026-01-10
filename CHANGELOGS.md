@@ -136,3 +136,4 @@
 - 09/01/2026, 23:54:16 - teste removido de #1 (MAIN), Windy Landscape promovido(s) para Main. Windy Landscape promovido de Extended para Main (#75); Dont Simp promovido de Legacy para Extended (#150)
 - 10/01/2026, 12:31:50 - Chaoz Airflow foi adicionado na posição 160 (LEGACY)
 - 10/01/2026, 12:33:32 - Velocity II foi adicionado na posição 161 (LEGACY)
+- 10/01/2026, 12:34:23 - RIOT foi adicionado na posição 162 (LEGACY)
