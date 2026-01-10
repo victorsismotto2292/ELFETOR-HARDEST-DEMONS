@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:54:23 — Demon Park foi adicionado na posição 230 (LEGACY)
+- 10/01/2026, 12:54:30 — Demon Park atualizado: AREDL: 8 → NaN
 <!--LATEST-CHANGES-END-->
+
 
 
 
