@@ -134,3 +134,4 @@
 - 09/01/2026, 19:10:16 - Windy Landscape atualizado: URL, scale: 9.5 → 15
 - 09/01/2026, 23:53:36 - teste foi adicionado na posição 1 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Dont Simp caiu da Extended (#151) para Legacy (#151)
 - 09/01/2026, 23:54:16 - teste removido de #1 (MAIN), Windy Landscape promovido(s) para Main. Windy Landscape promovido de Extended para Main (#75); Dont Simp promovido de Legacy para Extended (#150)
+- 10/01/2026, 12:31:50 - Chaoz Airflow foi adicionado na posição 160 (LEGACY)

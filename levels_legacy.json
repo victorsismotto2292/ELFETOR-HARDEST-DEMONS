@@ -145,5 +145,13 @@
         "log1": "09/01/26 - Moved to position 9 (-8), below Reanimation"
       }
     ]
+  },
+  {
+    "lvl_name": "Chaoz Airflow",
+    "lvl_creator": "Sumsar",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
   }
 ]
