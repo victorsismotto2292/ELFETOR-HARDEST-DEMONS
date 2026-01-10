@@ -228,3 +228,4 @@
 - 10/01/2026, 12:58:14 - The Fairydust foi adicionado na posição 244 (LEGACY)
 - 10/01/2026, 12:58:30 - To the moon foi adicionado na posição 245 (LEGACY)
 - 10/01/2026, 12:59:15 - Insomnia foi adicionado na posição 246 (LEGACY)
+- 10/01/2026, 12:59:30 - Slap Squad II foi adicionado na posição 247 (LEGACY)

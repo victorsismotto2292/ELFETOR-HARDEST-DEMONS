@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:59:15 — Insomnia foi adicionado na posição 246 (LEGACY)
+- 10/01/2026, 12:59:30 — Slap Squad II foi adicionado na posição 247 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
