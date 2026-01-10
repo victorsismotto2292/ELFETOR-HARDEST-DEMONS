@@ -172,3 +172,4 @@
 - 10/01/2026, 12:45:10 - ZXCircleS foi adicionado na posição 195 (LEGACY)
 - 10/01/2026, 12:45:24 - ZXCircleS atualizado: rank: 8 → Easy Demon, scale:  → 8
 - 10/01/2026, 12:45:42 - Sidestep foi adicionado na posição 196 (LEGACY)
+- 10/01/2026, 12:45:57 - PERIHELION foi adicionado na posição 197 (LEGACY)
