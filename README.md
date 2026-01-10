@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 12:44:30 — Extinction foi adicionado na posição 193 (LEGACY)
+- 10/01/2026, 12:44:46 — 	DeCode foi adicionado na posição 194 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
