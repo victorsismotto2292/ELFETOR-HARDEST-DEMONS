@@ -254,3 +254,4 @@
 - 10/01/2026, 13:05:18 - Deadly Games foi adicionado na posição 269 (LEGACY)
 - 10/01/2026, 13:05:46 - Speed Racer foi adicionado na posição 270 (LEGACY)
 - 10/01/2026, 13:05:52 - Speed Racer atualizado: scale:  → 6
+- 10/01/2026, 13:06:22 - Theory of Everything v2 foi adicionado na posição 271 (LEGACY)

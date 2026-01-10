@@ -3,8 +3,9 @@
 <!--LATEST-CHANGES-START-->
 ## Últimas alterações
 
-- 10/01/2026, 13:05:52 — Speed Racer atualizado: scale:  → 6
+- 10/01/2026, 13:06:22 — Theory of Everything v2 foi adicionado na posição 271 (LEGACY)
 <!--LATEST-CHANGES-END-->
+
 
 
 
