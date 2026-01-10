@@ -181,3 +181,4 @@
 - 10/01/2026, 12:47:41 - Another Easy Demon foi adicionado na posição 203 (LEGACY)
 - 10/01/2026, 12:48:00 - Born Survivor foi adicionado na posição 204 (LEGACY)
 - 10/01/2026, 12:48:14 - Adust foi adicionado na posição 205 (LEGACY)
+- 10/01/2026, 12:48:42 - Afterthought foi adicionado na posição 206 (LEGACY)
