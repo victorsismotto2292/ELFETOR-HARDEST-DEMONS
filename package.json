@@ -1,0 +1,14 @@
+{
+  "name": "elfetor-hardest-demons",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "levels": "node scripts/cli.cjs",
+    "manage": "node scripts/cli.cjs"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}

@@ -1,0 +1,1189 @@
+[
+  {
+    "video_url": "",
+    "lvl_name": "Nebulous Journey",
+    "lvl_creator": "CorroX",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Gold Temple",
+    "lvl_creator": "Serponge",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "ZO",
+    "lvl_creator": "KasVA",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Boss 3 Electro",
+    "lvl_creator": "XenderGame",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Boss V Devourers",
+    "lvl_creator": "Xender Game",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Shrill Hallway",
+    "lvl_creator": "Nico99",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Solar Circles",
+    "lvl_creator": "D4rkGryf",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "",
+    "lvl_name": "Reanimation",
+    "lvl_creator": "Terron",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": 9,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Z was moved above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Z was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Z",
+    "lvl_creator": "Zyzyx",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 1 (+8), above Nebulous Journey"
+      },
+      {
+        "log1": "09/01/26 - Moved to position 9 (-8), below Reanimation"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Chaoz Airflow",
+    "lvl_creator": "Sumsar",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Velocity II",
+    "lvl_creator": "jacr360",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "RIOT",
+    "lvl_creator": "cometface",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Tengu Wind",
+    "lvl_creator": "Shemo",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Malware",
+    "lvl_creator": "MrLorenzo",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "KrAzY MAcHine",
+    "lvl_creator": "F3lixram",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Mechanical Showdown",
+    "lvl_creator": "Tongii",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Speed of Light II",
+    "lvl_creator": "TheRealSalad",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "factry",
+    "lvl_creator": "Baltz",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Bloodshed",
+    "lvl_creator": "Chlorines",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Ascent",
+    "lvl_creator": "JustBasic",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Sakupen Egg",
+    "lvl_creator": "Sivlol",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Ultra Violence",
+    "lvl_creator": "XenderGame",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Paracosm Circles",
+    "lvl_creator": "N1X0",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Dungeon II",
+    "lvl_creator": "EthanMG",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Forcedynamix",
+    "lvl_creator": "Minesap",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Adventure",
+    "lvl_creator": "Superopi",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Fire Temple",
+    "lvl_creator": "Michigun",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Uranus Fantasy II",
+    "lvl_creator": "GuraNuS",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The End of The World",
+    "lvl_creator": "NukeNacho",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Demon Dawn",
+    "lvl_creator": "Experience D",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Electrodynamix v2",
+    "lvl_creator": "iiiNepTuneiii",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Way of The Darkness",
+    "lvl_creator": "iIiNepTunEiIi",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Clubstep v2",
+    "lvl_creator": "iIiNepTunEiIi",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "9",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "NANDERTALE",
+    "lvl_creator": "IM FERNANDO",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Utopia II",
+    "lvl_creator": "Leafparfait",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Running Le Beats",
+    "lvl_creator": "GDTicLos",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "MORCE II",
+    "lvl_creator": "ImSamo",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Dark Hell",
+    "lvl_creator": "LaZye",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "MLXmas",
+    "lvl_creator": "qjivxn",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8.5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Fast N Spicy",
+    "lvl_creator": "spark",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Bloudeleute",
+    "lvl_creator": "MrSpaghetti",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Nemesis",
+    "lvl_creator": "Florent",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Extinction",
+    "lvl_creator": "haoN",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "\tDeCode",
+    "lvl_creator": "Rek3dge",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "ZXCircleS",
+    "lvl_creator": "Wintter",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Sidestep",
+    "lvl_creator": "ChaSe",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "PERIHELION",
+    "lvl_creator": "krenogd",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Experiment",
+    "lvl_creator": "khelado",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Blast Processed",
+    "lvl_creator": "jirk",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Vibration",
+    "lvl_creator": "Schady",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Lanthanium",
+    "lvl_creator": "Fury0313",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Bloudebafe",
+    "lvl_creator": "MrSpaghetti",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Another Easy Demon",
+    "lvl_creator": "Danzmen",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Born Survivor",
+    "lvl_creator": "Spilnter25",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Adust",
+    "lvl_creator": "F3lixram",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Afterthought",
+    "lvl_creator": "Aerma",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Motion",
+    "lvl_creator": "Taman",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Spark",
+    "lvl_creator": "PotatoBaby",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "wowzers holy",
+    "lvl_creator": "lumpy",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Voyager",
+    "lvl_creator": "nasgubb",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": null
+  },
+  {
+    "lvl_name": "Traction",
+    "lvl_creator": "Ferdefunky",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": null
+  },
+  {
+    "lvl_name": "BlooDrop",
+    "lvl_creator": "DYSCO",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Outlive",
+    "lvl_creator": "DHaner",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Tabasco",
+    "lvl_creator": "Talia",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Absolute Garbage",
+    "lvl_creator": "bli",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "X",
+    "lvl_creator": "TriAxis",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Broken Roulette",
+    "lvl_creator": "NoFlix",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "SUPERCHARGE",
+    "lvl_creator": "Elvii",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "iSpyWithMylittleEye",
+    "lvl_creator": "Voxicat",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Erratic",
+    "lvl_creator": "Geox01",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Zircon",
+    "lvl_creator": "DHaner",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Beyond",
+    "lvl_creator": "Jirk",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Balut",
+    "lvl_creator": "Assing",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "FOUR WHEEL DRIVE",
+    "lvl_creator": "Split72",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Not My Style",
+    "lvl_creator": "dolphe",
+    "video_url": "",
+    "diff_rank": "Easy demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "WAREHOUSE",
+    "lvl_creator": "GDCreeper4",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Flower Crown",
+    "lvl_creator": "Split72",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Dimension Machine",
+    "lvl_creator": "PunkySoul",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Virtualization",
+    "lvl_creator": "Splinter25",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Demon Park",
+    "lvl_creator": "M2coL",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": null
+  },
+  {
+    "lvl_name": "Speed of Light",
+    "lvl_creator": "TheRealSalad",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Chaoz Impact",
+    "lvl_creator": "TheRealDarnoc",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Electro House",
+    "lvl_creator": "Danolex",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Catch the Rainbow",
+    "lvl_creator": "Syberianmp3",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "SaDrop",
+    "lvl_creator": "DYSCO",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "DeaDrop",
+    "lvl_creator": "DYSCO",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "THE HILLS HAVE EYES",
+    "lvl_creator": "Overdefo",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "WiiDrop",
+    "lvl_creator": "DYSCO",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Aurora Veil",
+    "lvl_creator": "Endoox",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Clubdrop",
+    "lvl_creator": "TheRealDarnoc",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Meow",
+    "lvl_creator": "BlowMyPooh",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "An",
+    "lvl_creator": "An Cyung",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Death Moon",
+    "lvl_creator": "Caustic",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Fairydust",
+    "lvl_creator": "Alkali",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "To the moon",
+    "lvl_creator": "soda2D",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Insomnia",
+    "lvl_creator": "Glittershroom",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Slap Squad II",
+    "lvl_creator": "Danzmen",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": null
+  },
+  {
+    "lvl_name": "Outbreak",
+    "lvl_creator": "SleyGD",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "FREEDOM",
+    "lvl_creator": "MrPPs",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "FranSum",
+    "lvl_creator": "Zerenity",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Problematic",
+    "lvl_creator": "DHafin",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Mirror Force",
+    "lvl_creator": "Dudex",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "8",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Impact X",
+    "lvl_creator": "NiTro451",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "7",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "STARPUNK",
+    "lvl_creator": "Ferdefunky",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "7",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Cobalt Ruins",
+    "lvl_creator": "Rexone",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "7",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "850",
+    "lvl_creator": "OzzeL2",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Deadlocked",
+    "lvl_creator": "RobTop",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "OTIS",
+    "lvl_creator": "Megaman9",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Aloe and Vera",
+    "lvl_creator": "DeniPol",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Neuron Connect",
+    "lvl_creator": "TrueNature",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Ultra Paracosm",
+    "lvl_creator": "iIiRulasiIi",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "yStep",
+    "lvl_creator": "TheRealDarnoc",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Lights and Thunder",
+    "lvl_creator": "Lyod",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "NothinG",
+    "lvl_creator": "iriswolfx",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Shiver",
+    "lvl_creator": "SpKale",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Invisible Clubstep",
+    "lvl_creator": "-",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Buried Angel",
+    "lvl_creator": "F3lixram",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "neXus",
+    "lvl_creator": "BlueRimz",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Deadly Games",
+    "lvl_creator": "Damianos Kabanos",
+    "video_url": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Speed Racer",
+    "lvl_creator": "ZenticAlpha",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Theory of Everything v2",
+    "lvl_creator": "iIiNePtunEiIi",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Clutterfunk v2",
+    "lvl_creator": "iIiNePtunEiIi",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "TOE II",
+    "lvl_creator": "RobTop",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "6",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "iS",
+    "lvl_creator": "Grenate",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Phjork",
+    "lvl_creator": "Cerufiffy",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Black Park",
+    "lvl_creator": "PSHyeok",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Clubstep",
+    "lvl_creator": "RobTop",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "SpArta",
+    "lvl_creator": "-",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Dorabaedifficult4",
+    "lvl_creator": "DORABAE",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Theory of Infinity",
+    "lvl_creator": "-",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Maximum Risk",
+    "lvl_creator": "FunnyGame",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Monster City",
+    "lvl_creator": "SilverSoul",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": null
+  },
+  {
+    "lvl_name": "Demon step",
+    "lvl_creator": "elemelon",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Darkstep",
+    "lvl_creator": "-",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Demon mixed",
+    "lvl_creator": "RealOggY",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Insane Club",
+    "lvl_creator": "-",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "5",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "Platinum Adventure",
+    "lvl_creator": "Jerry Bronze V",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "4",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Lightning Road",
+    "lvl_creator": "Timeless Real",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "4",
+    "pos_aredl": 0
+  },
+  {
+    "lvl_name": "The Nightmare",
+    "lvl_creator": "Jax",
+    "video_url": "",
+    "diff_rank": "Easy Demon",
+    "diff_scale": "4",
+    "pos_aredl": 0
+  }
+]
