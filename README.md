@@ -21,5 +21,3 @@ Este projeto está configurado para deploy automático no Vercel.
 ## Últimas alterações
 
 - 12/01/2026, 21:02:15 — SFW atualizado: URL, scale: 9.5 → 15
-
-
