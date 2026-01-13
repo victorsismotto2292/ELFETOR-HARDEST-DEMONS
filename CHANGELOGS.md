@@ -276,3 +276,21 @@
 - 10/01/2026, 13:25:49 - The Nightmare foi adicionado na posição 289 (LEGACY)
 - 10/01/2026, 23:14:31 - teste foi adicionado na posição 1 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Dont Simp caiu da Extended (#151) para Legacy (#151)
 - 10/01/2026, 23:15:06 - teste removido de #1 (MAIN), Windy Landscape promovido(s) para Main. Windy Landscape promovido de Extended para Main (#75); Dont Simp promovido de Legacy para Extended (#150)
+- 12/01/2026, 20:27:37 - Allegiance atualizado: URL, scale: 12 → 21, AREDL: 1070 → 1125
+- 12/01/2026, 20:29:08 - The Flawless atualizado: URL, scale: 12 → 21, AREDL: 1040 → 1115
+- 12/01/2026, 20:30:30 - Forbidden Isle atualizado: URL, scale: 12 → 21, AREDL: 1140 → 1210
+- 12/01/2026, 20:33:05 - The Lost Existence atualizado: URL, scale: 12 → 21, AREDL: 1160 → 1215
+- 12/01/2026, 20:34:16 - Azurite atualizado: URL, scale: 11 → 21, AREDL: 1100 → 1255
+- 12/01/2026, 20:36:56 - Precipitance atualizado: URL, scale: 10 → 21, AREDL: 1210 → 1315
+- 12/01/2026, 20:37:29 - Dysphoria atualizado: URL, scale: 10 → 19
+- 12/01/2026, 20:38:52 - (Deathlink) - Supersonic atualizado: URL, scale: 10 → 16
+- 12/01/2026, 20:39:46 - Light Years atualizado: URL, scale: 10 → 18
+- 12/01/2026, 20:42:50 - In Cargill atualizado: URL, scale: 10 → 18
+- 12/01/2026, 20:44:04 - Bit Reaper atualizado: URL, scale: 10 → 17
+- 12/01/2026, 20:46:13 - (Solo) Supersonic atualizado: URL, scale: 10 → 17
+- 12/01/2026, 20:47:01 - Pyromaniac atualizado: URL, scale: 9.5 → 16
+- 12/01/2026, 20:56:00 - EXG atualizado: URL, scale: 9.5 → 16
+- 12/01/2026, 20:56:36 - Stalemate atualizado: URL
+- 12/01/2026, 20:57:57 - Crazy II atualizado: URL, scale: 9.5 → 15
+- 12/01/2026, 21:01:53 - Poltergeist atualizado: URL, scale: 9.5 → 15
+- 12/01/2026, 21:02:15 - SFW atualizado: URL, scale: 9.5 → 15
