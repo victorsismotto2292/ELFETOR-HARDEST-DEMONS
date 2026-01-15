@@ -294,3 +294,32 @@
 - 12/01/2026, 20:57:57 - Crazy II atualizado: URL, scale: 9.5 → 15
 - 12/01/2026, 21:01:53 - Poltergeist atualizado: URL, scale: 9.5 → 15
 - 12/01/2026, 21:02:15 - SFW atualizado: URL, scale: 9.5 → 15
+- 14/01/2026, 23:55:55 - Explorers foi movido de #68 (MAIN) para #64 (MAIN)
+- 15/01/2026, 00:07:44 - Linear Lane foi adicionado na posição 24 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Dont Simp caiu da Extended (#151) para Legacy (#151)
+- 15/01/2026, 00:11:17 - Galactus foi adicionado na posição 28 (MAIN), fazendo com que Blast Furnace caia(m) para a Extended List. Blast Furnace caiu da Main (#76) para Extended (#76); speequ caiu da Extended (#151) para Legacy (#151)
+- 15/01/2026, 11:49:40 - MulLuna atualizado: URL, scale: 9.5 → 24
+- 15/01/2026, 11:50:47 - Multition atualizado: URL, scale: 9.5 → 25
+- 15/01/2026, 11:53:56 - Xes atualizado: URL, scale: 9.5 → 15, AREDL: 35 → 25
+- 15/01/2026, 11:54:47 - Hibernal atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 11:55:39 - Frostbound atualizado: URL, scale: 9.5 → 15, AREDL: 65 → 85
+- 15/01/2026, 11:56:31 - Anya II atualizado: URL, scale: 9.5 → 15, AREDL: 90 → 70
+- 15/01/2026, 11:57:17 - Droppy atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 11:59:26 - Terror Factory atualizado: URL, scale: 9.5 → 15, AREDL: 70 → 45
+- 15/01/2026, 12:00:16 - Diffuse atualizado: URL, scale: 9.5 → 15, AREDL: 65 → 60
+- 15/01/2026, 12:01:14 - Sharp Minor atualizado: scale: 9.5 → 15
+- 15/01/2026, 12:01:23 - Sharp Minor atualizado: URL
+- 15/01/2026, 12:04:37 - MASTERMIND atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:05:30 - Jajagarasu atualizado: URL, scale: 9.5 → 15, AREDL: 85 → 90
+- 15/01/2026, 12:06:21 - Euphoria atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:06:54 - Eternal Flame atualizado: URL, scale: 9.5 → 15, AREDL: 75 → 90
+- 15/01/2026, 12:07:43 - Psychosis atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:08:21 - DeCodeX atualizado: URL, scale: 9.5 → 14
+- 15/01/2026, 12:09:38 - 8E8E6 atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:12:14 - Walkman atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 12:20:10 - Badland atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:21:43 - Iridescent atualizado: URL, scale: 9.5 → 15, AREDL:  → 235
+- 15/01/2026, 12:21:51 - Badland atualizado: AREDL:  → 235
+- 15/01/2026, 12:23:39 - Conclusion atualizado: URL, scale: 9.5 → 15
+- 15/01/2026, 12:35:15 - Future Funk atualizado: URL, scale: 9.5 → 13
+- 15/01/2026, 12:37:13 - Fairydust atualizado: URL, scale: 9.5 → 14
+- 15/01/2026, 12:41:29 - LOCK IN atualizado: URL, scale: 9.5 → 14
