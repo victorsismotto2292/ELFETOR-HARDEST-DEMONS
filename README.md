@@ -11,7 +11,6 @@ Este projeto está configurado para deploy automático no Vercel.
 - Node.js e cjs
 - Express.js
 - Bootstrap 5
-- 12/01/2026, 21:02:15 — SFW atualizado: URL, scale: 9.5 → 15
 
 ## Licença
 
