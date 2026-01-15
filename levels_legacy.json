@@ -5,15 +5,7 @@
     "lvl_creator": "Tenzk",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -21,15 +13,7 @@
     "lvl_creator": "IvashkaUA",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -37,15 +21,7 @@
     "lvl_creator": "CorroX",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -53,15 +29,7 @@
     "lvl_creator": "Serponge",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -69,15 +37,7 @@
     "lvl_creator": "KasVA",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -85,15 +45,7 @@
     "lvl_creator": "XenderGame",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -101,15 +53,7 @@
     "lvl_creator": "Xender Game",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -117,15 +61,7 @@
     "lvl_creator": "Nico99",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -133,15 +69,7 @@
     "lvl_creator": "D4rkGryf",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "video_url": "",
@@ -149,15 +77,7 @@
     "lvl_creator": "Terron",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
-    "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Z was moved above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Z was moved below (+1)"
-      }
-    ]
+    "diff_scale": 9
   },
   {
     "lvl_name": "Z",
@@ -165,18 +85,7 @@
     "video_url": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
-    "pos_aredl": 0,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Added to the LEGACY List at position 9, below Reanimation"
-      },
-      {
-        "log1": "09/01/26 - Moved to position 1 (+8), above Nebulous Journey"
-      },
-      {
-        "log1": "09/01/26 - Moved to position 9 (-8), below Reanimation"
-      }
-    ]
+    "pos_aredl": 0
   },
   {
     "lvl_name": "Chaoz Airflow",
