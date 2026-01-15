@@ -385,3 +385,14 @@
 - 15/01/2026, 15:08:20 - Ad Honorem atualizado: URL, scale: 9 → 10
 - 15/01/2026, 15:08:58 - Ad Honorem foi movido de #149 (EXTENDED) para #144 (EXTENDED)
 - 15/01/2026, 15:09:29 - Ruuun atualizado: URL
+- 15/01/2026, 15:13:31 - Black Off atualizado: URL
+- 15/01/2026, 15:13:58 - Goodbye II atualizado: URL
+- 15/01/2026, 15:14:23 - Left Behind editado (sem mudanças)
+- 15/01/2026, 15:14:28 - Cant Let Vulc editado (sem mudanças)
+- 15/01/2026, 15:14:38 - Cant Let Vulc atualizado: URL
+- 15/01/2026, 15:18:12 - Goodbye II atualizado: URL
+- 15/01/2026, 15:18:41 - Quasar atualizado: URL
+- 15/01/2026, 15:19:10 - Solar Wind atualizado: URL
+- 15/01/2026, 15:20:43 - Thermodynamix atualizado: URL
+- 15/01/2026, 15:22:06 - Quasar atualizado: URL
+- 15/01/2026, 15:26:48 - Quasar atualizado: URL
