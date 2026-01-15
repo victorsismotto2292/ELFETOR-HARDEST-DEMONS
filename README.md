@@ -19,4 +19,4 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 15/01/2026, 15:09:29 — Quasar atualizado: URL
+- 15/01/2026, 20:22:25 — Backrooms foi movido de #69 (MAIN) para #70 (MAIN)
