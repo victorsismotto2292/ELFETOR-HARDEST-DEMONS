@@ -323,3 +323,65 @@
 - 15/01/2026, 12:35:15 - Future Funk atualizado: URL, scale: 9.5 → 13
 - 15/01/2026, 12:37:13 - Fairydust atualizado: URL, scale: 9.5 → 14
 - 15/01/2026, 12:41:29 - LOCK IN atualizado: URL, scale: 9.5 → 14
+- 15/01/2026, 14:00:41 - Frostbound atualizado: URL
+- 15/01/2026, 14:01:19 - LOCK IN atualizado: URL
+- 15/01/2026, 14:03:38 - Frostbound atualizado: URL
+- 15/01/2026, 14:08:37 - Spacelocked atualizado: URL, scale: 9.5 → 13
+- 15/01/2026, 14:09:55 - CraZy atualizado: URL, scale: 9.5 → 13
+- 15/01/2026, 14:10:20 - Obelisk atualizado: URL, scale: 9.5 → 13
+- 15/01/2026, 14:10:57 - Double Dash atualizado: URL, scale: 9.5 → 13
+- 15/01/2026, 14:11:05 - Double Dash atualizado: scale: 13 → 12
+- 15/01/2026, 14:11:38 - Dance Massacre atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:12:04 - Different Descent atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:15:34 - YOQUIERO atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:16:27 - Thermodynamix atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:19:46 - GD10 atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:20:25 - Solar Wind atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:23:09 - EUOUAE atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:24:30 - In Rainbows atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:25:06 - Electrodynamix II atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:25:59 - Quasar atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:26:39 - Zephyrs Madness atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:27:02 - Cataclysmic Drive atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:27:34 - Radioactive atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:28:06 - TOE III atualizado: URL, scale: 9 → 12
+- 15/01/2026, 14:28:17 - Cytokinesis editado (sem mudanças)
+- 15/01/2026, 14:29:43 - Nine Circles atualizado: URL, scale: 9.5 → 11
+- 15/01/2026, 14:30:29 - Jawbreaker atualizado: URL, scale: 9.5 → 11
+- 15/01/2026, 14:31:03 - Bloodroom atualizado: URL, scale: 9 → 11
+- 15/01/2026, 14:31:26 - Bloodroom atualizado: scale: 11 → 10
+- 15/01/2026, 14:31:57 - Inception atualizado: URL, scale: 9 → 10
+- 15/01/2026, 14:32:23 - Nowise atualizado: URL, scale: 9.5 → 10
+- 15/01/2026, 14:32:43 - Inception atualizado: scale: 10 → 11
+- 15/01/2026, 14:32:49 - Nowise atualizado: scale: 10 → 11
+- 15/01/2026, 14:34:54 - Linear Lane atualizado: URL
+- 15/01/2026, 14:36:33 - Interstellar atualizado: URL, scale: 9.5 → 10
+- 15/01/2026, 14:36:42 - Cytokinesis editado (sem mudanças)
+- 15/01/2026, 14:37:21 - Loving U Is Wrong atualizado: URL, scale: 9.5 → 12
+- 15/01/2026, 14:37:42 - Loving U Is Wrong foi movido de #128 (EXTENDED) para #127 (EXTENDED)
+- 15/01/2026, 14:39:29 - Despacito Circles atualizado: URL, scale: 9 → 11
+- 15/01/2026, 14:39:57 - Despacito Circles foi movido de #129 (EXTENDED) para #126 (EXTENDED)
+- 15/01/2026, 14:42:25 - Golden Hope atualizado: URL, scale: 9 → 11
+- 15/01/2026, 14:45:19 - Interstellar foi movido de #129 (EXTENDED) para #130 (EXTENDED)
+- 15/01/2026, 14:46:47 - Golden Hope editado (sem mudanças)
+- 15/01/2026, 14:47:07 - Dashplorers atualizado: URL, scale: 9 → 8
+- 15/01/2026, 14:48:00 - Black Off atualizado: URL, scale: 9.5 → 10
+- 15/01/2026, 14:50:41 - DAK atualizado: URL, scale: 9 → 10
+- 15/01/2026, 14:51:14 - Hydragon atualizado: URL, scale: 9 → 11
+- 15/01/2026, 14:52:59 - Overpowered atualizado: URL, scale: 9 → 11
+- 15/01/2026, 14:53:41 - Darkness Keeper atualizado: URL, scale: 9 → 10
+- 15/01/2026, 14:54:14 - Goodbye II atualizado: URL, scale: 9 → 10
+- 15/01/2026, 14:56:06 - Carnivores atualizado: URL
+- 15/01/2026, 14:57:00 - Cyber CompositioN atualizado: URL, scale: 9 → 9
+- 15/01/2026, 14:58:37 - Petrified Factory atualizado: URL, scale: 9 → 10
+- 15/01/2026, 14:59:19 - HeLL atualizado: URL, scale: 9 → 8
+- 15/01/2026, 14:59:48 - Kepcep atualizado: URL, scale: 9 → 8
+- 15/01/2026, 15:00:15 - VeritY atualizado: URL, scale: 9 → 7
+- 15/01/2026, 15:02:05 - VeritY editado (sem mudanças)
+- 15/01/2026, 15:02:12 - Left Behind atualizado: URL, scale: 9 → 10
+- 15/01/2026, 15:02:59 - Cant Let Vulc atualizado: URL, scale: 9 → 6
+- 15/01/2026, 15:03:44 - Deadlocked 2017 atualizado: URL, scale: 9 → 8
+- 15/01/2026, 15:05:30 - Flinq atualizado: URL, scale: 9 → 5
+- 15/01/2026, 15:08:20 - Ad Honorem atualizado: URL, scale: 9 → 10
+- 15/01/2026, 15:08:58 - Ad Honorem foi movido de #149 (EXTENDED) para #144 (EXTENDED)
+- 15/01/2026, 15:09:29 - Ruuun atualizado: URL

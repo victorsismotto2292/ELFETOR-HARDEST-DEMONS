@@ -19,4 +19,4 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 15/01/2026, 12:41:29 — LOCK IN atualizado: URL, scale: 9.5 → 14
+- 15/01/2026, 15:09:29 — Ruuun atualizado: URL
