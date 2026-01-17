@@ -4459,6 +4459,52 @@
       },
       {
         "log1": "15/01/26 - Heritage was moved above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Bichromatic",
+    "lvl_creator": "gmdmann",
+    "video_url": "https://youtu.be/c79ERYvDXYU?si=78R8MdRYrGbj4cQM",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the MAIN List at position 60, below Quantum Force and above Pyromaniac"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Moved to position 56 (+6), below YMTHLYFYMBIKWHRLYF and above Valhalla"
+      },
+      {
+        "log1": "17/01/26 - Moved to position 57 (-1), below Valhalla and above Hysteria"
       }
     ]
   },
@@ -4646,6 +4692,9 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
       }
     ]
   },
@@ -4830,6 +4879,9 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
       }
     ]
   },
@@ -5044,6 +5096,9 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
       }
     ]
   },
@@ -5189,6 +5244,9 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
       }
     ]
   },
@@ -5226,40 +5284,9 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
-      }
-    ]
-  },
-  {
-    "lvl_name": "Bichromatic",
-    "lvl_creator": "gmdmann",
-    "video_url": "https://youtu.be/c79ERYvDXYU?si=78R8MdRYrGbj4cQM",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "16",
-    "pos_aredl": 0,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Added to the MAIN List at position 60, below Quantum Force and above Pyromaniac"
       },
       {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
+        "log1": "17/01/26 - Bichromatic was moved above (-1)"
       }
     ]
   },
