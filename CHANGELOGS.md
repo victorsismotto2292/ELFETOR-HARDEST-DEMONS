@@ -406,3 +406,4 @@
 - 18/01/2026, 00:53:41 - Windy Landscape foi movido de #76 (EXTENDED) para #74 (MAIN), fazendo com que Buh caia(m) para Extended, fazendo com que Windy Landscape suba(m) para Main. Buh caiu da Main (#76) para Extended (#76)
 - 18/01/2026, 19:30:43 - Lit Fuse foi movido de #61 (MAIN) para #52 (MAIN)
 - 18/01/2026, 19:33:36 - MultiChromatic foi adicionado na posição 63 (MAIN), fazendo com que Joyride caia(m) para a Extended List. Joyride caiu da Main (#76) para Extended (#76); Ruuun caiu da Extended (#151) para Legacy (#151)
+- 18/01/2026, 23:09:31 - The Bandere foi movido de #41 (MAIN) para #40 (MAIN)
