@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://youtu.be/LOS52oijbcg?si=ZzqtPYCOGMfVAsMe",
+    "lvl_name": "Joyride",
+    "lvl_creator": "BridgetTheCroco",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "video_url": "https://youtu.be/csFwdbwZ8ek?si=uz_pDTgR1QKX0vdx",
     "lvl_name": "Buh",
     "lvl_creator": "MazZedy",
@@ -1150,22 +1158,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=bCrXZWKnswQ",
-    "lvl_name": "Ruuun",
-    "lvl_creator": "qMystic",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": 9,
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
