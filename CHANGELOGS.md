@@ -408,3 +408,4 @@
 - 18/01/2026, 19:33:36 - MultiChromatic foi adicionado na posição 63 (MAIN), fazendo com que Joyride caia(m) para a Extended List. Joyride caiu da Main (#76) para Extended (#76); Ruuun caiu da Extended (#151) para Legacy (#151)
 - 18/01/2026, 23:09:31 - The Bandere foi movido de #41 (MAIN) para #40 (MAIN)
 - 21/01/2026, 01:49:25 - Ulon foi movido de #38 (MAIN) para #37 (MAIN)
+- 21/01/2026, 18:56:53 - Stereo Demoness foi adicionado na posição 74 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Flinq caiu da Extended (#151) para Legacy (#151)
