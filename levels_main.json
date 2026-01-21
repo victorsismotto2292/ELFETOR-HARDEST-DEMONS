@@ -2055,49 +2055,6 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=MHu9pcld2oY",
-    "lvl_name": "Light Years",
-    "lvl_creator": "Smokes",
-    "pos_aredl": 200,
-    "diff_rank": "Insane Demon",
-    "diff_scale": "18",
-    "pos_history": [
-      {
-        "log1": "11/06/25 - Added to the list at position 33"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/1Df__HLZRvA?si=7cLo85UKWvfDpf6w",
     "lvl_name": "Ulon",
     "lvl_creator": "OliSW",
@@ -2179,6 +2136,55 @@
       },
       {
         "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "21/01/26 - Moved to position 37 (+1), below Elysian Aegis and above Light Years"
+      }
+    ]
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=MHu9pcld2oY",
+    "lvl_name": "Light Years",
+    "lvl_creator": "Smokes",
+    "pos_aredl": 200,
+    "diff_rank": "Insane Demon",
+    "diff_scale": "18",
+    "pos_history": [
+      {
+        "log1": "11/06/25 - Added to the list at position 33"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "21/01/26 - Ulon was moved above (-1)"
       }
     ]
   },
