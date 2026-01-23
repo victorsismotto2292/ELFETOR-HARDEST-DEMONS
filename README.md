@@ -19,7 +19,7 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 23/01/2026, 17:00:05 — Decimation foi adicionado na posição 68 (MAIN).
+- 23/01/2026, 17:00:05 — Decimation foi adicionado na posição 68 (MAIN), acima de One North e abaixo de Explorers.
 
 - SFW caiu da Main (#75) para Extended (#76);
 
