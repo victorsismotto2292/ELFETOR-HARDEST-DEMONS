@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=nglcTT4OXzM",
+    "lvl_name": "SFW",
+    "lvl_creator": "hiavl",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "video_url": "https://youtu.be/kc0xOXNnpbE?si=3QxlAHm4l-J5tz3_",
     "lvl_name": "Windy Landscape",
     "lvl_creator": "WOOGI1411",
@@ -1134,22 +1142,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "8",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "lvl_name": "Nantendo",
-    "lvl_creator": "im fernando",
-    "video_url": "https://youtu.be/2qMLsRlvxg0?si=RkrAGS6ZSeiMeZmF",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "9",
-    "pos_aredl": 0,
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
