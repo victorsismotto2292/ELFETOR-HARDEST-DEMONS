@@ -64,6 +64,14 @@
     ]
   },
   {
+    "lvl_name": "Denouement",
+    "lvl_creator": "Synactive GD",
+    "video_url": "https://www.youtube.com/watch?v=o5TR_2FIv3g",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "17",
+    "pos_aredl": 0
+  },
+  {
     "video_url": "https://youtu.be/6fphd9IIDE8?si=Llyy8vCF10b7KVpo",
     "lvl_name": "Multition",
     "lvl_creator": "Mulpan & Partition",
@@ -1126,22 +1134,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "6",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=-BEvwY6dDDA",
-    "lvl_name": "Deadlocked 2017",
-    "lvl_creator": "Bronks",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "8",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"

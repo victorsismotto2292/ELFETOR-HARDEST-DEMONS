@@ -19,6 +19,6 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 23/01/2026, 19:16:32 — MASTERMIND foi movido de #93 (EXTENDED) para #94 (EXTENDED)
+- 24/01/2026, 22:47:26 — Denouement foi adicionado na posição 83 (EXTENDED), acima de Multition e abaixo de Mulluna. 
 
- 
+- Deadlocked 2017 caiu da Extended (#150) para Legacy (#151)

@@ -411,3 +411,4 @@
 - 21/01/2026, 18:56:53 - Stereo Demoness foi adicionado na posição 74 (MAIN), fazendo com que Windy Landscape caia(m) para a Extended List. Windy Landscape caiu da Main (#76) para Extended (#76); Flinq caiu da Extended (#151) para Legacy (#151)
 - 23/01/2026, 20:00:05 - Decimation foi adicionado na posição 68 (MAIN), fazendo com que SFW caia(m) para a Extended List. SFW caiu da Main (#76) para Extended (#76); Nantendo caiu da Extended (#151) para Legacy (#151)
 - 23/01/2026, 22:16:32 - MASTERMIND foi movido de #93 (EXTENDED) para #94 (EXTENDED)
+- 24/01/2026, 22:47:26 - Denouement foi adicionado na posição 83 (EXTENDED). Deadlocked 2017 caiu da Extended (#151) para Legacy (#151)
