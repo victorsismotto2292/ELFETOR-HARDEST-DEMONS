@@ -1,5 +1,21 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=rxY2wclgwKg",
+    "lvl_name": "Cant Let Vulc",
+    "lvl_creator": "Vulcanium4",
+    "pos_aredl": "",
+    "diff_rank": "Medium Demon",
+    "diff_scale": "6",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=-BEvwY6dDDA",
     "lvl_name": "Deadlocked 2017",
     "lvl_creator": "Bronks",
@@ -64,7 +80,7 @@
     ]
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=A5sOxT2ySr8",
     "lvl_name": "speequ",
     "lvl_creator": "Tenzk",
     "pos_aredl": "",
@@ -72,7 +88,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=i4o6A_gttNg",
     "lvl_name": "Dont Simp",
     "lvl_creator": "IvashkaUA",
     "pos_aredl": "",
@@ -80,7 +96,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=O8jHEeOPCeg",
     "lvl_name": "Nebulous Journey",
     "lvl_creator": "CorroX",
     "pos_aredl": "",
@@ -88,7 +104,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=ARL0iOLpsBU",
     "lvl_name": "Gold Temple",
     "lvl_creator": "Serponge",
     "pos_aredl": "",
@@ -96,7 +112,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=HfdsolQCh70",
     "lvl_name": "ZO",
     "lvl_creator": "KasVA",
     "pos_aredl": "",
@@ -104,7 +120,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=OfsMqyw5cqA",
     "lvl_name": "Boss 3 Electro",
     "lvl_creator": "XenderGame",
     "pos_aredl": "",
@@ -112,7 +128,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=tIqOD69YeYk",
     "lvl_name": "Boss V Devourers",
     "lvl_creator": "Xender Game",
     "pos_aredl": "",
@@ -120,7 +136,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=5JJ7LCAeEkQ",
     "lvl_name": "Shrill Hallway",
     "lvl_creator": "Nico99",
     "pos_aredl": "",
@@ -128,7 +144,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=QqIMKL9RmrA",
     "lvl_name": "Solar Circles",
     "lvl_creator": "D4rkGryf",
     "pos_aredl": "",
@@ -136,7 +152,7 @@
     "diff_scale": 9
   },
   {
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=93QI_B0BsH8",
     "lvl_name": "Reanimation",
     "lvl_creator": "Terron",
     "pos_aredl": "",
@@ -146,7 +162,7 @@
   {
     "lvl_name": "Z",
     "lvl_creator": "Zyzyx",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=7Jkz7S7Mb8Y",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -154,7 +170,7 @@
   {
     "lvl_name": "Chaoz Airflow",
     "lvl_creator": "Sumsar",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=WFMhPPLItRk",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -162,7 +178,7 @@
   {
     "lvl_name": "Velocity II",
     "lvl_creator": "jacr360",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=1HJNtt9tSvc",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -170,7 +186,7 @@
   {
     "lvl_name": "RIOT",
     "lvl_creator": "cometface",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=iz6KagrTOX0",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -178,7 +194,7 @@
   {
     "lvl_name": "Tengu Wind",
     "lvl_creator": "Shemo",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=ygQlQoalIBQ",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -186,7 +202,7 @@
   {
     "lvl_name": "Malware",
     "lvl_creator": "MrLorenzo",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=BNtcJ-Y74AY",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -194,7 +210,7 @@
   {
     "lvl_name": "KrAzY MAcHine",
     "lvl_creator": "F3lixram",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=jgknw6xnl7o",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -202,7 +218,7 @@
   {
     "lvl_name": "Mechanical Showdown",
     "lvl_creator": "Tongii",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=jTfLxbgexvc",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -210,7 +226,7 @@
   {
     "lvl_name": "Speed of Light II",
     "lvl_creator": "TheRealSalad",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=sIQp0e0qhWc",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -218,7 +234,7 @@
   {
     "lvl_name": "factry",
     "lvl_creator": "Baltz",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=FMiY_QNPVso",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0
@@ -226,7 +242,7 @@
   {
     "lvl_name": "Bloodshed",
     "lvl_creator": "Chlorines",
-    "video_url": "",
+    "video_url": "https://www.youtube.com/watch?v=jBYSIuOleyo",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
     "pos_aredl": 0

@@ -27,7 +27,6 @@ const TRACKED_FILES = [
   FILES.MAIN,
   FILES.EXTENDED,
   FILES.LEGACY,
-  'CHANGELOGS.md',
   'README.md'
 ];
 
@@ -107,23 +106,6 @@ function nowDate() {
   const month = String(d.getMonth() + 1).padStart(2, '0');
   const year = String(d.getFullYear()).slice(-2);
   return `${day}/${month}/${year}`;
-}
-
-function appendChangelog(entry) {
-  const file = 'CHANGELOGS.md';
-  const date = new Date().toLocaleString('pt-BR');
-  const line = `- ${date} - ${entry}\n`;
-  try {
-    if (!fs.existsSync(file)) fs.writeFileSync(file, '# Changelogs\n\n', 'utf8');
-    fs.appendFileSync(file, line, 'utf8');
-    try {
-      updateReadmeSummary(date, entry);
-    } catch (e) {
-      console.error('Falha ao atualizar README.md:', e.message);
-    }
-  } catch (e) {
-    console.error('Falha ao escrever CHANGELOGS.md:', e.message);
-  }
 }
 
 function updateReadmeSummary(date, entry) {

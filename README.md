@@ -19,6 +19,10 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 24/01/2026, 22:47:26 — Denouement foi adicionado na posição 83 (EXTENDED), acima de Multition e abaixo de Mulluna. 
+- 27/01/2026, 19:56:12 — Frizzantino Vibes foi adicionada na posição 24, acima de Linear Lane e abaixo de Encroaching Dark
 
-- Deadlocked 2017 caiu da Extended (#150) para Legacy (#151)
+- Stereo Demoness caiu da MAIN (#75) para EXTENDED (#76)
+
+- Cant Let Vulc caiu da EXTENDED (#150) para LEGACY (#151)
+
+- ATUALIZADO URL DO TOP 151 ATÉ 176

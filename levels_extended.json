@@ -1,5 +1,13 @@
 [
   {
+    "lvl_name": "Stereo Demoness",
+    "lvl_creator": "MaJackO",
+    "video_url": "https://youtu.be/CNvffiEo7rw?si=VggZQ99fNJYsWlkU",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16",
+    "pos_aredl": 0
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=nglcTT4OXzM",
     "lvl_name": "SFW",
     "lvl_creator": "hiavl",
@@ -1118,22 +1126,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=rxY2wclgwKg",
-    "lvl_name": "Cant Let Vulc",
-    "lvl_creator": "Vulcanium4",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "6",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
