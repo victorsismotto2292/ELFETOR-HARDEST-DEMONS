@@ -19,10 +19,6 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 27/01/2026, 19:56:12 — Frizzantino Vibes foi adicionada na posição 24, acima de Linear Lane e abaixo de Encroaching Dark
-
-- Stereo Demoness caiu da MAIN (#75) para EXTENDED (#76)
-
-- Cant Let Vulc caiu da EXTENDED (#150) para LEGACY (#151)
+- 30/01/2026 (21:22) -> Allegiance foi movida da posição #11 para #13, acima de The Lost Existence e abaixo de Forbidden Isle
 
 - ATUALIZADO URL DO TOP 151 ATÉ 176
