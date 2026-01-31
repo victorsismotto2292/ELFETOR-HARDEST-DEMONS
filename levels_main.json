@@ -331,34 +331,6 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=lHf6buYpbXU",
-    "lvl_name": "Allegiance",
-    "lvl_creator": "NikroPlays",
-    "pos_aredl": 1125,
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "21",
-    "pos_history": [
-      {
-        "log1": "02/11/25 - Added to the list at position 10"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 10) (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved below (+1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://www.youtube.com/watch?v=yAipW4Tge08",
     "lvl_name": "The Flawless",
     "lvl_creator": "Fin",
@@ -395,6 +367,9 @@
       },
       {
         "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "31/01/26 - Allegiance was moved below (+1)"
       }
     ]
   },
@@ -435,6 +410,40 @@
       },
       {
         "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "31/01/26 - Allegiance was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=lHf6buYpbXU",
+    "lvl_name": "Allegiance",
+    "lvl_creator": "NikroPlays",
+    "pos_aredl": 1125,
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "21",
+    "pos_history": [
+      {
+        "log1": "02/11/25 - Added to the list at position 10"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 10) (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved below (+1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "31/01/26 - Moved to position 13 (-2), below Forbidden Isle and above The Lost Existence"
       }
     ]
   },
