@@ -322,8 +322,6 @@ async function addWithHistory(targetFile, skipGit = false) {
   if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para a Extended List`;
   if (addedToTop.length && !addedToTop.includes(name)) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top ${LIMITS.MAIN_MAX}`;
   if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
-  
-  appendChangelog(desc);
 
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Adicionado: ${desc}`);
@@ -490,8 +488,6 @@ async function moveWithHistory(skipGit = false) {
   if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} suba(m) para Main`;
   if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
   
-  appendChangelog(desc);
-  
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Movido: ${desc}`);
     console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou.');
@@ -604,8 +600,6 @@ async function deleteLevel(skipGit = false) {
   if (addedToTop.length) desc += `, ${addedToTop.join(', ')} promovido(s) para Main`;
   if (promotions.length > 0) desc += `. ${promotions.join('; ')}`;
   
-  appendChangelog(desc);
-  
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Removido: ${desc}`);
     console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou.');
@@ -683,8 +677,6 @@ async function update(skipGit = false) {
   
   const name = level.lvl_name || '(sem nome)';
   const desc = changes.length ? `${name} atualizado: ${changes.join(', ')}` : `${name} editado (sem mudanças)`;
-  
-  appendChangelog(desc);
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Atualizado: ${desc}`);
