@@ -200,15 +200,15 @@ function cascadeTransitions(lists, date) {
 async function list() {
   const lists = loadAll();
   
-  console.log(`\n📊 MAIN LIST (${lists.main.length}/${LIMITS.MAIN_MAX} níveis, posições 1-${LIMITS.MAIN_MAX}):\n`);
+  console.log(`\n MAIN LIST (${lists.main.length}/${LIMITS.MAIN_MAX} níveis, posições 1-${LIMITS.MAIN_MAX}):\n`);
   lists.main.slice(0, 20).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
   if (lists.main.length > 20) console.log(`  ... e ${lists.main.length - 20} mais\n`);
   
-  console.log(`\n📊 EXTENDED LIST (${lists.extended.length}/${LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX} níveis, posições ${LIMITS.MAIN_MAX + 1}-${LIMITS.EXTENDED_MAX}):\n`);
+  console.log(`\n EXTENDED LIST (${lists.extended.length}/${LIMITS.EXTENDED_MAX - LIMITS.MAIN_MAX} níveis, posições ${LIMITS.MAIN_MAX + 1}-${LIMITS.EXTENDED_MAX}):\n`);
   lists.extended.slice(0, 10).forEach((l, i) => console.log(`  ${LIMITS.MAIN_MAX + i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
   if (lists.extended.length > 10) console.log(`  ... e ${lists.extended.length - 10} mais\n`);
   
-  console.log(`\n📊 LEGACY LIST (${lists.legacy.length} níveis, posições ${LIMITS.EXTENDED_MAX + 1}+):\n`);
+  console.log(`\n LEGACY LIST (${lists.legacy.length} níveis, posições ${LIMITS.EXTENDED_MAX + 1}+):\n`);
   lists.legacy.slice(0, 10).forEach((l, i) => console.log(`  ${LIMITS.EXTENDED_MAX + i+1}. ${l.lvl_name} - ${l.lvl_creator || 'unknown'}`));
   if (lists.legacy.length > 10) console.log(`  ... e ${lists.legacy.length - 10} mais\n`);
   
@@ -218,7 +218,7 @@ async function list() {
 // ===== BUSCAR =====
 async function search() {
   const lists = loadAll();
-  const query = (await ask('\n🔍 Buscar (nome/criador): ')).toLowerCase();
+  const query = (await ask('\n Buscar (nome/criador): ')).toLowerCase();
   if (!query) return;
   
   const allLevels = [
@@ -232,7 +232,7 @@ async function search() {
     (l.lvl_creator || '').toLowerCase().includes(query)
   );
   
-  console.log(`\n✅ ${results.length} resultado(s):\n`);
+  console.log(`\n ${results.length} resultado(s):\n`);
   results.forEach(l => {
     console.log(`  #${l.pos} (${l.list}): ${l.lvl_name} by ${l.lvl_creator}`);
   });
@@ -241,14 +241,14 @@ async function search() {
 
 // ===== ADICIONAR =====
 async function addWithHistory(targetFile, skipGit = false) {
-  console.log('\n➕ ADICIONAR NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
+  console.log('\n ADICIONAR NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
   const targetList = targetFile === FILES.MAIN ? 'main' : targetFile === FILES.EXTENDED ? 'extended' : 'legacy';
   const beforeTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   
   const name = await ask('Nome do nível: ');
-  if (!name) { console.log('❌ Cancelado.\n'); return; }
+  if (!name) { console.log('Cancelado.\n'); return; }
   
   const creator = await ask('Criador: ') || '';
   const url = await ask('URL vídeo (Enter = pular): ') || '';
@@ -306,9 +306,9 @@ async function addWithHistory(targetFile, skipGit = false) {
   
   saveAll(lists);
   
-  console.log(`\n✅ Nível "${name}" adicionado na posição ${globalPos} (${targetList.toUpperCase()})!`);
+  console.log(`\n Nível "${name}" adicionado na posição ${globalPos} (${targetList.toUpperCase()})!`);
   if (cascadeChanges.length > 0) {
-    console.log('\n📋 Transições automáticas:');
+    console.log('\n Transições automáticas:');
     cascadeChanges.forEach(c => console.log(`  • ${c}`));
   }
   console.log('');
@@ -327,15 +327,15 @@ async function addWithHistory(targetFile, skipGit = false) {
 
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Adicionado: ${desc}`);
-    console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou (verifique credenciais).');
+    console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou (verifique credenciais).');
   } else {
-    console.log('💾 Alteração salva localmente (pendente no modo Batch).');
+    console.log('Alteração salva localmente (pendente no modo Batch).');
   }
 }
 
 // ===== MOVER =====
 async function moveWithHistory(skipGit = false) {
-  console.log('\n➡️  MOVER NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
+  console.log('\n MOVER NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
   
@@ -347,7 +347,7 @@ async function moveWithHistory(skipGit = false) {
   console.log('');
   
   const from = await ask('\nNome do nível ou posição global: ');
-  if (!from) { console.log('❌ Cancelado.\n'); return; }
+  if (!from) { console.log('Cancelado.\n'); return; }
   
   // Buscar nível
   let level, oldGlobalPos, oldList;
@@ -392,7 +392,7 @@ async function moveWithHistory(skipGit = false) {
   }
   
   if (!level) {
-    console.log('❌ Nível não encontrado.\n');
+    console.log('Nível não encontrado.\n');
     return;
   }
   
@@ -400,7 +400,7 @@ async function moveWithHistory(skipGit = false) {
   const newGlobalPos = parseInt(to);
   
   if (newGlobalPos === oldGlobalPos) {
-    console.log('⚠️ Nível já está nessa posição.\n');
+    console.log('Nível já está nessa posição.\n');
     return;
   }
   
@@ -473,9 +473,9 @@ async function moveWithHistory(skipGit = false) {
   
   saveAll(lists);
   
-  console.log(`\n✅ "${level.lvl_name}" movido de #${oldGlobalPos} (${oldList.toUpperCase()}) para #${newGlobalPos} (${newList.toUpperCase()})!`);
+  console.log(`\n"${level.lvl_name}" movido de #${oldGlobalPos} (${oldList.toUpperCase()}) para #${newGlobalPos} (${newList.toUpperCase()})!`);
   if (cascadeChanges.length > 0) {
-    console.log('\n📋 Transições automáticas:');
+    console.log('\nTransições automáticas:');
     cascadeChanges.forEach(c => console.log(`  • ${c}`));
   }
   console.log('');
@@ -494,15 +494,15 @@ async function moveWithHistory(skipGit = false) {
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Movido: ${desc}`);
-    console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
+    console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou.');
   } else {
-    console.log('💾 Alteração salva localmente (pendente no modo Batch).');
+    console.log('Alteração salva localmente (pendente no modo Batch).');
   }
 }
 
 // ===== DELETAR =====
 async function deleteLevel(skipGit = false) {
-  console.log('\n🗑️  DELETAR COM PROMOÇÕES AUTOMÁTICAS:');
+  console.log('\nDELETAR COM PROMOÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
   
@@ -511,7 +511,7 @@ async function deleteLevel(skipGit = false) {
   console.log('');
   
   const input = await ask('\nNome do nível ou posição global: ');
-  if (!input) { console.log('❌ Cancelado.\n'); return; }
+  if (!input) { console.log('Cancelado.\n'); return; }
   
   // Buscar nível
   let level, globalPos, list;
@@ -554,7 +554,7 @@ async function deleteLevel(skipGit = false) {
   }
   
   if (!level) {
-    console.log('❌ Nível não encontrado.\n');
+    console.log('Nível não encontrado.\n');
     return;
   }
   
@@ -589,9 +589,9 @@ async function deleteLevel(skipGit = false) {
   
   saveAll(lists);
   
-  console.log(`✅ "${name}" deletado de #${globalPos} (${list.toUpperCase()})!\n`);
+  console.log(`"${name}" deletado de #${globalPos} (${list.toUpperCase()})!\n`);
   if (promotions.length > 0) {
-    console.log('📋 Promoções automáticas:');
+    console.log('Promoções automáticas:');
     promotions.forEach(p => console.log(`  • ${p}`));
     console.log('');
   }
@@ -608,15 +608,15 @@ async function deleteLevel(skipGit = false) {
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Removido: ${desc}`);
-    console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
+    console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou.');
   } else {
-    console.log('💾 Alteração salva localmente (pendente no modo Batch).');
+    console.log('Alteração salva localmente (pendente no modo Batch).');
   }
 }
 
 // ===== EDITAR =====
 async function update(skipGit = false) {
-  console.log('\n✏️  EDITAR:');
+  console.log('\nEDITAR:');
   
   const lists = loadAll();
   
@@ -625,7 +625,7 @@ async function update(skipGit = false) {
   console.log('');
   
   const input = await ask('\nNome do nível ou posição global: ');
-  if (!input) { console.log('❌ Cancelado.\n'); return; }
+  if (!input) { console.log('Cancelado.\n'); return; }
   
   // Buscar nível
   let level;
@@ -645,7 +645,7 @@ async function update(skipGit = false) {
   }
   
   if (!level) {
-    console.log('❌ Nível não encontrado.\n');
+    console.log('Nível não encontrado.\n');
     return;
   }
   
@@ -672,7 +672,7 @@ async function update(skipGit = false) {
   if (aredl) level.pos_aredl = parseInt(aredl, 10);
   
   saveAll(lists);
-  console.log(`✅ Atualizado!\n`);
+  console.log(`Atualizado!\n`);
   
   const changes = [];
   if (old.lvl_creator !== level.lvl_creator) changes.push(`criador: ${old.lvl_creator} → ${level.lvl_creator}`);
@@ -688,9 +688,9 @@ async function update(skipGit = false) {
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Atualizado: ${desc}`);
-    console.log(ok ? '✅ Commit e push realizados.' : '⚠️ Commit/push falhou.');
+    console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou.');
   } else {
-    console.log('💾 Alteração salva localmente (pendente no modo Batch).');
+    console.log('Alteração salva localmente (pendente no modo Batch).');
   }
 }
 
@@ -698,14 +698,14 @@ async function update(skipGit = false) {
 // BATCH COMMIT - COMMITS EM LOTE
 // ==========================
 async function batchCommit() {
-  console.log('\n📦 COMMIT EM LOTE - Economize deploys!\n');
+  console.log('\nCOMMIT EM LOTE - Economize deploys!\n');
   console.log('Esta opção cria backups dos arquivos atuais.');
   console.log('Se você cancelar, os arquivos voltarão ao estado original.\n');
   
   // CRIAR BACKUPS
-  console.log('⏳ Criando ponto de restauração...');
+  console.log('Criando ponto de restauração...');
   createBatchBackups();
-  console.log('✅ Backups criados. Iniciando sessão de edição.\n');
+  console.log('Backups criados. Iniciando sessão de edição.\n');
 
   let changesMade = false;
   let changeLog = [];
@@ -715,17 +715,17 @@ async function batchCommit() {
     console.log('\n╔═══════════════════════════════════════╗');
     console.log('║       MODO BATCH - Menu               ║');
     console.log('╚═══════════════════════════════════════╝\n');
-    console.log('1. ➕ Adicionar nível');
-    console.log('2. ✏️  Editar nível');
-    console.log('3. 🗑️  Deletar nível');
-    console.log('4. ➡️  Mover nível');
-    console.log('5. 📝 Ver mudanças pendentes');
-    console.log('6. 💾 SALVAR E COMMITAR TUDO');
-    console.log('7. ❌ Cancelar (RESTAURAR ARQUIVOS)');
+    console.log('1. Adicionar nível');
+    console.log('2. Editar nível');
+    console.log('3. Deletar nível');
+    console.log('4. Mover nível');
+    console.log('5. Ver mudanças pendentes');
+    console.log('6. SALVAR E COMMITAR TUDO');
+    console.log('7. Cancelar (RESTAURAR ARQUIVOS)');
     console.log('0. Voltar ao menu principal (mantendo alterações locais)\n');
     
     if (changesMade) {
-      console.log(`⚠️  Você tem ${changeLog.length} mudança(s) pendente(s)\n`);
+      console.log(`Você tem ${changeLog.length} mudança(s) pendente(s)\n`);
     }
     
     const choice = await ask('> ');
@@ -766,7 +766,7 @@ async function batchCommit() {
         break;
       
       case '5':
-        console.log('\n📝 MUDANÇAS PENDENTES:\n');
+        console.log('\nMUDANÇAS PENDENTES:\n');
         if (changeLog.length === 0) {
           console.log('Nenhuma mudança pendente.\n');
         } else {
@@ -779,11 +779,11 @@ async function batchCommit() {
       
       case '6':
         if (!changesMade) {
-          console.log('\n⚠️  Nenhuma mudança para commitar!\n');
+          console.log('\nNenhuma mudança para commitar!\n');
           break;
         }
         
-        console.log('\n💾 COMMITANDO TODAS AS MUDANÇAS...\n');
+        console.log('\nCOMMITANDO TODAS AS MUDANÇAS...\n');
         console.log('Resumo das mudanças:');
         changeLog.forEach((change, idx) => {
           console.log(`  ${idx + 1}. ${change}`);
@@ -798,24 +798,24 @@ async function batchCommit() {
         );
         
         if (success) {
-          console.log('\n✅ Todas as mudanças foram commitadas e enviadas!');
-          console.log('🚀 O Vercel fará apenas 1 deploy para todas as mudanças!\n');
+          console.log('\nTodas as mudanças foram commitadas e enviadas!');
+          console.log('O Vercel fará apenas 1 deploy para todas as mudanças!\n');
           // Se deu sucesso, não precisamos mais dos backups
           deleteBatchBackups();
           changeLog = [];
           changesMade = false;
         } else {
-          console.log('\n⚠️  Falha no commit. Mudanças salvas localmente.\n');
+          console.log('\nFalha no commit. Mudanças salvas localmente.\n');
         }
         break;
       
       case '7':
         if (changesMade) {
-          const confirm = await ask('\n⚠️  Tem certeza? Isso irá REVERTER os arquivos para o estado inicial. (s/n): ');
+          const confirm = await ask('\nTem certeza? Isso irá REVERTER os arquivos para o estado inicial. (s/n): ');
           if (confirm.toLowerCase() === 's') {
-            console.log('\n⏳ Restaurando arquivos originais...');
+            console.log('\nRestaurando arquivos originais...');
             restoreBatchBackups();
-            console.log('❌ Todas as alterações foram descartadas.\n');
+            console.log('Todas as alterações foram descartadas.\n');
             changeLog = [];
             changesMade = false;
           }
@@ -827,7 +827,7 @@ async function batchCommit() {
       
       case '0':
         if (changesMade) {
-          console.log('\n⚠️  Você tem mudanças pendentes salvas localmente!');
+          console.log('\nVocê tem mudanças pendentes salvas localmente!');
           const confirm = await ask('Deseja salvar no Git antes de sair? (s/n): ');
           if (confirm.toLowerCase() === 's') {
             const finalMsg = `Batch update: ${changeLog.length} mudanças`;
@@ -837,7 +837,7 @@ async function batchCommit() {
             );
             if(ok) deleteBatchBackups();
           } else {
-             console.log('⚠️  Saindo sem commitar. As alterações permanecem salvas no disco.');
+             console.log('Saindo sem commitar. As alterações permanecem salvas no disco.');
              // Remove backups pois usuário escolheu sair conscientemente
              deleteBatchBackups();
           }
@@ -848,7 +848,7 @@ async function batchCommit() {
         break;
       
       default:
-        console.log('❌ Opção inválida.\n');
+        console.log('Opção inválida.\n');
     }
   }
 }
@@ -870,13 +870,13 @@ async function menu() {
     console.log('╔═══════════════════════════════════╗');
     console.log('║        O QUE FAZER?               ║');
     console.log('╚═══════════════════════════════════╝\n');
-    console.log('1. 📋 Listar todas as listas');
-    console.log('2. 🔍 Buscar em todas as listas');
-    console.log('3. ➕ Adicionar nível (com transições automáticas)');
-    console.log('4. ✏️  Editar nível');
-    console.log('5. 🗑️  Deletar nível (com promoções automáticas)');
-    console.log('6. ➡️  Mover nível (com transições automáticas)');
-    console.log('7. 📦 MODO BATCH (vários commits de uma vez)');
+    console.log('1. Listar todas as listas');
+    console.log('2. Buscar em todas as listas');
+    console.log('3. Adicionar nível (com transições automáticas)');
+    console.log('4. Editar nível');
+    console.log('5. Deletar nível (com promoções automáticas)');
+    console.log('6. Mover nível (com transições automáticas)');
+    console.log('7. MODO BATCH (vários commits de uma vez)');
     console.log('0. Sair\n');
     
     const choice = await ask('> ');
@@ -898,7 +898,7 @@ async function menu() {
                        addChoice === '2' ? FILES.EXTENDED : 
                        addChoice === '3' ? FILES.LEGACY : null;
         if (addFile) await addWithHistory(addFile);
-        else console.log('❌ Escolha inválida.\n');
+        else console.log('Escolha inválida.\n');
         break;
       case '4': 
         await update(); 
@@ -914,10 +914,10 @@ async function menu() {
         break;
       case '0':
         running = false;
-        console.log('\n👋 Tchau!\n');
+        console.log('\nTchau!\n');
         break;
       default:
-        console.log('❌ Inválido.\n');
+        console.log('Inválido.\n');
     }
   }
   
