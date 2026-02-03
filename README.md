@@ -19,6 +19,6 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 30/01/2026 (21:22) -> Allegiance foi movida da posição #11 para #13, acima de The Lost Existence e abaixo de Forbidden Isle
+- 03/02/2026 (7:58) - Thermodynamix e GD10 foram trocadas de lugar, agora com GD10 acima, na posição #116 (EXTENDED)
 
-- ATUALIZADO URL DO TOP 151 ATÉ 176
+- ATUALIZADO URL VÍDEOS TOP 151 ATÉ 176
