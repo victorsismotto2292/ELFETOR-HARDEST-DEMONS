@@ -19,6 +19,6 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 03/02/2026 (7:58) - Thermodynamix e GD10 foram trocadas de lugar, agora com GD10 acima, na posição #116 (EXTENDED)
+- 05/02/2026 (12:46) -> VeritY foi movida da posição #148 para #146, acima de HeLL e abaixo de Petrified Factory
 
 - ATUALIZADO URL VÍDEOS TOP 151 ATÉ 176
