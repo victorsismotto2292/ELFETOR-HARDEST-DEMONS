@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=63sr55FXqsI",
+    "lvl_name": "Poltergeist",
+    "lvl_creator": "Andromeda GMD",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "lvl_name": "Stereo Demoness",
     "lvl_creator": "MaJackO",
     "video_url": "https://youtu.be/CNvffiEo7rw?si=VggZQ99fNJYsWlkU",
@@ -1107,22 +1115,6 @@
     "video_url": "https://www.youtube.com/watch?v=LdzuSfXktSU",
     "lvl_name": "Ad Honorem",
     "lvl_creator": "Echonox",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://youtu.be/dpmMENQtHVU?si=Xe0oiJiz1ztm1Qzw",
-    "lvl_name": "Left Behind",
-    "lvl_creator": "carlosart16",
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "10",

@@ -19,6 +19,10 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 05/02/2026 (12:46) -> VeritY foi movida da posição #148 para #146, acima de HeLL e abaixo de Petrified Factory
+- 08/02/2026 (10:12) - Sweater Weather foi adicionada na posição #22, acima de Acu e abaixo de Precipitance
+
+- Poltergeist caiu da MAIN (#75) para EXTENDED (#76)
+
+- Left Behind caiu da EXTENDED (#150) para LEGACY (#151)
 
 - ATUALIZADO URL VÍDEOS TOP 151 ATÉ 176
