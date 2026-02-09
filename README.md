@@ -19,10 +19,6 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 08/02/2026 (10:12) - Sweater Weather foi adicionada na posição #22, acima de Acu e abaixo de Precipitance
+- 09.02/2026 (8:26) - Kepcep e Ad Honorem foram trocados de lugar, agora com Ad Honorem acima, na posição #149
 
-- Poltergeist caiu da MAIN (#75) para EXTENDED (#76)
-
-- Left Behind caiu da EXTENDED (#150) para LEGACY (#151)
-
-- ATUALIZADO URL VÍDEOS TOP 151 ATÉ 176
+- ATUALIZADO URL VÍDEOS TOP 151 ATÉ 177
