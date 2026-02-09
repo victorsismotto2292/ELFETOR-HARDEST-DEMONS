@@ -472,6 +472,22 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=K0MDnUBlZws",
+    "lvl_name": "Obelisk",
+    "lvl_creator": "SuprianGD",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "13",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=-frwXyOU8kQ",
     "lvl_name": "Spacelocked",
     "lvl_creator": "LazerBlitz",
@@ -491,22 +507,6 @@
     "video_url": "https://www.youtube.com/watch?v=g_MP6BENHEs",
     "lvl_name": "CraZy",
     "lvl_creator": "DavJT",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "13",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=K0MDnUBlZws",
-    "lvl_name": "Obelisk",
-    "lvl_creator": "SuprianGD",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "13",
