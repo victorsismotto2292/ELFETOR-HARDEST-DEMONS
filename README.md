@@ -19,6 +19,8 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 09.02/2026 (8:26) - Kepcep e Ad Honorem foram trocados de lugar, agora com Ad Honorem acima, na posição #149
+- 09/02/2026 (8:26) - Kepcep e Ad Honorem foram trocados de lugar, agora com Ad Honorem acima, na posição #149
+
+- 09/02/2026 (9:47) - Obelisk foi movida da posição #112 para #110, acima de Spacelocked e abaixo de LOCK IN
 
 - ATUALIZADO URL VÍDEOS TOP 151 ATÉ 177
