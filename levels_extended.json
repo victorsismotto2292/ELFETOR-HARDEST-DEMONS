@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=8vLP8XOztJM",
+    "lvl_name": "Magma Bound",
+    "lvl_creator": "ScorchVx",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=63sr55FXqsI",
     "lvl_name": "Poltergeist",
     "lvl_creator": "Andromeda GMD",
@@ -1102,22 +1110,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=x-2cPRsjos0",
-    "lvl_name": "Kepcep",
-    "lvl_creator": "Rokioto",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "8",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
