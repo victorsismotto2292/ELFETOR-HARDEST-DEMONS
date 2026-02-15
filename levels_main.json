@@ -1268,10 +1268,41 @@
     ]
   },
   {
+    "lvl_name": "Thanatophobia",
+    "lvl_creator": "ARtu",
+    "video_url": "https://youtu.be/jWLbdP7r5oU?si=Kajf7XiGvv5jrTW_",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "20",
+    "pos_aredl": 50,
+    "pos_history": [
+      {
+        "log1": "09/01/26 - Added to the list at position 25, below Hateflayer and above Dysphoria"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - Hateflayer was moved below (+1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://youtu.be/g19pDeYw_Ps?si=Uzt5du_chqGbrHCX",
     "lvl_name": "Hateflayer",
     "lvl_creator": "SirZeus",
-    "pos_aredl": 30,
+    "pos_aredl": 70,
     "diff_rank": "Insane Demon",
     "diff_scale": "20",
     "pos_history": [
@@ -1355,34 +1386,9 @@
       },
       {
         "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      }
-    ]
-  },
-  {
-    "lvl_name": "Thanatophobia",
-    "lvl_creator": "ARtu",
-    "video_url": "https://youtu.be/jWLbdP7r5oU?si=Kajf7XiGvv5jrTW_",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "20",
-    "pos_aredl": 50,
-    "pos_history": [
-      {
-        "log1": "09/01/26 - Added to the list at position 25, below Hateflayer and above Dysphoria"
       },
       {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+        "log1": "15/02/26 - Moved to position 28 (-1), below Thanatophobia and above Dysphoria"
       }
     ]
   },
@@ -1433,25 +1439,6 @@
     ]
   },
   {
-    "lvl_name": "Galactus",
-    "lvl_creator": "Agils",
-    "video_url": "https://www.youtube.com/watch?v=5CQP1NhdjcU",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "20",
-    "pos_aredl": 65,
-    "pos_history": [
-      {
-        "log1": "15/01/26 - Added to the list at position 28, below Dysphoria and above PPPPPPPPPPPPPPPPIXEL"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      }
-    ]
-  },
-  {
     "lvl_name": "PPPPPPPPPPPPPPPPIXEL",
     "lvl_creator": "Renn241",
     "video_url": "https://www.youtube.com/watch?v=utim7mVmIWY",
@@ -1479,6 +1466,31 @@
       },
       {
         "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - Moved to position 30 (+1), below Dysphoria and above Galactus"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Galactus",
+    "lvl_creator": "Agils",
+    "video_url": "https://www.youtube.com/watch?v=5CQP1NhdjcU",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "20",
+    "pos_aredl": 65,
+    "pos_history": [
+      {
+        "log1": "15/01/26 - Added to the list at position 28, below Dysphoria and above PPPPPPPPPPPPPPPPIXEL"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - PPPPPPPPPPPPPPPPIXEL was moved above (-1)"
       }
     ]
   },
