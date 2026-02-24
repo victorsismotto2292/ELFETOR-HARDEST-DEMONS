@@ -3,26 +3,20 @@ import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
 
-// ==========================
-// BASIC SETUP
-// ==========================
+// SETUP
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ==========================
 // MIDDLEWARES
-// ==========================
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // STATIC FILES (Vercel-friendly)
 app.use(express.static(path.join(__dirname, "public")));
 
-// ==========================
-// CREATE DATA FUNCTION
-// ==========================
+// CREATING DATA FUNCTION
 function loadLevels() {
   const mainPath = path.join(__dirname, "levels_main.json");
   const extPath = path.join(__dirname, "levels_extended.json");
@@ -35,9 +29,7 @@ function loadLevels() {
   };
 }
 
-// ==========================
 // FUNCTIONS
-// ==========================
 
 // Extracting youtube video ID from various URL formats
 function extractYouTubeVideoId(url) {
@@ -60,13 +52,13 @@ function extractYouTubeVideoId(url) {
     return null;
 }
 
-// Função para escapar HTML e formatar histórico
+// Escape HTML & historical format
 function formatPositionHistory(posHistory) {
     if (!posHistory || !Array.isArray(posHistory) || posHistory.length === 0) {
         return '<span class="text-muted">No history available</span>';
     }
     
-    // Função para escapar caracteres especiais
+    // Escape special characters
     function escapeHtml(text) {
         const map = {
             '&': '&amp;',
@@ -79,7 +71,7 @@ function formatPositionHistory(posHistory) {
         return String(text).replace(/[&<>"'\/]/g, s => map[s]);
     }
     
-    // Mapear e formatar cada entrada
+    // Entries map & format
     const entries = posHistory.map((entry, idx) => {
         const log = entry.log1 || entry || 'Unknown entry';
         const escapedLog = escapeHtml(log);
@@ -92,7 +84,7 @@ function formatPositionHistory(posHistory) {
     return entries.join('');
 }
 
-// Esta versão usa um sistema de expansão próprio, sem depender do Bootstrap dropdown
+// Own expansion system
 
 function CreateCardLevels_Main(level_main, index) {
     const position = index + 1;
@@ -104,7 +96,7 @@ function CreateCardLevels_Main(level_main, index) {
     
     const difficulty = `${level_main.diff_scale || ''}`;
     
-    // Formatar histórico de forma segura
+    // Historical format
     let historyHtml = '';
     if (level_main.pos_history && Array.isArray(level_main.pos_history) && level_main.pos_history.length > 0) {
         historyHtml = level_main.pos_history.map((entry, idx) => {
@@ -129,7 +121,7 @@ function CreateCardLevels_Main(level_main, index) {
     const safeCreator = (level_main.lvl_creator || '').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     const safeVideoUrl = level_main.video_url || '#';
 
-    // ID único para o accordion
+    // Unique ID
     const accordionId = `history-${position}`;
 
     const cardHtml = `
@@ -388,204 +380,76 @@ function CreateCardLevels_Extended(level_extended, index) {
 }
 
 function CreateCardLevels_Legacy(level_legacy, index) {
-        const position = index + 151;
-    
+    const position = index + 151;
+ 
     const videoId = extractYouTubeVideoId(level_legacy.video_url);
-    
-    const imageSrc = videoId 
-        ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` 
+ 
+    const imageSrc = videoId
+        ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
         : '/img/placeholder.png';
-    
+ 
     const difficulty = `${level_legacy.diff_scale || ''}`;
-
-    let rankDisplay = "";
-    if (level_legacy.pos_aredl === "" || level_legacy.pos_aredl === 0 || level_legacy.pos_aredl === undefined) {
-        rankDisplay = `${level_legacy.diff_rank || ''}`;
-    } else {
-        rankDisplay = `${level_legacy.diff_rank || ''}`;
-    }
-
-    const safeName = (level_legacy.lvl_name || '').replace(/"/g, '&quot;');
+    const rankDisplay = `${level_legacy.diff_rank || ''}`;
+ 
+    const safeName    = (level_legacy.lvl_name    || '').replace(/"/g, '&quot;');
     const safeCreator = (level_legacy.lvl_creator || '').replace(/"/g, '&quot;');
-    
     const safeVideoUrl = level_legacy.video_url || '#';
-    // DIFF RANK CASES:
-
-        if(level_legacy.diff_rank === "Extreme Demon"){
-            let levelCardHtml = `
-        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="image-container">
-                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src="${imageSrc}" 
-                                    alt="${safeName}"
-                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
-                                    loading="lazy"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                ${position}. ${safeName}
-                            </h5>
-                            
-                            <p class="creator-text">
-                                by ${safeCreator}
-                            </p>
-                            
-                            <div class="badge-container">
-                                <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier: ${difficulty}</span>
-                            </div>
-                            
-                            ${level_legacy.pos_aredl ? `<p class="aredl-text">AREDL Position: #${level_legacy.pos_aredl}</p>` : ''}
-                        </div>
-                    </div>
-                </div>
+ 
+    // Badge class choice
+    let badgeClass = 'badge-demon';
+    if (level_legacy.diff_rank === 'Extreme Demon') badgeClass = 'badge-extreme';
+    else if (level_legacy.diff_rank === 'Insane Demon') badgeClass = 'badge-insane';
+    else if (level_legacy.diff_rank === 'Hard Demon')   badgeClass = 'badge-hard';
+    else if (level_legacy.diff_rank === 'Medium Demon') badgeClass = 'badge-medium';
+    else if (level_legacy.diff_rank === 'Easy Demon')   badgeClass = 'badge-easy';
+ 
+    // Link's position text
+    let aredlLabel = 'List Position';
+    if (level_legacy.diff_rank === 'Extreme Demon') aredlLabel = 'List Position';
+    else if (level_legacy.diff_rank === 'Insane Demon') aredlLabel = 'IDL Position';
+    else if (level_legacy.diff_rank === 'Hard Demon')   aredlLabel = 'AREDL Position';
+ 
+    const levelCardHtml = `
+<div class="col level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
+    <div class="card h-100 legacy-card">
+        <!-- Imagem ocupa toda a largura do card -->
+        <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
+            <img
+                class="legacy-card-img"
+                src="${imageSrc}"
+                alt="${safeName}"
+                onerror="this.src='/img/placeholder.png'; this.onerror=null;"
+                loading="lazy"
+            >
+        </a>
+ 
+        <!-- Dados do nível ficam abaixo da imagem -->
+        <div class="card-body legacy-card-body">
+            <h6 class="card-title legacy-card-title">
+                ${position}. ${safeName}
+            </h6>
+ 
+            <p class="creator-text legacy-creator">
+                by ${safeCreator}
+            </p>
+ 
+            <div class="badge-container">
+                <span class="badge-demon">${rankDisplay}</span>
+                ${difficulty ? `<span class="badge-tier">Tier: ${difficulty}</span>` : ''}
             </div>
+ 
+            ${level_legacy.pos_aredl
+                ? `<p class="aredl-text">${aredlLabel}: #${level_legacy.pos_aredl}</p>`
+                : ''}
         </div>
-    `;
-
+    </div>
+</div>
+`;
+ 
     return levelCardHtml;
-    }
-
-    if(level_legacy.diff_rank === "Insane Demon"){
-            let levelCardHtml = `
-        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="image-container">
-                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src="${imageSrc}" 
-                                    alt="${safeName}"
-                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
-                                    loading="lazy"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                ${position}. ${safeName}
-                            </h5>
-                            
-                            <p class="creator-text">
-                                by ${safeCreator}
-                            </p>
-                            
-                            <div class="badge-container">
-                                <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier: ${difficulty}</span>
-                            </div>
-                            
-                            ${level_legacy.pos_aredl ? `<p class="aredl-text">IDL Position: #${level_legacy.pos_aredl}</p>` : ''}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
-
-    return levelCardHtml;
-    }
-    
-    if(level_legacy.diff_rank === "Hard Demon"){
-                    let levelCardHtml = `
-        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="image-container">
-                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src="${imageSrc}" 
-                                    alt="${safeName}"
-                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
-                                    loading="lazy"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                ${position}. ${safeName}
-                            </h5>
-                            
-                            <p class="creator-text">
-                                by ${safeCreator}
-                            </p>
-                            
-                            <div class="badge-container">
-                                <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier: ${difficulty}</span>
-                            </div>
-                            
-                            ${level_legacy.pos_aredl ? `<p class="aredl-text">HDL Position: #${level_legacy.pos_aredl}</p>` : ''}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
-
-    return levelCardHtml;
-    }
-    if(level_legacy.diff_rank === "Medium Demon" || level_legacy.diff_rank === "Easy Demon"){
-                    let levelCardHtml = `
-        <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="image-container">
-                            <a href="${safeVideoUrl}" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src="${imageSrc}" 
-                                    alt="${safeName}"
-                                    onerror="this.src='/img/placeholder.png'; this.onerror=null;"
-                                    loading="lazy"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                ${position}. ${safeName}
-                            </h5>
-                            
-                            <p class="creator-text">
-                                by ${safeCreator}
-                            </p>
-                            
-                            <div class="badge-container">
-                                <span class="badge-demon">${rankDisplay}</span>
-                                <span class="badge-tier">Tier: ${difficulty}</span>
-                            </div>
-                            
-                            ${level_legacy.pos_aredl ? `<p class="aredl-text">List Position: #${level_legacy.pos_aredl}</p>` : ''}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
-
-    return levelCardHtml;
-    }
 }
 
-// ==========================
 // GENERATE PAGE
-// ==========================
 function generatePage() {
     // LOAD UPDATED DATA ON EVERY REQUEST
     const { main: Mainlevels, extended: Extendedlevels, legacy: Legacylevels } = loadLevels();
@@ -627,9 +491,7 @@ function generatePage() {
     return htmlPage;
 }
 
-// ==========================
 // ROUTES
-// ==========================
 app.get("/", (req, res) => {
   res.redirect("/home");
 });
@@ -639,17 +501,13 @@ app.get("/home", (req, res) => {
   res.send(generatePage());
 });
 
-// ==========================
-// LOADING LOCALHOST PORT
-// ==========================
+// PORT
 if (process.env.NODE_ENV !== "production") {
-  const PORT = 3010;
+  const PORT = 3000;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });
 }
 
-// ==========================
 // VERCEL EXPORT
-// ==========================
 export default app;
