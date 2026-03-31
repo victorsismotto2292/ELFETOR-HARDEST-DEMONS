@@ -19,16 +19,8 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 14/02/2026 (22:45) - Hateflayer e Thanatophobia foram trocados de lugar, agora com Thanatophobia acima, na posição #27
+- (30/03/2026 - 21:42) Dysphoria foi movida da posição #29 para #31, acima de Zaphes Back Yard e abaixo de Galactus
 
-- 14/02/2026 (22:45) - Galactus e PPPPPPPPPPPPPPPPIXEL foram trocados de lugar,agora com PPPPPPPPPPPPPPPPIXEL acima, na posição #30
+- (30/03/2026 21:42) Galactus e PPPPPPPPPPPPPPPPIXEL foram trocadas de lugar, agora com Galactus acima, na posição #29
 
-- 14/02/2026 (23:00) - MikuMikuMikuMiku foi adicionada na posição #49, acima de Night Terrors e abaixo de X Aventure.
-
-- Bit Reaper CAI DA POSIÇÃO #50 APÓS 1 ANO
-
-- Magna Bound CAI DA MAIN LIST (#75) PARA A EXTENDED LIST (#76) APÓS QUASE 3 ANOS
-
-- Kepcep cai da EXTENDED LIST (#150) para a LEGACY LIST (#151)
-
-- ATUALIZADO URL VÍDEOS TOP 151 ATÉ 178
+- (14/02/2026) ATUALIZADO URL VÍDEOS TOP 151 ATÉ 178
