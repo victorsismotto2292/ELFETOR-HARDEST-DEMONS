@@ -20,7 +20,7 @@ Este projeto está configurado para deploy automático no Vercel.
 ## Últimas alterações
 
 - (06/04/2026 - 19:30) - Bunny Demon foi adicionadana posição #25, acima de Frizzantino Vibes e abaixo de Encroaching Dark
--> Backrooms cai para a EXTENDED LIST
--> Ad Honorem cai para a LEGACY LIST
+- -> Backrooms cai para a EXTENDED LIST
+- -> Ad Honorem cai para a LEGACY LIST
 
 - (14/02/2026) ATUALIZADO URL VÍDEOS TOP 151 ATÉ 178
