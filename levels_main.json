@@ -2699,130 +2699,6 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=LA7eaIfS9dE",
-    "lvl_name": "Necropolis",
-    "lvl_creator": "iIiNepTuneiIi",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "18",
-    "pos_history": [
-      {
-        "log1": "06/10/24 - Added to the list at position 14"
-      },
-      {
-        "log1": "17/10/24 - Prismatic was added above (-1)"
-      },
-      {
-        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (Fell out of the top 15) (-1)"
-      },
-      {
-        "log1": "29/11/24 - Precipitance was added above (-1)"
-      },
-      {
-        "log1": "13/12/24 - Bloodbath was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Stellaluna was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Azurite was added above (-1)"
-      },
-      {
-        "log1": "24/02/25 - Sheol Death was added above (Fell out of the top 20) (-1)"
-      },
-      {
-        "log1": "14/03/25 - The Bandere was added above (-1)"
-      },
-      {
-        "log1": "19/03/25 - Ulon was added above (-1)"
-      },
-      {
-        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
-      },
-      {
-        "log1": "19/05/25 - Manic Machine was added above (-1)"
-      },
-      {
-        "log1": "17/07/25 - Zaphes Back Yard was added above (Fell out of the top 25) (-1)"
-      },
-      {
-        "log1": "24/07/25 - Destination 19 was added above (-1)"
-      },
-      {
-        "log1": "18/08/25 - The Flawless was added above (-1)"
-      },
-      {
-        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
-      },
-      {
-        "log1": "23/09/25 - Reflective was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Reverence was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Broken Signal was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - The Lost Existence was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - Dysphoria was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "11/06/25 - Light Years was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "06/12/25 - Leyak was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      },
-      {
-        "log1": "06/04/26 - Bunny Demon was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/ajf8ZVFWCf8?si=qJMN9EYvwplCk6af",
     "lvl_name": "Elements X",
     "lvl_creator": "Eiken",
@@ -2970,6 +2846,136 @@
       },
       {
         "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/04/26 - Moved to position 45 (+1), below In Cargill and above Necropolis"
+      }
+    ]
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=LA7eaIfS9dE",
+    "lvl_name": "Necropolis",
+    "lvl_creator": "iIiNepTuneiIi",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "18",
+    "pos_history": [
+      {
+        "log1": "06/10/24 - Added to the list at position 14"
+      },
+      {
+        "log1": "17/10/24 - Prismatic was added above (-1)"
+      },
+      {
+        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (Fell out of the top 15) (-1)"
+      },
+      {
+        "log1": "29/11/24 - Precipitance was added above (-1)"
+      },
+      {
+        "log1": "13/12/24 - Bloodbath was added above (-1)"
+      },
+      {
+        "log1": "02/02/25 - Stellaluna was added above (-1)"
+      },
+      {
+        "log1": "02/02/25 - Azurite was added above (-1)"
+      },
+      {
+        "log1": "24/02/25 - Sheol Death was added above (Fell out of the top 20) (-1)"
+      },
+      {
+        "log1": "14/03/25 - The Bandere was added above (-1)"
+      },
+      {
+        "log1": "19/03/25 - Ulon was added above (-1)"
+      },
+      {
+        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
+      },
+      {
+        "log1": "19/05/25 - Manic Machine was added above (-1)"
+      },
+      {
+        "log1": "17/07/25 - Zaphes Back Yard was added above (Fell out of the top 25) (-1)"
+      },
+      {
+        "log1": "24/07/25 - Destination 19 was added above (-1)"
+      },
+      {
+        "log1": "18/08/25 - The Flawless was added above (-1)"
+      },
+      {
+        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
+      },
+      {
+        "log1": "23/09/25 - Reflective was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Reverence was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Broken Signal was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - The Lost Existence was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - Dysphoria was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
+      },
+      {
+        "log1": "02/11/25 - Allegiance was added above (-1)"
+      },
+      {
+        "log1": "11/06/25 - Light Years was added above (-1)"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "06/12/25 - Leyak was added above (-1)"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/04/26 - Elements X was moved above (-1)"
       }
     ]
   },
@@ -3649,6 +3655,205 @@
     ]
   },
   {
+    "video_url": "https://youtu.be/DOvFm_23y1A?si=aw4xX1abGLJGk2Ej",
+    "lvl_name": "Arcane",
+    "lvl_creator": "qMystic",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "17",
+    "pos_history": [
+      {
+        "log1": "31/03/24 - Added to the list at position 8"
+      },
+      {
+        "log1": "12/04/24 - CMYK was added above (-1)"
+      },
+      {
+        "log1": "26/04/24 - Dust storm was added above (-1)"
+      },
+      {
+        "log1": "12/05/24 - Elements X was added above (Fell out of the top 10) (-1)"
+      },
+      {
+        "log1": "09/06/24 - goodnight was added above (-1)"
+      },
+      {
+        "log1": "09/06/24 - Memories III was added above (-1)"
+      },
+      {
+        "log1": "30/06/24 - Hateflayer was added above (-1)"
+      },
+      {
+        "log1": "22/07/24 - Encroaching Dark was added above (-1)"
+      },
+      {
+        "log1": "27/07/24 - In Cargill was added above (Fell out of the top 15) (-1)"
+      },
+      {
+        "log1": "06/08/24 - Moved to position 15 (+1)"
+      },
+      {
+        "log1": "20/08/24 - CHROMA  was moved up past this demon (Fell out again to the top 15) (-1)"
+      },
+      {
+        "log1": "23/08/24 - Cataclysm was added above (-1)"
+      },
+      {
+        "log1": "05/09/24 - Prismatic Haze was added above (-1)"
+      },
+      {
+        "log1": "18/09/24 - Kyrie Eleison was added above (-1)"
+      },
+      {
+        "log1": "06/10/24 - Mind Crusher was added above (-1)"
+      },
+      {
+        "log1": "06/10/24 - Necropolis was added above (Fell out of the top 20) (-1)"
+      },
+      {
+        "log1": "17/10/24 - Prismatic was added above (-1)"
+      },
+      {
+        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "29/11/24 - Precipitance was added above (-1)"
+      },
+      {
+        "log1": "13/12/24 - Bloodbath was added adove (-1)"
+      },
+      {
+        "log1": "20/01/25 - ReRUST was added above (Fell out of the top 25) (-1)"
+      },
+      {
+        "log1": "02/02/25 - Stellaluna was added above (-1)"
+      },
+      {
+        "log1": "02/02/25 - Azurite was added above (-1)"
+      },
+      {
+        "log1": "05/02/25 - Moved to position 27 (+1)"
+      },
+      {
+        "log1": "24/02/25 - Sheol Death was added above (-1)"
+      },
+      {
+        "log1": "28/02/25 - Acrise was moved down past this demon (+1)"
+      },
+      {
+        "log1": "14/03/25 - The Bandere was added above (-1)"
+      },
+      {
+        "log1": "19/03/25 - Ulon was added above (-1)"
+      },
+      {
+        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
+      },
+      {
+        "log1": "19/05/25 - Manic Machine was added above (-1)"
+      },
+      {
+        "log1": "20/06/25 - Bit Reaper was added above (-1)"
+      },
+      {
+        "log1": "02/07/25 - X Adventure was added above (-1)"
+      },
+      {
+        "log1": "07/07/25 - goodnight was moved down past this demon (+1)"
+      },
+      {
+        "log1": "07/07/25 - YMTHLYFYMBIKWHRLYF was added above (-1)"
+      },
+      {
+        "log1": "17/07/25 - Zaphes Back Yard was added above (-1)"
+      },
+      {
+        "log1": "24/07/25 - Destination 19 was added above (-1)"
+      },
+      {
+        "log1": "18/08/25 - The Flawless was added above (-1)"
+      },
+      {
+        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
+      },
+      {
+        "log1": "23/09/25 - Reflective was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Reverence was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Broken Signal was added above (-1)"
+      },
+      {
+        "log1": "07/10/25 - YMTHLYFYMBIKWHRLYF was moved down past this demon (+1)"
+      },
+      {
+        "log1": "01/11/25 - The Lost Existence was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - Dysphoria was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
+      },
+      {
+        "log1": "02/11/25 - Allegiance was added above (-1)"
+      },
+      {
+        "log1": "11/06/25 - Light Years was added above (-1)"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "06/12/25 - Leyak was added above (-1)"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
+      },
+      {
+        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/04/26 - Moved to position 53 (+1), below Bit Reaper and above CHROMA"
+      }
+    ]
+  },
+  {
     "video_url": "https://youtu.be/safTqSqxp30?si=Qg1Ou55Wlh78vEg2",
     "lvl_name": "CHROMA",
     "lvl_creator": "Renn241",
@@ -3850,202 +4055,9 @@
       },
       {
         "log1": "06/04/26 - Bunny Demon was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://youtu.be/DOvFm_23y1A?si=aw4xX1abGLJGk2Ej",
-    "lvl_name": "Arcane",
-    "lvl_creator": "qMystic",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "17",
-    "pos_history": [
-      {
-        "log1": "31/03/24 - Added to the list at position 8"
       },
       {
-        "log1": "12/04/24 - CMYK was added above (-1)"
-      },
-      {
-        "log1": "26/04/24 - Dust storm was added above (-1)"
-      },
-      {
-        "log1": "12/05/24 - Elements X was added above (Fell out of the top 10) (-1)"
-      },
-      {
-        "log1": "09/06/24 - goodnight was added above (-1)"
-      },
-      {
-        "log1": "09/06/24 - Memories III was added above (-1)"
-      },
-      {
-        "log1": "30/06/24 - Hateflayer was added above (-1)"
-      },
-      {
-        "log1": "22/07/24 - Encroaching Dark was added above (-1)"
-      },
-      {
-        "log1": "27/07/24 - In Cargill was added above (Fell out of the top 15) (-1)"
-      },
-      {
-        "log1": "06/08/24 - Moved to position 15 (+1)"
-      },
-      {
-        "log1": "20/08/24 - CHROMA  was moved up past this demon (Fell out again to the top 15) (-1)"
-      },
-      {
-        "log1": "23/08/24 - Cataclysm was added above (-1)"
-      },
-      {
-        "log1": "05/09/24 - Prismatic Haze was added above (-1)"
-      },
-      {
-        "log1": "18/09/24 - Kyrie Eleison was added above (-1)"
-      },
-      {
-        "log1": "06/10/24 - Mind Crusher was added above (-1)"
-      },
-      {
-        "log1": "06/10/24 - Necropolis was added above (Fell out of the top 20) (-1)"
-      },
-      {
-        "log1": "17/10/24 - Prismatic was added above (-1)"
-      },
-      {
-        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "29/11/24 - Precipitance was added above (-1)"
-      },
-      {
-        "log1": "13/12/24 - Bloodbath was added adove (-1)"
-      },
-      {
-        "log1": "20/01/25 - ReRUST was added above (Fell out of the top 25) (-1)"
-      },
-      {
-        "log1": "02/02/25 - Stellaluna was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Azurite was added above (-1)"
-      },
-      {
-        "log1": "05/02/25 - Moved to position 27 (+1)"
-      },
-      {
-        "log1": "24/02/25 - Sheol Death was added above (-1)"
-      },
-      {
-        "log1": "28/02/25 - Acrise was moved down past this demon (+1)"
-      },
-      {
-        "log1": "14/03/25 - The Bandere was added above (-1)"
-      },
-      {
-        "log1": "19/03/25 - Ulon was added above (-1)"
-      },
-      {
-        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
-      },
-      {
-        "log1": "19/05/25 - Manic Machine was added above (-1)"
-      },
-      {
-        "log1": "20/06/25 - Bit Reaper was added above (-1)"
-      },
-      {
-        "log1": "02/07/25 - X Adventure was added above (-1)"
-      },
-      {
-        "log1": "07/07/25 - goodnight was moved down past this demon (+1)"
-      },
-      {
-        "log1": "07/07/25 - YMTHLYFYMBIKWHRLYF was added above (-1)"
-      },
-      {
-        "log1": "17/07/25 - Zaphes Back Yard was added above (-1)"
-      },
-      {
-        "log1": "24/07/25 - Destination 19 was added above (-1)"
-      },
-      {
-        "log1": "18/08/25 - The Flawless was added above (-1)"
-      },
-      {
-        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
-      },
-      {
-        "log1": "23/09/25 - Reflective was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Reverence was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Broken Signal was added above (-1)"
-      },
-      {
-        "log1": "07/10/25 - YMTHLYFYMBIKWHRLYF was moved down past this demon (+1)"
-      },
-      {
-        "log1": "01/11/25 - The Lost Existence was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - Dysphoria was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "11/06/25 - Light Years was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "06/12/25 - Leyak was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      },
-      {
-        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
-      },
-      {
-        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+        "log1": "16/04/26 - Arcane was moved above (-1)"
       }
     ]
   },
@@ -6119,202 +6131,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/fohRDf4tn4Y?si=2rtNCTBa6N2KXL00",
-    "lvl_name": "FFFFFF",
-    "lvl_creator": "Vlacc",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "16",
-    "pos_history": [
-      {
-        "log1": "14/05/24 - Added to the list at position 17"
-      },
-      {
-        "log1": "09/06/24 - goodnight was added above (-1)"
-      },
-      {
-        "log1": "09/06/24 - Memories III was added above (-1)"
-      },
-      {
-        "log1": "12/06/24 - Pyromaniac was moved up past this demon (-1)"
-      },
-      {
-        "log1": "30/06/24 - Hateflayer was added above (Fell out of the top 20) (-1)"
-      },
-      {
-        "log1": "22/07/24 - Encroaching Dark was added above (-1)"
-      },
-      {
-        "log1": "27/07/24 - In Cargill was added above (-1)"
-      },
-      {
-        "log1": "23/08/24 - Cataclysm was added above (-1)"
-      },
-      {
-        "log1": "05/09/24 - Prismatic Haze was added above (-1)"
-      },
-      {
-        "log1": "18/09/24 - Kyrie Eleison was added above (Fell out of the top 25) (-1)"
-      },
-      {
-        "log1": "19/09/24 - Lit Fuse was added above (-1)"
-      },
-      {
-        "log1": "06/10/24 - Mind Crusher was added above (-1)"
-      },
-      {
-        "log1": "06/10/24 - Necropolis was added above (-1)"
-      },
-      {
-        "log1": "17/10/24 - Prismatic was added above (-1)"
-      },
-      {
-        "log1": "15/11/24 - One North was added above  (-1)"
-      },
-      {
-        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "29/11/24 - Precipitance was added above (-1)"
-      },
-      {
-        "log1": "13/12/24 - Bloodbath was added adove (-1)"
-      },
-      {
-        "log1": "20/01/25 - ReRUST was added above (-1)"
-      },
-      {
-        "log1": "20/01/25 - Quantum Force was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Stellaluna was added above (-1)"
-      },
-      {
-        "log1": "02/02/25 - Azurite was added above (-1)"
-      },
-      {
-        "log1": "24/02/25 - Sheol Death was added above (-1)"
-      },
-      {
-        "log1": "14/03/25 - The Bandere was added above (-1)"
-      },
-      {
-        "log1": "19/03/25 - Ulon was added above (-1)"
-      },
-      {
-        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
-      },
-      {
-        "log1": "19/05/25 - Manic Machine was added above (-1)"
-      },
-      {
-        "log1": "12/06/25 - Valhalla was added above (-1)"
-      },
-      {
-        "log1": "20/06/25 - Bit Reaper was added above (-1)"
-      },
-      {
-        "log1": "02/07/25 - X Adventure was added above (-1)"
-      },
-      {
-        "log1": "07/07/25 - YMTHLYFYMBIKWHRLYF was added above (-1)"
-      },
-      {
-        "log1": "17/07/25 - Zaphes Back Yard was added above (-1)"
-      },
-      {
-        "log1": "24/07/25 - Destination 19 was added above (-1)"
-      },
-      {
-        "log1": "18/08/25 - The Flawless was added above (-1)"
-      },
-      {
-        "log1": "19/09/25 - One North was moved down past this demon (+1)"
-      },
-      {
-        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
-      },
-      {
-        "log1": "23/09/25 - Reflective was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Reverence was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Broken Signal was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - The Lost Existence was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - Dysphoria was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - (Solo) - Supersonic was added above (-1)"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "11/06/25 - Light Years was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "06/12/25 - Leyak was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Bichromatic was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
-      },
-      {
-        "log1": "18/01/26 - MultiChromatic was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      },
-      {
-        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
-      },
-      {
-        "log1": "06/04/26 - Bunny Demon was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://www.youtube.com/watch?v=ykmK5EsQXHs",
     "lvl_name": "EXG",
     "lvl_creator": "Grax",
@@ -6567,6 +6383,208 @@
       },
       {
         "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/04/26 - Moved to position 69 (+1), below Pyromaniac and above FFFFFF"
+      }
+    ]
+  },
+  {
+    "video_url": "https://youtu.be/fohRDf4tn4Y?si=2rtNCTBa6N2KXL00",
+    "lvl_name": "FFFFFF",
+    "lvl_creator": "Vlacc",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16",
+    "pos_history": [
+      {
+        "log1": "14/05/24 - Added to the list at position 17"
+      },
+      {
+        "log1": "09/06/24 - goodnight was added above (-1)"
+      },
+      {
+        "log1": "09/06/24 - Memories III was added above (-1)"
+      },
+      {
+        "log1": "12/06/24 - Pyromaniac was moved up past this demon (-1)"
+      },
+      {
+        "log1": "30/06/24 - Hateflayer was added above (Fell out of the top 20) (-1)"
+      },
+      {
+        "log1": "22/07/24 - Encroaching Dark was added above (-1)"
+      },
+      {
+        "log1": "27/07/24 - In Cargill was added above (-1)"
+      },
+      {
+        "log1": "23/08/24 - Cataclysm was added above (-1)"
+      },
+      {
+        "log1": "05/09/24 - Prismatic Haze was added above (-1)"
+      },
+      {
+        "log1": "18/09/24 - Kyrie Eleison was added above (Fell out of the top 25) (-1)"
+      },
+      {
+        "log1": "19/09/24 - Lit Fuse was added above (-1)"
+      },
+      {
+        "log1": "06/10/24 - Mind Crusher was added above (-1)"
+      },
+      {
+        "log1": "06/10/24 - Necropolis was added above (-1)"
+      },
+      {
+        "log1": "17/10/24 - Prismatic was added above (-1)"
+      },
+      {
+        "log1": "15/11/24 - One North was added above  (-1)"
+      },
+      {
+        "log1": "19/11/24 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "29/11/24 - Precipitance was added above (-1)"
+      },
+      {
+        "log1": "13/12/24 - Bloodbath was added adove (-1)"
+      },
+      {
+        "log1": "20/01/25 - ReRUST was added above (-1)"
+      },
+      {
+        "log1": "20/01/25 - Quantum Force was added above (-1)"
+      },
+      {
+        "log1": "02/02/25 - Stellaluna was added above (-1)"
+      },
+      {
+        "log1": "02/02/25 - Azurite was added above (-1)"
+      },
+      {
+        "log1": "24/02/25 - Sheol Death was added above (-1)"
+      },
+      {
+        "log1": "14/03/25 - The Bandere was added above (-1)"
+      },
+      {
+        "log1": "19/03/25 - Ulon was added above (-1)"
+      },
+      {
+        "log1": "01/05/25 - The Ultimate Return was added above (-1)"
+      },
+      {
+        "log1": "19/05/25 - Manic Machine was added above (-1)"
+      },
+      {
+        "log1": "12/06/25 - Valhalla was added above (-1)"
+      },
+      {
+        "log1": "20/06/25 - Bit Reaper was added above (-1)"
+      },
+      {
+        "log1": "02/07/25 - X Adventure was added above (-1)"
+      },
+      {
+        "log1": "07/07/25 - YMTHLYFYMBIKWHRLYF was added above (-1)"
+      },
+      {
+        "log1": "17/07/25 - Zaphes Back Yard was added above (-1)"
+      },
+      {
+        "log1": "24/07/25 - Destination 19 was added above (-1)"
+      },
+      {
+        "log1": "18/08/25 - The Flawless was added above (-1)"
+      },
+      {
+        "log1": "19/09/25 - One North was moved down past this demon (+1)"
+      },
+      {
+        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
+      },
+      {
+        "log1": "23/09/25 - Reflective was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Reverence was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Broken Signal was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - The Lost Existence was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - Dysphoria was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - (Deathlink) - Supersonic was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - (Solo) - Supersonic was added above (-1)"
+      },
+      {
+        "log1": "02/11/25 - Allegiance was added above (-1)"
+      },
+      {
+        "log1": "11/06/25 - Light Years was added above (-1)"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "06/12/25 - Leyak was added above (-1)"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Bichromatic was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "18/01/26 - MultiChromatic was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
+      },
+      {
+        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/04/26 - EXG was moved above (-1)"
       }
     ]
   },
