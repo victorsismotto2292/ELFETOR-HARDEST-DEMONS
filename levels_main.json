@@ -6610,67 +6610,6 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=f1Hu7r5KVxM",
-    "lvl_name": "Explorers",
-    "lvl_creator": "Darwin",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "15",
-    "pos_history": [
-      {
-        "log1": "13/12/25 - Added to the list at position 67"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Bichromatic was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "14/01/26 - Moved to position 64 (+4), below EXG and above One North"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Galactus was added above (-1)"
-      },
-      {
-        "log1": "18/01/26 - MultiChromatic was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      },
-      {
-        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
-      },
-      {
-        "log1": "06/04/26 - Bunny Demon was added above (-1)"
-      }
-    ]
-  },
-  {
     "lvl_name": "Decimation",
     "lvl_creator": "Lemons",
     "video_url": "https://youtu.be/wtqHPh7_Eg4?si=bng4xCs71PcbAWKT",
@@ -6692,6 +6631,9 @@
       },
       {
         "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "17/04/26 - Explorers was moved below (+1)"
       }
     ]
   },
@@ -6753,6 +6695,73 @@
       },
       {
         "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "17/04/26 - Explorers was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=f1Hu7r5KVxM",
+    "lvl_name": "Explorers",
+    "lvl_creator": "Darwin",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15",
+    "pos_history": [
+      {
+        "log1": "13/12/25 - Added to the list at position 67"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Bichromatic was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - PPPPPPPPPPPPPPPPIXEL was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "14/01/26 - Moved to position 64 (+4), below EXG and above One North"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Galactus was added above (-1)"
+      },
+      {
+        "log1": "18/01/26 - MultiChromatic was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "15/02/26 - MikuMikuMikuMiku was added above (-1)"
+      },
+      {
+        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "17/04/26 - Moved to position 73 (-2), below One North and above Stalemate"
       }
     ]
   },
