@@ -23,8 +23,7 @@ Este projeto está configurado para deploy automático no Vercel.
 - -> Backrooms cai para a EXTENDED LIST
 - -> Ad Honorem cai para a LEGACY LIST
 
-- (15/04/2026 - 22:25) - Necropolis e Elements X foram trocadas de lugar, agora com Elements X acima, na posição #45
-- (15/04/2026 - 22:25) - CHROMA e Arcane foram trocadas de lugar, agora com Arcane acima, na posição #53
-- (15/04/2026 - 22:25) - FFFFFF e EXG foram trocadas de lugar, agora com EXG acima, na posição #69
+- (17/04/2026 - 11:25) - Acrise foi movida da posição #58 para #54, acima de CHROMA e abaixo de Arcane
+- (17/04/2026 - 11:25) - goodnight e Heritage foram trocadas de lugar, agora com Heritage acima, na posição #58
 
 - (14/02/2026) ATUALIZADO URL VÍDEOS TOP 151 ATÉ 178
