@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=eGPNEaZV6cc",
+    "lvl_name": "Crazy II",
+    "lvl_creator": "DAVJT",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "video_url": "https://youtu.be/SgTPZUlj31c?si=3DliqBJ1rV8g2Vaz",
     "lvl_name": "Backrooms",
     "lvl_creator": "CarrotySpice",
@@ -1086,22 +1094,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "7",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=gTtsrzNUJM8",
-    "lvl_name": "HeLL",
-    "lvl_creator": "Serponge",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "8",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
