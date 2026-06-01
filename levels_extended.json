@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=f1Hu7r5KVxM",
+    "lvl_name": "Explorers",
+    "lvl_creator": "Darwin",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=rtm0flhztcU",
     "lvl_name": "Stalemate",
     "lvl_creator": "Nox",
@@ -1070,22 +1078,6 @@
     "pos_aredl": "",
     "diff_rank": "Medium Demon",
     "diff_scale": "9",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=vUZFy9xeHkE",
-    "lvl_name": "Petrified Factory",
-    "lvl_creator": "Korita",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "10",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
