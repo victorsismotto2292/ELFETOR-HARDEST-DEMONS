@@ -750,6 +750,67 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=Wn48wSXwo8k",
+    "lvl_name": "Destination 19",
+    "lvl_creator": "bosjoker",
+    "pos_aredl": 1240,
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "21",
+    "pos_history": [
+      {
+        "log1": "24/07/25 - Added to the list at position 15"
+      },
+      {
+        "log1": "18/08/25 - The Flawless was added above (Fell out of the top 15) (-1)"
+      },
+      {
+        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
+      },
+      {
+        "log1": "23/09/25 - Reflective was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Reverence was added above (-1)"
+      },
+      {
+        "log1": "06/10/25 - Broken Signal was added above (-1)"
+      },
+      {
+        "log1": "01/11/25 - The Lost Existence was added above (Fell out of the top 20) (-1)"
+      },
+      {
+        "log1": "02/11/25 - Allegiance was added above (-1)"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Moved to position 3 (+20)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Moved to position 20 (-17)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved below (+1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "08/06/26 - Moved to position 19 (+1), below Azurite and above Memories III"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=16XbSBTstrw&t=147s",
     "lvl_name": "Memories III",
     "lvl_creator": "the4n1ma",
@@ -822,64 +883,9 @@
       },
       {
         "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=Wn48wSXwo8k",
-    "lvl_name": "Destination 19",
-    "lvl_creator": "bosjoker",
-    "pos_aredl": 1240,
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "21",
-    "pos_history": [
-      {
-        "log1": "24/07/25 - Added to the list at position 15"
       },
       {
-        "log1": "18/08/25 - The Flawless was added above (Fell out of the top 15) (-1)"
-      },
-      {
-        "log1": "19/09/25 - Forbidden Isle was added above (-1)"
-      },
-      {
-        "log1": "23/09/25 - Reflective was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Reverence was added above (-1)"
-      },
-      {
-        "log1": "06/10/25 - Broken Signal was added above (-1)"
-      },
-      {
-        "log1": "01/11/25 - The Lost Existence was added above (Fell out of the top 20) (-1)"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Moved to position 3 (+20)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Moved to position 20 (-17)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved below (+1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+        "log1": "08/06/26 - Destination 19 was moved above (-1)"
       }
     ]
   },
