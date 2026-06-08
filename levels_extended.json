@@ -304,22 +304,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/-BqN5ZnDqig?si=hSuAQWwfiY8YkWo3",
-    "lvl_name": "MASTERMIND",
-    "lvl_creator": "Hinds",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "15",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
     "lvl_name": "Euphoria",
     "video_url": "https://youtu.be/R6BKN2LDRjQ?si=9AK-WhcLvCaaYZQZ",
     "lvl_creator": "Dams778",
@@ -352,10 +336,42 @@
     ]
   },
   {
+    "video_url": "https://youtu.be/-BqN5ZnDqig?si=hSuAQWwfiY8YkWo3",
+    "lvl_name": "MASTERMIND",
+    "lvl_creator": "Hinds",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "15",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://youtu.be/vqpiYyi2sDk?si=sy4zk4r4Tbw-mwEs",
     "lvl_name": "Psychosis",
     "lvl_creator": "Hinds",
     "pos_aredl": 220,
+    "diff_rank": "Hard Demon",
+    "diff_scale": "15",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://youtu.be/3eVqIMNS28c?si=LBlblx_dKp3aDX4U",
+    "lvl_name": "8E8E6",
+    "lvl_creator": "cynir",
+    "pos_aredl": 235,
     "diff_rank": "Hard Demon",
     "diff_scale": "15",
     "pos_history": [
@@ -384,22 +400,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/3eVqIMNS28c?si=LBlblx_dKp3aDX4U",
-    "lvl_name": "8E8E6",
-    "lvl_creator": "cynir",
-    "pos_aredl": 235,
-    "diff_rank": "Hard Demon",
-    "diff_scale": "15",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/pD1F-NoCmUg?si=RdQfLUlbCgEoR-DK",
     "lvl_name": "Walkman",
     "lvl_creator": "JamAttack",
@@ -416,9 +416,9 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/S5h0cDVYt7Y?si=CA0LtmKNU3RCxuQr",
-    "lvl_name": "Badland",
-    "lvl_creator": "TamaN",
+    "video_url": "https://youtu.be/EgdgZwc1x6Y?si=wlqnrSRdEbExLAt1",
+    "lvl_name": "Iridescent",
+    "lvl_creator": "ViPriN",
     "pos_aredl": 235,
     "diff_rank": "Hard Demon",
     "diff_scale": "15",
@@ -432,9 +432,9 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/EgdgZwc1x6Y?si=wlqnrSRdEbExLAt1",
-    "lvl_name": "Iridescent",
-    "lvl_creator": "ViPriN",
+    "video_url": "https://youtu.be/S5h0cDVYt7Y?si=CA0LtmKNU3RCxuQr",
+    "lvl_name": "Badland",
+    "lvl_creator": "TamaN",
     "pos_aredl": 235,
     "diff_rank": "Hard Demon",
     "diff_scale": "15",
@@ -496,6 +496,22 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=K0MDnUBlZws",
+    "lvl_name": "Obelisk",
+    "lvl_creator": "SuprianGD",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "13",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=w6EUYAmbjEE",
     "lvl_name": "LOCK IN",
     "lvl_creator": "Sparktwo",
@@ -512,12 +528,12 @@
     ]
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=K0MDnUBlZws",
-    "lvl_name": "Obelisk",
-    "lvl_creator": "SuprianGD",
+    "video_url": "https://www.youtube.com/watch?v=sBUnK_sATR4",
+    "lvl_name": "Double Dash",
+    "lvl_creator": "Zoroa",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
-    "diff_scale": "13",
+    "diff_scale": "12",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
@@ -550,22 +566,6 @@
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "13",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=sBUnK_sATR4",
-    "lvl_name": "Double Dash",
-    "lvl_creator": "Zoroa",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "12",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
