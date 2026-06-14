@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://youtu.be/irDNQ-kk1xA?si=KO7L2aTZNfXXer_H",
+    "lvl_name": "One North",
+    "lvl_creator": "IAMRozz",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16"
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=f1Hu7r5KVxM",
     "lvl_name": "Explorers",
     "lvl_creator": "Darwin",
@@ -1062,22 +1070,6 @@
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": 9,
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=NzlwLyvWoPE",
-    "lvl_name": "Cyber CompositioN",
-    "lvl_creator": "Takumii",
-    "pos_aredl": "",
-    "diff_rank": "Medium Demon",
-    "diff_scale": "9",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
