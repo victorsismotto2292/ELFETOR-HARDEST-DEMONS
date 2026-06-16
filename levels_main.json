@@ -457,6 +457,46 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=lHf6buYpbXU",
+    "lvl_name": "Allegiance",
+    "lvl_creator": "NikroPlays",
+    "pos_aredl": 1125,
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "21",
+    "pos_history": [
+      {
+        "log1": "02/11/25 - Added to the list at position 10"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 10) (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved below (+1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "31/01/26 - Moved to position 13 (-2), below Forbidden Isle and above The Lost Existence"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "16/06/26 - Moved to position 14 (+1), below The Flawless and above Forbidden Isle"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=su7p9rT3JB4",
     "lvl_name": "Forbidden Isle",
     "lvl_creator": "Sillow",
@@ -502,43 +542,9 @@
       },
       {
         "log1": "14/06/26 - Aftermath was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=lHf6buYpbXU",
-    "lvl_name": "Allegiance",
-    "lvl_creator": "NikroPlays",
-    "pos_aredl": 1125,
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "21",
-    "pos_history": [
-      {
-        "log1": "02/11/25 - Added to the list at position 10"
       },
       {
-        "log1": "24/11/25 - Cytokinesis was added above (Fell out of the top 10) (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved below (+1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "31/01/26 - Moved to position 13 (-2), below Forbidden Isle and above The Lost Existence"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
+        "log1": "16/06/26 - Allegiance was moved above (-1)"
       }
     ]
   },
