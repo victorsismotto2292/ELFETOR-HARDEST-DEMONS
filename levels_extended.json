@@ -1,5 +1,13 @@
 [
   {
+    "lvl_name": "Decimation",
+    "lvl_creator": "Lemons",
+    "video_url": "https://youtu.be/wtqHPh7_Eg4?si=bng4xCs71PcbAWKT",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16",
+    "pos_aredl": 0
+  },
+  {
     "video_url": "https://youtu.be/irDNQ-kk1xA?si=KO7L2aTZNfXXer_H",
     "lvl_name": "One North",
     "lvl_creator": "IAMRozz",
@@ -1054,22 +1062,6 @@
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=AcCV-WMIOZU",
-    "lvl_name": "Carnivores",
-    "lvl_creator": "KrazyKako9",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": 9,
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
