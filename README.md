@@ -19,11 +19,11 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-- 14/06/2026 (12:11) - Aftermath foi adicionada na posição #5, acima de Manic Machine e abaixo de Prismatic Haze
-  - NAPALM FORA DA POSIÇÃO #10
-  - THE LOST EXISTENCE FORA DA POSIÇÃO #15
-  - MEMORIES III FORA DA POSIÇÃO #20
-  - ACU FORA DA POSIÇÃO #25
-  - GUMSHOT FORA DA POSIÇÃO #50
-
--  16/06/2026 (11:54) - Forbidden Isle e Allegiance foram trocadas de lugar, agora com Allegiance acima, na posição #14
+- 02/07/2026 (19:34) - Balengu Vortex foi adicionada na posição #2, acima de Bloodbath e abaixo de Black Blizzard
+- AFTERMATH CAI DA POSIÇÃO #5
+- THE ULTIMATE RETURN CAI DA POSIÇÃO #10
+- FORBIDDEN ISLE CAI DA POSIÇÃO #15
+- DESTINATION 19 CAI DA POSIÇÃO #20
+- SWEATER WEATHER CAI DA POSIÇÃO #25
+- DECIMATION CAI DA POSIÇÃO #75 (EXTENDED LIST)
+- CARNIVORES CAI DA POSIÇÃO #150 (LEGACY LIST)
