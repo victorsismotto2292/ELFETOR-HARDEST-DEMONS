@@ -424,22 +424,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/pD1F-NoCmUg?si=RdQfLUlbCgEoR-DK",
-    "lvl_name": "Walkman",
-    "lvl_creator": "JamAttack",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "12",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/EgdgZwc1x6Y?si=wlqnrSRdEbExLAt1",
     "lvl_name": "Iridescent",
     "lvl_creator": "ViPriN",
@@ -462,6 +446,22 @@
     "pos_aredl": 235,
     "diff_rank": "Hard Demon",
     "diff_scale": "15",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://youtu.be/pD1F-NoCmUg?si=RdQfLUlbCgEoR-DK",
+    "lvl_name": "Walkman",
+    "lvl_creator": "JamAttack",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "12",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
