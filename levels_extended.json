@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://youtu.be/fohRDf4tn4Y?si=2rtNCTBa6N2KXL00",
+    "lvl_name": "FFFFFF",
+    "lvl_creator": "Vlacc",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16"
+  },
+  {
     "lvl_name": "Decimation",
     "lvl_creator": "Lemons",
     "video_url": "https://youtu.be/wtqHPh7_Eg4?si=bng4xCs71PcbAWKT",
@@ -1043,22 +1051,6 @@
     "video_url": "https://www.youtube.com/watch?v=ynviG8bEgaw",
     "lvl_name": "Darkness Keeper",
     "lvl_creator": "AbstractDark",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=J400WqJIllA",
-    "lvl_name": "Goodbye II",
-    "lvl_creator": "Freyda",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "10",
