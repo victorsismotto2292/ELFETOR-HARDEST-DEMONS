@@ -600,6 +600,14 @@
     ]
   },
   {
+    "lvl_name": "Forest Temple",
+    "lvl_creator": "Michigun",
+    "video_url": "https://www.youtube.com/watch?v=ZKT1_Mq7hD0",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "14",
+    "pos_aredl": 0
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=XaSKm3c0U_4",
     "lvl_name": "Dance Massacre",
     "lvl_creator": "Hinds",
@@ -1038,22 +1046,6 @@
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "11",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=ynviG8bEgaw",
-    "lvl_name": "Darkness Keeper",
-    "lvl_creator": "AbstractDark",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "10",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
