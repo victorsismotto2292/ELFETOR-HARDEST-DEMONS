@@ -261,6 +261,49 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=arn_H4QM_1o",
+    "lvl_name": "Reverence",
+    "lvl_creator": "Woom",
+    "pos_aredl": 1000,
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "22",
+    "pos_history": [
+      {
+        "log1": "06/10/25 - Added to the list at position 6"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved above (-1)"
+      },
+      {
+        "log1": "20/12/25 - Destination 19 was moved below (+1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
+      },
+      {
+        "log1": "31/07/26 - The Yandere was added above (-1)"
+      },
+      {
+        "log1": "20/08/26 - Moved to position 10 (+1), below Reflective and above Stellaluna"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=BcvzgdvrZ5Y",
     "lvl_name": "Stellaluna",
     "lvl_creator": "SamMaxx",
@@ -309,46 +352,9 @@
       },
       {
         "log1": "31/07/26 - The Yandere was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=arn_H4QM_1o",
-    "lvl_name": "Reverence",
-    "lvl_creator": "Woom",
-    "pos_aredl": 1000,
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "22",
-    "pos_history": [
-      {
-        "log1": "06/10/25 - Added to the list at position 6"
       },
       {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved above (-1)"
-      },
-      {
-        "log1": "20/12/25 - Destination 19 was moved below (+1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
-      },
-      {
-        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
-      },
-      {
-        "log1": "31/07/26 - The Yandere was added above (-1)"
+        "log1": "20/08/26 - Reverence was moved above (-1)"
       }
     ]
   },
