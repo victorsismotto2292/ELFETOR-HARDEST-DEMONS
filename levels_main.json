@@ -1200,28 +1200,6 @@
     ]
   },
   {
-    "lvl_name": "Lost Love",
-    "lvl_creator": "TheBlackHell",
-    "video_url": "https://youtu.be/qfcu9y-tCPM?si=_fpFOh6n1anel1dw",
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "21",
-    "pos_aredl": 1370,
-    "pos_history": [
-      {
-        "log1": "31/05/26 - Added to the list at position 22, below Prismatic and above Precipitance"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
-      },
-      {
-        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
-      },
-      {
-        "log1": "31/07/26 - The Yandere was added above (-1)"
-      }
-    ]
-  },
-  {
     "lvl_name": "Sweater Weather",
     "lvl_creator": "VelYT",
     "video_url": "https://youtu.be/y3Kk0ZvDqUM?si=Y4iIISed0b-uopoZ",
@@ -1249,6 +1227,9 @@
       },
       {
         "log1": "20/08/26 - Precipitance was moved below (+1)"
+      },
+      {
+        "log1": "21/08/26 - Lost Love was moved below (+1)"
       }
     ]
   },
@@ -1451,6 +1432,34 @@
       },
       {
         "log1": "20/08/26 - Precipitance was moved below (+1)"
+      },
+      {
+        "log1": "21/08/26 - Lost Love was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Lost Love",
+    "lvl_creator": "TheBlackHell",
+    "video_url": "https://youtu.be/qfcu9y-tCPM?si=_fpFOh6n1anel1dw",
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "21",
+    "pos_aredl": 1370,
+    "pos_history": [
+      {
+        "log1": "31/05/26 - Added to the list at position 22, below Prismatic and above Precipitance"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
+      },
+      {
+        "log1": "31/07/26 - The Yandere was added above (-1)"
+      },
+      {
+        "log1": "21/08/26 - Moved to position 27 (-2), below Acu and above Precipitance"
       }
     ]
   },
