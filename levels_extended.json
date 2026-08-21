@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=6PVEh26j9ZE",
+    "lvl_name": "Pyromaniac",
+    "lvl_creator": "Glittershroom",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16"
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=ykmK5EsQXHs",
     "lvl_name": "EXG",
     "lvl_creator": "Grax",
@@ -1022,22 +1030,6 @@
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=MXJsdMuRMd4",
-    "lvl_name": "Hydragon",
-    "lvl_creator": "MalZir",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "11",
     "pos_history": [
       {
         "log1": "08/01/26 - foguito was added above (-1)"
