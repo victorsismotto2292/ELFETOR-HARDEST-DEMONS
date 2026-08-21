@@ -1200,40 +1200,6 @@
     ]
   },
   {
-    "lvl_name": "Sweater Weather",
-    "lvl_creator": "VelYT",
-    "video_url": "https://youtu.be/y3Kk0ZvDqUM?si=Y4iIISed0b-uopoZ",
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "20",
-    "pos_aredl": 1330,
-    "pos_history": [
-      {
-        "log1": "08/02/26 - Added to the list at position 22, below Precipitance and above Acu"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      },
-      {
-        "log1": "31/05/26 - Lost Love was added above (-1)"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
-      },
-      {
-        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
-      },
-      {
-        "log1": "31/07/26 - The Yandere was added above (-1)"
-      },
-      {
-        "log1": "20/08/26 - Precipitance was moved below (+1)"
-      },
-      {
-        "log1": "21/08/26 - Lost Love was moved below (+1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/7jgwIEHsWfQ?si=2jsbcfIsokSx4wHB",
     "lvl_name": "Acu",
     "lvl_creator": "neigefeu",
@@ -1435,6 +1401,46 @@
       },
       {
         "log1": "21/08/26 - Lost Love was moved below (+1)"
+      },
+      {
+        "log1": "21/08/26 - Moved to position 25 (+1), below Prismatic and above Sweater Weather"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Sweater Weather",
+    "lvl_creator": "VelYT",
+    "video_url": "https://youtu.be/y3Kk0ZvDqUM?si=Y4iIISed0b-uopoZ",
+    "diff_rank": "Extreme Demon",
+    "diff_scale": "20",
+    "pos_aredl": 1330,
+    "pos_history": [
+      {
+        "log1": "08/02/26 - Added to the list at position 22, below Precipitance and above Acu"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "31/05/26 - Lost Love was added above (-1)"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
+      },
+      {
+        "log1": "31/07/26 - The Yandere was added above (-1)"
+      },
+      {
+        "log1": "20/08/26 - Precipitance was moved below (+1)"
+      },
+      {
+        "log1": "21/08/26 - Lost Love was moved below (+1)"
+      },
+      {
+        "log1": "21/08/26 - Acu was moved above (-1)"
       }
     ]
   },
