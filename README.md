@@ -35,3 +35,5 @@ Este projeto está configurado para deploy automático no Vercel.
 3. (20/08/2026) -> Precipitance foi movida da posição #26 para #28, acima de Encroaching Dark e abaixo de Acu
    
 4. (21/08/2026) -> Lost Love foi movida da posição #25 para #27, acima de Precipitance e abaixo de Acu; seguindo esta troca, Sweater Weather e Acu foram trocadas de lugar, agora com Acu acima, na posição #25
+
+5. (22/08/2026) -> rauchkammer foi adicionada na posição #26, acima de Sweater Weather e abaixo de Acu
