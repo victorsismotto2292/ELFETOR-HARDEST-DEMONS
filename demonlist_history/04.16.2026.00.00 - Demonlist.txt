@@ -1,0 +1,159 @@
+Demonlist - 04/16/2026 00:00
+Source: reconstructed from the GitHub commit history
+
+Changes recorded during this day:
+- 04/16/2026 01:19 | 6540af7b7f0c | Main list levels swap changelog
+- 04/16/2026 01:21 | 3d0a9edc399c | Atualizado: TENDO atualizado: scale: 9.5 → 15
+
+Positions:
+
+1 - Bloodbath by Riot
+2 - Cytokinesis by cherryteam
+3 - Prismatic Haze by Cirtrax
+4 - Manic Machine by TwisterDude161
+5 - Reflective by Mojitoz
+6 - Stellaluna by SamMaxx
+7 - Reverence by Woom
+8 - The Ultimate Return by vit12
+9 - Napalm by Marwec
+10 - Broken Signal by Grax
+11 - The Flawless by Fin
+12 - Forbidden Isle by Sillow
+13 - Allegiance by NikroPlays
+14 - The Lost Existence by JonathanGD
+15 - Cataclysm by Ggb0y
+16 - HyperSonic by ViPriN
+17 - Azurite by Sillow
+18 - Memories III by the4n1ma
+19 - Destination 19 by bosjoker
+20 - Prismatic by Catgeo
+21 - Precipitance by Extravagon
+22 - Sweater Weather by VelYT
+23 - Acu by neigefeu
+24 - Encroaching Dark by e3ea
+25 - Bunny Demon by Pncsr
+26 - Frizzantino Vibes by Usermatt18
+27 - Linear Lane by UniverseDevon
+28 - Thanatophobia by ARtu
+29 - Hateflayer by SirZeus
+30 - Galactus by Agils
+31 - PPPPPPPPPPPPPPPPIXEL by Renn241
+32 - Dysphoria by IceboxOG
+33 - Zaphes Back Yard by Zacanii
+34 - Sheol Death by TwisterDude161
+35 - Kyrie Eleison by ViPriN
+36 - (Deathlink) - Supersonic by ZenticAlpha
+37 - CMYK by Ewop
+38 - Mind Crusher by ThatJack
+39 - Elysian Aegis by zYuko
+40 - Ulon by OliSW
+41 - Light Years by Smokes
+42 - Leyak by EnZore
+43 - The Bandere by Ka1ns
+44 - In Cargill by LP44
+45 - Necropolis by iIiNepTuneiIi
+46 - Elements X by Eiken
+47 - ReRUST by Dawnf4ll
+48 - Gumshot by qMystic
+49 - X Adventure by Paziblitz
+50 - MikuMikuMikuMiku by OddMod
+51 - Night Terrors by Hinds
+52 - Bit Reaper by Vlacc
+53 - CHROMA by Renn241
+54 - Arcane by qMystic
+55 - (Solo) Supersonic by ZenticAlpha
+56 - Lit Fuse by Krmal
+57 - goodnight by Unnn
+58 - Acrise by ZWK
+59 - Heritage by Karma8
+60 - YMTHLYFYMBIKWHRLYF by augi
+61 - Valhalla by Annon
+62 - Bichromatic by gmdmann
+63 - Hysteria by Monogalaxy2
+64 - Dust storm by sam005
+65 - Lmao by MazZedy
+66 - Quantum Force by Darwin
+67 - MultiChromatic by gmdmann
+68 - Pyromaniac by Glittershroom
+69 - FFFFFF by Vlacc
+70 - EXG by Grax
+71 - Explorers by Darwin
+72 - Decimation by Lemons
+73 - One North by IAMRozz
+74 - Stalemate by Nox
+75 - Crazy II by DAVJT
+76 - Backrooms by CarrotySpice
+77 - Magma Bound by ScorchVx
+78 - Poltergeist by Andromeda GMD
+79 - Stereo Demoness by MaJackO
+80 - SFW by hiavl
+81 - Windy Landscape by WOOGI1411
+82 - Joyride by BridgetTheCroco
+83 - Buh by MazZedy
+84 - Blast Furnace by Samifying
+85 - TENDO by gradientxd
+86 - MulLuna by Mulpan & K911una
+87 - Denouement by Synactive GD
+88 - Multition by Mulpan & Partition
+89 - Xes by Winterbitia
+90 - Hibernal by Cassidyy
+91 - Frostbound by YakobNugget
+92 - Anya II by Anya21
+93 - Droppy by TeamNoX
+94 - Terror Factory by Korita
+95 - Diffuse by Hinds
+96 - The Furious by Knobbelboy
+97 - Sharp Minor by Giron
+98 - Jajagarasu by PlebKingdom
+99 - MASTERMIND by Hinds
+100 - Euphoria by Dams778
+101 - Eternal Flame by James
+102 - Psychosis by Hinds
+103 - DeCodeX by Rek3dge
+104 - 8E8E6 by cynir
+105 - Walkman by JamAttack
+106 - Badland by TamaN
+107 - Iridescent by ViPriN
+108 - Conclusion by Giron
+109 - Future Funk by JonathanGD
+110 - Fairydust by MkComic
+111 - LOCK IN by Sparktwo
+112 - Obelisk by SuprianGD
+113 - Spacelocked by LazerBlitz
+114 - CraZy by DavJT
+115 - Double Dash by Zoroa
+116 - Dance Massacre by Hinds
+117 - Different Descent by Danke
+118 - YOQUIERO by vrymer
+119 - GD10 by Floppy
+120 - Thermodynamix by Flash
+121 - Solar Wind by IwillowI
+122 - EUOUAE by Vadi
+123 - In Rainbows by Lfritz
+124 - Electrodynamix II by iv4n24
+125 - Quasar by Allan
+126 - Zephyrs Madness by Zephyr
+127 - Cataclysmic Drive by TheRealArtee
+128 - Radioactive by ViPriN
+129 - TOE III by Manix648
+130 - Nine Circles by Zobros
+131 - Jawbreaker by ZenticAlpha
+132 - Bloodroom by HeroZombie80
+133 - Inception by Darwin
+134 - Despacito Circles by Terron
+135 - Nowise by Darwin
+136 - Loving U Is Wrong by skywalker14
+137 - Golden Hope by Terron
+138 - Interstellar by Darwin
+139 - Dashplorers by RuebeXPX
+140 - Black Off by Vlacc
+141 - DAK by MazZedy
+142 - Hydragon by MalZir
+143 - Overpowered by T3mplate
+144 - Darkness Keeper by AbstractDark
+145 - Goodbye II by Freyda
+146 - Carnivores by KrazyKako9
+147 - Cyber CompositioN by Takumii
+148 - Petrified Factory by Korita
+149 - VeritY by Serponge
+150 - HeLL by Serponge
