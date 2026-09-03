@@ -1,0 +1,158 @@
+Demonlist - 01/20/2026 00:00
+Source: reconstructed from the GitHub commit history
+
+Changes recorded during this day:
+- No list-data commits recorded on this day.
+
+Positions:
+
+1 - Bloodbath by Riot
+2 - Cytokinesis by cherryteam
+3 - Prismatic Haze by Cirtrax
+4 - Manic Machine by TwisterDude161
+5 - Reflective by Mojitoz
+6 - Stellaluna by SamMaxx
+7 - Reverence by Woom
+8 - The Ultimate Return by vit12
+9 - Napalm by Marwec
+10 - Broken Signal by Grax
+11 - Allegiance by NikroPlays
+12 - The Flawless by Fin
+13 - Forbidden Isle by Sillow
+14 - The Lost Existence by JonathanGD
+15 - Cataclysm by Ggb0y
+16 - HyperSonic by ViPriN
+17 - Azurite by Sillow
+18 - Memories III by the4n1ma
+19 - Destination 19 by bosjoker
+20 - Prismatic by Catgeo
+21 - Precipitance by Extravagon
+22 - Acu by neigefeu
+23 - Encroaching Dark by e3ea
+24 - Linear Lane by UniverseDevon
+25 - Hateflayer by SirZeus
+26 - Thanatophobia by ARtu
+27 - Dysphoria by IceboxOG
+28 - Galactus by Agils
+29 - PPPPPPPPPPPPPPPPIXEL by Renn241
+30 - Zaphes Back Yard by Zacanii
+31 - Sheol Death by TwisterDude161
+32 - Kyrie Eleison by ViPriN
+33 - (Deathlink) - Supersonic by ZenticAlpha
+34 - CMYK by Ewop
+35 - Mind Crusher by ThatJack
+36 - Elysian Aegis by zYuko
+37 - Light Years by Smokes
+38 - Ulon by OliSW
+39 - Leyak by EnZore
+40 - The Bandere by Ka1ns
+41 - In Cargill by LP44
+42 - Necropolis by iIiNepTuneiIi
+43 - Elements X by Eiken
+44 - ReRUST by Dawnf4ll
+45 - Gumshot by qMystic
+46 - X Adventure by Paziblitz
+47 - Night Terrors by Hinds
+48 - Bit Reaper by Vlacc
+49 - CHROMA by Renn241
+50 - Arcane by qMystic
+51 - (Solo) Supersonic by ZenticAlpha
+52 - Lit Fuse by Krmal
+53 - goodnight by Unnn
+54 - Acrise by ZWK
+55 - Heritage by Karma8
+56 - YMTHLYFYMBIKWHRLYF by augi
+57 - Valhalla by Annon
+58 - Bichromatic by gmdmann
+59 - Hysteria by Monogalaxy2
+60 - Dust storm by sam005
+61 - Lmao by MazZedy
+62 - Quantum Force by Darwin
+63 - MultiChromatic by gmdmann
+64 - Pyromaniac by Glittershroom
+65 - FFFFFF by Vlacc
+66 - EXG by Grax
+67 - Explorers by Darwin
+68 - One North by IAMRozz
+69 - Stalemate by Nox
+70 - Crazy II by DAVJT
+71 - Backrooms by CarrotySpice
+72 - Magma Bound by ScorchVx
+73 - Poltergeist by Andromeda GMD
+74 - SFW by hiavl
+75 - Windy Landscape by WOOGI1411
+76 - Joyride by BridgetTheCroco
+77 - Buh by MazZedy
+78 - Blast Furnace by Samifying
+79 - TENDO by gradientxd
+80 - MulLuna by Mulpan & K911una
+81 - Multition by Mulpan & Partition
+82 - Xes by Winterbitia
+83 - Hibernal by Cassidyy
+84 - Frostbound by YakobNugget
+85 - Anya II by Anya21
+86 - Droppy by TeamNoX
+87 - Terror Factory by Korita
+88 - Diffuse by Hinds
+89 - The Furious by Knobbelboy
+90 - Sharp Minor by Giron
+91 - MASTERMIND by Hinds
+92 - Jajagarasu by PlebKingdom
+93 - Euphoria by Dams778
+94 - Eternal Flame by James
+95 - Psychosis by Hinds
+96 - DeCodeX by Rek3dge
+97 - 8E8E6 by cynir
+98 - Walkman by JamAttack
+99 - Badland by TamaN
+100 - Iridescent by ViPriN
+101 - Conclusion by Giron
+102 - Future Funk by JonathanGD
+103 - Fairydust by MkComic
+104 - LOCK IN by Sparktwo
+105 - Spacelocked by LazerBlitz
+106 - CraZy by DavJT
+107 - Obelisk by SuprianGD
+108 - Double Dash by Zoroa
+109 - Dance Massacre by Hinds
+110 - Different Descent by Danke
+111 - YOQUIERO by vrymer
+112 - Thermodynamix by Flash
+113 - GD10 by Floppy
+114 - Solar Wind by IwillowI
+115 - EUOUAE by Vadi
+116 - In Rainbows by Lfritz
+117 - Electrodynamix II by iv4n24
+118 - Quasar by Allan
+119 - Zephyrs Madness by Zephyr
+120 - Cataclysmic Drive by TheRealArtee
+121 - Radioactive by ViPriN
+122 - TOE III by Manix648
+123 - Nine Circles by Zobros
+124 - Jawbreaker by ZenticAlpha
+125 - Bloodroom by HeroZombie80
+126 - Inception by Darwin
+127 - Despacito Circles by Terron
+128 - Nowise by Darwin
+129 - Loving U Is Wrong by skywalker14
+130 - Golden Hope by Terron
+131 - Interstellar by Darwin
+132 - Dashplorers by RuebeXPX
+133 - Black Off by Vlacc
+134 - DAK by MazZedy
+135 - Hydragon by MalZir
+136 - Overpowered by T3mplate
+137 - Darkness Keeper by AbstractDark
+138 - Goodbye II by Freyda
+139 - Carnivores by KrazyKako9
+140 - Cyber CompositioN by Takumii
+141 - Petrified Factory by Korita
+142 - HeLL by Serponge
+143 - Kepcep by Rokioto
+144 - VeritY by Serponge
+145 - Ad Honorem by Echonox
+146 - Left Behind by carlosart16
+147 - Cant Let Vulc by Vulcanium4
+148 - Deadlocked 2017 by Bronks
+149 - Nantendo by im fernando
+150 - Flinq by MrMeurick
