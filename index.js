@@ -34,11 +34,13 @@ function loadLevelsTM(){
     const cardsTMPath = path.join(__dirname, "time_machine_data.json");
     const snapshotsPath = path.join(__dirname, "time_machine_snapshots.json");
     const data = JSON.parse(fs.readFileSync(cardsTMPath, "utf-8"));
+    const dataSnapshots = Array.isArray(data.snapshots) ? data.snapshots : [];
     const snapshots = fs.existsSync(snapshotsPath)
-        ? JSON.parse(fs.readFileSync(snapshotsPath, "utf-8")).snapshots
-        : [{ date: "2026-01-15T00:00:00-03:00", levels: data[0].list_data[0].levels }];
+        ? (JSON.parse(fs.readFileSync(snapshotsPath, "utf-8")).snapshots || dataSnapshots)
+        : dataSnapshots;
+    const firstLevels = snapshots[0]?.list_data?.[0]?.levels || data[0]?.list_data?.[0]?.levels || [];
     return {
-        CardsTM: data[0].list_data[0].levels,
+        CardsTM: firstLevels,
         snapshots
     };
 }
@@ -454,7 +456,9 @@ function CreateCardLevels_TM(level, index, currentPosition){
     const difficulty = escapeHtml(level.diff_scale || '');
     const videoUrl = escapeHtml(level.video_url || '#');
     const positionInfo = level.pos_aredl ? `<p class="aredl-text">List Position: #${escapeHtml(level.pos_aredl)}</p>` : '';
-    const currentPositionInfo = currentPosition
+    const currentPositionInfo = currentPosition > 150
+        ? '<p class="current-position">Currently at Legacy</p>'
+        : currentPosition
         ? `<p class="current-position">Currently at #${currentPosition}</p>`
         : '<p class="current-position current-position-muted">Currently not on the list</p>';
 
@@ -535,7 +539,7 @@ function generateTimeMachinePage(selectedAt){
     const currentLevels = [...main, ...extended, ...legacy];
     const currentPositions = new Map(currentLevels.map((level, index) => [String(level.lvl_name || '').trim().toLowerCase(), index + 1]));
     const selectedSnapshot = getTimeMachineSnapshot(selectedAt);
-    const CardsTM = selectedSnapshot.levels;
+    const CardsTM = selectedSnapshot.list_data?.[0]?.levels || selectedSnapshot.levels || [];
 
     const TMPagePath = path.join(__dirname, '/public/timemachine.html');
     let TMPage = fs.readFileSync(TMPagePath, 'utf-8');
