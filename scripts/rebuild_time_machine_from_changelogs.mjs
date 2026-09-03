@@ -73,6 +73,20 @@ for (const filename of fs.readdirSync(HISTORY_DIR).filter(name => name.endsWith(
   }
 }
 
+// In CI, also capture the commit that changed the current list. This makes the
+// workflow fully automatic even before a new TXT changelog is added manually.
+if (process.argv.includes('--include-current')) {
+  const commit = process.env.GITHUB_SHA || git('rev-parse', 'HEAD');
+  const commitDate = git('show', '-s', '--format=%cI', commit);
+  const levels = levelsAtCommit(commit.slice(0, 12));
+  if (levels) {
+    snapshots.push({
+      date: commitDate,
+      list_data: [{ date: commitDate.replace('T', ' ').replace(/([+-]\d\d:\d\d|Z)$/, ''), levels }],
+    });
+  }
+}
+
 // If two commits share the same minute, the last changelog entry is the state at that minute.
 const byDate = new Map(snapshots.map(snapshot => [snapshot.date, snapshot]));
 const orderedSnapshots = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
