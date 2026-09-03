@@ -72,10 +72,10 @@
             <p>Travel through the historical demon list and explore how it looked on a specific date.</p>
             <form class="travel-form" id="travelForm">
                 <label class="visually-hidden" for="travelDate">List date</label>
-                <input id="travelDate" name="date" type="date" min="2026-01-15" max="" value="2026-01-15">
+                <input id="travelDate" name="date" type="datetime-local" min="2026-01-15T00:00" max="" value="2026-01-15T00:00" step="60">
                 <button class="travel-button" type="button">travel</button>
             </form>
-            <small class="date-hint">Available history starts on January 15, 2026. The latest selectable date updates automatically.</small>
+            <small class="date-hint">Available history starts on January 15, 2026. Choose the exact hour and minute to prepare a historical snapshot.</small>
         </div></div>
     </section>
     <h2 class="section-title">DEMON LIST</h2>
@@ -85,7 +85,9 @@
 </main>
 <footer><div class="container">{{footerTM}}</div></footer>
 <script>
-    const today = new Date().toISOString().slice(0, 10);
+    const now = new Date();
+    const pad = value => String(value).padStart(2, '0');
+    const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
     const dateInput = document.getElementById('travelDate');
     dateInput.max = today;
     window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50));
