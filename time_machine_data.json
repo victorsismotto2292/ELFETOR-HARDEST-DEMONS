@@ -383,8 +383,8 @@
                     {
                         "lvl_name": "(Solo) - Supersonic",
                         "lvl_creator": "ZenticAlpha",
-                        "video_url": "",
-                        "diff_rank": "",
+                        "video_url": "https://www.youtube.com/watch?v=BgCVY5Gw4ws",
+                        "diff_rank": "Insane Demon",
                         "diff_scale": "17",
                         "pos_aredl": 0
                     },
@@ -479,7 +479,7 @@
                     {
                         "lvl_creator": "Glittershroom",
                         "video_url": "https://www.youtube.com/watch?v=6PVEh26j9ZE",
-                        "diff_rank": "",
+                        "diff_rank": "Insane Demon",
                         "diff_scale": "16",
                         "pos_aredl": 0,
                         "lvl_name": "Pyromaniac"
@@ -528,7 +528,7 @@
                         "lvl_name": "CraZy II",
                         "lvl_creator": "DAVJT",
                         "video_url": "https://www.youtube.com/watch?v=eGPNEaZV6cc",
-                        "diff_rank": "",
+                        "diff_rank": "Insane Demon",
                         "diff_scale": "15",
                         "pos_aredl": 0
                     },
@@ -903,7 +903,7 @@
                     {
                         "lvl_creator": "Zobros",
                         "video_url": "https://youtu.be/m0m0JZnGPTQ?si=lkeI2KT7vKWwBe5g",
-                        "diff_rank": "",
+                        "diff_rank": "Hard Demon",
                         "diff_scale": "11",
                         "pos_aredl": 0,
                         "lvl_name": "Nine Circles"
