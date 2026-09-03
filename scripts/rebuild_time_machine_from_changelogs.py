@@ -10,7 +10,7 @@ def levels_at(sha):
     for f in ('levels_main.json','levels_extended.json','levels_legacy.json'):
         try: out += json.loads(git('show',f'{sha}:{f}'))
         except subprocess.CalledProcessError: return None
-    return out[:150]
+    return [{key: value for key, value in level.items() if key != "pos_history"} for level in out[:150]]
 def levels_from_txt(path):
     out=[]
     for line in path.read_text(encoding='utf-8').splitlines():
