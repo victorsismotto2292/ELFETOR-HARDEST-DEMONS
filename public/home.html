@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,6 +70,12 @@
         .nav-bar a:hover {
             color: #980000;
             background: #f5f5f5;
+        }
+
+        .nav-bar a.active {
+            color: #980000;
+            background: #fff0f0;
+            box-shadow: inset 0 -3px 0 #980000;
         }
 
         /* Hero minimalista */
@@ -459,9 +465,9 @@
             </div>
 
             <nav class="nav-bar">
-                <a href="">Home</a>
+                <a href="/home" class="active" aria-current="page">Home</a>
                 <a href="">Highest BPM List</a>
-                <a href="">Former Hardest Levels</a>
+                <a href="/timemachine">Time Machine</a>
                 <a href="">Levels Progress</a>
                 <a href="">Another Lists</a>
             </nav>

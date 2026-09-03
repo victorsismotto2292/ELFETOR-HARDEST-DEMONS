@@ -29,6 +29,15 @@ function loadLevels() {
   };
 }
 
+// TIME MACHINE DATA FUNCTION
+function loadLevelsTM(){
+    const cardsTMPath = path.join(__dirname, "time_machine_data.json");
+    const data = JSON.parse(fs.readFileSync(cardsTMPath, "utf-8"));
+    return {
+        CardsTM: data[0].list_data[0].levels
+    };
+}
+
 // FUNCTIONS
 
 // Extracting youtube video ID from various URL formats
@@ -51,40 +60,6 @@ function extractYouTubeVideoId(url) {
     
     return null;
 }
-
-// Escape HTML & historical format
-function formatPositionHistory(posHistory) {
-    if (!posHistory || !Array.isArray(posHistory) || posHistory.length === 0) {
-        return '<span class="text-muted">No history available</span>';
-    }
-    
-    // Escape special characters
-    function escapeHtml(text) {
-        const map = {
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#039;',
-            '/': '&#x2F;'
-        };
-        return String(text).replace(/[&<>"'\/]/g, s => map[s]);
-    }
-    
-    // Entries map & format
-    const entries = posHistory.map((entry, idx) => {
-        const log = entry.log1 || entry || 'Unknown entry';
-        const escapedLog = escapeHtml(log);
-        return `<div class="history-entry">
-            <span class="history-number">${idx + 1}.</span> 
-            <span class="history-text">${escapedLog}</span>
-        </div>`;
-    });
-    
-    return entries.join('');
-}
-
-// Own expansion system
 
 function CreateCardLevels_Main(level_main, index) {
     const position = index + 1;
@@ -397,11 +372,11 @@ function CreateCardLevels_Legacy(level_legacy, index) {
  
     // Badge class choice
     let badgeClass = 'badge-demon';
-    if (level_legacy.diff_rank === 'Extreme Demon') badgeClass = 'badge-extreme';
-    else if (level_legacy.diff_rank === 'Insane Demon') badgeClass = 'badge-insane';
-    else if (level_legacy.diff_rank === 'Hard Demon')   badgeClass = 'badge-hard';
-    else if (level_legacy.diff_rank === 'Medium Demon') badgeClass = 'badge-medium';
-    else if (level_legacy.diff_rank === 'Easy Demon')   badgeClass = 'badge-easy';
+    if (level_legacy.diff_rank === 'Extreme Demon'){badgeClass = 'badge-extreme'}
+    else if (level_legacy.diff_rank === 'Insane Demon'){badgeClass = 'badge-insane'}
+    else if (level_legacy.diff_rank === 'Hard Demon'){badgeClass = 'badge-hard'}
+    else if (level_legacy.diff_rank === 'Medium Demon'){badgeClass = 'badge-medium'}
+    else if (level_legacy.diff_rank === 'Easy Demon'){badgeClass = 'badge-easy'}
  
     // Link's position text
     let aredlLabel = 'List Position';
@@ -449,6 +424,47 @@ function CreateCardLevels_Legacy(level_legacy, index) {
     return levelCardHtml;
 }
 
+function CreateCardLevels_TM(level, index){
+    const position = index + 1;
+    const videoId = extractYouTubeVideoId(level.video_url);
+    const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
+    const escapeHtml = value => String(value ?? '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    const name = escapeHtml(level.lvl_name || 'Unknown level');
+    const creator = escapeHtml(level.lvl_creator || 'Unknown creator');
+    const rank = escapeHtml(level.diff_rank || '');
+    const difficulty = escapeHtml(level.diff_scale || '');
+    const videoUrl = escapeHtml(level.video_url || '#');
+    const positionInfo = level.pos_aredl ? `<p class="aredl-text">List Position: #${escapeHtml(level.pos_aredl)}</p>` : '';
+
+    return `
+        <article class="level-card" data-name="${name.toLowerCase()}" data-creator="${creator.toLowerCase()}" data-position="${position}">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <a href="${videoUrl}" target="_blank" rel="noopener noreferrer">
+                                <img src="${imageSrc}" alt="${name}" onerror="this.src='/img/placeholder.png'; this.onerror=null;" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">${position}. ${name}</h2>
+                            <p class="creator-text">by ${creator}</p>
+                            <div class="badge-container">
+                                <span class="badge-demon">${rank}</span>
+                                <span class="badge-tier">Tier: ${difficulty}</span>
+                            </div>
+                            ${positionInfo}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    `;
+}
 // GENERATE PAGE
 function generatePage() {
     // LOAD UPDATED DATA ON EVERY REQUEST
@@ -491,6 +507,35 @@ function generatePage() {
     return htmlPage;
 }
 
+// TIME MACHINE GENERATION PAGE:
+
+function generateTimeMachinePage(){
+    const {CardsTM} = loadLevelsTM();
+
+    const TMPagePath = path.join(__dirname, '/public/timemachine.html');
+    let TMPage = fs.readFileSync(TMPagePath, 'utf-8');
+
+    const CardsTMHtml = CardsTM.map((levels_TM, index) => CreateCardLevels_TM(levels_TM, index)).join('');
+
+    const footerTM =
+    `<p class="footer-title">ELFETOR HARDEST DEMONS</p>
+    <p>© ${new Date().getFullYear()} All rights reserved</p>`
+
+    // placeholders replacement:
+
+    TMPage = TMPage.replaceAll('{{CardsTMHtml}}', CardsTMHtml);
+    TMPage = TMPage.replaceAll('{{footerTM}}', footerTM);
+
+    if(!TMPage.includes(CardsTMHtml)){
+        TMPage = TMPage.replace('</body>', CardsTMHtml + '\n</body>');
+    }
+    if(!TMPage.includes(footerTM)){
+        TMPage = TMPage.replace('</body>', footerTM + '\n</body>');
+    }
+
+    return TMPage;
+}
+
 // ROUTES
 app.get("/", (req, res) => {
   res.redirect("/home");
@@ -501,9 +546,15 @@ app.get("/home", (req, res) => {
   res.send(generatePage());
 });
 
+app.get("/timemachine", (req, res) => {
+    console.log("Carregando página Time Machine...");
+    // res.sendFile(path.join(__dirname, "timemachine.html")); PRA TESTE
+    res.send(generateTimeMachinePage());
+});
+
 // PORT
 if (process.env.NODE_ENV !== "production") {
-  const PORT = 3000;
+  const PORT = 3001;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });

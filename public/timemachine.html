@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Machine | ELFetor Hardest Demons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; background: #fafafa; color: #1a1a1a; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.6; }
+        header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 1.5rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,.05); transition: box-shadow .3s ease; }
+        header.scrolled { box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+        .logo { display: flex; align-items: center; gap: 1rem; font-weight: 700; font-size: 1.3rem; color: #980000; letter-spacing: -.5px; }
+        .logo img { max-width: 50px; height: auto; }
+        .nav-bar { display: flex; justify-content: flex-end; align-items: center; gap: .5rem; flex-wrap: wrap; }
+        .nav-bar a { color: #666; text-decoration: none; font-weight: 500; padding: .6rem 1rem; transition: all .2s ease; font-size: .95rem; border-radius: 8px; }
+        .nav-bar a:hover, .nav-bar a.active { color: #980000; background: #fff0f0; box-shadow: inset 0 -3px 0 #980000; }
+        .hero { background: linear-gradient(rgba(152,0,0,.85), rgba(152,0,0,.85)), url('imagem-home.webp'); background-size: cover; background-position: center; min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 3px solid #980000; }
+        .hero h1 { font-size: 4.5rem; font-weight: 700; color: #fff; margin: 0; letter-spacing: -2px; text-shadow: 0 2px 4px rgba(0,0,0,.2); }
+        .date-panel { background: #fff; border: 1px solid #e5e5e5; border-radius: 16px; padding: 2rem; margin: 3rem auto; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+        .date-panel h2 { color: #980000; font-size: 1.35rem; font-weight: 700; margin-bottom: .5rem; }
+        .date-panel p { color: #666; margin-bottom: 1.5rem; }
+        .travel-form { display: flex; gap: .75rem; align-items: stretch; }
+        .travel-form input { flex: 1; min-width: 0; background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: .9rem 1rem; font: inherit; color: #1a1a1a; }
+        .travel-form input:focus { outline: none; border-color: #980000; box-shadow: 0 0 0 3px rgba(152,0,0,.1); }
+        .travel-button { border: 0; border-radius: 12px; padding: .9rem 1.75rem; background: #980000; color: #fff; font-weight: 700; text-transform: lowercase; letter-spacing: .5px; transition: background .2s, transform .2s; }
+        .travel-button:hover { background: #700000; transform: translateY(-1px); }
+        .date-hint { display: block; margin-top: .75rem; color: #999; font-size: .85rem; }
+        .section-title { font-size: 2.5rem; font-weight: 700; text-align: center; margin: 4rem 0 2rem; color: #980000; letter-spacing: -1px; position: relative; }
+        .section-title::after { content: ''; position: absolute; bottom: -.5rem; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: #980000; border-radius: 2px; }
+        .level-card { animation: fadeInUp .5s ease-out; }
+        .level-card .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 16px; transition: all .3s ease; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.04); margin-bottom: 2rem; }
+        .level-card .card:hover { box-shadow: 0 8px 24px rgba(152,0,0,.12); transform: translateY(-4px); border-color: #980000; }
+        .level-card .card-body { padding: 2rem; }
+        .level-card .card-title { font-size: 2rem; font-weight: 700; color: #980000; margin-bottom: .8rem; letter-spacing: -.5px; }
+        .creator-text { font-size: 1.1rem; color: #666; font-weight: 600; margin-bottom: 1.5rem; }
+        .badge-container { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .badge-demon { background: #980000; color: #fff; padding: .5rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; display: inline-block; }
+        .badge-tier { background: #f5f5f5; color: #1a1a1a; padding: .5rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; display: inline-block; }
+        .aredl-text { color: #999; font-size: .9rem; font-weight: 500; }
+        .image-container { overflow: hidden; background: #f5f5f5; min-height: 100%; }
+        .level-card img { display: block; width: 100%; height: 100%; min-height: 220px; object-fit: cover; transition: transform .3s ease; }
+        .level-card:hover img { transform: scale(1.05); }
+        footer { background: #fff; border-top: 1px solid #e5e5e5; padding: 3rem 0; text-align: center; margin-top: 4rem; color: #666; }
+        footer p { margin: .5rem 0; } footer .footer-title { color: #980000; font-weight: 700; font-size: 1.1rem; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .logo { width: 100%; margin-bottom: .5rem; justify-content: center; font-size: 1.1rem; } .nav-bar { width: 100%; justify-content: center; margin-top: 1rem; } .date-panel { padding: 1.5rem; margin: 2rem auto; } .travel-form { flex-direction: column; } .travel-button { width: 100%; } .section-title { font-size: 2rem; } .level-card .card-title { font-size: 1.5rem; } .level-card .card-body { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap">
+            <div class="logo"><img src="imagem-cabecario.webp" alt="ELFetor logo"><span>ELFetor Hardest Demons</span></div>
+            <nav class="nav-bar" aria-label="Main navigation">
+                <a href="/home">Home</a>
+                <a href="#">Highest BPM List</a>
+                <a href="/timemachine" class="active" aria-current="page">Time Machine</a>
+                <a href="#">Levels Progress</a>
+                <a href="#">Another Lists</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero"><div class="container"><h1>Time Machine</h1></div></section>
+    <section class="date-panel container" aria-labelledby="date-heading">
+        <div class="row justify-content-center"><div class="col-lg-10 col-12">
+            <h2 id="date-heading">Choose a list date</h2>
+            <p>Travel through the historical demon list and explore how it looked on a specific date.</p>
+            <form class="travel-form" id="travelForm">
+                <label class="visually-hidden" for="travelDate">List date</label>
+                <input id="travelDate" name="date" type="date" min="2026-01-15" max="" value="2026-01-15">
+                <button class="travel-button" type="button">travel</button>
+            </form>
+            <small class="date-hint">Available history starts on January 15, 2026. The latest selectable date updates automatically.</small>
+        </div></div>
+    </section>
+    <h2 class="section-title">DEMON LIST</h2>
+    <section class="tm-levels-list container" aria-label="Historical demon list">
+        <div class="row justify-content-center"><div class="col-lg-10 col-12">{{CardsTMHtml}}</div></div>
+    </section>
+</main>
+<footer><div class="container">{{footerTM}}</div></footer>
+<script>
+    const today = new Date().toISOString().slice(0, 10);
+    const dateInput = document.getElementById('travelDate');
+    dateInput.max = today;
+    window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50));
+</script>
+</body>
+</html>
