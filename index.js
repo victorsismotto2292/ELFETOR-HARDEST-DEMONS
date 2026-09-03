@@ -32,10 +32,27 @@ function loadLevels() {
 // TIME MACHINE DATA FUNCTION
 function loadLevelsTM(){
     const cardsTMPath = path.join(__dirname, "time_machine_data.json");
+    const snapshotsPath = path.join(__dirname, "time_machine_snapshots.json");
     const data = JSON.parse(fs.readFileSync(cardsTMPath, "utf-8"));
+    const snapshots = fs.existsSync(snapshotsPath)
+        ? JSON.parse(fs.readFileSync(snapshotsPath, "utf-8")).snapshots
+        : [{ date: "2026-01-15T00:00:00-03:00", levels: data[0].list_data[0].levels }];
     return {
-        CardsTM: data[0].list_data[0].levels
+        CardsTM: data[0].list_data[0].levels,
+        snapshots
     };
+}
+
+function getTimeMachineSnapshot(selectedAt){
+    const { snapshots } = loadLevelsTM();
+    const requested = selectedAt
+        ? new Date(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(selectedAt) ? `${selectedAt}:00-03:00` : selectedAt)
+        : new Date("2026-01-15T00:00:00-03:00");
+    if (Number.isNaN(requested.getTime())) return snapshots[0];
+    return snapshots.reduce((chosen, snapshot) => {
+        const snapshotDate = new Date(snapshot.date);
+        return snapshotDate <= requested && snapshotDate >= new Date(chosen.date) ? snapshot : chosen;
+    }, snapshots[0]);
 }
 
 // FUNCTIONS
@@ -424,7 +441,7 @@ function CreateCardLevels_Legacy(level_legacy, index) {
     return levelCardHtml;
 }
 
-function CreateCardLevels_TM(level, index){
+function CreateCardLevels_TM(level, index, currentPosition){
     const position = index + 1;
     const videoId = extractYouTubeVideoId(level.video_url);
     const imageSrc = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '/img/placeholder.png';
@@ -437,6 +454,9 @@ function CreateCardLevels_TM(level, index){
     const difficulty = escapeHtml(level.diff_scale || '');
     const videoUrl = escapeHtml(level.video_url || '#');
     const positionInfo = level.pos_aredl ? `<p class="aredl-text">List Position: #${escapeHtml(level.pos_aredl)}</p>` : '';
+    const currentPositionInfo = currentPosition
+        ? `<p class="current-position">Currently at #${currentPosition}</p>`
+        : '<p class="current-position current-position-muted">Currently not on the list</p>';
 
     return `
         <article class="level-card" data-name="${name.toLowerCase()}" data-creator="${creator.toLowerCase()}" data-position="${position}">
@@ -457,6 +477,7 @@ function CreateCardLevels_TM(level, index){
                                 <span class="badge-demon">${rank}</span>
                                 <span class="badge-tier">Tier: ${difficulty}</span>
                             </div>
+                            ${currentPositionInfo}
                             ${positionInfo}
                         </div>
                     </div>
@@ -509,13 +530,21 @@ function generatePage() {
 
 // TIME MACHINE GENERATION PAGE:
 
-function generateTimeMachinePage(){
-    const {CardsTM} = loadLevelsTM();
+function generateTimeMachinePage(selectedAt){
+    const { main, extended, legacy } = loadLevels();
+    const currentLevels = [...main, ...extended, ...legacy];
+    const currentPositions = new Map(currentLevels.map((level, index) => [String(level.lvl_name || '').trim().toLowerCase(), index + 1]));
+    const selectedSnapshot = getTimeMachineSnapshot(selectedAt);
+    const CardsTM = selectedSnapshot.levels;
 
     const TMPagePath = path.join(__dirname, '/public/timemachine.html');
     let TMPage = fs.readFileSync(TMPagePath, 'utf-8');
 
-    const CardsTMHtml = CardsTM.map((levels_TM, index) => CreateCardLevels_TM(levels_TM, index)).join('');
+    const CardsTMHtml = CardsTM.map((levels_TM, index) => CreateCardLevels_TM(
+        levels_TM,
+        index,
+        currentPositions.get(String(levels_TM.lvl_name || '').trim().toLowerCase())
+    )).join('');
 
     const footerTM =
     `<p class="footer-title">ELFETOR HARDEST DEMONS</p>
@@ -549,7 +578,7 @@ app.get("/home", (req, res) => {
 app.get("/timemachine", (req, res) => {
     console.log("Carregando página Time Machine...");
     // res.sendFile(path.join(__dirname, "timemachine.html")); PRA TESTE
-    res.send(generateTimeMachinePage());
+    res.send(generateTimeMachinePage(req.query.at));
 });
 
 // PORT

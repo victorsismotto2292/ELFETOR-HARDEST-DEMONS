@@ -39,6 +39,8 @@
         .badge-demon { background: #980000; color: #fff; padding: .5rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; display: inline-block; }
         .badge-tier { background: #f5f5f5; color: #1a1a1a; padding: .5rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; display: inline-block; }
         .aredl-text { color: #999; font-size: .9rem; font-weight: 500; }
+        .current-position { color: #980000; font-size: .9rem; font-weight: 700; margin-bottom: .5rem; }
+        .current-position-muted { color: #999; font-weight: 600; }
         .image-container { overflow: hidden; background: #f5f5f5; min-height: 100%; }
         .level-card img { display: block; width: 100%; height: 100%; min-height: 220px; object-fit: cover; transition: transform .3s ease; }
         .level-card:hover img { transform: scale(1.05); }
@@ -73,7 +75,7 @@
             <form class="travel-form" id="travelForm">
                 <label class="visually-hidden" for="travelDate">List date</label>
                 <input id="travelDate" name="date" type="datetime-local" min="2026-01-15T00:00" max="" value="2026-01-15T00:00" step="60">
-                <button class="travel-button" type="button">travel</button>
+                <button class="travel-button" type="submit">travel</button>
             </form>
             <small class="date-hint">Available history starts on January 15, 2026. Choose the exact hour and minute to prepare a historical snapshot.</small>
         </div></div>
@@ -90,6 +92,15 @@
     const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
     const dateInput = document.getElementById('travelDate');
     dateInput.max = today;
+    const selectedAt = new URLSearchParams(window.location.search).get('at');
+    if (selectedAt && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(selectedAt)) dateInput.value = selectedAt;
+    document.getElementById('travelForm').addEventListener('submit', event => {
+        event.preventDefault();
+        if (!dateInput.value) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set('at', dateInput.value);
+        window.location.assign(url.toString());
+    });
     window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50));
 </script>
 </body>
