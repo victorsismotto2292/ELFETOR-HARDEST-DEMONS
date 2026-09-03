@@ -8,603 +8,1203 @@
           "levels": [
             {
               "lvl_name": "Bloodbath",
-              "lvl_creator": "Riot"
+              "lvl_creator": "Riot",
+              "video_url": "https://www.youtube.com/watch?v=j_svLT9ZXZA",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "24",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Cytokinesis",
-              "lvl_creator": "cherryteam"
+              "lvl_creator": "cherryteam",
+              "video_url": "https://www.youtube.com/watch?v=xOXpRRjvhFM",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "24",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Prismatic Haze",
-              "lvl_creator": "Cirtrax"
+              "lvl_creator": "Cirtrax",
+              "video_url": "https://www.youtube.com/watch?v=ox-uEFFta78",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "24",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Manic Machine",
-              "lvl_creator": "TwisterDude161"
+              "lvl_creator": "TwisterDude161",
+              "video_url": "https://www.youtube.com/watch?v=nmnbfFaiNbI",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "23",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Reflective",
-              "lvl_creator": "Mojitoz"
+              "lvl_creator": "Mojitoz",
+              "video_url": "https://www.youtube.com/watch?v=P585m0OW8pk",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Stellaluna",
-              "lvl_creator": "SamMaxx"
+              "lvl_creator": "SamMaxx",
+              "video_url": "https://www.youtube.com/watch?v=BcvzgdvrZ5Y",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Reverence",
-              "lvl_creator": "Woom"
+              "lvl_creator": "Woom",
+              "video_url": "https://www.youtube.com/watch?v=arn_H4QM_1o",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "The Ultimate Return",
-              "lvl_creator": "vit12"
+              "lvl_creator": "vit12",
+              "video_url": "https://www.youtube.com/watch?v=UgCE1h3N5uw",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Napalm",
-              "lvl_creator": "Marwec"
+              "lvl_creator": "Marwec",
+              "video_url": "https://www.youtube.com/watch?v=-Z77U-4m1Bg",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Broken Signal",
-              "lvl_creator": "Grax"
+              "lvl_creator": "Grax",
+              "video_url": "https://www.youtube.com/watch?v=3xo1b5kMTbE",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "22",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Allegiance",
-              "lvl_creator": "NikroPlays"
+              "lvl_creator": "NikroPlays",
+              "video_url": "https://www.youtube.com/watch?v=lHf6buYpbXU",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "The Flawless",
-              "lvl_creator": "Fin"
+              "lvl_creator": "Fin",
+              "video_url": "https://www.youtube.com/watch?v=yAipW4Tge08",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Forbidden Isle",
-              "lvl_creator": "Sillow"
+              "lvl_creator": "Sillow",
+              "video_url": "https://www.youtube.com/watch?v=su7p9rT3JB4",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "The Lost Existence",
-              "lvl_creator": "JonathanGD"
+              "lvl_creator": "JonathanGD",
+              "video_url": "https://youtu.be/vW4xQ3_YKPw?si=NOoK9sp2aPGAGjHl",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Cataclysm",
-              "lvl_creator": "Ggb0y"
+              "lvl_creator": "Ggb0y",
+              "video_url": "https://youtu.be/Cn9Uwe0k12Q?si=HjMfcMtfdmE4lbFK",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "HyperSonic",
-              "lvl_creator": "ViPriN"
+              "lvl_creator": "ViPriN",
+              "video_url": "https://youtu.be/K3sbp7uZ5ms?si=n_4nDyCfSWEJFLpE",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Azurite",
-              "lvl_creator": "Sillow"
+              "lvl_creator": "Sillow",
+              "video_url": "https://www.youtube.com/watch?v=i20EDHuP5n8",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Memories III",
-              "lvl_creator": "the4n1ma"
+              "lvl_creator": "the4n1ma",
+              "video_url": "https://www.youtube.com/watch?v=16XbSBTstrw&t=147s",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Prismatic",
-              "lvl_creator": "Catgeo"
+              "lvl_creator": "Catgeo",
+              "video_url": "https://www.youtube.com/watch?v=73iyf156l5Q",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Precipitance",
-              "lvl_creator": "Extravagon"
+              "lvl_creator": "Extravagon",
+              "video_url": "https://www.youtube.com/watch?v=y7KEH7PFjws",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Acu",
-              "lvl_creator": "neigefeu"
+              "lvl_creator": "neigefeu",
+              "video_url": "https://youtu.be/7jgwIEHsWfQ?si=2jsbcfIsokSx4wHB",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Encroaching Dark",
-              "lvl_creator": "e3ea"
+              "lvl_creator": "e3ea",
+              "video_url": "https://youtu.be/Ql0xbmJa77k?si=zzgxl-bj37gcl6e4",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Destination 19",
-              "lvl_creator": "bosjoker"
+              "lvl_creator": "bosjoker",
+              "video_url": "https://www.youtube.com/watch?v=Wn48wSXwo8k",
+              "diff_rank": "Extreme Demon",
+              "diff_scale": "21",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Hateflayer",
-              "lvl_creator": "SirZeus"
+              "lvl_creator": "SirZeus",
+              "video_url": "https://youtu.be/g19pDeYw_Ps?si=Uzt5du_chqGbrHCX",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Dysphoria",
-              "lvl_creator": "IceboxOG"
+              "lvl_creator": "IceboxOG",
+              "video_url": "https://youtu.be/1jjd5TQbsKY?si=p6xx8e8CdM6BgUgd",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "PPPPPPPPPPPPPPPPIXEL",
-              "lvl_creator": "Renn241"
+              "lvl_creator": "Renn241",
+              "video_url": "https://www.youtube.com/watch?v=utim7mVmIWY",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Zaphes Back Yard",
-              "lvl_creator": "Zacanaii"
+              "lvl_creator": "Zacanaii",
+              "video_url": "https://youtu.be/A3vk3aWIWbE?si=1zvZZBmCptUE1dkf",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Sheol Death",
-              "lvl_creator": "TwisterDude161"
+              "lvl_creator": "TwisterDude161",
+              "video_url": "https://youtu.be/tHdizajhby4?si=YnWGScsiDu-0L4Le",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Kyrie Eleison",
-              "lvl_creator": "ViPriN"
+              "lvl_creator": "ViPriN",
+              "video_url": "https://youtu.be/1aNlZErKsHc?si=xvEkc5rtuweLE1A-",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "(Deathlink) - Supersonic",
-              "lvl_creator": "ZenticAlpha"
+              "lvl_creator": "ZenticAlpha",
+              "video_url": "https://www.youtube.com/watch?v=k2TG4pxht8g",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "CMYK",
-              "lvl_creator": "Ewop"
+              "lvl_creator": "Ewop",
+              "video_url": "https://youtu.be/5wciNodaC6U?si=5I_Guv91m6BHn7Sm",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "20",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Mind Crusher",
-              "lvl_creator": "ThatJack"
+              "lvl_creator": "ThatJack",
+              "video_url": "https://youtu.be/hw0uWQrIan0?si=4lQofCIGZ08Jiz2z",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Elysian Aegis",
-              "lvl_creator": "zYuko"
+              "lvl_creator": "zYuko",
+              "video_url": "https://youtu.be/bi3rohfcO9M?si=BTKz5c2SCLoh9Z_Y",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Light Years",
-              "lvl_creator": "Smokes"
+              "lvl_creator": "Smokes",
+              "video_url": "https://www.youtube.com/watch?v=MHu9pcld2oY",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Ulon",
-              "lvl_creator": "OliSW"
+              "lvl_creator": "OliSW",
+              "video_url": "https://youtu.be/1Df__HLZRvA?si=7cLo85UKWvfDpf6w",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "19",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Leyak",
-              "lvl_creator": "EnZore"
+              "lvl_creator": "EnZore",
+              "video_url": "https://www.youtube.com/watch?v=dCpZRpPbBoI",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "In Cargill",
-              "lvl_creator": "LP44"
+              "lvl_creator": "LP44",
+              "video_url": "https://www.youtube.com/watch?v=QB7lYWrKpEk",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "The Bandere",
-              "lvl_creator": "Ka1ns"
+              "lvl_creator": "Ka1ns",
+              "video_url": "https://youtu.be/nzuUyaxV-7o?si=XtPRJ4jL0c3Zo1aW",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Necropolis",
-              "lvl_creator": "iIiNepTuneiIi"
+              "lvl_creator": "iIiNepTuneiIi",
+              "video_url": "https://www.youtube.com/watch?v=LA7eaIfS9dE",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Elements X",
-              "lvl_creator": "Eiken"
+              "lvl_creator": "Eiken",
+              "video_url": "https://youtu.be/ajf8ZVFWCf8?si=qJMN9EYvwplCk6af",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "ReRUST",
-              "lvl_creator": "Dawnf4ll"
+              "lvl_creator": "Dawnf4ll",
+              "video_url": "https://youtu.be/PCaOq6egk9s?si=I85Xa8rqUn2CCs84",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Gumshot",
-              "lvl_creator": "qMystic"
+              "lvl_creator": "qMystic",
+              "video_url": "https://youtu.be/UFmQywCtN2Q?si=fO9SiCf5YhtLhFxY",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "X Adventure",
-              "lvl_creator": "Paziblitz"
+              "lvl_creator": "Paziblitz",
+              "video_url": "https://youtu.be/I-BdKGItztQ?si=NOLLVkWRBPBgUR91",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "18",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Night Terrors",
-              "lvl_creator": "Hinds"
+              "lvl_creator": "Hinds",
+              "video_url": "https://www.youtube.com/watch?v=_2gm9gUdTrg",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Bit Reaper",
-              "lvl_creator": "Vlacc"
+              "lvl_creator": "Vlacc",
+              "video_url": "https://www.youtube.com/watch?v=ziRs_-DM_qw",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "CHROMA",
-              "lvl_creator": "Renn241"
+              "lvl_creator": "Renn241",
+              "video_url": "https://youtu.be/safTqSqxp30?si=Qg1Ou55Wlh78vEg2",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Arcane",
-              "lvl_creator": "qMystic"
+              "lvl_creator": "qMystic",
+              "video_url": "https://youtu.be/DOvFm_23y1A?si=aw4xX1abGLJGk2Ej",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "(Solo) - Supersonic",
-              "lvl_creator": "ZenticAlpha"
+              "lvl_creator": "ZenticAlpha",
+              "video_url": "https://www.youtube.com/watch?v=BgCVY5Gw4ws",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "goodnight",
-              "lvl_creator": "Unnn"
+              "lvl_creator": "Unnn",
+              "video_url": "https://youtu.be/g2-yQ3CSahE?si=KSWwBJDLGHWne8xC",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Acrise",
-              "lvl_creator": "ZWK"
+              "lvl_creator": "ZWK",
+              "video_url": "https://youtu.be/8Pq1gXQKGPo?si=JDwlB6cUaTzL0CPq",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "YMTHLYFYMBIKWHRLYF",
-              "lvl_creator": "augi"
+              "lvl_creator": "augi",
+              "video_url": "https://youtu.be/kc8twQLKNUY?si=pspTimg2aU12RRYO",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Valhalla",
-              "lvl_creator": "Annon"
+              "lvl_creator": "Annon",
+              "video_url": "https://www.youtube.com/watch?v=PxID-eKpTIA",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Heritage",
-              "lvl_creator": "Karma8"
+              "lvl_creator": "Karma8",
+              "video_url": "https://www.youtube.com/watch?v=jOCCMIw0tpo",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Hysteria",
-              "lvl_creator": "Monogalaxy2"
+              "lvl_creator": "Monogalaxy2",
+              "video_url": "https://youtu.be/VxJlDgbvSD4?si=X7KRI_TF5rllCDKf",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Dust storm",
-              "lvl_creator": "sam005"
+              "lvl_creator": "sam005",
+              "video_url": "https://youtu.be/2c3q3whWov4?si=UiqXTprueVSgwVRg",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Lmao",
-              "lvl_creator": "MazZedy"
+              "lvl_creator": "MazZedy",
+              "video_url": "https://www.youtube.com/watch?v=vI_OxQhc_sU",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Lit Fuse",
-              "lvl_creator": "Kmral"
+              "lvl_creator": "Kmral",
+              "video_url": "https://www.youtube.com/watch?v=6k4p6pLrjbc",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "17",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Quantum Force",
-              "lvl_creator": "Darwin"
+              "lvl_creator": "Darwin",
+              "video_url": "https://www.youtube.com/watch?v=88YJC5qW8ts",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Bichromatic",
-              "lvl_creator": "gmdmann"
+              "lvl_creator": "gmdmann",
+              "video_url": "https://youtu.be/c79ERYvDXYU?si=78R8MdRYrGbj4cQM",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
-              "lvl_name": "Pyromaniac",
-              "lvl_creator": "Glittershroom"
+              "lvl_creator": "Glittershroom",
+              "video_url": "https://www.youtube.com/watch?v=6PVEh26j9ZE",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0,
+              "lvl_name": "Pyromaniac"
             },
             {
               "lvl_name": "FFFFFF",
-              "lvl_creator": "Vlacc"
+              "lvl_creator": "Vlacc",
+              "video_url": "https://youtu.be/fohRDf4tn4Y?si=2rtNCTBa6N2KXL00",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "EXG",
-              "lvl_creator": "Grax"
+              "lvl_creator": "Grax",
+              "video_url": "https://www.youtube.com/watch?v=ykmK5EsQXHs",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "One North",
-              "lvl_creator": "IAmRozz"
+              "lvl_creator": "IAmRozz",
+              "video_url": "https://youtu.be/irDNQ-kk1xA?si=KO7L2aTZNfXXer_H",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Backrooms",
-              "lvl_creator": "CarrotySpice"
+              "lvl_creator": "CarrotySpice",
+              "video_url": "https://youtu.be/SgTPZUlj31c?si=3DliqBJ1rV8g2Vaz",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "16",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Stalemate",
-              "lvl_creator": "Nox"
+              "lvl_creator": "Nox",
+              "video_url": "https://www.youtube.com/watch?v=rtm0flhztcU",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "CraZy II",
-              "lvl_creator": "DAVJT"
+              "lvl_creator": "DAVJT",
+              "video_url": "https://www.youtube.com/watch?v=eGPNEaZV6cc",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Explorers",
-              "lvl_creator": "Darwin"
+              "lvl_creator": "Darwin",
+              "video_url": "https://www.youtube.com/watch?v=f1Hu7r5KVxM",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Magma Bound",
-              "lvl_creator": "ScorchVx"
+              "lvl_creator": "ScorchVx",
+              "video_url": "https://www.youtube.com/watch?v=8vLP8XOztJM",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Poltergeist",
-              "lvl_creator": "Andromeda GMD"
+              "lvl_creator": "Andromeda GMD",
+              "video_url": "https://www.youtube.com/watch?v=63sr55FXqsI",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "SFW",
-              "lvl_creator": "hiavl"
+              "lvl_creator": "hiavl",
+              "video_url": "https://www.youtube.com/watch?v=nglcTT4OXzM",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Joyride",
-              "lvl_creator": "BridgetTheCroco"
+              "lvl_creator": "BridgetTheCroco",
+              "video_url": "https://youtu.be/LOS52oijbcg?si=ZzqtPYCOGMfVAsMe",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Buh",
-              "lvl_creator": "MazZedy"
+              "lvl_creator": "MazZedy",
+              "video_url": "https://youtu.be/csFwdbwZ8ek?si=uz_pDTgR1QKX0vdx",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Blast Furnace",
-              "lvl_creator": "Samifying"
+              "lvl_creator": "Samifying",
+              "video_url": "https://youtu.be/ZTiDgkRDDxc?si=DzHazyuugK8HlpS9",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Windy Landscape",
-              "lvl_creator": "WOOGI1411"
+              "lvl_creator": "WOOGI1411",
+              "video_url": "https://youtu.be/kc0xOXNnpbE?si=3QxlAHm4l-J5tz3_",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "TENDO",
-              "lvl_creator": "Gradientxd"
+              "lvl_creator": "Gradientxd",
+              "video_url": "https://www.youtube.com/watch?v=H0dmFLZkxO0",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "MulLuna",
-              "lvl_creator": "Mulpan & K911una"
+              "lvl_creator": "Mulpan & K911una",
+              "video_url": "https://www.youtube.com/watch?v=s76yRQRMtSY",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "24",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Multition",
-              "lvl_creator": "Mulpan & Partition"
+              "lvl_creator": "Mulpan & Partition",
+              "video_url": "https://youtu.be/6fphd9IIDE8?si=Llyy8vCF10b7KVpo",
+              "diff_rank": "Insane Demon",
+              "diff_scale": "25",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Xes",
-              "lvl_creator": "Winterbitia"
+              "lvl_creator": "Winterbitia",
+              "video_url": "https://youtu.be/-Zloz5N4IM0?si=vVuobjZn3902kqTc",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Frostbound",
-              "lvl_creator": "YakobNugget"
+              "lvl_creator": "YakobNugget",
+              "video_url": "https://www.youtube.com/watch?v=xLCfqMLGfR8",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Anya II",
-              "lvl_creator": "Anya21"
+              "lvl_creator": "Anya21",
+              "video_url": "https://www.youtube.com/watch?v=tCfNTBeMi1M",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Terror Factory",
-              "lvl_creator": "Korita"
+              "lvl_creator": "Korita",
+              "video_url": "https://www.youtube.com/watch?v=Did3T_KW4SM",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Diffuse",
-              "lvl_creator": "Hinds"
+              "lvl_creator": "Hinds",
+              "video_url": "https://www.youtube.com/watch?v=hHsXRZ2TIX0",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "MASTERMIND",
-              "lvl_creator": "Hinds"
+              "lvl_creator": "Hinds",
+              "video_url": "https://youtu.be/-BqN5ZnDqig?si=hSuAQWwfiY8YkWo3",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Jajagarasu",
-              "lvl_creator": "PlebKingdom"
+              "lvl_creator": "PlebKingdom",
+              "video_url": "https://youtu.be/NMBygLCOp-w?si=G1fDCZXy6sCDSuj7",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Eternal Flame",
-              "lvl_creator": "James"
+              "lvl_creator": "James",
+              "video_url": "https://www.youtube.com/watch?v=tLCv38lyJaM",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Psychosis",
-              "lvl_creator": "Hinds"
+              "lvl_creator": "Hinds",
+              "video_url": "https://youtu.be/vqpiYyi2sDk?si=sy4zk4r4Tbw-mwEs",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Walkman",
-              "lvl_creator": "JamAttack"
+              "lvl_creator": "JamAttack",
+              "video_url": "https://youtu.be/pD1F-NoCmUg?si=RdQfLUlbCgEoR-DK",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "8E8E6",
-              "lvl_creator": "cynir"
+              "lvl_creator": "cynir",
+              "video_url": "https://youtu.be/3eVqIMNS28c?si=LBlblx_dKp3aDX4U",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Badland",
-              "lvl_creator": "TamaN"
+              "lvl_creator": "TamaN",
+              "video_url": "https://youtu.be/S5h0cDVYt7Y?si=CA0LtmKNU3RCxuQr",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Iridescent",
-              "lvl_creator": "ViPriN"
+              "lvl_creator": "ViPriN",
+              "video_url": "https://youtu.be/EgdgZwc1x6Y?si=wlqnrSRdEbExLAt1",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Conclusion",
-              "lvl_creator": "Giron"
+              "lvl_creator": "Giron",
+              "video_url": "https://youtu.be/QfjdzWBz15s?si=NxN9fWXM7ZH0wdVq",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "15",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Future Funk",
-              "lvl_creator": "JonathanGD"
+              "lvl_creator": "JonathanGD",
+              "video_url": "https://youtu.be/2CZM4Oi_hdA?si=vKItNjyz6DLVk2PV",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "13",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Fairydust",
-              "lvl_creator": "MkComic"
+              "lvl_creator": "MkComic",
+              "video_url": "https://youtu.be/6-AEgkS9_sY?si=wtG__HA4Y1XuVPmz",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "14",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "LOCK IN",
-              "lvl_creator": "Sparktwo"
+              "lvl_creator": "Sparktwo",
+              "video_url": "https://www.youtube.com/watch?v=w6EUYAmbjEE",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "14",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Spacelocked",
-              "lvl_creator": "LazerBlitz"
+              "lvl_creator": "LazerBlitz",
+              "video_url": "https://www.youtube.com/watch?v=-frwXyOU8kQ",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "13",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "CraZy",
-              "lvl_creator": "DavJT"
+              "lvl_creator": "DavJT",
+              "video_url": "https://www.youtube.com/watch?v=g_MP6BENHEs",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "13",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Obelisk",
-              "lvl_creator": "SuprianGD"
+              "lvl_creator": "SuprianGD",
+              "video_url": "https://www.youtube.com/watch?v=K0MDnUBlZws",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "13",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Double Dash",
-              "lvl_creator": "Zoroa"
+              "lvl_creator": "Zoroa",
+              "video_url": "https://www.youtube.com/watch?v=sBUnK_sATR4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Dance Massacre",
-              "lvl_creator": "Hinds"
+              "lvl_creator": "Hinds",
+              "video_url": "https://www.youtube.com/watch?v=XaSKm3c0U_4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Different Descent",
-              "lvl_creator": "Danke"
+              "lvl_creator": "Danke",
+              "video_url": "https://www.youtube.com/watch?v=pIwFmP6Q9l8",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "YOQUIERO",
-              "lvl_creator": "vrymer"
+              "lvl_creator": "vrymer",
+              "video_url": "https://www.youtube.com/watch?v=XflUcuavRPQ",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Thermodynamix",
-              "lvl_creator": "Flash"
+              "lvl_creator": "Flash",
+              "video_url": "https://www.youtube.com/watch?v=I6eYtgs9YIU",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "GD10",
-              "lvl_creator": "Floppy"
+              "lvl_creator": "Floppy",
+              "video_url": "https://www.youtube.com/watch?v=EuClzhlzZE4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Solar Wind",
-              "lvl_creator": "IwillowI"
+              "lvl_creator": "IwillowI",
+              "video_url": "https://www.youtube.com/watch?v=8HLgCqz-3_o",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "EUOUAE",
-              "lvl_creator": "Vadi"
+              "lvl_creator": "Vadi",
+              "video_url": "https://www.youtube.com/watch?v=cyq3rbZNXU4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "In Rainbows",
-              "lvl_creator": "Lfritz"
+              "lvl_creator": "Lfritz",
+              "video_url": "https://www.youtube.com/watch?v=N94yhgolU2M",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Electrodynamix II",
-              "lvl_creator": "iv4n24"
+              "lvl_creator": "iv4n24",
+              "video_url": "https://www.youtube.com/watch?v=s_My4_zYQYA",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Quasar",
-              "lvl_creator": "Allan"
+              "lvl_creator": "Allan",
+              "video_url": "https://www.youtube.com/watch?v=8EbIq2lslAw",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Zephyrs Madness",
-              "lvl_creator": "Zephyr"
+              "lvl_creator": "Zephyr",
+              "video_url": "https://youtu.be/fyhL2SCD1fE?si=vq0eoUXDbzpQuDc8",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Cataclysmic Drive",
-              "lvl_creator": "TheRealArtee"
+              "lvl_creator": "TheRealArtee",
+              "video_url": "https://www.youtube.com/watch?v=rOZtLw8TykI",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Radioactive",
-              "lvl_creator": "ViPriN"
+              "lvl_creator": "ViPriN",
+              "video_url": "https://youtu.be/NBc3a6oxols?si=0ywmqWQg1pIxPjTc",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "TOE III",
-              "lvl_creator": "Manix648"
+              "lvl_creator": "Manix648",
+              "video_url": "https://youtu.be/t0X1Ds-E7b8?si=Sr25xLxubtsiTuyv",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
-              "lvl_name": "Nine Circles",
-              "lvl_creator": "Zobros"
+              "lvl_creator": "Zobros",
+              "video_url": "https://youtu.be/m0m0JZnGPTQ?si=lkeI2KT7vKWwBe5g",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0,
+              "lvl_name": "Nine Circles"
             },
             {
               "lvl_name": "Jawbreaker",
-              "lvl_creator": "ZenticAlpha"
+              "lvl_creator": "ZenticAlpha",
+              "video_url": "https://www.youtube.com/watch?v=olIIIpYHUO8",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Bloodroom",
-              "lvl_creator": "HeroZombie80"
+              "lvl_creator": "HeroZombie80",
+              "video_url": "https://www.youtube.com/watch?v=iWsCwbVEK5M",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Inception",
-              "lvl_creator": "Darwin"
+              "lvl_creator": "Darwin",
+              "video_url": "https://youtu.be/Bpc7l7ovqgU?si=4B9aC122XwJSXN_A",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Nowise",
-              "lvl_creator": "Darwin"
+              "lvl_creator": "Darwin",
+              "video_url": "https://www.youtube.com/watch?v=5YKUMsrcMNs",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Interstellar",
-              "lvl_creator": "Darwin"
+              "lvl_creator": "Darwin",
+              "video_url": "https://www.youtube.com/watch?v=HgNHkZ6jzFo",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Loving U Is Wrong",
-              "lvl_creator": "skywalker14"
+              "lvl_creator": "skywalker14",
+              "video_url": "https://www.youtube.com/watch?v=dTMdXrSSLkc",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "12",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Despacito Circles",
-              "lvl_creator": "Terron"
+              "lvl_creator": "Terron",
+              "video_url": "https://www.youtube.com/watch?v=4_enMcdxloI",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": ""
             },
             {
               "lvl_name": "Golden Hope",
-              "lvl_creator": "Terron"
+              "lvl_creator": "Terron",
+              "video_url": "https://www.youtube.com/watch?v=WtefIMGBYf4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Black Off",
-              "lvl_creator": "Vlacc"
+              "lvl_creator": "Vlacc",
+              "video_url": "https://www.youtube.com/watch?v=feGpY-d01yk",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "DAK",
-              "lvl_creator": "MazZedy"
+              "lvl_creator": "MazZedy",
+              "video_url": "https://youtu.be/OMuY9eY3srU?si=g2L0u-YXBlPCvw_u",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Hydragon",
-              "lvl_creator": "MalZir"
+              "lvl_creator": "MalZir",
+              "video_url": "https://www.youtube.com/watch?v=MXJsdMuRMd4",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Overpowered",
-              "lvl_creator": "T3mplate"
+              "lvl_creator": "T3mplate",
+              "video_url": "https://www.youtube.com/watch?v=Ic4tMyBdP3Q",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "11",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Darkness Keeper",
-              "lvl_creator": "AbstractDark"
+              "lvl_creator": "AbstractDark",
+              "video_url": "https://www.youtube.com/watch?v=ynviG8bEgaw",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Goodbye II",
-              "lvl_creator": "Freyda"
+              "lvl_creator": "Freyda",
+              "video_url": "https://www.youtube.com/watch?v=J400WqJIllA",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Carnivores",
-              "lvl_creator": "KrazyKako9"
+              "lvl_creator": "KrazyKako9",
+              "video_url": "https://www.youtube.com/watch?v=AcCV-WMIOZU",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Cyber CompositioN",
-              "lvl_creator": "Takumii"
+              "lvl_creator": "Takumii",
+              "video_url": "https://www.youtube.com/watch?v=NzlwLyvWoPE",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Petrified Factory",
-              "lvl_creator": "Korita"
+              "lvl_creator": "Korita",
+              "video_url": "https://www.youtube.com/watch?v=vUZFy9xeHkE",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "HeLL",
-              "lvl_creator": "Serponge"
+              "lvl_creator": "Serponge",
+              "video_url": "https://www.youtube.com/watch?v=gTtsrzNUJM8",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "8",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Kepcep",
-              "lvl_creator": "Rokioto"
+              "lvl_creator": "Rokioto",
+              "video_url": "https://www.youtube.com/watch?v=x-2cPRsjos0",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "8",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "VeritY",
-              "lvl_creator": "Serponge"
+              "lvl_creator": "Serponge",
+              "video_url": "https://www.youtube.com/watch?v=p15w9MB2eAc",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "7",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Left Behind",
-              "lvl_creator": "carlosart16"
+              "lvl_creator": "carlosart16",
+              "video_url": "https://youtu.be/dpmMENQtHVU?si=Xe0oiJiz1ztm1Qzw",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Cant Let Vulc",
-              "lvl_creator": "Vulcanium4"
+              "lvl_creator": "Vulcanium4",
+              "video_url": "https://www.youtube.com/watch?v=rxY2wclgwKg",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "6",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Deadlocked 2017",
-              "lvl_creator": "Bronks"
+              "lvl_creator": "Bronks",
+              "video_url": "https://www.youtube.com/watch?v=-BEvwY6dDDA",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "8",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Flinq",
-              "lvl_creator": "MrMeurick"
+              "lvl_creator": "MrMeurick",
+              "video_url": "https://youtu.be/X_ukGAYU6qc?si=wq9I1LAXJzJnzSaL",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Ad Honorem",
-              "lvl_creator": "Echonox"
+              "lvl_creator": "Echonox",
+              "video_url": "https://www.youtube.com/watch?v=LdzuSfXktSU",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "10",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Ruuun",
-              "lvl_creator": "qMystic"
+              "lvl_creator": "qMystic",
+              "video_url": "https://www.youtube.com/watch?v=bCrXZWKnswQ",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "speequ",
-              "lvl_creator": "Tenzk"
+              "lvl_creator": "Tenzk",
+              "video_url": "https://www.youtube.com/watch?v=A5sOxT2ySr8",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Dont Simp",
-              "lvl_creator": "IvashkaUA"
+              "lvl_creator": "IvashkaUA",
+              "video_url": "https://www.youtube.com/watch?v=i4o6A_gttNg",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Nebulous Journey",
-              "lvl_creator": "CorroX"
+              "lvl_creator": "CorroX",
+              "video_url": "https://www.youtube.com/watch?v=O8jHEeOPCeg",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Gold Temple",
-              "lvl_creator": "Serponge"
+              "lvl_creator": "Serponge",
+              "video_url": "https://www.youtube.com/watch?v=ARL0iOLpsBU",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "ZO",
-              "lvl_creator": "KasVA"
+              "lvl_creator": "KasVA",
+              "video_url": "https://www.youtube.com/watch?v=HfdsolQCh70",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Boss 3 Electro",
-              "lvl_creator": "XenderGame"
+              "lvl_creator": "XenderGame",
+              "video_url": "https://www.youtube.com/watch?v=OfsMqyw5cqA",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Boss V Devourers",
-              "lvl_creator": "Xender Game"
+              "lvl_creator": "Xender Game",
+              "video_url": "https://www.youtube.com/watch?v=tIqOD69YeYk",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Shrill Hallway",
-              "lvl_creator": "Nico99"
+              "lvl_creator": "Nico99",
+              "video_url": "https://www.youtube.com/watch?v=5JJ7LCAeEkQ",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Solar Circles",
-              "lvl_creator": "D4rkGryf"
+              "lvl_creator": "D4rkGryf",
+              "video_url": "https://www.youtube.com/watch?v=QqIMKL9RmrA",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Reanimation",
-              "lvl_creator": "Terron"
+              "lvl_creator": "Terron",
+              "video_url": "https://www.youtube.com/watch?v=93QI_B0BsH8",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             },
             {
               "lvl_name": "Z",
-              "lvl_creator": "Zyzyx"
+              "lvl_creator": "Zyzyx",
+              "video_url": "https://www.youtube.com/watch?v=7Jkz7S7Mb8Y",
+              "diff_rank": "Medium Demon",
+              "diff_scale": "9",
+              "pos_aredl": 0
             }
           ]
         }
