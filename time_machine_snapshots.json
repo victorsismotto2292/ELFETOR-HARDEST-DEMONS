@@ -491119,24 +491119,11 @@
       ]
     },
     {
-      "date": "2026-09-03T21:19:59-03:00",
+      "date": "2026-09-03T21:22:08-03:00",
       "list_data": [
         {
-          "date": "2026-09-03 21:19:59",
+          "date": "2026-09-03 21:22:08",
           "levels": [
-            {
-              "lvl_name": "Teste",
-              "lvl_creator": "teste",
-              "video_url": "teste",
-              "diff_rank": "teste",
-              "diff_scale": "teste",
-              "pos_aredl": 0,
-              "pos_history": [
-                {
-                  "log1": "03/09/26 - Added to the list at position NaN"
-                }
-              ]
-            },
             {
               "lvl_name": "The Yandere",
               "lvl_creator": "Dorami",
@@ -498552,7 +498539,12 @@
               "video_url": "https://youtu.be/k6BWZAz6CEs?si=FI7CY_C-7RAzpeF1",
               "diff_rank": "Insane Demon",
               "diff_scale": "16",
-              "pos_aredl": 0
+              "pos_aredl": 0,
+              "pos_history": [
+                {
+                  "log1": "03/09/26 - Promoted to Main List at position 75 (was Extended #76)"
+                }
+              ]
             },
             {
               "video_url": "https://www.youtube.com/watch?v=6PVEh26j9ZE",
@@ -499566,6 +499558,22 @@
               "video_url": "https://www.youtube.com/watch?v=feGpY-d01yk",
               "lvl_name": "Black Off",
               "lvl_creator": "Vlacc",
+              "pos_aredl": "",
+              "diff_rank": "Hard Demon",
+              "diff_scale": "10",
+              "pos_history": [
+                {
+                  "log1": "08/01/26 - foguito was added above (-1)"
+                },
+                {
+                  "log1": "09/01/26 - teste was added above (-1)"
+                }
+              ]
+            },
+            {
+              "video_url": "https://youtu.be/OMuY9eY3srU?si=g2L0u-YXBlPCvw_u",
+              "lvl_name": "DAK",
+              "lvl_creator": "MazZedy",
               "pos_aredl": "",
               "diff_rank": "Hard Demon",
               "diff_scale": "10",
