@@ -17,6 +17,7 @@ const START_DATE = '2026-01-15T00:00:00-03:00';
 const TZ = 'America/Sao_Paulo';
 const MAIN_MAX = 75;
 const EXTENDED_MAX = 150;
+const CURRENT_LEVEL_FILES = ['levels_main.json', 'levels_extended.json', 'levels_legacy.json'];
 
 function clone(value) {
   return JSON.parse(JSON.stringify(value));
@@ -39,6 +40,24 @@ function readJson(file) {
 
 function normalizeName(value) {
   return String(value || '').trim().toLowerCase();
+}
+
+function buildCurrentVideoUrlIndex() {
+  const index = new Map();
+
+  for (const filename of CURRENT_LEVEL_FILES) {
+    const file = path.join(ROOT, filename);
+    if (!fs.existsSync(file)) continue;
+
+    const levels = readJson(file);
+    for (const level of Array.isArray(levels) ? levels : []) {
+      const name = normalizeName(level?.lvl_name);
+      const videoUrl = String(level?.video_url || '').trim();
+      if (name && videoUrl) index.set(name, videoUrl);
+    }
+  }
+
+  return index;
 }
 
 function removeByName(list, name) {
@@ -113,8 +132,17 @@ function applyEvent(state, event) {
   }
 }
 
-function first150(state) {
-  return [...state.main, ...state.extended].slice(0, EXTENDED_MAX).map(level => clone(level));
+function first150(state, currentVideoUrlIndex) {
+  return [...state.main, ...state.extended]
+    .slice(0, EXTENDED_MAX)
+    .map(level => {
+      const copy = clone(level);
+      if (!String(copy.video_url || '').trim()) {
+        const fallbackUrl = currentVideoUrlIndex.get(normalizeName(copy.lvl_name));
+        if (fallbackUrl) copy.video_url = fallbackUrl;
+      }
+      return copy;
+    });
 }
 
 function formatDisplay(timestamp) {
@@ -135,16 +163,18 @@ function formatDisplay(timestamp) {
   return `${parts.month}/${parts.day}/${parts.year} ${parts.hour}:${parts.minute}:${parts.second}`;
 }
 
-function makeSnapshot(timestamp, state, metadata = {}) {
+function makeSnapshot(timestamp, state, metadata = {}, currentVideoUrlIndex) {
   return {
     date: timestamp,
     list_data: [{
       date: formatDisplay(timestamp),
-      levels: first150(state)
+      levels: first150(state, currentVideoUrlIndex)
     }],
     metadata
   };
 }
+
+const currentVideoUrlIndex = buildCurrentVideoUrlIndex();
 
 const files = walkHistoryFiles(HISTORY_DIR);
 if (!files.length) throw new Error('Nenhum changelog JSON encontrado.');
@@ -162,7 +192,7 @@ let state = {
 const snapshots = [makeSnapshot(START_DATE, state, {
   source: 'daily JSON changelog baseline',
   source_commit: startDocument.day_start.source_commit || null
-})];
+}, currentVideoUrlIndex)];
 
 let eventCount = 0;
 
@@ -170,7 +200,7 @@ for (const document of dayDocuments) {
   for (const event of [...(document.changes || [])].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp))) {
     applyEvent(state, event);
 
-    const top150 = first150(state);
+    const top150 = first150(state, currentVideoUrlIndex);
     if (top150.length !== 150) {
       throw new Error(`Evento ${event.commit || event.local_timestamp} produziu ${top150.length} posições, esperado 150.`);
     }
@@ -199,7 +229,8 @@ const payload = {
     positions_per_snapshot: 150,
     history_schema_version: 2,
     snapshot_count: snapshots.length,
-    event_count: eventCount
+    event_count: eventCount,
+    video_url_enrichment: 'missing URLs are filled from current levels_*.json by lvl_name'
   }
 };
 
