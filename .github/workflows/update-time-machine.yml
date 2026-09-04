@@ -1,0 +1,50 @@
+name: Update Time Machine history
+
+on:
+  push:
+    paths:
+      - 'levels_main.json'
+      - 'levels_extended.json'
+      - 'levels_legacy.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-time-machine
+  cancel-in-progress: false
+
+jobs:
+  rebuild-history:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Rebuild Time Machine JSON files
+        run: node scripts/rebuild_time_machine_from_changelogs.mjs --include-current
+
+      - name: Commit generated history when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add time_machine_data.json
+          git add time_machine_snapshots.json
+          git add snapshot.json
+
+          if git diff --cached --quiet; then
+            echo "No Time Machine changes to commit."
+          else
+            git commit -m "Auto-update Time Machine history"
+            git push
+          fi
