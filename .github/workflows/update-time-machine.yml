@@ -6,6 +6,9 @@ on:
       - 'levels_main.json'
       - 'levels_extended.json'
       - 'levels_legacy.json'
+      - '.github/workflows/update-time-machine.yml'
+      - 'scripts/migrate_history.cjs'
+      - 'scripts/rebuild_time_machine_from_changelogs.mjs'
   workflow_dispatch:
 
 permissions:
@@ -30,6 +33,15 @@ jobs:
         with:
           node-version: 22
 
+      - name: Migrate legacy TXT history when present
+        shell: bash
+        run: |
+          if find demonlist_history -type f -name '*.txt' -print -quit | grep -q .; then
+            node scripts/migrate_history.cjs
+            find demonlist_history -type f -name '*.txt' -delete
+          fi
+          rm -f demonlist_history/HISTORY_INDEX.txt
+
       - name: Rebuild Time Machine JSON files
         run: node scripts/rebuild_time_machine_from_changelogs.mjs --include-current
 
@@ -38,6 +50,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git add -A demonlist_history
           git add time_machine_data.json
           git add time_machine_snapshots.json
           git add snapshot.json

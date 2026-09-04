@@ -47,8 +47,9 @@ function loadLevelsTM(){
 
 function getTimeMachineSnapshot(selectedAt){
     const { snapshots } = loadLevelsTM();
+    const isMinuteSelection = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(selectedAt || '');
     const requested = selectedAt
-        ? new Date(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(selectedAt) ? `${selectedAt}:00-03:00` : selectedAt)
+        ? new Date(isMinuteSelection ? `${selectedAt}:59.999-03:00` : selectedAt)
         : new Date("2026-01-15T00:00:00-03:00");
     if (Number.isNaN(requested.getTime())) return snapshots[0];
     return snapshots.reduce((chosen, snapshot) => {
@@ -176,6 +177,7 @@ function CreateCardLevels_Main(level_main, index) {
 
 function CreateCardLevels_Extended(level_extended, index) {
         const position = index + 76;
+        const normalizedRank = String(level_extended.diff_rank || '').trim().toLowerCase();
     
     const videoId = extractYouTubeVideoId(level_extended.video_url);
     
@@ -201,7 +203,7 @@ function CreateCardLevels_Extended(level_extended, index) {
 
     // DIFF RANK CASES:
 
-        if(level_extended.diff_rank === "Extreme Demon"){
+        if(normalizedRank === "extreme demon"){
             let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -244,7 +246,7 @@ function CreateCardLevels_Extended(level_extended, index) {
     return levelCardHtml;
     }
 
-    if(level_extended.diff_rank === "Insane Demon"){
+    if(normalizedRank === "insane demon"){
             let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -287,7 +289,7 @@ function CreateCardLevels_Extended(level_extended, index) {
     return levelCardHtml;
     }
     
-    if(level_extended.diff_rank === "Hard Demon"){
+    if(normalizedRank === "hard demon"){
                     let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -329,7 +331,7 @@ function CreateCardLevels_Extended(level_extended, index) {
 
     return levelCardHtml;
     }
-    if(level_extended.diff_rank === "Medium Demon" || level_extended.diff_rank === "Easy Demon"){
+    if(normalizedRank === "medium demon" || normalizedRank === "easy demon"){
                     let levelCardHtml = `
         <div class="level-card" data-name="${safeName.toLowerCase()}" data-creator="${safeCreator.toLowerCase()}" data-position="${position}">
             <div class="card">
@@ -384,6 +386,7 @@ function CreateCardLevels_Legacy(level_legacy, index) {
  
     const difficulty = `${level_legacy.diff_scale || ''}`;
     const rankDisplay = `${level_legacy.diff_rank || ''}`;
+    const normalizedRank = String(level_legacy.diff_rank || '').trim().toLowerCase();
  
     const safeName    = (level_legacy.lvl_name    || '').replace(/"/g, '&quot;');
     const safeCreator = (level_legacy.lvl_creator || '').replace(/"/g, '&quot;');
@@ -391,11 +394,11 @@ function CreateCardLevels_Legacy(level_legacy, index) {
  
     // Badge class choice
     let badgeClass = 'badge-demon';
-    if (level_legacy.diff_rank === 'Extreme Demon'){badgeClass = 'badge-extreme'}
-    else if (level_legacy.diff_rank === 'Insane Demon'){badgeClass = 'badge-insane'}
-    else if (level_legacy.diff_rank === 'Hard Demon'){badgeClass = 'badge-hard'}
-    else if (level_legacy.diff_rank === 'Medium Demon'){badgeClass = 'badge-medium'}
-    else if (level_legacy.diff_rank === 'Easy Demon'){badgeClass = 'badge-easy'}
+    if (normalizedRank === 'extreme demon'){badgeClass = 'badge-extreme'}
+    else if (normalizedRank === 'insane demon'){badgeClass = 'badge-insane'}
+    else if (normalizedRank === 'hard demon'){badgeClass = 'badge-hard'}
+    else if (normalizedRank === 'medium demon'){badgeClass = 'badge-medium'}
+    else if (normalizedRank === 'easy demon'){badgeClass = 'badge-easy'}
  
     // Link's position text
     let aredlLabel = 'List Position';
@@ -428,7 +431,7 @@ function CreateCardLevels_Legacy(level_legacy, index) {
             </p>
  
             <div class="badge-container">
-                <span class="badge-demon">${rankDisplay}</span>
+                <span class="${badgeClass}">${rankDisplay}</span>
                 ${difficulty ? `<span class="badge-tier">Tier: ${difficulty}</span>` : ''}
             </div>
  

@@ -1,7 +1,16 @@
 #!/usr/bin/env node
 const fs = require('fs');
+const path = require('path');
 const readline = require('readline');
-const { execSync } = require('child_process');
+const os = require('os');
+const { execSync, execFileSync } = require('child_process');
+const {
+  HISTORY_DIR,
+  HISTORY_INDEX,
+  appendHistoryEvent,
+  rebuildHistoryIndex,
+  clone
+} = require('./history_manager.cjs');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -27,8 +36,12 @@ const TRACKED_FILES = [
   FILES.MAIN,
   FILES.EXTENDED,
   FILES.LEGACY,
-  'README.md'
+  'README.md',
+  'demonlist_history',
+  'demonlist_history/HISTORY_INDEX.json'
 ];
+
+const BATCH_HISTORY_BACKUP_DIR = path.join(os.tmpdir(), `elfetor-history-backup-${process.pid}`);
 
 // ==========================
 // UTILITÁRIOS
@@ -65,27 +78,45 @@ function saveAll(lists) {
 // --- Funções de Backup para o Modo Batch ---
 function createBatchBackups() {
   TRACKED_FILES.forEach(file => {
+    if (file === HISTORY_DIR) return;
+    if (file === HISTORY_INDEX) return;
     if (fs.existsSync(file)) {
       fs.copyFileSync(file, `${file}.batch_temp`);
     }
   });
+
+  if (fs.existsSync(BATCH_HISTORY_BACKUP_DIR)) fs.rmSync(BATCH_HISTORY_BACKUP_DIR, { recursive: true, force: true });
+  if (fs.existsSync(HISTORY_DIR)) fs.cpSync(HISTORY_DIR, BATCH_HISTORY_BACKUP_DIR, { recursive: true });
 }
 
 function restoreBatchBackups() {
   TRACKED_FILES.forEach(file => {
+    if (file === HISTORY_DIR || file === HISTORY_INDEX) return;
     if (fs.existsSync(`${file}.batch_temp`)) {
       fs.copyFileSync(`${file}.batch_temp`, file);
-      fs.unlinkSync(`${file}.batch_temp`); // Remove o temp após restaurar
+      fs.unlinkSync(`${file}.batch_temp`);
     }
   });
+
+  if (fs.existsSync(BATCH_HISTORY_BACKUP_DIR)) {
+    fs.rmSync(HISTORY_DIR, { recursive: true, force: true });
+    fs.cpSync(BATCH_HISTORY_BACKUP_DIR, HISTORY_DIR, { recursive: true });
+    fs.rmSync(BATCH_HISTORY_BACKUP_DIR, { recursive: true, force: true });
+  }
+  rebuildHistoryIndex();
 }
 
 function deleteBatchBackups() {
   TRACKED_FILES.forEach(file => {
+    if (file === HISTORY_DIR || file === HISTORY_INDEX) return;
     if (fs.existsSync(`${file}.batch_temp`)) {
       fs.unlinkSync(`${file}.batch_temp`);
     }
   });
+
+  if (fs.existsSync(BATCH_HISTORY_BACKUP_DIR)) {
+    fs.rmSync(BATCH_HISTORY_BACKUP_DIR, { recursive: true, force: true });
+  }
 }
 // -------------------------------------------
 
@@ -106,6 +137,31 @@ function nowDate() {
   const month = String(d.getMonth() + 1).padStart(2, '0');
   const year = String(d.getFullYear()).slice(-2);
   return `${day}/${month}/${year}`;
+}
+
+function recordHistory(beforeLists, afterLists, timestamp, operation, message) {
+  const result = appendHistoryEvent({
+    timestamp,
+    beforeLists,
+    afterLists,
+    operation,
+    message,
+    source: 'cli'
+  });
+
+  if (result.changes.length > 0) {
+    rebuildHistoryIndex();
+    console.log('Histórico json de posições adicionado!');
+    return result;
+  }
+
+  return null;
+}
+
+function parsePosition(value) {
+  const position = Number(String(value).trim());
+  if (!Number.isInteger(position) || position < 1) return null;
+  return position;
 }
 
 function updateReadmeSummary(date, entry) {
@@ -145,17 +201,19 @@ function ensureGitAvailable() {
 
 function gitCommitAndPush(files, message) {
   try {
+    const fileList = Array.isArray(files) ? files : [files];
+
     if (process.env.SIMULATE_GIT === '1') {
-      console.log('[SIM] git add', Array.isArray(files) ? files.join(' ') : files);
+      console.log('[SIM] git add', fileList.join(' '));
       console.log('[SIM] git commit -m "' + message + '"');
       console.log('[SIM] git push');
       return true;
     }
+
     ensureGitAvailable();
-    const addList = Array.isArray(files) ? files.join(' ') : files;
-    execSync(`git add ${addList}`, { stdio: 'ignore' });
-    execSync(`git commit -m "${message.replace(/"/g, '\\"')}"`, { stdio: 'ignore' });
-    execSync('git push', { stdio: 'ignore' });
+    execFileSync('git', ['add', '--', ...fileList], { stdio: 'ignore' });
+    execFileSync('git', ['commit', '-m', message], { stdio: 'ignore' });
+    execFileSync('git', ['push'], { stdio: 'inherit' });
     return true;
   } catch (e) {
     console.error('Git commit/push falhou:', e.message);
@@ -244,6 +302,8 @@ async function addWithHistory(targetFile, skipGit = false) {
   console.log('\n ADICIONAR NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
+  const beforeLists = clone(lists);
+  const historyTimestamp = new Date();
   const targetList = targetFile === FILES.MAIN ? 'main' : targetFile === FILES.EXTENDED ? 'extended' : 'legacy';
   const beforeTop = lists.main.slice(0, LIMITS.MAIN_MAX).map(d => d.lvl_name);
   
@@ -256,6 +316,11 @@ async function addWithHistory(targetFile, skipGit = false) {
   const scale = await ask('Scale (Enter = pular): ') || '';
   const aredl = await ask('Posição AREDL (Enter = pular): ') || '0';
   const pos = await ask(`Posição na ${targetList.toUpperCase()} (Enter = final): `);
+  const parsedPos = pos ? parsePosition(pos) : null;
+  if (pos && !parsedPos) {
+    console.log('Posição inválida. Use um número inteiro positivo.\n');
+    return;
+  }
   
   const obj = { 
     lvl_name: name, 
@@ -267,7 +332,7 @@ async function addWithHistory(targetFile, skipGit = false) {
   };
   
   const data = lists[targetList];
-  const idx = pos ? Math.max(0, Math.min(parseInt(pos) - 1, data.length)) : data.length;
+  const idx = parsedPos ? Math.max(0, Math.min(parsedPos - 1, data.length)) : data.length;
   
   // Calcular posição global
   let globalPos = idx + 1;
@@ -323,6 +388,8 @@ async function addWithHistory(targetFile, skipGit = false) {
   if (addedToTop.length && !addedToTop.includes(name)) desc += `, fazendo com que ${addedToTop.join(', ')} entre(m) para o Top ${LIMITS.MAIN_MAX}`;
   if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
 
+  recordHistory(beforeLists, lists, historyTimestamp, 'add', desc);
+
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Adicionado: ${desc}`);
     console.log(ok ? 'Commit e push realizados.' : 'Commit/push falhou (verifique credenciais).');
@@ -336,6 +403,8 @@ async function moveWithHistory(skipGit = false) {
   console.log('\n MOVER NÍVEL COM TRANSIÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
+  const beforeLists = clone(lists);
+  const historyTimestamp = new Date();
   
   // Mostrar alguns níveis de referência
   console.log('\nPrimeiros 10 da Main:');
@@ -487,6 +556,8 @@ async function moveWithHistory(skipGit = false) {
   if (removedFromTop.length) desc += `, fazendo com que ${removedFromTop.join(', ')} caia(m) para Extended`;
   if (addedToTop.length) desc += `, fazendo com que ${addedToTop.join(', ')} suba(m) para Main`;
   if (cascadeChanges.length > 0) desc += `. ${cascadeChanges.join('; ')}`;
+
+  recordHistory(beforeLists, lists, historyTimestamp, 'move', desc);
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Movido: ${desc}`);
@@ -501,6 +572,8 @@ async function deleteLevel(skipGit = false) {
   console.log('\nDELETAR COM PROMOÇÕES AUTOMÁTICAS:');
   
   const lists = loadAll();
+  const beforeLists = clone(lists);
+  const historyTimestamp = new Date();
   
   console.log('\nPrimeiros 10 da Main:');
   lists.main.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
@@ -533,7 +606,11 @@ async function deleteLevel(skipGit = false) {
       }
     }
   } else {
-    const pos = parseInt(input);
+    const pos = parsePosition(input);
+    if (!pos) {
+      console.log('Posição inválida. Use um número inteiro positivo.\n');
+      return;
+    }
     if (pos <= LIMITS.MAIN_MAX) {
       level = lists.main[pos - 1];
       globalPos = pos;
@@ -599,6 +676,8 @@ async function deleteLevel(skipGit = false) {
   let desc = `${name} removido de #${globalPos} (${list.toUpperCase()})`;
   if (addedToTop.length) desc += `, ${addedToTop.join(', ')} promovido(s) para Main`;
   if (promotions.length > 0) desc += `. ${promotions.join('; ')}`;
+
+  recordHistory(beforeLists, lists, historyTimestamp, 'remove', desc);
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Removido: ${desc}`);
@@ -613,6 +692,8 @@ async function update(skipGit = false) {
   console.log('\nEDITAR:');
   
   const lists = loadAll();
+  const beforeLists = clone(lists);
+  const historyTimestamp = new Date();
   
   console.log('\nPrimeiros 10 da Main:');
   lists.main.slice(0, 10).forEach((l, i) => console.log(`  ${i+1}. ${l.lvl_name}`));
@@ -628,7 +709,11 @@ async function update(skipGit = false) {
             lists.extended.find(l => l.lvl_name.toLowerCase() === input.toLowerCase()) ||
             lists.legacy.find(l => l.lvl_name.toLowerCase() === input.toLowerCase());
   } else {
-    const pos = parseInt(input);
+    const pos = parsePosition(input);
+    if (!pos) {
+      console.log('Posição inválida. Use um número inteiro positivo.\n');
+      return;
+    }
     if (pos <= LIMITS.MAIN_MAX) {
       level = lists.main[pos - 1];
     } else if (pos <= LIMITS.EXTENDED_MAX) {
@@ -677,6 +762,8 @@ async function update(skipGit = false) {
   
   const name = level.lvl_name || '(sem nome)';
   const desc = changes.length ? `${name} atualizado: ${changes.join(', ')}` : `${name} editado (sem mudanças)`;
+
+  if (changes.length) recordHistory(beforeLists, lists, historyTimestamp, 'update', desc);
   
   if (!skipGit) {
     const ok = gitCommitAndPush(TRACKED_FILES, `Atualizado: ${desc}`);

@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "levels": "node scripts/cli.cjs",
-    "manage": "node scripts/cli.cjs"
+    "manage": "node scripts/cli.cjs",
+    "migrate-history": "node scripts/migrate_history.cjs",
+    "rebuild-time-machine": "node scripts/rebuild_time_machine_from_changelogs.mjs"
   },
   "dependencies": {
     "express": "^4.22.1"
