@@ -1,18 +1,5 @@
 [
   {
-    "lvl_name": "Automation Test Level",
-    "lvl_creator": "Manus Test",
-    "video_url": "",
-    "diff_rank": "Extreme Demon",
-    "diff_scale": "1",
-    "pos_aredl": 0,
-    "pos_history": [
-      {
-        "log1": "04/09/26 - Added to the list at position 1, above The Yandere"
-      }
-    ]
-  },
-  {
     "lvl_name": "The Yandere",
     "lvl_creator": "Dorami",
     "video_url": "https://youtu.be/bINkwwDFW3E?si=kgRBdtbbdmNn3YcM",
@@ -7418,6 +7405,19 @@
       },
       {
         "log1": "04/09/26 - Automation Test Level was added above (-1)"
+      }
+    ]
+  },
+  {
+    "lvl_name": "MultiChromatic",
+    "lvl_creator": "gmdmann",
+    "video_url": "https://youtu.be/k6BWZAz6CEs?si=FI7CY_C-7RAzpeF1",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "04/09/26 - Promoted to Main List at position 75 (was Extended #76)"
       }
     ]
   }
