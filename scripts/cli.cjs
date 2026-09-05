@@ -76,10 +76,17 @@ function saveAll(lists) {
 }
 
 // --- Funções de Backup para o Modo Batch ---
+// TRACKED_FILES usa caminhos relativos, enquanto HISTORY_DIR/HISTORY_INDEX
+// vêm do history_manager.cjs como caminhos absolutos. Comparar as strings
+// diretamente fazia o Batch tentar usar copyFileSync() em uma pasta.
+function isHistoryPath(file) {
+  const resolved = path.resolve(file);
+  return resolved === path.resolve(HISTORY_DIR) || resolved === path.resolve(HISTORY_INDEX);
+}
+
 function createBatchBackups() {
   TRACKED_FILES.forEach(file => {
-    if (file === HISTORY_DIR) return;
-    if (file === HISTORY_INDEX) return;
+    if (isHistoryPath(file)) return;
     if (fs.existsSync(file)) {
       fs.copyFileSync(file, `${file}.batch_temp`);
     }
@@ -91,7 +98,7 @@ function createBatchBackups() {
 
 function restoreBatchBackups() {
   TRACKED_FILES.forEach(file => {
-    if (file === HISTORY_DIR || file === HISTORY_INDEX) return;
+    if (isHistoryPath(file)) return;
     if (fs.existsSync(`${file}.batch_temp`)) {
       fs.copyFileSync(`${file}.batch_temp`, file);
       fs.unlinkSync(`${file}.batch_temp`);
@@ -108,7 +115,7 @@ function restoreBatchBackups() {
 
 function deleteBatchBackups() {
   TRACKED_FILES.forEach(file => {
-    if (file === HISTORY_DIR || file === HISTORY_INDEX) return;
+    if (isHistoryPath(file)) return;
     if (fs.existsSync(`${file}.batch_temp`)) {
       fs.unlinkSync(`${file}.batch_temp`);
     }
