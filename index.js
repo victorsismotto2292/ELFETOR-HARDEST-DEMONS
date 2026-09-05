@@ -431,8 +431,8 @@ function CreateCardLevels_Legacy(level_legacy, index) {
             </p>
  
             <div class="badge-container">
-                <span>${rankDisplay}</span>
-                ${difficulty ? `<span class="badge-tier">Tier: ${difficulty}</span>` : ''}
+                <span class="badge-demon">${rankDisplay}</span>
+                <span class="badge-tier">Tier: ${difficulty}</span>
             </div>
  
             ${level_legacy.pos_aredl
