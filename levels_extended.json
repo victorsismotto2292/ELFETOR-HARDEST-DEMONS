@@ -896,6 +896,22 @@
     ]
   },
   {
+    "video_url": "https://www.youtube.com/watch?v=5YKUMsrcMNs",
+    "lvl_name": "Nowise",
+    "lvl_creator": "Darwin",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "11",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://youtu.be/Bpc7l7ovqgU?si=4B9aC122XwJSXN_A",
     "lvl_name": "Inception",
     "lvl_creator": "Darwin",
@@ -915,22 +931,6 @@
     "video_url": "https://www.youtube.com/watch?v=4_enMcdxloI",
     "lvl_name": "Despacito Circles",
     "lvl_creator": "Terron",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "11",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=5YKUMsrcMNs",
-    "lvl_name": "Nowise",
-    "lvl_creator": "Darwin",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "11",
