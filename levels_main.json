@@ -4862,43 +4862,6 @@
     ]
   },
   {
-    "lvl_name": "Firewall",
-    "lvl_creator": "Hinds",
-    "video_url": "https://youtu.be/vvSPDqFBbZo?si=_n5Nt8-rFsFruYKf",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "17",
-    "pos_aredl": 0,
-    "pos_history": [
-      {
-        "log1": "18/04/26 - Added to the list at position 53, below Night Terrors and above Arcane"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      },
-      {
-        "log1": "31/05/26 - Lost Love was added above (-1)"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
-      },
-      {
-        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
-      },
-      {
-        "log1": "31/07/26 - The Yandere was added above (-1)"
-      },
-      {
-        "log1": "21/08/26 - rauchkammer was added above (-1)"
-      },
-      {
-        "log1": "04/09/26 - Automation Test Level was added above (-1)"
-      },
-      {
-        "log1": "05/09/26 - Abandoned Kingdom was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/DOvFm_23y1A?si=aw4xX1abGLJGk2Ej",
     "lvl_name": "Arcane",
     "lvl_creator": "qMystic",
@@ -5121,6 +5084,49 @@
       },
       {
         "log1": "05/09/26 - Abandoned Kingdom was added above (-1)"
+      },
+      {
+        "log1": "21/09/26 - Moved to position 60 (+1), below Night Terrors and above Firewall"
+      }
+    ]
+  },
+  {
+    "lvl_name": "Firewall",
+    "lvl_creator": "Hinds",
+    "video_url": "https://youtu.be/vvSPDqFBbZo?si=_n5Nt8-rFsFruYKf",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "17",
+    "pos_aredl": 0,
+    "pos_history": [
+      {
+        "log1": "18/04/26 - Added to the list at position 53, below Night Terrors and above Arcane"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "31/05/26 - Lost Love was added above (-1)"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
+      },
+      {
+        "log1": "31/07/26 - The Yandere was added above (-1)"
+      },
+      {
+        "log1": "21/08/26 - rauchkammer was added above (-1)"
+      },
+      {
+        "log1": "04/09/26 - Automation Test Level was added above (-1)"
+      },
+      {
+        "log1": "05/09/26 - Abandoned Kingdom was added above (-1)"
+      },
+      {
+        "log1": "21/09/26 - Arcane was moved above (-1)"
       }
     ]
   },
