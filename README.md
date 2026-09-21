@@ -19,24 +19,12 @@ Este projeto está configurado para deploy automático no Vercel.
 #
 ## Últimas alterações
 
-1. (31/07/2026) -> THE YANDERE FOI ADICIONADA NA POSIÇÃO #1, ACIMA DE BLACK BLIZZARD, FAZENDO COM QUE BLACK BLIZZARD CAIA DA POSIÇÃO APÓS 2 MESES
+1. (04/09/2026) - ABA TIME MACHINE ADICIONADA!
+2. (04/09/2026) - Azurite e Destination 19 foram trocadas de lugar, agora com Destination 19 acima, na posição #21
 
-- BLOODBATH CAI DO TOP 3 NÍVEIS MAIS DIFÍCEIS
-- PRISMATIC HAZE CAI DA POSIÇÃO 5 APÓS QUASE 2 ANOS
-- REVERENCE CAI DA POSIÇÃO 10 APÓS 1 ANO
-- ALLEGIANCE CAI DA POSIÇÃO 15 APÓS 1 ANO
-- AZURITE CAI DA POSIÇÃO 20 APÓS 2 ANOS
-- PRECIPITANCE CAI DA POSIÇÃO 25 APÓS QUASE 3 ANOS
-- EXG CAI DA POSIÇÃO 75 APÓS 3 ANOS
-- OVERPOWERED CAI DA POSIÇÃO 150 APÓS 3 ANOS
-  
-2. (20/08/2026) -> Stellaluna e Reverence foram trocadas de lugar, agora com Reverence acima, na posição #10
-   
-3. (20/08/2026) -> Precipitance foi movida da posição #26 para #28, acima de Encroaching Dark e abaixo de Acu
-   
-4. (21/08/2026) -> Lost Love foi movida da posição #25 para #27, acima de Precipitance e abaixo de Acu; seguindo esta troca, Sweater Weather e Acu foram trocadas de lugar, agora com Acu acima, na posição #25
-
-5. (22/08/2026) -> rauchkammer foi adicionada na posição #26, acima de Sweater Weather e abaixo de Acu
-
-6. (04/09/2026) - ABA TIME MACHINE ADICIONADA!
-7. (04/09/2026) - Azurite e Destination 19 foram trocadas de lugar, agora com Destination 19 acima, na posição #21
+3. (21/09/2026) - Firewall e Arcane foram trocadas de lugar, agora com Arcane acima, na posição #60
+4. (21/09/2026) - Stereo Demoness e SFW foram trocadas de lugar, agora com SFW acima, na posição #88
+5. (21/09/2026) - Droppy foi movida da posição #102 para #106, acima de Sharp Minor e abaixo de The Furious
+6. (21/09/2026) - Jajagarasu foi movida da posição #107 para #104, acima de The Furious e abaixo de Diffuse
+7. (21/09/2026) - DecodeX e Iridescent foram trocadas de lugar,agora com Iridescent acima, na posição #113
+8. (21/09/2026) - Walkman e Conclusion foram trocadas de lugar, agora com Conclusion acima, na posição #116
