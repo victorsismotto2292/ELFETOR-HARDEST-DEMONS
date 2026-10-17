@@ -760,6 +760,22 @@
     ]
   },
   {
+    "video_url": "https://youtu.be/fyhL2SCD1fE?si=vq0eoUXDbzpQuDc8",
+    "lvl_name": "Zephyrs Madness",
+    "lvl_creator": "Zephyr",
+    "pos_aredl": "",
+    "diff_rank": "Hard Demon",
+    "diff_scale": "12",
+    "pos_history": [
+      {
+        "log1": "08/01/26 - foguito was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      }
+    ]
+  },
+  {
     "video_url": "https://www.youtube.com/watch?v=s_My4_zYQYA",
     "lvl_name": "Electrodynamix II",
     "lvl_creator": "iv4n24",
@@ -779,22 +795,6 @@
     "video_url": "https://www.youtube.com/watch?v=8EbIq2lslAw",
     "lvl_name": "Quasar",
     "lvl_creator": "Allan",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "12",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://youtu.be/fyhL2SCD1fE?si=vq0eoUXDbzpQuDc8",
-    "lvl_name": "Zephyrs Madness",
-    "lvl_creator": "Zephyr",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "12",
