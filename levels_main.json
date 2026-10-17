@@ -2185,79 +2185,6 @@
     ]
   },
   {
-    "video_url": "https://youtu.be/1jjd5TQbsKY?si=p6xx8e8CdM6BgUgd",
-    "lvl_name": "Dysphoria",
-    "lvl_creator": "IceboxOG",
-    "pos_aredl": 60,
-    "diff_rank": "Insane Demon",
-    "diff_scale": "19",
-    "pos_history": [
-      {
-        "log1": "01/11/25 - Added to the list at position 23"
-      },
-      {
-        "log1": "02/11/25 - Allegiance was added above (-1)"
-      },
-      {
-        "log1": "24/11/25 - Cytokinesis was added above (-1)"
-      },
-      {
-        "log1": "03/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - Thanatophobia was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "10/01/26 - teste was added above (-1)"
-      },
-      {
-        "log1": "15/01/26 - Linear Lane was added above (-1)"
-      },
-      {
-        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
-      },
-      {
-        "log1": "08/02/26 - Sweater Weather was added above (-1)"
-      },
-      {
-        "log1": "30/03/26 - Moved to position 31 (-2), below Galactus and above Zaphes Back Yard"
-      },
-      {
-        "log1": "06/04/26 - Bunny Demon was added above (-1)"
-      },
-      {
-        "log1": "16/05/26 - Black Blizzard was added above (-1)"
-      },
-      {
-        "log1": "31/05/26 - Lost Love was added above (-1)"
-      },
-      {
-        "log1": "14/06/26 - Aftermath was added above (-1)"
-      },
-      {
-        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
-      },
-      {
-        "log1": "31/07/26 - The Yandere was added above (-1)"
-      },
-      {
-        "log1": "21/08/26 - rauchkammer was added above (-1)"
-      },
-      {
-        "log1": "04/09/26 - Automation Test Level was added above (-1)"
-      }
-    ]
-  },
-  {
     "video_url": "https://youtu.be/A3vk3aWIWbE?si=1zvZZBmCptUE1dkf",
     "lvl_name": "Zaphes Back Yard",
     "lvl_creator": "Zacanii",
@@ -2354,6 +2281,9 @@
       },
       {
         "log1": "04/09/26 - Automation Test Level was added above (-1)"
+      },
+      {
+        "log1": "17/10/26 - Dysphoria was moved below (+1)"
       }
     ]
   },
@@ -2463,6 +2393,9 @@
       },
       {
         "log1": "04/09/26 - Automation Test Level was added above (-1)"
+      },
+      {
+        "log1": "17/10/26 - Dysphoria was moved below (+1)"
       }
     ]
   },
@@ -2476,6 +2409,85 @@
     "pos_history": [
       {
         "log1": "05/09/26 - Added to the list at position 41, below Sheol Death and above Kyrie Eleison"
+      },
+      {
+        "log1": "17/10/26 - Dysphoria was moved below (+1)"
+      }
+    ]
+  },
+  {
+    "video_url": "https://youtu.be/1jjd5TQbsKY?si=p6xx8e8CdM6BgUgd",
+    "lvl_name": "Dysphoria",
+    "lvl_creator": "IceboxOG",
+    "pos_aredl": 60,
+    "diff_rank": "Insane Demon",
+    "diff_scale": "19",
+    "pos_history": [
+      {
+        "log1": "01/11/25 - Added to the list at position 23"
+      },
+      {
+        "log1": "02/11/25 - Allegiance was added above (-1)"
+      },
+      {
+        "log1": "24/11/25 - Cytokinesis was added above (-1)"
+      },
+      {
+        "log1": "03/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - Thanatophobia was added above (-1)"
+      },
+      {
+        "log1": "09/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "10/01/26 - teste was added above (-1)"
+      },
+      {
+        "log1": "15/01/26 - Linear Lane was added above (-1)"
+      },
+      {
+        "log1": "27/01/26 - Frizzantino Vibes was added above (-1)"
+      },
+      {
+        "log1": "08/02/26 - Sweater Weather was added above (-1)"
+      },
+      {
+        "log1": "30/03/26 - Moved to position 31 (-2), below Galactus and above Zaphes Back Yard"
+      },
+      {
+        "log1": "06/04/26 - Bunny Demon was added above (-1)"
+      },
+      {
+        "log1": "16/05/26 - Black Blizzard was added above (-1)"
+      },
+      {
+        "log1": "31/05/26 - Lost Love was added above (-1)"
+      },
+      {
+        "log1": "14/06/26 - Aftermath was added above (-1)"
+      },
+      {
+        "log1": "02/07/26 - Balengu Vortex was added above (-1)"
+      },
+      {
+        "log1": "31/07/26 - The Yandere was added above (-1)"
+      },
+      {
+        "log1": "21/08/26 - rauchkammer was added above (-1)"
+      },
+      {
+        "log1": "04/09/26 - Automation Test Level was added above (-1)"
+      },
+      {
+        "log1": "17/10/26 - Moved to position 41 (-3), below Abandoned Kingdom and above Kyrie Eleison"
       }
     ]
   },
