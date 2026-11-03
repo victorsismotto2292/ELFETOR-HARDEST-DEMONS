@@ -1,5 +1,13 @@
 [
   {
+    "video_url": "https://www.youtube.com/watch?v=88YJC5qW8ts",
+    "lvl_name": "Quantum Force",
+    "lvl_creator": "Darwin",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "16"
+  },
+  {
     "lvl_name": "MultiChromatic",
     "lvl_creator": "gmdmann",
     "video_url": "https://youtu.be/k6BWZAz6CEs?si=FI7CY_C-7RAzpeF1",
@@ -1003,22 +1011,6 @@
     "video_url": "https://www.youtube.com/watch?v=HgNHkZ6jzFo",
     "lvl_name": "Interstellar",
     "lvl_creator": "Darwin",
-    "pos_aredl": "",
-    "diff_rank": "Hard Demon",
-    "diff_scale": "10",
-    "pos_history": [
-      {
-        "log1": "08/01/26 - foguito was added above (-1)"
-      },
-      {
-        "log1": "09/01/26 - teste was added above (-1)"
-      }
-    ]
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=feGpY-d01yk",
-    "lvl_name": "Black Off",
-    "lvl_creator": "Vlacc",
     "pos_aredl": "",
     "diff_rank": "Hard Demon",
     "diff_scale": "10",
