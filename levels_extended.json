@@ -64,14 +64,6 @@
     "diff_scale": "15"
   },
   {
-    "video_url": "https://www.youtube.com/watch?v=rtm0flhztcU",
-    "lvl_name": "Stalemate",
-    "lvl_creator": "Nox",
-    "pos_aredl": "",
-    "diff_rank": "Insane Demon",
-    "diff_scale": "15"
-  },
-  {
     "video_url": "https://www.youtube.com/watch?v=eGPNEaZV6cc",
     "lvl_name": "Crazy II",
     "lvl_creator": "DAVJT",
@@ -86,6 +78,14 @@
     "pos_aredl": "",
     "diff_rank": "Insane Demon",
     "diff_scale": "16"
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=rtm0flhztcU",
+    "lvl_name": "Stalemate",
+    "lvl_creator": "Nox",
+    "pos_aredl": "",
+    "diff_rank": "Insane Demon",
+    "diff_scale": "15"
   },
   {
     "video_url": "https://www.youtube.com/watch?v=8vLP8XOztJM",
